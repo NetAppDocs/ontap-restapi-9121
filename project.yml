@@ -1,0 +1,9 @@
+settings:
+  name: "Product Name"
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    # Remove this comment and uncomment the harmony_enabled line immediately before initial publishing. 
+    # harmony_enabled: true
+sidebar: 
