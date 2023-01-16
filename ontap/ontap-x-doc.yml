@@ -70,14 +70,13 @@ paths:
         filename: delete-application-applications-snapshots-.html
     get:
       x-doc:
-        title: 'application_snapshot_get: Retrieve a snapshot copy of an application
-          component'
+        title: Retrieve a snapshot copy of an application component 👁️
         category: application
         filename: get-application-applications-snapshots-.html
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restore an application snapshot<br/>
+        title: Restore an application snapshot 👁️
         category: application
         filename: post-application-applications-snapshots-restore.html
   "/application/applications/{uuid}":
@@ -104,7 +103,7 @@ paths:
         filename: get-application-consistency-groups.html
     post:
       x-doc:
-        title: 'Create a consistency group with one or more consistency groups having:'
+        title: Create a consistency group with one or more consistency groups 👁️
         category: application
         filename: post-application-consistency-groups.html
   "/application/consistency-groups/{consistency_group.uuid}/snapshots":
@@ -420,7 +419,7 @@ paths:
         filename: get-cluster-metrocluster.html
     patch:
       x-doc:
-        title: Initiate a switchover, heal or switchback operation
+        title: Initiate a switchover, heal, or switchback operation 👁️
         category: cluster
         filename: patch-cluster-metrocluster.html
     post:
@@ -621,38 +620,37 @@ paths:
   "/cluster/peers/{peer.uuid}/application/consistency-groups":
     get:
       x-doc:
-        title: Cross cluster get consistency groups
+        title: Retrieve all cross cluster consistency groups 👁️
         category: cluster
         filename: get-cluster-peers-application-consistency-groups.html
   "/cluster/peers/{peer.uuid}/application/consistency-groups/{uuid}":
     get:
       x-doc:
-        title: 'cross_cluster_xc_consistency_group_get: Cross cluster get consistency
-          groups'
+        title: Retrieve a cross cluster consistency group 👁️
         category: cluster
         filename: get-cluster-peers-application-consistency-groups-.html
   "/cluster/peers/{peer.uuid}/cluster":
     get:
       x-doc:
-        title: Cross cluster get cluster
+        title: Retrieve a cross cluster 👁️
         category: cluster
         filename: get-cluster-peers-cluster.html
   "/cluster/peers/{peer.uuid}/cluster/licensing/licenses":
     get:
       x-doc:
-        title: Cross cluster get licenses
+        title: Retrieve all cross cluster licenses 👁️
         category: cluster
         filename: get-cluster-peers-cluster-licensing-licenses.html
   "/cluster/peers/{peer.uuid}/cluster/nodes":
     get:
       x-doc:
-        title: 'cross_cluster_xc_node_collection_get: Cross cluster get cluster'
+        title: Retrieve all cross cluster peers 👁️
         category: cluster
         filename: get-cluster-peers-cluster-nodes.html
   "/cluster/peers/{peer.uuid}/cluster/nodes/{uuid}":
     get:
       x-doc:
-        title: 'cross_cluster_xc_node_get: Cross cluster get cluster'
+        title: Retrieve a cross cluster peer 👁️
         category: cluster
         filename: get-cluster-peers-cluster-nodes-.html
   "/cluster/peers/{peer.uuid}/cluster/peers":
@@ -693,12 +691,12 @@ paths:
   "/cluster/peers/{peer.uuid}/security/key-managers":
     get:
       x-doc:
-        title: Cross cluster get key_managers
+        title: Cross cluster get key managers 👁️
         category: security
         filename: get-cluster-peers-security-key-managers.html
     post:
       x-doc:
-        title: Cross cluster post key_managers
+        title: Cross cluster post key managers 👁️
         category: security
         filename: post-cluster-peers-security-key-managers.html
   "/cluster/peers/{peer.uuid}/snapmirror/relationships":
@@ -734,7 +732,7 @@ paths:
   "/cluster/peers/{peer.uuid}/svm/svms/{uuid}":
     get:
       x-doc:
-        title: 'cross_cluster_svm_config_instance_get: Cross cluster get svm config'
+        title: Retrieve the svm configuration for a cross cluster peer 👁️
         category: svm
         filename: get-cluster-peers-svm-svms-.html
   "/cluster/peers/{uuid}":
@@ -772,7 +770,7 @@ paths:
         filename: delete-cluster-schedules-.html
     get:
       x-doc:
-        title: 'schedule_get: Retrieve a schedule'
+        title: Retrieve a schedule 👁️
         category: cluster
         filename: get-cluster-schedules-.html
     patch:
@@ -789,7 +787,7 @@ paths:
   "/cluster/sensors/{node.uuid}/{index}":
     get:
       x-doc:
-        title: 'sensors_get: Retrieve environment sensors'
+        title: Retrieve environment sensors 👁️
         category: cluster
         filename: get-cluster-sensors-.html
   "/cluster/software":
@@ -860,12 +858,6 @@ paths:
         title: Retrieve the web services configuration for a collection of nodes
         category: cluster
         filename: get-cluster-web-statistics.html
-  "/host/hosts/{uuid}/report":
-    post:
-      x-doc:
-        title: "## overview"
-        category: Host
-        filename: post-host-hosts-report.html
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -1068,25 +1060,23 @@ paths:
         filename: delete-name-services-local-hosts-.html
     get:
       x-doc:
-        title: For a specified svm and ip address, Return the corresponding ip to
-          hostname mapping
+        title: Retrieve hostname mapping for a svm 👁️
         category: name-services
         filename: get-name-services-local-hosts-.html
     patch:
       x-doc:
-        title: For a specified svm and ip address, Modify the corresponding ip to
-          hostname mapping
+        title: Update hostname mapping for a svm 👁️
         category: name-services
         filename: patch-name-services-local-hosts-.html
   "/name-services/name-mappings":
     get:
       x-doc:
-        title: Retrieve the name mapping configuration for all svms
+        title: Retrieve hostname mapping for all svms 👁️
         category: name-services
         filename: get-name-services-name-mappings.html
     post:
       x-doc:
-        title: Create name mappings for an svm
+        title: Create hostname mappings for a svm 👁️
         category: name-services
         filename: post-name-services-name-mappings.html
   "/name-services/name-mappings/{svm.uuid}/{direction}/{index}":
@@ -1173,8 +1163,7 @@ paths:
         filename: get-name-services-unix-groups-.html
     patch:
       x-doc:
-        title: Update the unix group information of the specified group in the specified
-          svm
+        title: Update the unix group information of the specified group in the specified svm 👁️
         category: name-services
         filename: patch-name-services-unix-groups-.html
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users":
@@ -1196,8 +1185,7 @@ paths:
         filename: delete-name-services-unix-groups--users-.html
     get:
       x-doc:
-        title: 'unix_group_users_get: Retrieve users for the specified unix group
-          and svm'
+        title: Retrieve users for the specified unix group and svm 👁️
         category: name-services
         filename: get-name-services-unix-groups--users-.html
   "/name-services/unix-users":
@@ -1467,14 +1455,12 @@ paths:
   "/network/http-proxy/{uuid}":
     delete:
       x-doc:
-        title: Delete the http proxy configuration of the specified svm or cluster
-          ipspace
+        title: Delete the http proxy configuration of the specified svm or cluster ipspace 👁️
         category: networking
         filename: delete-network-http-proxy-.html
     get:
       x-doc:
-        title: Display the http proxy server, port, and ipspace of the specified
-          svm or cluster ipspace
+        title: Display the http proxy server, port, and ipspace of the specified svm or cluster ipspace 👁️
         category: networking
         filename: get-network-http-proxy-.html
     patch:
@@ -1690,7 +1676,7 @@ paths:
   "/private/cluster/nodes/{uuid}":
     get:
       x-doc:
-        title: 'node_private_get: Retrieve information for the node'
+        title: Retrieve information for the node 👁️
         category: cluster
         filename: get-private-cluster-nodes-.html
     patch:
@@ -1852,14 +1838,12 @@ paths:
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Delete the active directory preferred dc configuration of the specified
-          svm and domain
+        title: Delete the active directory preferred dc configuration of the specified svm and domain 👁️
         category: NAS
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: 'active_directory_preferred_dc_get: Retrieve the active directory
-          preferred dc configuration of an svm'
+        title: Retrieve the active directory preferred dc configuration of an svm 👁️
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
   "/protocols/audit":
@@ -1942,14 +1926,12 @@ paths:
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Delete the cifs domain preferred dc configuration of the specified
-          svm and domain
+        title: Delete the cifs domain preferred dc configuration of the specified svm and domain 👁️
         category: NAS
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: 'cifs_domain_preferred_dc_get: Retrieve the cifs domain preferred
-          dc configuration of an svm'
+        title: Retrieve the cifs domain preferred dc configuration of an svm 👁️
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
   "/protocols/cifs/group-policies":
@@ -2060,7 +2042,7 @@ paths:
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members":
     delete:
       x-doc:
-        title: Delete the local users, active directory users and/or active directory
+        title: Delete the local users, active directory users, or active directory 👁️
           groups from the specified local group and svm
         category: NAS
         filename: delete-protocols-cifs-local-groups--members.html
@@ -2225,23 +2207,23 @@ paths:
         title: Specify list files to be added as a part of shadowcopy creation
         category: NAS
         filename: patch-protocols-cifs-shadow-copies-.html
-  "/protocols/cifs/shadowcopy-Set":
+  "/protocols/cifs/shadowcopy-set":
     get:
       x-doc:
-        title: Retrieve shadowcopy Set
+        title: Retrieve shadowcopy set 👁️
         category: NAS
-        filename: get-protocols-cifs-shadowcopy-Set.html
-  "/protocols/cifs/shadowcopy-Set/{uuid}":
+        filename: get-protocols-cifs-shadowcopy-set.html
+  "/protocols/cifs/shadowcopy-set/{uuid}":
     get:
       x-doc:
         title: Retrieve a shadowcopy set
         category: NAS
-        filename: get-protocols-cifs-shadowcopy-Set-.html
+        filename: get-protocols-cifs-shadowcopy-set-.html
     patch:
       x-doc:
         title: Update a shadowcopy set
         category: NAS
-        filename: patch-protocols-cifs-shadowcopy-Set-.html
+        filename: patch-protocols-cifs-shadowcopy-set-.html
   "/protocols/cifs/shares":
     get:
       x-doc:
@@ -2328,19 +2310,17 @@ paths:
     get:
       x-doc:
         title: Retrieve information about the import operation status of the cifs
-          local users,
+          local users, groups, and group memberships 👁️
         category: NAS
         filename: get-protocols-cifs-users-and-groups-bulk-import-.html
     patch:
       x-doc:
-        title: Upload the status of the bulk-import of the specified svm to the specified
-          uri
+        title: Upload the status of the bulk-import of the specified svm to the specified uri 👁️
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-bulk-import-.html
     post:
       x-doc:
-        title: Loads cifs local users,groups and group memberships file from the specified
-          url
+        title: Loads cifs local users,groups and group memberships file from the specified url 👁️
         category: NAS
         filename: post-protocols-cifs-users-and-groups-bulk-import-.html
   "/protocols/cifs/users-and-groups/privileges":
@@ -2352,15 +2332,13 @@ paths:
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
       x-doc:
-        title: Add privileges to the specified local or active directory user or
-          group and svm
+        title: Add privileges to the specified local or active directory user or group and svm 👁️
         category: NAS
         filename: post-protocols-cifs-users-and-groups-privileges.html
   "/protocols/cifs/users-and-groups/privileges/{svm.uuid}/{name}":
     get:
       x-doc:
-        title: 'user_group_privileges_get: Retrieve privileges of the specified local
-          or active directory user or group and svm'
+        title: Retrieve privileges of the specified local or active directory user or group and svm 👁️
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges-.html
     patch:
@@ -2405,8 +2383,7 @@ paths:
         filename: delete-protocols-file-access-tracing-filters-.html
     get:
       x-doc:
-        title: 'file_access_filter_get: Retrieve information about security trace
-          filter entries'
+        title: Retrieve information about security trace filter entries 👁️
         category: NAS
         filename: get-protocols-file-access-tracing-filters-.html
     patch:
@@ -2809,7 +2786,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: 'nfs_collection_get: Retrieve the nfs configuration of svms'
+        title: Retrieve the nfs configuration of svms 👁️
         category: NAS
         filename: get-protocols-nfs-services.html
     post:
@@ -3025,39 +3002,39 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets":
     get:
       x-doc:
-        title: Retrieve the s3 bucket's configuration of an svm
+        title: Retrieve the s3 bucket configuration of an svm 👁️
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
     post:
       x-doc:
-        title: 's3_bucket_svm_create: Create the s3 bucket configuration of an svm'
+        title: Create the s3 bucket configuration of an svm 👁️
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: 's3_bucket_svm_delete: Delete the s3 bucket configuration of an svm'
+        title: Delete the s3 bucket configuration of an svm 👁️
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
       x-doc:
-        title: 's3_bucket_svm_get: Retrieve the s3 bucket configuration of an svm'
+        title: Retrieve the s3 bucket configuration of an svm 👁️
         category: Object-store
         filename: get-protocols-s3-services-buckets-.html
     patch:
       x-doc:
-        title: 's3_bucket_svm_modify: Update the s3 bucket configuration of an svm'
+        title: Update the s3 bucket configuration of an svm 👁️
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
-        title: Retrieve the s3 group's svm configuration
+        title: Retrieve s3 group configuration 👁️
         category: Object-store
         filename: get-protocols-s3-services-groups.html
     post:
       x-doc:
-        title: Create the s3 group configuration
+        title: Create s3 group configuration 👁️
         category: Object-store
         filename: post-protocols-s3-services-groups.html
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
@@ -3113,12 +3090,12 @@ paths:
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieve the s3 user's svm configuration
+        title: Retrieve s3 user configuration 👁️
         category: Object-store
         filename: get-protocols-s3-services-users.html
     post:
       x-doc:
-        title: Create the s3 user configuration
+        title: Create s3 user configuration 👁️
         category: Object-store
         filename: post-protocols-s3-services-users.html
   "/protocols/s3/services/{svm.uuid}/users/{name}":
@@ -3364,12 +3341,12 @@ paths:
         title: Retrieve a lun map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
-  "/protocols/san/portSet":
+  "/protocols/san/portset":
     get:
       x-doc:
-        title: Retrieve portSet
+        title: Retrieve portset 👁️
         category: SAN
-        filename: get-protocols-san-portSet.html
+        filename: get-protocols-san-portset.html
     post:
       x-doc:
         title: Create a portset
@@ -3553,33 +3530,6 @@ paths:
         title: Update the vscan scanner-pool configuration of an svm
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
-  "/renames":
-    get:
-      x-doc:
-        title: Retrieve xxxx
-        category: Rename
-        filename: get-renames.html
-    post:
-      x-doc:
-        title: Create a xxx
-        category: Rename
-        filename: post-renames.html
-  "/renames/{rename.uuid}":
-    delete:
-      x-doc:
-        title: Delete a xxxx
-        category: Rename
-        filename: delete-renames-.html
-    get:
-      x-doc:
-        title: 'rename_get: Retrieve xxxx'
-        category: Rename
-        filename: get-renames-.html
-    patch:
-      x-doc:
-        title: Update a xxxx
-        category: Rename
-        filename: patch-renames-.html
   "/security":
     get:
       x-doc:
@@ -3654,7 +3604,7 @@ paths:
         filename: get-security-audit-destinations.html
     post:
       x-doc:
-        title: Configures remote syslog/splunk server information
+        title: Define remote syslog/splunk server information 👁️
         category: security
         filename: post-security-audit-destinations.html
   "/security/audit/destinations/{address}/{port}":
@@ -3665,8 +3615,7 @@ paths:
         filename: delete-security-audit-destinations-.html
     get:
       x-doc:
-        title: 'security_log_forwarding_get: Defines a remote syslog/splunk server
-          for sending audit information to'
+        title: Retrieve remote syslog/splunk server information 👁️
         category: security
         filename: get-security-audit-destinations-.html
     patch:
@@ -3942,31 +3891,30 @@ paths:
         filename: get-security-certificate-authorities-issued-certificates-.html
     patch:
       x-doc:
-        title: Revokes an issued certificate
+        title: Revoke an issued certificate 👁️
         category: security
         filename: patch-security-certificate-authorities-issued-certificates-.html
   "/security/certificate-authorities/{security_certificate_authority.uuid}/sign":
     post:
       x-doc:
-        title: Signs a certificate
+        title: Sign security certificate authority 👁️
         category: security
         filename: post-security-certificate-authorities-sign.html
   "/security/certificate-authorities/{uuid}":
     delete:
       x-doc:
-        title: Delete a local certificate authority from ontap
+        title: Delete local certificate authority from ONTAP 👁️
         category: security
         filename: delete-security-certificate-authorities-.html
     get:
       x-doc:
-        title: Retrieve a local certificate authority from ontap
+        title: Retrieve local certificate authority from ONTAP 👁️
         category: security
         filename: get-security-certificate-authorities-.html
   "/security/certificate-signing-request":
     post:
       x-doc:
-        title: This api generates a certificate signing request(csr) and a private
-          key pair
+        title: Create certificate signing request 👁️
         category: security
         filename: post-security-certificate-signing-request.html
   "/security/certificates":
@@ -3977,51 +3925,51 @@ paths:
         filename: get-security-certificates.html
     post:
       x-doc:
-        title: Create or installs a certificate
+        title: Create or install security certificates 👁️
         category: security
         filename: post-security-certificates.html
   "/security/certificates/{ca.uuid}/sign":
     post:
       x-doc:
-        title: 'security_certificate_sign: Signs a certificate'
+        title: Sign security certificates 👁️
         category: security
         filename: post-security-certificates-sign.html
   "/security/certificates/{uuid}":
     delete:
       x-doc:
-        title: Delete a security certificate
+        title: Delete security certificates 👁️
         category: security
         filename: delete-security-certificates-.html
     get:
       x-doc:
-        title: 'security_certificate_get: Retrieve security certificates'
+        title: Retrieve security certificates 👁️
         category: security
         filename: get-security-certificates-.html
   "/security/cluster/accounts":
     get:
       x-doc:
-        title: Retrieve a list of user and group accounts
+        title: List user and group accounts 👁️
         category: security
         filename: get-security-cluster-accounts.html
     post:
       x-doc:
-        title: Create a new user or group account
+        title: Create new user or group accounts 👁️
         category: security
         filename: post-security-cluster-accounts.html
   "/security/cluster/accounts/{name}":
     delete:
       x-doc:
-        title: Delete a user or group account
+        title: Delete user or group accounts 👁️
         category: security
         filename: delete-security-cluster-accounts-.html
     get:
       x-doc:
-        title: Retrieve a specific user or group account
+        title: Retrieve specific user or group accounts 👁️
         category: security
         filename: get-security-cluster-accounts-.html
     patch:
       x-doc:
-        title: 'cluster_account_modify: Update a user account'
+        title: Update user accounts 👁️
         category: security
         filename: patch-security-cluster-accounts-.html
   "/security/cluster/roles":
@@ -4244,54 +4192,52 @@ paths:
         filename: delete-security-key-managers-auth-keys-.html
     get:
       x-doc:
-        title: 'key_manager_auth_key_get: Retrieve a list of all authentication keys
-          associated with the admin svm'
+        title: List all authentication keys associated with admin svm 👁️
         category: security
         filename: get-security-key-managers-auth-keys-.html
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids":
     get:
       x-doc:
-        title: 'key_manager_keys_collection_get: Retrieve key manager configurations'
+        title: Retrieve key manager configurations 👁️
         category: security
         filename: get-security-key-managers-keys-key-ids.html
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids/{key_id}":
     get:
       x-doc:
-        title: Retrieve the key management keys information for the specified key_id
+        title: Retrieve key management keys information for specified keys 👁️
         category: security
         filename: get-security-key-managers-keys-key-ids-.html
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
-        title: Migrates the keys belonging to an svm between the cluster's key manager
-          and the svm's key manager
+        title: Migrate svm keys between security key managers 👁️
         category: security
         filename: post-security-key-managers-migrate.html
   "/security/key-managers/{uuid}":
     delete:
       x-doc:
-        title: Delete a key manager
+        title: Delete key managers 👁️
         category: security
         filename: delete-security-key-managers-.html
     get:
       x-doc:
-        title: 'security_key_manager_get: Retrieve key managers'
+        title: Retrieve key managers 👁️
         category: security
         filename: get-security-key-managers-.html
     patch:
       x-doc:
-        title: Update a key manager
+        title: Update key managers 👁️
         category: security
         filename: patch-security-key-managers-.html
   "/security/key-managers/{uuid}/key-servers":
     get:
       x-doc:
-        title: Retrieve the list of key servers configured in an external key manager
+        title: List key servers configured in an external key manager 👁️
         category: security
         filename: get-security-key-managers-key-servers.html
     post:
       x-doc:
-        title: Add primary key servers to a configured external key manager
+        title: Add primary key servers to an external key manager 👁️
         category: security
         filename: post-security-key-managers-key-servers.html
   "/security/key-managers/{uuid}/key-servers/{server}":
@@ -4319,37 +4265,35 @@ paths:
   "/security/keystore-certificates":
     get:
       x-doc:
-        title: Retrieve end entity certificates from ontap's keystore
+        title: Retrieve end entity certificates from the ONTAP keystore 👁️
         category: security
         filename: get-security-keystore-certificates.html
     post:
       x-doc:
-        title: Create or installs an end entity certificate as part of ontap's keystore
+        title: Add end entity certificates to the ONTAP keystore 👁️
         category: security
         filename: post-security-keystore-certificates.html
   "/security/keystore-certificates/{uuid}":
     delete:
       x-doc:
-        title: Delete an installed end entity certificate from ontap's keystore
+        title: Remove an end entity certificate from the ONTAP keystore 👁️
         category: security
         filename: delete-security-keystore-certificates-.html
     get:
       x-doc:
-        title: Retrieve an installed or created end entity certificate from ontap's
-          keystore
+        title: Retrieve an end entity certificate from the ONTAP keystore 👁️
         category: security
         filename: get-security-keystore-certificates-.html
   "/security/login/messages":
     get:
       x-doc:
-        title: Retrieve the login banner and messages of the day (motd) configured
-          in the cluster
+        title: Retrieve login banner and messages of the day 👁️
         category: security
         filename: get-security-login-messages.html
   "/security/login/messages/{uuid}":
     get:
       x-doc:
-        title: Retrieve the login messages configuration by uuid
+        title: Retrieve login messages configuration by uuid 👁️
         category: security
         filename: get-security-login-messages-.html
     patch:
@@ -4395,33 +4339,33 @@ paths:
         title: Update a multi-admin-verify approval group
         category: security
         filename: patch-security-multi-admin-verify-approval-groups-.html
-  "/security/multi-admin-verify/Request":
+  "/security/multi-admin-verify/requests":
     get:
       x-doc:
         title: Retrieve multi-admin-verify Request
         category: security
-        filename: get-security-multi-admin-verify-Request.html
+        filename: get-security-multi-admin-verify-requests.html
     post:
       x-doc:
         title: Create a multi-admin-verify request
         category: security
-        filename: post-security-multi-admin-verify-Request.html
-  "/security/multi-admin-verify/Request/{index}":
+        filename: post-security-multi-admin-verify-requests.html
+  "/security/multi-admin-verify/requests/{index}":
     delete:
       x-doc:
         title: Delete a multi-admin-verify request
         category: security
-        filename: delete-security-multi-admin-verify-Request-.html
+        filename: delete-security-multi-admin-verify-requests-.html
     get:
       x-doc:
         title: Retrieve a multi-admin-verify request
         category: security
-        filename: get-security-multi-admin-verify-Request-.html
+        filename: get-security-multi-admin-verify-requests-.html
     patch:
       x-doc:
         title: Update a multi-admin-verify request
         category: security
-        filename: patch-security-multi-admin-verify-Request-.html
+        filename: patch-security-multi-admin-verify-requests-.html
   "/security/multi-admin-verify/rules":
     get:
       x-doc:
@@ -4552,23 +4496,23 @@ paths:
   "/security/truststore-certificates":
     get:
       x-doc:
-        title: Retrieve ca certificates from ontap's truststore
+        title: Retrieve ca certificates from ONTAP truststore
         category: security
         filename: get-security-truststore-certificates.html
     post:
       x-doc:
-        title: Installs a ca certificate as part of ontap's truststore
+        title: Installs a ca certificate as part of ONTAP truststore
         category: security
         filename: post-security-truststore-certificates.html
   "/security/truststore-certificates/{uuid}":
     delete:
       x-doc:
-        title: Delete an installed ca certificate from ontap's truststore
+        title: Delete an installed ca certificate from ONTAP truststore
         category: security
         filename: delete-security-truststore-certificates-.html
     get:
       x-doc:
-        title: Retrieve an installed ca certificate from ontap's truststore
+        title: Retrieve an installed ca certificate from ONTAP truststore
         category: security
         filename: get-security-truststore-certificates-.html
   "/snapmirror/object-stores/{object_store.uuid}/endpoints/{endpoint.uuid}/snapshots":
@@ -4604,7 +4548,7 @@ paths:
   "/snapmirror/policies":
     get:
       x-doc:
-        title: Retrieve snapmirror policies of type "async" and "sync"
+        title: Retrieve snapmirror policies of type async and sync
         category: snapmirror
         filename: get-snapmirror-policies.html
     post:
@@ -4828,8 +4772,7 @@ paths:
   "/storage/file/clone/split-status/{volume.uuid}":
     get:
       x-doc:
-        title: 'split_status_get: Retrieve file clone split status of all volumes
-          in the node'
+        title: Retrieve file clone split status of all volumes
         category: storage
         filename: get-storage-file-clone-split-status-.html
   "/storage/file/clone/tokens":
@@ -4879,7 +4822,7 @@ paths:
   "/storage/file/moves/{node.uuid}/{uuid}/{index}":
     get:
       x-doc:
-        title: 'file_move_get: ## overview'
+        title: Check the status of an active file move operation
         category: storage
         filename: get-storage-file-moves--.html
   "/storage/flexcache/flexcaches":
@@ -4972,7 +4915,7 @@ paths:
         filename: delete-storage-luns-.html
     get:
       x-doc:
-        title: Retrieve a lun's properties or a lun's data
+        title: Retrieve lun properties or data
         category: SAN
         filename: get-storage-luns-.html
     patch:
@@ -5146,7 +5089,7 @@ paths:
         filename: delete-storage-qtrees-.html
     get:
       x-doc:
-        title: Retrieve properties for a specific qtree identified by the `volume
+        title: Retrieve properties for a specific qtree
         category: storage
         filename: get-storage-qtrees-.html
     patch:
@@ -5226,17 +5169,17 @@ paths:
   "/storage/snaplock/audit-logs/{svm.uuid}":
     delete:
       x-doc:
-        title: Disassociates a snaplock volume as the audit log volume for an svm
+        title: Disassociate snaplock audit logs
         category: snaplock
         filename: delete-storage-snaplock-audit-logs-.html
     get:
       x-doc:
-        title: Retrieve snaplock logs for the specified svm
+        title: Retrieve snaplock audit logs
         category: snaplock
         filename: get-storage-snaplock-audit-logs-.html
     patch:
       x-doc:
-        title: 'Update one of the following:'
+        title: Update snaplock audit logs
         category: snaplock
         filename: patch-storage-snaplock-audit-logs-.html
   "/storage/snaplock/compliance-clocks":
@@ -5637,7 +5580,7 @@ paths:
   "/support/auto-update/configurations":
     get:
       x-doc:
-        title: Retrieve the configuration for automatic Update
+        title: Retrieve the configuration for automatic update
         category: support
         filename: get-support-auto-update-configurations.html
   "/support/auto-update/configurations/{uuid}":
@@ -5651,23 +5594,23 @@ paths:
         title: Update the configuration for a specified automatic update
         category: support
         filename: patch-support-auto-update-configurations-.html
-  "/support/auto-update/Update":
+  "/support/auto-update/update":
     get:
       x-doc:
-        title: Retrieve the status of all Update
+        title: Retrieve the status of all updates 👁️
         category: support
-        filename: get-support-auto-update-Update.html
-  "/support/auto-update/Update/{uuid}":
+        filename: get-support-auto-update-update.html
+  "/support/auto-update/update/{uuid}":
     get:
       x-doc:
         title: Retrieve the status of an update
         category: support
-        filename: get-support-auto-update-Update-.html
+        filename: get-support-auto-update-update-.html
     patch:
       x-doc:
         title: Perform an action on the update
         category: support
-        filename: patch-support-auto-update-Update-.html
+        filename: patch-support-auto-update-update-.html
   "/support/autosupport":
     get:
       x-doc:
@@ -6114,28 +6057,25 @@ paths:
   "/svm/svms/{svm.uuid}/top-metrics/clients":
     get:
       x-doc:
-        title: 'top_metrics_svm_client_collection_get: Retrieve a list of clients
-          with the most io activity'
+        title: List clients with the most I/O activity 👁️
         category: svm
         filename: get-svm-svms-top-metrics-clients.html
   "/svm/svms/{svm.uuid}/top-metrics/directories":
     get:
       x-doc:
-        title: Retrieve a list of directories with the most io activity
+        title: List directories with the most I/O activity 👁️
         category: svm
         filename: get-svm-svms-top-metrics-directories.html
   "/svm/svms/{svm.uuid}/top-metrics/files":
     get:
       x-doc:
-        title: 'top_metrics_svm_file_collection_get: Retrieve a list of files with
-          the most io activity'
+        title: List files with the most I/O activity 👁️
         category: svm
         filename: get-svm-svms-top-metrics-files.html
   "/svm/svms/{svm.uuid}/top-metrics/users":
     get:
       x-doc:
-        title: 'top_metrics_svm_user_collection_get: Retrieve a list of users with
-          the most io activity'
+        title: List users with the most I/O activity 👁️
         category: svm
         filename: get-svm-svms-top-metrics-users.html
   "/svm/svms/{svm.uuid}/web":
@@ -6162,8 +6102,7 @@ paths:
         filename: get-svm-svms-.html
     patch:
       x-doc:
-        title: 'Update one or more of the following properties of an individual svm:
-          svm name, svm default volume language code, svm comment, and svm state'
+        title: Update svm properties 👁️
         category: svm
         filename: patch-svm-svms-.html
   "/test/fijis":
