@@ -2210,26 +2210,26 @@ paths:
         filename: get-protocols-cifs-shadow-copies-.html
     patch:
       x-doc:
-        title: Specify list files to be added as a part of shadowcopy creation
+        title: Update a shadowcopy 👁️
         category: NAS
         filename: patch-protocols-cifs-shadow-copies-.html
-  "/protocols/cifs/shadowcopy-set":
+  "/protocols/cifs/shadowcopy-sets":
     get:
       x-doc:
-        title: Retrieve shadowcopy set 👁️
+        title: Retrieve shadowcopy sets 👁️
         category: NAS
-        filename: get-protocols-cifs-shadowcopy-set.html
-  "/protocols/cifs/shadowcopy-set/{uuid}":
+        filename: get-protocols-cifs-shadowcopy-sets.html
+  "/protocols/cifs/shadowcopy-sets/{uuid}":
     get:
       x-doc:
-        title: Retrieve a shadowcopy set
+        title: Retrieve a shadowcopy set 👁️
         category: NAS
-        filename: get-protocols-cifs-shadowcopy-set-.html
+        filename: get-protocols-cifs-shadowcopy-sets-.html
     patch:
       x-doc:
-        title: Update a shadowcopy set
+        title: Update a shadowcopy set 👁️
         category: NAS
-        filename: patch-protocols-cifs-shadowcopy-set-.html
+        filename: patch-protocols-cifs-shadowcopy-sets-.html
   "/protocols/cifs/shares":
     get:
       x-doc:
@@ -3347,50 +3347,50 @@ paths:
         title: Retrieve a lun map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
-  "/protocols/san/portset":
+  "/protocols/san/portsets":
     get:
       x-doc:
-        title: Retrieve portset 👁️
+        title: Retrieve portsets 👁️
         category: SAN
-        filename: get-protocols-san-portset.html
+        filename: get-protocols-san-portsets.html
     post:
       x-doc:
-        title: Create a portset
+        title: Create portsets 👁️
         category: SAN
-        filename: post-protocols-san-portSet.html
-  "/protocols/san/portSet/{portset.uuid}/interfaces":
+        filename: post-protocols-san-portsets.html
+  "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
       x-doc:
-        title: Retrieve interfaces of a portset
+        title: Retrieve portset network interfaces 👁️
         category: SAN
-        filename: get-protocols-san-portSet-interfaces.html
+        filename: get-protocols-san-portsets-interfaces.html
     post:
       x-doc:
-        title: Add one or more interfaces to a portset
+        title: Add portset network interfaces 👁️
         category: SAN
-        filename: post-protocols-san-portSet-interfaces.html
-  "/protocols/san/portSet/{portset.uuid}/interfaces/{uuid}":
+        filename: post-protocols-san-portsets-interfaces.html
+  "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
       x-doc:
-        title: Delete a network interface from a portset
+        title: Delete portset network interfaces 👁️
         category: SAN
-        filename: delete-protocols-san-portSet-interfaces-.html
+        filename: delete-protocols-san-portsets-interfaces-.html
     get:
       x-doc:
-        title: Retrieve a network interface of a portset
+        title: Retrieve portset network interfaces 👁️
         category: SAN
-        filename: get-protocols-san-portSet-interfaces-.html
-  "/protocols/san/portSet/{uuid}":
+        filename: get-protocols-san-portsets-interfaces-.html
+  "/protocols/san/portsets/{uuid}":
     delete:
       x-doc:
-        title: Delete a portset
+        title: Delete a portset 👁️
         category: SAN
-        filename: delete-protocols-san-portSet-.html
+        filename: delete-protocols-san-portsets-.html
     get:
       x-doc:
-        title: Retrieve a portset
+        title: Retrieve a portset 👁️
         category: SAN
-        filename: get-protocols-san-portSet-.html
+        filename: get-protocols-san-portsets-.html
   "/protocols/san/vvol-bindings":
     get:
       x-doc:
