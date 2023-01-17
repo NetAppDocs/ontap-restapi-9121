@@ -858,6 +858,12 @@ paths:
         title: Retrieve the web services configuration for a collection of nodes
         category: cluster
         filename: get-cluster-web-statistics.html
+  "/host/hosts/{uuid}/report":
+    post:
+      x-doc:
+        title: Reports a host side error
+        category: Host
+        filename: post-host-hosts-report.html
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -3530,6 +3536,33 @@ paths:
         title: Update the vscan scanner-pool configuration of an svm
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
+  "/renames":
+    get:
+      x-doc:
+        title: Retrieve xxxx
+        category: Rename
+        filename: get-renames.html
+    post:
+      x-doc:
+        title: Create a xxx
+        category: Rename
+        filename: post-renames.html
+  "/renames/{rename.uuid}":
+    delete:
+      x-doc:
+        title: Delete a xxxx
+        category: Rename
+        filename: delete-renames-.html
+    get:
+      x-doc:
+        title: Retrieve xxxx
+        category: Rename
+        filename: get-renames-.html
+    patch:
+      x-doc:
+        title: Update a xxxx
+        category: Rename
+        filename: patch-renames-.html
   "/security":
     get:
       x-doc:
