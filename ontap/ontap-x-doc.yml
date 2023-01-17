@@ -1642,6 +1642,161 @@ paths:
         title: Update an ipspace object
         category: networking
         filename: patch-network-ipspaces-.html
+  "/private/cli":
+    post:
+      x-doc:
+        title: Execute a cli command
+        category: cluster
+        filename: post-private-cli.html
+  "/private/cluster/licensing/capacity-pools":
+    post:
+      x-doc:
+        title: Assigns nodes in the cluster to new capacity pools
+        category: cluster
+        filename: post-private-cluster-licensing-capacity-pools.html
+  "/private/cluster/licensing/capacity-pools/{serial_number}":
+    patch:
+      x-doc:
+        title: Assigns nodes in the cluster to a capacity pool that is already associated
+          with the cluster
+        category: cluster
+        filename: patch-private-cluster-licensing-capacity-pools-.html
+  "/private/cluster/licensing/license-managers":
+    post:
+      x-doc:
+        title: Configures a new license manager instance
+        category: cluster
+        filename: post-private-cluster-licensing-license-managers.html
+  "/private/cluster/licensing/protected-api-test":
+    post:
+      x-doc:
+        title: Validate an access token
+        category: cluster
+        filename: post-private-cluster-licensing-protected-api-test.html
+  "/private/cluster/nodes/{uuid}":
+    get:
+      x-doc:
+        title: Retrieve information for the node 👁️
+        category: cluster
+        filename: get-private-cluster-nodes-.html
+    patch:
+      x-doc:
+        title: Update the node information
+        category: cluster
+        filename: patch-private-cluster-nodes-.html
+  "/private/cluster/notes":
+    get:
+      x-doc:
+        title: Retrieve the notes associated with the cluster
+        category: cluster
+        filename: get-private-cluster-notes.html
+    post:
+      x-doc:
+        title: Create a note associated with the cluster
+        category: cluster
+        filename: post-private-cluster-notes.html
+  "/private/cluster/notes/{owner.uuid}/{name}":
+    delete:
+      x-doc:
+        title: Delete a cluter note
+        category: cluster
+        filename: delete-private-cluster-notes-.html
+    get:
+      x-doc:
+        title: Retrieve a specific cluster note
+        category: cluster
+        filename: get-private-cluster-notes-.html
+    patch:
+      x-doc:
+        title: Update a cluster note
+        category: cluster
+        filename: patch-private-cluster-notes-.html
+  "/private/cluster/select-pre-expansion":
+    post:
+      x-doc:
+        title: Set the configuration parameters required for expanding an ontap select
+          cluster
+        category: cluster
+        filename: post-private-cluster-select-pre-expansion.html
+  "/private/cluster/usage":
+    post:
+      x-doc:
+        title: Records incremental usage of a particular instrumention point
+        category: cluster
+        filename: post-private-cluster-usage.html
+  "/private/manage/event-remediations":
+    get:
+      x-doc:
+        title: Event remediation and management action collection get
+        category: Manage
+        filename: get-private-manage-event-remediations.html
+  "/private/manage/event-remediations/{id}":
+    get:
+      x-doc:
+        title: Event remediation and management action
+        category: Manage
+        filename: get-private-manage-event-remediations-.html
+    patch:
+      x-doc:
+        title: Perform an event management action
+        category: Manage
+        filename: patch-private-manage-event-remediations-.html
+  "/private/protocols/audit/audit-log-redirect":
+    delete:
+      x-doc:
+        title: Delete an audit log redirect configuration
+        category: NAS
+        filename: delete-private-protocols-audit-audit-log-redirect.html
+    get:
+      x-doc:
+        title: Retrieve an audit log redirect configuration
+        category: NAS
+        filename: get-private-protocols-audit-audit-log-redirect.html
+    patch:
+      x-doc:
+        title: Update an audit log redirect configuration
+        category: NAS
+        filename: patch-private-protocols-audit-audit-log-redirect.html
+    post:
+      x-doc:
+        title: Create an audit log redirect configuration
+        category: NAS
+        filename: post-private-protocols-audit-audit-log-redirect.html
+  "/private/support/alerts":
+    get:
+      x-doc:
+        title: Retrieve the active ontap alerts from all subsystems in the cluster
+        category: support
+        filename: get-private-support-alerts.html
+  "/private/support/alerts/{node.uuid}/{monitor}/{name}/{resource}":
+    get:
+      x-doc:
+        title: Retrieve information for the alert
+        category: support
+        filename: get-private-support-alerts--.html
+    patch:
+      x-doc:
+        title: Update the acknowledge and suppress fields for an alert
+        category: support
+        filename: patch-private-support-alerts--.html
+  "/private/support/ems/events":
+    get:
+      x-doc:
+        title: Retrieve a collection of observed events using the new implementation
+          under development
+        category: support
+        filename: get-private-support-ems-events.html
+  "/private/support/ems/events/{uuid}":
+    get:
+      x-doc:
+        title: Retrieve a specific event using the new implementation under development
+        category: support
+        filename: get-private-support-ems-events-.html
+    patch:
+      x-doc:
+        title: Update a specific event using the new implementation under development
+        category: support
+        filename: patch-private-support-ems-events-.html
   "/protocols/active-directory":
     get:
       x-doc:
@@ -5950,3 +6105,42 @@ paths:
         title: Update svm properties +++
         category: svm
         filename: patch-svm-svms-.html
+  "/test/fijis":
+    get:
+      x-doc:
+        title: Retrieve fault injection information
+        category: Test
+        filename: get-test-fijis.html
+  "/test/fijis/{node}/{fault-id}":
+    get:
+      x-doc:
+        title: Retrieve a specific fault injection
+        category: Test
+        filename: get-test-fijis-.html
+    patch:
+      x-doc:
+        title: Update a fault injection
+        category: Test
+        filename: patch-test-fijis-.html
+  "/test/smnext":
+    get:
+      x-doc:
+        title: Retrieve smnext records
+        category: Test
+        filename: get-test-smnext.html
+    post:
+      x-doc:
+        title: Create a new smnext record
+        category: Test
+        filename: post-test-smnext.html
+  "/test/smnext/{top1}":
+    delete:
+      x-doc:
+        title: Delete an smnnext record instance
+        category: Test
+        filename: delete-test-smnext-.html
+    get:
+      x-doc:
+        title: Retrieve an smnext record instance
+        category: Test
+        filename: get-test-smnext-.html
