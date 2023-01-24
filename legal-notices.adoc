@@ -15,4 +15,4 @@ include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/commo
 include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
 
 // Add required link(s)
-* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2882103[Notice for ONTAP 9.11.1^]
+* link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2884813[Notice for ONTAP 9.12.1^]
