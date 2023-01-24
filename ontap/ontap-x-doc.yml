@@ -205,29 +205,6 @@ paths:
         title: Create a cluster
         category: cluster
         filename: post-cluster.html
-  "/cluster/agent/connections":
-    get:
-      x-doc:
-        title: Retrieve a list of agent connections to external managers
-        category: cluster
-        filename: get-cluster-agent-connections.html
-    post:
-      x-doc:
-        title: Create a connection to an external manager to enable efficient delivery
-          of any cluster metadata
-        category: cluster
-        filename: post-cluster-agent-connections.html
-  "/cluster/agent/connections/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a connection to an external manager
-        category: cluster
-        filename: delete-cluster-agent-connections-.html
-    patch:
-      x-doc:
-        title: Update a connection to an external manager
-        category: cluster
-        filename: patch-cluster-agent-connections-.html
   "/cluster/chassis":
     get:
       x-doc:
@@ -240,33 +217,6 @@ paths:
         title: Retrieve a specific chassis
         category: cluster
         filename: get-cluster-chassis-.html
-  "/cluster/cloud-portals":
-    get:
-      x-doc:
-        title: Retrieve cloud portals registered to the cluster
-        category: cluster
-        filename: get-cluster-cloud-portals.html
-    post:
-      x-doc:
-        title: Register a cloud portal
-        category: cluster
-        filename: post-cluster-cloud-portals.html
-  "/cluster/cloud-portals/{uuid}":
-    delete:
-      x-doc:
-        title: Unregister a cloud portal
-        category: cluster
-        filename: delete-cluster-cloud-portals-.html
-    get:
-      x-doc:
-        title: Retrieve a specific cloud portal
-        category: cluster
-        filename: get-cluster-cloud-portals-.html
-    patch:
-      x-doc:
-        title: Re-register a cloud portal
-        category: cluster
-        filename: patch-cluster-cloud-portals-.html
   "/cluster/counter/tables":
     get:
       x-doc:
@@ -314,12 +264,6 @@ paths:
         title: Update the state of a specific asynchronous job
         category: cluster
         filename: patch-cluster-jobs-.html
-  "/cluster/licensing/access-tokens":
-    post:
-      x-doc:
-        title: Request an access token
-        category: cluster
-        filename: post-cluster-licensing-access-tokens.html
   "/cluster/licensing/capacity-pools":
     get:
       x-doc:
@@ -332,18 +276,6 @@ paths:
         title: Retrieve information about the capacity pool
         category: cluster
         filename: get-cluster-licensing-capacity-pools-.html
-  "/cluster/licensing/leases":
-    get:
-      x-doc:
-        title: Retrieve a collection of leases
-        category: cluster
-        filename: get-cluster-licensing-leases.html
-  "/cluster/licensing/leases/{id}":
-    get:
-      x-doc:
-        title: Retrieve a lease
-        category: cluster
-        filename: get-cluster-licensing-leases-.html
   "/cluster/licensing/license-managers":
     get:
       x-doc:
@@ -617,124 +549,6 @@ paths:
         title: Create a peering relationship
         category: cluster
         filename: post-cluster-peers.html
-  "/cluster/peers/{peer.uuid}/application/consistency-groups":
-    get:
-      x-doc:
-        title: Retrieve all cross cluster consistency groups 👁️
-        category: cluster
-        filename: get-cluster-peers-application-consistency-groups.html
-  "/cluster/peers/{peer.uuid}/application/consistency-groups/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve a cross cluster consistency group 👁️
-        category: cluster
-        filename: get-cluster-peers-application-consistency-groups-.html
-  "/cluster/peers/{peer.uuid}/cluster":
-    get:
-      x-doc:
-        title: Retrieve a cross cluster 👁️
-        category: cluster
-        filename: get-cluster-peers-cluster.html
-  "/cluster/peers/{peer.uuid}/cluster/licensing/licenses":
-    get:
-      x-doc:
-        title: Retrieve all cross cluster licenses 👁️
-        category: cluster
-        filename: get-cluster-peers-cluster-licensing-licenses.html
-  "/cluster/peers/{peer.uuid}/cluster/nodes":
-    get:
-      x-doc:
-        title: Retrieve all cross cluster peers 👁️
-        category: cluster
-        filename: get-cluster-peers-cluster-nodes.html
-  "/cluster/peers/{peer.uuid}/cluster/nodes/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve a cross cluster peer 👁️
-        category: cluster
-        filename: get-cluster-peers-cluster-nodes-.html
-  "/cluster/peers/{peer.uuid}/cluster/peers":
-    get:
-      x-doc:
-        title: Cross cluster get peers
-        category: cluster
-        filename: get-cluster-peers-cluster-peers.html
-  "/cluster/peers/{peer.uuid}/cluster/schedules":
-    get:
-      x-doc:
-        title: Cross cluster get schedules
-        category: cluster
-        filename: get-cluster-peers-cluster-schedules.html
-  "/cluster/peers/{peer.uuid}/network/ethernet/broadcast-domains":
-    get:
-      x-doc:
-        title: Cross cluster get broadcast-domains
-        category: networking
-        filename: get-cluster-peers-network-ethernet-broadcast-domains.html
-  "/cluster/peers/{peer.uuid}/network/ip/interfaces":
-    get:
-      x-doc:
-        title: Cross cluster get interfaces
-        category: networking
-        filename: get-cluster-peers-network-ip-interfaces.html
-    post:
-      x-doc:
-        title: Cross cluster post interface
-        category: networking
-        filename: post-cluster-peers-network-ip-interfaces.html
-  "/cluster/peers/{peer.uuid}/security":
-    get:
-      x-doc:
-        title: Retrieve information about the security configured on the remote cluster
-        category: security
-        filename: get-cluster-peers-security.html
-  "/cluster/peers/{peer.uuid}/security/key-managers":
-    get:
-      x-doc:
-        title: Cross cluster get key managers 👁️
-        category: security
-        filename: get-cluster-peers-security-key-managers.html
-    post:
-      x-doc:
-        title: Cross cluster post key managers 👁️
-        category: security
-        filename: post-cluster-peers-security-key-managers.html
-  "/cluster/peers/{peer.uuid}/snapmirror/relationships":
-    get:
-      x-doc:
-        title: Cross cluster get snapmirror config
-        category: snapmirror
-        filename: get-cluster-peers-snapmirror-relationships.html
-  "/cluster/peers/{peer.uuid}/snapmirror/relationships/{uuid}":
-    get:
-      x-doc:
-        title: Cross cluster get snapmirror relationship config
-        category: snapmirror
-        filename: get-cluster-peers-snapmirror-relationships-.html
-  "/cluster/peers/{peer.uuid}/storage/aggregates":
-    get:
-      x-doc:
-        title: Cross cluster get aggregates
-        category: storage
-        filename: get-cluster-peers-storage-aggregates.html
-  "/cluster/peers/{peer.uuid}/support/ems/events":
-    get:
-      x-doc:
-        title: Cross cluster get of observed ems events
-        category: support
-        filename: get-cluster-peers-support-ems-events.html
-  "/cluster/peers/{peer.uuid}/svm/svms":
-    get:
-      x-doc:
-        title: Cross cluster get svm config
-        category: svm
-        filename: get-cluster-peers-svm-svms.html
-  "/cluster/peers/{peer.uuid}/svm/svms/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve the svm configuration for a cross cluster peer 👁️
-        category: svm
-        filename: get-cluster-peers-svm-svms-.html
   "/cluster/peers/{uuid}":
     delete:
       x-doc:
@@ -852,18 +666,6 @@ paths:
         title: Update the web services configuration
         category: cluster
         filename: patch-cluster-web.html
-  "/cluster/web/statistics":
-    get:
-      x-doc:
-        title: Retrieve the web services configuration for a collection of nodes
-        category: cluster
-        filename: get-cluster-web-statistics.html
-  "/host/hosts/{uuid}/report":
-    post:
-      x-doc:
-        title: Reports a host side error
-        category: Host
-        filename: post-host-hosts-report.html
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -1112,12 +914,6 @@ paths:
         title: Retrieve the netgroup file details
         category: name-services
         filename: get-name-services-netgroup-files-.html
-  "/name-services/netgroups/{svm.uuid}/{name}":
-    get:
-      x-doc:
-        title: Retrieve all hosts belonging to the specified netgroup
-        category: name-services
-        filename: get-name-services-netgroups-.html
   "/name-services/nis":
     get:
       x-doc:
@@ -1534,17 +1330,6 @@ paths:
         title: Retrieve historical performance metrics for an interface
         category: networking
         filename: get-network-ip-interfaces-metrics.html
-  "/network/ip/options":
-    get:
-      x-doc:
-        title: Retrieve the internet protocol options
-        category: networking
-        filename: get-network-ip-options.html
-    patch:
-      x-doc:
-        title: Modify the internet protocol options
-        category: networking
-        filename: patch-network-ip-options.html
   "/network/ip/routes":
     get:
       x-doc:
@@ -1648,161 +1433,6 @@ paths:
         title: Update an ipspace object
         category: networking
         filename: patch-network-ipspaces-.html
-  "/private/cli":
-    post:
-      x-doc:
-        title: Execute a cli command
-        category: cluster
-        filename: post-private-cli.html
-  "/private/cluster/licensing/capacity-pools":
-    post:
-      x-doc:
-        title: Assigns nodes in the cluster to new capacity pools
-        category: cluster
-        filename: post-private-cluster-licensing-capacity-pools.html
-  "/private/cluster/licensing/capacity-pools/{serial_number}":
-    patch:
-      x-doc:
-        title: Assigns nodes in the cluster to a capacity pool that is already associated
-          with the cluster
-        category: cluster
-        filename: patch-private-cluster-licensing-capacity-pools-.html
-  "/private/cluster/licensing/license-managers":
-    post:
-      x-doc:
-        title: Configures a new license manager instance
-        category: cluster
-        filename: post-private-cluster-licensing-license-managers.html
-  "/private/cluster/licensing/protected-api-test":
-    post:
-      x-doc:
-        title: Validate an access token
-        category: cluster
-        filename: post-private-cluster-licensing-protected-api-test.html
-  "/private/cluster/nodes/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve information for the node 👁️
-        category: cluster
-        filename: get-private-cluster-nodes-.html
-    patch:
-      x-doc:
-        title: Update the node information
-        category: cluster
-        filename: patch-private-cluster-nodes-.html
-  "/private/cluster/notes":
-    get:
-      x-doc:
-        title: Retrieve the notes associated with the cluster
-        category: cluster
-        filename: get-private-cluster-notes.html
-    post:
-      x-doc:
-        title: Create a note associated with the cluster
-        category: cluster
-        filename: post-private-cluster-notes.html
-  "/private/cluster/notes/{owner.uuid}/{name}":
-    delete:
-      x-doc:
-        title: Delete a cluter note
-        category: cluster
-        filename: delete-private-cluster-notes-.html
-    get:
-      x-doc:
-        title: Retrieve a specific cluster note
-        category: cluster
-        filename: get-private-cluster-notes-.html
-    patch:
-      x-doc:
-        title: Update a cluster note
-        category: cluster
-        filename: patch-private-cluster-notes-.html
-  "/private/cluster/select-pre-expansion":
-    post:
-      x-doc:
-        title: Set the configuration parameters required for expanding an ontap select
-          cluster
-        category: cluster
-        filename: post-private-cluster-select-pre-expansion.html
-  "/private/cluster/usage":
-    post:
-      x-doc:
-        title: Records incremental usage of a particular instrumention point
-        category: cluster
-        filename: post-private-cluster-usage.html
-  "/private/manage/event-remediations":
-    get:
-      x-doc:
-        title: Event remediation and management action collection get
-        category: Manage
-        filename: get-private-manage-event-remediations.html
-  "/private/manage/event-remediations/{id}":
-    get:
-      x-doc:
-        title: Event remediation and management action
-        category: Manage
-        filename: get-private-manage-event-remediations-.html
-    patch:
-      x-doc:
-        title: Perform an event management action
-        category: Manage
-        filename: patch-private-manage-event-remediations-.html
-  "/private/protocols/audit/audit-log-redirect":
-    delete:
-      x-doc:
-        title: Delete an audit log redirect configuration
-        category: NAS
-        filename: delete-private-protocols-audit-audit-log-redirect.html
-    get:
-      x-doc:
-        title: Retrieve an audit log redirect configuration
-        category: NAS
-        filename: get-private-protocols-audit-audit-log-redirect.html
-    patch:
-      x-doc:
-        title: Update an audit log redirect configuration
-        category: NAS
-        filename: patch-private-protocols-audit-audit-log-redirect.html
-    post:
-      x-doc:
-        title: Create an audit log redirect configuration
-        category: NAS
-        filename: post-private-protocols-audit-audit-log-redirect.html
-  "/private/support/alerts":
-    get:
-      x-doc:
-        title: Retrieve the active ontap alerts from all subsystems in the cluster
-        category: support
-        filename: get-private-support-alerts.html
-  "/private/support/alerts/{node.uuid}/{monitor}/{name}/{resource}":
-    get:
-      x-doc:
-        title: Retrieve information for the alert
-        category: support
-        filename: get-private-support-alerts--.html
-    patch:
-      x-doc:
-        title: Update the acknowledge and suppress fields for an alert
-        category: support
-        filename: patch-private-support-alerts--.html
-  "/private/support/ems/events":
-    get:
-      x-doc:
-        title: Retrieve a collection of observed events using the new implementation
-          under development
-        category: support
-        filename: get-private-support-ems-events.html
-  "/private/support/ems/events/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve a specific event using the new implementation under development
-        category: support
-        filename: get-private-support-ems-events-.html
-    patch:
-      x-doc:
-        title: Update a specific event using the new implementation under development
-        category: support
-        filename: patch-private-support-ems-events-.html
   "/protocols/active-directory":
     get:
       x-doc:
@@ -2353,50 +1983,6 @@ paths:
           or group and svm
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-privileges-.html
-  "/protocols/file-access-tracing/events":
-    get:
-      x-doc:
-        title: Retrieve the trace results for access allowed or denied events
-        category: NAS
-        filename: get-protocols-file-access-tracing-events.html
-  "/protocols/file-access-tracing/events/{node.uuid}/{svm.uuid}/{index}":
-    delete:
-      x-doc:
-        title: Delete trace results
-        category: NAS
-        filename: delete-protocols-file-access-tracing-events--.html
-    get:
-      x-doc:
-        title: Retrieve trace results for the specified sequence number
-        category: NAS
-        filename: get-protocols-file-access-tracing-events--.html
-  "/protocols/file-access-tracing/filters":
-    get:
-      x-doc:
-        title: Retrieve information about security trace filter entries
-        category: NAS
-        filename: get-protocols-file-access-tracing-filters.html
-    post:
-      x-doc:
-        title: Create security trace filter entries
-        category: NAS
-        filename: post-protocols-file-access-tracing-filters.html
-  "/protocols/file-access-tracing/filters/{svm.uuid}/{index}":
-    delete:
-      x-doc:
-        title: Delete security trace filters
-        category: NAS
-        filename: delete-protocols-file-access-tracing-filters-.html
-    get:
-      x-doc:
-        title: Retrieve information about security trace filter entries 👁️
-        category: NAS
-        filename: get-protocols-file-access-tracing-filters-.html
-    patch:
-      x-doc:
-        title: Update security trace filter entries
-        category: NAS
-        filename: patch-protocols-file-access-tracing-filters-.html
   "/protocols/file-security/effective-permissions/{svm.uuid}/{path}":
     get:
       x-doc:
@@ -3536,33 +3122,6 @@ paths:
         title: Update the vscan scanner-pool configuration of an svm
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
-  "/renames":
-    get:
-      x-doc:
-        title: Retrieve xxxx
-        category: Rename
-        filename: get-renames.html
-    post:
-      x-doc:
-        title: Create a xxx
-        category: Rename
-        filename: post-renames.html
-  "/renames/{rename.uuid}":
-    delete:
-      x-doc:
-        title: Delete a xxxx
-        category: Rename
-        filename: delete-renames-.html
-    get:
-      x-doc:
-        title: Retrieve xxxx
-        category: Rename
-        filename: get-renames-.html
-    patch:
-      x-doc:
-        title: Update a xxxx
-        category: Rename
-        filename: patch-renames-.html
   "/security":
     get:
       x-doc:
@@ -3729,27 +3288,6 @@ paths:
         title: The cluster can have one nis server configuration
         category: security
         filename: post-security-authentication-cluster-nis.html
-  "/security/authentication/cluster/oidc":
-    delete:
-      x-doc:
-        title: Delete the oidc configuration
-        category: security
-        filename: delete-security-authentication-cluster-oidc.html
-    get:
-      x-doc:
-        title: Retrieve the oidc configuration
-        category: security
-        filename: get-security-authentication-cluster-oidc.html
-    patch:
-      x-doc:
-        title: Update the oidc configuration
-        category: security
-        filename: patch-security-authentication-cluster-oidc.html
-    post:
-      x-doc:
-        title: Create the oidc configuration
-        category: security
-        filename: post-security-authentication-cluster-oidc.html
   "/security/authentication/cluster/saml-sp":
     delete:
       x-doc:
@@ -3897,53 +3435,6 @@ paths:
         title: Restore the keys for an svm from a configured akv
         category: security
         filename: post-security-azure-key-vaults-restore.html
-  "/security/certificate-authorities":
-    get:
-      x-doc:
-        title: Retrieve certificate authorities created in ontap
-        category: security
-        filename: get-security-certificate-authorities.html
-    post:
-      x-doc:
-        title: Create a certificate authority in ontap and installs its public certificate
-          in truststore
-        category: security
-        filename: post-security-certificate-authorities.html
-  "/security/certificate-authorities/{security_certificate_authority.uuid}/issued-certificates":
-    get:
-      x-doc:
-        title: Retrieve certificates issued by a local certificate authority in ontap
-        category: security
-        filename: get-security-certificate-authorities-issued-certificates.html
-  "/security/certificate-authorities/{security_certificate_authority.uuid}/issued-certificates/{serial_number}":
-    get:
-      x-doc:
-        title: Retrieve details of a certificate issued by a local certificate authority
-          in ontap
-        category: security
-        filename: get-security-certificate-authorities-issued-certificates-.html
-    patch:
-      x-doc:
-        title: Revoke an issued certificate 👁️
-        category: security
-        filename: patch-security-certificate-authorities-issued-certificates-.html
-  "/security/certificate-authorities/{security_certificate_authority.uuid}/sign":
-    post:
-      x-doc:
-        title: Sign security certificate authority 👁️
-        category: security
-        filename: post-security-certificate-authorities-sign.html
-  "/security/certificate-authorities/{uuid}":
-    delete:
-      x-doc:
-        title: Delete local certificate authority from ONTAP 👁️
-        category: security
-        filename: delete-security-certificate-authorities-.html
-    get:
-      x-doc:
-        title: Retrieve local certificate authority from ONTAP 👁️
-        category: security
-        filename: get-security-certificate-authorities-.html
   "/security/certificate-signing-request":
     post:
       x-doc:
@@ -3978,39 +3469,6 @@ paths:
         title: Retrieve security certificates 👁️
         category: security
         filename: get-security-certificates-.html
-  "/security/cluster/accounts":
-    get:
-      x-doc:
-        title: List user and group accounts 👁️
-        category: security
-        filename: get-security-cluster-accounts.html
-    post:
-      x-doc:
-        title: Create new user or group accounts 👁️
-        category: security
-        filename: post-security-cluster-accounts.html
-  "/security/cluster/accounts/{name}":
-    delete:
-      x-doc:
-        title: Delete user or group accounts 👁️
-        category: security
-        filename: delete-security-cluster-accounts-.html
-    get:
-      x-doc:
-        title: Retrieve specific user or group accounts 👁️
-        category: security
-        filename: get-security-cluster-accounts-.html
-    patch:
-      x-doc:
-        title: Update user accounts 👁️
-        category: security
-        filename: patch-security-cluster-accounts-.html
-  "/security/cluster/roles":
-    get:
-      x-doc:
-        title: Retrieve a list of cluster roles
-        category: security
-        filename: get-security-cluster-roles.html
   "/security/gcp-kms":
     get:
       x-doc:
@@ -4059,56 +3517,6 @@ paths:
         title: Restores the keys for an svm from a configured google cloud kms
         category: security
         filename: post-security-gcp-kms-restore.html
-  "/security/ikp-kms":
-    get:
-      x-doc:
-        title: Retrieve all ibm key protect key management service instances configured
-          for all clusters and svms
-        category: security
-        filename: get-security-ikp-kms.html
-    post:
-      x-doc:
-        title: Configures the ibm key protect key management service configuration
-          for the specified svm
-        category: security
-        filename: post-security-ikp-kms.html
-  "/security/ikp-kms/{ikp_kms.uuid}/rekey-external":
-    post:
-      x-doc:
-        title: Rekeys or re-versions the ibm key protect key management service key
-          encryption key (kek) for the given svm
-        category: security
-        filename: post-security-ikp-kms-rekey-external.html
-  "/security/ikp-kms/{ikp_kms.uuid}/rekey-internal":
-    post:
-      x-doc:
-        title: Rekeys the svm kek for the given svm
-        category: security
-        filename: post-security-ikp-kms-rekey-internal.html
-  "/security/ikp-kms/{ikp_kms.uuid}/restore":
-    post:
-      x-doc:
-        title: Restores the keys for an svm from a configured ibm key protect key
-          management service
-        category: security
-        filename: post-security-ikp-kms-restore.html
-  "/security/ikp-kms/{uuid}":
-    delete:
-      x-doc:
-        title: Delete the ibm key protect key management service configuration
-        category: security
-        filename: delete-security-ikp-kms-.html
-    get:
-      x-doc:
-        title: Retrieve the ibm key protect key management service configuration
-          for the svm specified by the uuid
-        category: security
-        filename: get-security-ikp-kms-.html
-    patch:
-      x-doc:
-        title: Update the ibm key protect key management service configuration
-        category: security
-        filename: patch-security-ikp-kms-.html
   "/security/ipsec":
     get:
       x-doc:
@@ -4295,28 +3703,6 @@ paths:
         title: Retrieve keystores
         category: security
         filename: get-security-key-stores.html
-  "/security/keystore-certificates":
-    get:
-      x-doc:
-        title: Retrieve end entity certificates from the ONTAP keystore 👁️
-        category: security
-        filename: get-security-keystore-certificates.html
-    post:
-      x-doc:
-        title: Add end entity certificates to the ONTAP keystore 👁️
-        category: security
-        filename: post-security-keystore-certificates.html
-  "/security/keystore-certificates/{uuid}":
-    delete:
-      x-doc:
-        title: Remove an end entity certificate from the ONTAP keystore 👁️
-        category: security
-        filename: delete-security-keystore-certificates-.html
-    get:
-      x-doc:
-        title: Retrieve an end entity certificate from the ONTAP keystore 👁️
-        category: security
-        filename: get-security-keystore-certificates-.html
   "/security/login/messages":
     get:
       x-doc:
@@ -4509,75 +3895,6 @@ paths:
         title: Update the ssh server configuration for the specified svm
         category: security
         filename: patch-security-ssh-svms-.html
-  "/security/svm/accounts":
-    get:
-      x-doc:
-        title: Retrieve a list of svm user and group accounts
-        category: security
-        filename: get-security-svm-accounts.html
-    post:
-      x-doc:
-        title: Create a new svm user or group account
-        category: security
-        filename: post-security-svm-accounts.html
-  "/security/svm/roles":
-    get:
-      x-doc:
-        title: Retrieve a list of svm roles
-        category: security
-        filename: get-security-svm-roles.html
-  "/security/truststore-certificates":
-    get:
-      x-doc:
-        title: Retrieve ca certificates from ONTAP truststore
-        category: security
-        filename: get-security-truststore-certificates.html
-    post:
-      x-doc:
-        title: Installs a ca certificate as part of ONTAP truststore
-        category: security
-        filename: post-security-truststore-certificates.html
-  "/security/truststore-certificates/{uuid}":
-    delete:
-      x-doc:
-        title: Delete an installed ca certificate from ONTAP truststore
-        category: security
-        filename: delete-security-truststore-certificates-.html
-    get:
-      x-doc:
-        title: Retrieve an installed ca certificate from ONTAP truststore
-        category: security
-        filename: get-security-truststore-certificates-.html
-  "/snapmirror/object-stores/{object_store.uuid}/endpoints/{endpoint.uuid}/snapshots":
-    get:
-      x-doc:
-        title: Retrieve snapshot copy information associated with an object store
-          endpoint
-        category: snapmirror
-        filename: get-snapmirror-object-stores-endpoints-snapshots.html
-  "/snapmirror/object-stores/{object_store.uuid}/endpoints/{endpoint.uuid}/snapshots/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a snapshot copy from the object store endpoint
-        category: snapmirror
-        filename: delete-snapmirror-object-stores-endpoints-snapshots-.html
-    get:
-      x-doc:
-        title: Retrieve specific snapshot copy information given its uuid
-        category: snapmirror
-        filename: get-snapmirror-object-stores-endpoints-snapshots-.html
-  "/snapmirror/object-stores/{object_store.uuid}/endpoints/{uuid}":
-    delete:
-      x-doc:
-        title: This api Delete all the data of a specific endpoint within an object
-          store that was populated by snapmirror
-        category: snapmirror
-        filename: delete-snapmirror-object-stores-endpoints-.html
-    get:
-      x-doc:
-        title: Retrieve information for the specified object store, endpoint
-        category: snapmirror
-        filename: get-snapmirror-object-stores-endpoints-.html
   "/snapmirror/policies":
     get:
       x-doc:
@@ -4657,12 +3974,6 @@ paths:
         title: Update a snapmirror relationship
         category: snapmirror
         filename: patch-snapmirror-relationships-.html
-  "/snapmirror/relationships/{uuid}/restore":
-    post:
-      x-doc:
-        title: Cross cluster post to create snapmirror restore relationship
-        category: snapmirror
-        filename: post-snapmirror-relationships-restore.html
   "/storage/aggregates":
     get:
       x-doc:
@@ -4962,29 +4273,6 @@ paths:
         title: Retrieve historical performance metrics for a lun
         category: SAN
         filename: get-storage-luns-metrics.html
-  "/storage/monitored-files":
-    get:
-      x-doc:
-        title: Retrieve all monitored files
-        category: storage
-        filename: get-storage-monitored-files.html
-    post:
-      x-doc:
-        title: Create a monitored file
-        category: storage
-        filename: post-storage-monitored-files.html
-  "/storage/monitored-files/{monitored_file.uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve historical performance metrics for the monitored file
-        category: storage
-        filename: get-storage-monitored-files-metrics.html
-  "/storage/monitored-files/{uuid}":
-    delete:
-      x-doc:
-        title: Remove the file from the list of monitored files
-        category: storage
-        filename: delete-storage-monitored-files-.html
   "/storage/namespaces":
     get:
       x-doc:
@@ -5539,12 +4827,6 @@ paths:
         title: Retrieve historical performance metrics for a volume
         category: storage
         filename: get-storage-volumes-metrics.html
-  "/storage/volumes/{volume.uuid}/snapdiff/sessions":
-    post:
-      x-doc:
-        title: Create a snapdiff session
-        category: Snapdiff
-        filename: post-storage-volumes-snapdiff-sessions.html
   "/storage/volumes/{volume.uuid}/snapshots":
     get:
       x-doc:
@@ -5767,17 +5049,6 @@ paths:
         title: Retrieve a collection of observed events
         category: support
         filename: get-support-ems-events.html
-  "/support/ems/events/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve a specific event
-        category: support
-        filename: get-support-ems-events-.html
-    patch:
-      x-doc:
-        title: Update a specific event
-        category: support
-        filename: patch-support-ems-events-.html
   "/support/ems/filters":
     get:
       x-doc:
@@ -5977,89 +5248,6 @@ paths:
         title: Create a new svm peer relationship
         category: svm
         filename: post-svm-peers.html
-  "/svm/peers/{peer.uuid}/application/applications":
-    get:
-      x-doc:
-        title: Cross cluster get applications
-        category: application
-        filename: get-svm-peers-application-applications.html
-  "/svm/peers/{peer.uuid}/network/fc/interfaces":
-    get:
-      x-doc:
-        title: Cross cluster get fc interfaces
-        category: networking
-        filename: get-svm-peers-network-fc-interfaces.html
-  "/svm/peers/{peer.uuid}/network/ip/interfaces":
-    get:
-      x-doc:
-        title: Cross cluster get ip interfaces
-        category: networking
-        filename: get-svm-peers-network-ip-interfaces.html
-  "/svm/peers/{peer.uuid}/protocols/cifs/services":
-    get:
-      x-doc:
-        title: Cross cluster get cifs services
-        category: NAS
-        filename: get-svm-peers-protocols-cifs-services.html
-  "/svm/peers/{peer.uuid}/protocols/s3/buckets":
-    get:
-      x-doc:
-        title: Retrieve cross cluster buckets
-        category: Object-store
-        filename: get-svm-peers-protocols-s3-buckets.html
-  "/svm/peers/{peer.uuid}/protocols/s3/services":
-    get:
-      x-doc:
-        title: Retrieve cross cluster s3 services
-        category: Object-store
-        filename: get-svm-peers-protocols-s3-services.html
-  "/svm/peers/{peer.uuid}/protocols/s3/services/{svm.uuid}/buckets":
-    get:
-      x-doc:
-        title: Retrieve cross cluster buckets on an s3 server
-        category: Object-store
-        filename: get-svm-peers-protocols-s3-services-buckets.html
-  "/svm/peers/{peer.uuid}/snapmirror/policies":
-    get:
-      x-doc:
-        title: Cross cluster get snapmirror policies
-        category: snapmirror
-        filename: get-svm-peers-snapmirror-policies.html
-  "/svm/peers/{peer.uuid}/storage/luns":
-    get:
-      x-doc:
-        title: Cross cluster get luns
-        category: SAN
-        filename: get-svm-peers-storage-luns.html
-  "/svm/peers/{peer.uuid}/storage/snapshot-policies":
-    get:
-      x-doc:
-        title: Cross cluster get snapshot policies
-        category: storage
-        filename: get-svm-peers-storage-snapshot-policies.html
-  "/svm/peers/{peer.uuid}/storage/volumes":
-    get:
-      x-doc:
-        title: Cross cluster get volumes
-        category: storage
-        filename: get-svm-peers-storage-volumes.html
-  "/svm/peers/{peer.uuid}/storage/volumes/{volume.uuid}/snapshots":
-    get:
-      x-doc:
-        title: Cross cluster get snapshots
-        category: storage
-        filename: get-svm-peers-storage-volumes-snapshots.html
-  "/svm/peers/{peer.uuid}/svm/peers":
-    get:
-      x-doc:
-        title: Cross cluster get svm peers
-        category: svm
-        filename: get-svm-peers-svm-peers.html
-    post:
-      x-doc:
-        title: Cross cluster post svm peer
-        category: svm
-        filename: post-svm-peers-svm-peers.html
   "/svm/peers/{uuid}":
     delete:
       x-doc:
@@ -6138,42 +5326,3 @@ paths:
         title: Update svm properties 👁️
         category: svm
         filename: patch-svm-svms-.html
-  "/test/fijis":
-    get:
-      x-doc:
-        title: Retrieve fault injection information
-        category: Test
-        filename: get-test-fijis.html
-  "/test/fijis/{node}/{fault-id}":
-    get:
-      x-doc:
-        title: Retrieve a specific fault injection
-        category: Test
-        filename: get-test-fijis-.html
-    patch:
-      x-doc:
-        title: Update a fault injection
-        category: Test
-        filename: patch-test-fijis-.html
-  "/test/smnext":
-    get:
-      x-doc:
-        title: Retrieve smnext records
-        category: Test
-        filename: get-test-smnext.html
-    post:
-      x-doc:
-        title: Create a new smnext record
-        category: Test
-        filename: post-test-smnext.html
-  "/test/smnext/{top1}":
-    delete:
-      x-doc:
-        title: Delete an smnnext record instance
-        category: Test
-        filename: delete-test-smnext-.html
-    get:
-      x-doc:
-        title: Retrieve an smnext record instance
-        category: Test
-        filename: get-test-smnext-.html
