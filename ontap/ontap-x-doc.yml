@@ -2621,12 +2621,12 @@ paths:
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
-        title: Retrieves s3 group configuration
+        title: Retrieves the s3 group configuration
         category: Object-store
         filename: get-protocols-s3-services-groups.html
     post:
       x-doc:
-        title: Creates s3 group configuration
+        title: Creates the s3 group configuration
         category: Object-store
         filename: post-protocols-s3-services-groups.html
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
@@ -2682,12 +2682,12 @@ paths:
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieves s3 user configuration
+        title: Retrieves the s3 user configuration
         category: Object-store
         filename: get-protocols-s3-services-users.html
     post:
       x-doc:
-        title: Creates s3 user configuration
+        title: Creates the s3 user configuration
         category: Object-store
         filename: post-protocols-s3-services-users.html
   "/protocols/s3/services/{svm.uuid}/users/{name}":
