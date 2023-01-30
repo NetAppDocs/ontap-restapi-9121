@@ -3,96 +3,96 @@ paths:
   "/application/applications":
     get:
       x-doc:
-        title: Retrieves applications
+        title: Retrieve all applications
         category: application
         filename: get-application-applications.html
     post:
       x-doc:
-        title: Creates an application
+        title: Create an application
         category: application
         filename: post-application-applications.html
   "/application/applications/{application.uuid}/components":
     get:
       x-doc:
-        title: Retrieves application components
+        title: Retrieve all application components
         category: application
         filename: get-application-applications-components.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieves snapshot copies of an application component
+        title: Retrieve an application component Snapshot copy
         category: application
         filename: get-application-applications-components-snapshots.html
     post:
       x-doc:
-        title: Creates a snapshot copy of an application component
+        title: Create an application component Snapshot copy
         category: application
         filename: post-application-applications-components-snapshots.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapshot copy of an application component
+        title: Delete an application component Snapshot copy
         category: application
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieves a snapshot copy of an application component
+        title: Retrieve an application component Snapshot copy
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restores a snapshot copy of an application component
+        title: Restore an application component Snapshot copy
         category: application
         filename: post-application-applications-components-snapshots-restore.html
   "/application/applications/{application.uuid}/components/{uuid}":
     get:
       x-doc:
-        title: Retrieves an application component
+        title: Retrieve an application component
         category: application
         filename: get-application-applications-components-.html
   "/application/applications/{application.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieves snapshot copies of an application
+        title: Retrieve an application Snapshot copy
         category: application
         filename: get-application-applications-snapshots.html
     post:
       x-doc:
-        title: Creates a snapshot copy of the application
+        title: Create an application Snapshot copy
         category: application
         filename: post-application-applications-snapshots.html
   "/application/applications/{application.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapshot copy of an application
+        title: Delete an application Snapshot copy 
         category: application
         filename: delete-application-applications-snapshots-.html
     get:
       x-doc:
-        title: Retrieves a snapshot copy of an application component
+        title: Retrieve an application component Snapshot copy 
         category: application
         filename: get-application-applications-snapshots-.html
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restores an application snapshot
+        title: Restore an application Snapshot copy
         category: application
         filename: post-application-applications-snapshots-restore.html
   "/application/applications/{uuid}":
     delete:
       x-doc:
-        title: Deletes an application and all associated data
+        title: Delete an application and all associated data
         category: application
         filename: delete-application-applications-.html
     get:
       x-doc:
-        title: Retrieves an application
+        title: Retrieve an application
         category: application
         filename: get-application-applications-.html
     patch:
       x-doc:
-        title: Updates the properties of an application
+        title: Update the application properties
         category: application
         filename: patch-application-applications-.html
   "/application/consistency-groups":
@@ -2605,7 +2605,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Deletes the s3 bucket configuration of an svm
+        title: Deletes the s3 bucket configuration of an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
@@ -2660,7 +2660,7 @@ paths:
         filename: get-protocols-s3-services-policies.html
     post:
       x-doc:
-        title: Creates the s3 policy configuration
+        title: Creates the s3 policy configuration ----
         category: Object-store
         filename: post-protocols-s3-services-policies.html
   "/protocols/s3/services/{svm.uuid}/policies/{name}":
