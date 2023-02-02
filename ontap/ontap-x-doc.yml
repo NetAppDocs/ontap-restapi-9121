@@ -2666,44 +2666,44 @@ paths:
   "/protocols/s3/services/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
-        title: Deletes the s3 policy configuration of an svm
+        title: Delete S3 policy configuration
         category: Object-store
         filename: delete-protocols-s3-services-policies-.html
     get:
       x-doc:
-        title: Retrieves the s3 policy configuration of an svm
+        title: Retrieve S3 policy configuration
         category: Object-store
         filename: get-protocols-s3-services-policies-.html
     patch:
       x-doc:
-        title: Updates the s3 policy configuration of an svm
+        title: Update S3 policy configuration
         category: Object-store
         filename: patch-protocols-s3-services-policies-.html
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieves the s3 user configuration
+        title: Retrieve S3 user configuration
         category: Object-store
         filename: get-protocols-s3-services-users.html
     post:
       x-doc:
-        title: Creates the s3 user configuration
+        title: Create S3 user configuration
         category: Object-store
         filename: post-protocols-s3-services-users.html
   "/protocols/s3/services/{svm.uuid}/users/{name}":
     delete:
       x-doc:
-        title: Deletes the s3 user configuration of an svm
+        title: Delete S3 user configuration
         category: Object-store
         filename: delete-protocols-s3-services-users-.html
     get:
       x-doc:
-        title: Retrieves the s3 user configuration of an svm
+        title: Retrieve S3 user configuration
         category: Object-store
         filename: get-protocols-s3-services-users-.html
     patch:
       x-doc:
-        title: Updates the s3 user configuration of an svm
+        title: Update S3 user configuration
         category: Object-store
         filename: patch-protocols-s3-services-users-.html
   "/protocols/san/fcp/services":
