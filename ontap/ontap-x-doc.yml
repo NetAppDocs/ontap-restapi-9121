@@ -3,7 +3,7 @@ paths:
   "/application/applications":
     get:
       x-doc:
-        title: Retrieve all applications
+        title: Retrieve applications
         category: application
         filename: get-application-applications.html
     post:
@@ -14,35 +14,35 @@ paths:
   "/application/applications/{application.uuid}/components":
     get:
       x-doc:
-        title: Retrieve all application components
+        title: Retrieve application components
         category: application
         filename: get-application-applications-components.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy
+        title: Retrieve Snapshot copies of an application component 
         category: application
         filename: get-application-applications-components-snapshots.html
     post:
       x-doc:
-        title: Create an application component Snapshot copy
+        title: Create a Snapshot copy of an application component 
         category: application
         filename: post-application-applications-components-snapshots.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Delete an application component Snapshot copy
+        title: Delete a Snapshot copy of an application component 
         category: application
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy
+        title: Retrieve a Snapshot copy of an application component -- DUP
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restore an application component Snapshot copy
+        title: Restore a Snapshot copy of an application component 
         category: application
         filename: post-application-applications-components-snapshots-restore.html
   "/application/applications/{application.uuid}/components/{uuid}":
@@ -54,29 +54,29 @@ paths:
   "/application/applications/{application.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve an application Snapshot copy
+        title: Retrieve a Snapshot copy of an application 
         category: application
         filename: get-application-applications-snapshots.html
     post:
       x-doc:
-        title: Create an application Snapshot copy
+        title: Create a Snapshot copy of an application 
         category: application
         filename: post-application-applications-snapshots.html
   "/application/applications/{application.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Delete an application Snapshot copy 
+        title: Delete a Snapshot copy of an application  
         category: application
         filename: delete-application-applications-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy 
+        title: Retrieve a Snapshot copy of an application component DUP
         category: application
         filename: get-application-applications-snapshots-.html
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restore an application Snapshot copy
+        title: Restore an Snapshot copy of an application
         category: application
         filename: post-application-applications-snapshots-restore.html
   "/application/applications/{uuid}":
@@ -98,265 +98,264 @@ paths:
   "/application/consistency-groups":
     get:
       x-doc:
-        title: Retrieves details of a collection or a specific consistency group
+        title: Retrieve details of a collection or consistency group
         category: application
         filename: get-application-consistency-groups.html
     post:
       x-doc:
-        title: Creates a consistency group with one or more consistency groups
+        title: Create a consistency group with one or more consistency groups
         category: application
         filename: post-application-consistency-groups.html
   "/application/consistency-groups/{consistency_group.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieves snapshot copies for a consistency group
+        title: Retrieve Snapshot copies for a consistency group
         category: application
         filename: get-application-consistency-groups-snapshots.html
     post:
       x-doc:
-        title: Creates a snapshot copy of an existing consistency group
+        title: Create a Snapshot copy of an existing consistency group
         category: application
         filename: post-application-consistency-groups-snapshots.html
   "/application/consistency-groups/{consistency_group.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapshot copy of a consistency group
+        title: Delete a Snapshot copy of a consistency group
         category: application
         filename: delete-application-consistency-groups-snapshots-.html
     get:
       x-doc:
-        title: Retrieves details of a specific snapshot for a consistency group
+        title: Retrieve details of a Snapshot copy for a consistency group
         category: application
         filename: get-application-consistency-groups-snapshots-.html
     patch:
       x-doc:
-        title: Completes a snapshot copy operation of a consistency group
+        title: Complete a Snapshot copy operation of a consistency group
         category: application
         filename: patch-application-consistency-groups-snapshots-.html
   "/application/consistency-groups/{uuid}":
     delete:
       x-doc:
-        title: Deletes a consistency group
+        title: Delete a consistency group
         category: application
         filename: delete-application-consistency-groups-.html
     get:
       x-doc:
-        title: Retrieves a single consistency group
+        title: Retrieve a consistency group
         category: application
         filename: get-application-consistency-groups-.html
     patch:
       x-doc:
-        title: Updates a consistency group
+        title: Update a consistency group
         category: application
         filename: patch-application-consistency-groups-.html
   "/application/templates":
     get:
       x-doc:
-        title: Retrieves application templates
+        title: Retrieve application templates
         category: application
         filename: get-application-templates.html
   "/application/templates/{name}":
     get:
       x-doc:
-        title: Retrieves an application template
+        title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
   "/cloud/targets":
     get:
       x-doc:
-        title: Retrieves the collection of cloud targets in the cluster
+        title: Retrieve the collection of cloud targets in the cluster
         category: cloud
         filename: get-cloud-targets.html
     post:
       x-doc:
-        title: Creates a cloud target
+        title: Create a cloud target
         category: cloud
         filename: post-cloud-targets.html
   "/cloud/targets/{uuid}":
     delete:
       x-doc:
-        title: Deletes the cloud target specified by the uuid
+        title: Delete a cloud target specified by the UUID
         category: cloud
         filename: delete-cloud-targets-.html
     get:
       x-doc:
-        title: Retrieves the cloud target specified by the uuid
+        title: Retrieve a cloud target specified by the UUID
         category: cloud
         filename: get-cloud-targets-.html
     patch:
       x-doc:
-        title: Updates the cloud target specified by the uuid with the fields in the
-          body
+        title: Update a cloud target specified by the UUID
         category: cloud
         filename: patch-cloud-targets-.html
   "/cluster":
     get:
       x-doc:
-        title: Retrieves the cluster configuration
+        title: Retrieve the cluster configuration
         category: cluster
         filename: get-cluster.html
     patch:
       x-doc:
-        title: Updates the cluster configuration after the cluster is created
+        title: Update cluster configuration after the cluster is created
         category: cluster
         filename: patch-cluster.html
     post:
       x-doc:
-        title: Creates a cluster
+        title: Create a cluster
         category: cluster
         filename: post-cluster.html
   "/cluster/chassis":
     get:
       x-doc:
-        title: Retrieves a collection of chassis
+        title: Retrieve a collection of chassis
         category: cluster
         filename: get-cluster-chassis.html
   "/cluster/chassis/{id}":
     get:
       x-doc:
-        title: Retrieves a specific chassis
+        title: Retrieve a chassis
         category: cluster
         filename: get-cluster-chassis-.html
   "/cluster/counter/tables":
     get:
       x-doc:
-        title: Returns a collection of counter tables and their schema definitions
+        title: Retrieve a collection of counter tables with schema definitions
         category: cluster
         filename: get-cluster-counter-tables.html
   "/cluster/counter/tables/{counter_table.name}/rows":
     get:
       x-doc:
-        title: Returns a collection of counter rows
+        title: Retrieve a collection of counter rows
         category: cluster
         filename: get-cluster-counter-tables-rows.html
   "/cluster/counter/tables/{counter_table.name}/rows/{id}":
     get:
       x-doc:
-        title: Returns a single counter row
+        title: Retrieve a counter row
         category: cluster
         filename: get-cluster-counter-tables-rows-.html
   "/cluster/counter/tables/{name}":
     get:
       x-doc:
-        title: Returns the information about a single counter table
+        title: Retrieve information about a counter table
         category: cluster
         filename: get-cluster-counter-tables-.html
   "/cluster/firmware/history":
     get:
       x-doc:
-        title: Retrieves the history details for firmware update requests
+        title: Retrieve the history details for firmware update requests
         category: cluster
         filename: get-cluster-firmware-history.html
   "/cluster/jobs":
     get:
       x-doc:
-        title: Retrieves a list of recently running asynchronous jobs
+        title: Retrieve a list of recent asynchronous jobs
         category: cluster
         filename: get-cluster-jobs.html
   "/cluster/jobs/{uuid}":
     get:
       x-doc:
-        title: Retrieves the details of a specific asynchronous job
+        title: Retrieve the details of an asynchronous job
         category: cluster
         filename: get-cluster-jobs-.html
     patch:
       x-doc:
-        title: Updates the state of a specific asynchronous job
+        title: Update the state of an asynchronous job
         category: cluster
         filename: patch-cluster-jobs-.html
   "/cluster/licensing/capacity-pools":
     get:
       x-doc:
-        title: Retrieves a collection of capacity pools
+        title: Retrieve a collection of capacity pools
         category: cluster
         filename: get-cluster-licensing-capacity-pools.html
   "/cluster/licensing/capacity-pools/{serial_number}":
     get:
       x-doc:
-        title: Retrieves information about the capacity pool
+        title: Retrieve information about the capacity pool
         category: cluster
         filename: get-cluster-licensing-capacity-pools-.html
   "/cluster/licensing/license-managers":
     get:
       x-doc:
-        title: Retrieves a collection of license managers
+        title: Retrieve a collection of license managers
         category: cluster
         filename: get-cluster-licensing-license-managers.html
   "/cluster/licensing/license-managers/{uuid}":
     get:
       x-doc:
-        title: Retrieves information about the license manager
+        title: Retrieve information about the license manager
         category: cluster
         filename: get-cluster-licensing-license-managers-.html
     patch:
       x-doc:
-        title: Updates the license manager configuration
+        title: Update the license manager configuration
         category: cluster
         filename: patch-cluster-licensing-license-managers-.html
   "/cluster/licensing/licenses":
     get:
       x-doc:
-        title: Retrieves a collection of license packages
+        title: Retrieve a collection of license packages
         category: cluster
         filename: get-cluster-licensing-licenses.html
     post:
       x-doc:
-        title: Installs one or more feature licenses
+        title: Install one or more feature licenses
         category: cluster
         filename: post-cluster-licensing-licenses.html
   "/cluster/licensing/licenses/{name}":
     delete:
       x-doc:
-        title: Deletes a license
+        title: Delete a license
         category: cluster
         filename: delete-cluster-licensing-licenses-.html
     get:
       x-doc:
-        title: Retrieves a specific license package
+        title: Retrieve a license package
         category: cluster
         filename: get-cluster-licensing-licenses-.html
   "/cluster/mediators":
     get:
       x-doc:
-        title: Retrieves mediators configured in the cluster
+        title: Retrieve Mediators configured in the cluster
         category: cluster
         filename: get-cluster-mediators.html
     post:
       x-doc:
-        title: Creates and connect a mediator
+        title: Create and connect a Mediator
         category: cluster
         filename: post-cluster-mediators.html
   "/cluster/mediators/{uuid}":
     delete:
       x-doc:
-        title: Deletes the mediator
+        title: Delete the Mediator
         category: cluster
         filename: delete-cluster-mediators-.html
     get:
       x-doc:
-        title: Retrieves the mediator state and configuration
+        title: Retrieve the Mediator state and configuration
         category: cluster
         filename: get-cluster-mediators-.html
   "/cluster/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the cluster
+        title: Retrieve historical performance metrics for the cluster
         category: cluster
         filename: get-cluster-metrics.html
   "/cluster/metrocluster":
     get:
       x-doc:
-        title: Retrieves metrocluster status and configuration details
+        title: Retrieve MetroCluster status and configuration details
         category: cluster
         filename: get-cluster-metrocluster.html
     patch:
       x-doc:
-        title: Initiates a switchover, heal, or switchback operation
+        title: Initiate a switchover, heal, or switchback operation
         category: cluster
         filename: patch-cluster-metrocluster.html
     post:
       x-doc:
-        title: Sets up a metrocluster
+        title: Set up a MetroCluster
         category: cluster
         filename: post-cluster-metrocluster.html
   "/cluster/metrocluster/diagnostics":
