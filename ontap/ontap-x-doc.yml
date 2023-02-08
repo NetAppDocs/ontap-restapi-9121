@@ -361,109 +361,107 @@ paths:
   "/cluster/metrocluster/diagnostics":
     get:
       x-doc:
-        title: Retrieves the results of a completed diagnostic operation for the metrocluster
+        title: Retrieve the results of a diagnostic operation for the MetroCluster
           configuration
         category: cluster
         filename: get-cluster-metrocluster-diagnostics.html
     post:
       x-doc:
-        title: Starts a metrocluster diagnostic operation or set up a schedule for
-          the diagnostics to be run periodically
+        title: Start a MetroCluster diagnostic operation or set up a schedule for periodic diagnostics
         category: cluster
         filename: post-cluster-metrocluster-diagnostics.html
   "/cluster/metrocluster/dr-groups":
     get:
       x-doc:
-        title: Retrieves all the dr group in the metrocluster over ip configuration
+        title: Retrieve all DR groups in a MetroCluster IP configuration
         category: cluster
         filename: get-cluster-metrocluster-dr-groups.html
     post:
       x-doc:
-        title: Creates a new dr group in the metrocluster over ip configuration
+        title: Create a new DR group in a MetroCluster IP configuration
         category: cluster
         filename: post-cluster-metrocluster-dr-groups.html
   "/cluster/metrocluster/dr-groups/{id}":
     delete:
       x-doc:
-        title: Removes the dr group from the current metrocluster over ip configuration
-          specified by the dr group id
+        title: Remove a DR group from a current MetroCluster IP configuration
         category: cluster
         filename: delete-cluster-metrocluster-dr-groups-.html
     get:
       x-doc:
-        title: Retrieves the dr group information specified by the dr group id
+        title: Retrieve DR group information using the DR group ID
         category: cluster
         filename: get-cluster-metrocluster-dr-groups-.html
   "/cluster/metrocluster/interconnects":
     get:
       x-doc:
-        title: Retrieves a list of interconnect adapter information for nodes in the
-          metrocluster
+        title: Retrieve a list of interconnect adapter information for nodes in the
+          MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-interconnects.html
   "/cluster/metrocluster/interconnects/{node.uuid}/{partner_type}/{adapter}":
     get:
       x-doc:
-        title: Retrieves information about a metrocluster interconnect for a specific
+        title: Retrieve information about a MetroCluster interconnect for a specific
           partner type and adapter
         category: cluster
         filename: get-cluster-metrocluster-interconnects--.html
     patch:
       x-doc:
-        title: Updates a metrocluster interconnect interface
+        title: Update a MetroCluster interconnect interface
         category: cluster
         filename: patch-cluster-metrocluster-interconnects--.html
   "/cluster/metrocluster/nodes":
     get:
       x-doc:
-        title: Retrieves metrocluster nodes and their configurations
+        title: Retrieve MetroCluster nodes and configurations
         category: cluster
         filename: get-cluster-metrocluster-nodes.html
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieves the node configuration in the metrocluster
+        title: Retrieve the node configuration in the MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
   "/cluster/metrocluster/operations":
     get:
       x-doc:
-        title: Retrieves the list of metrocluster operations on the local cluster
+        title: Retrieve a list of MetroCluster operations on the local cluster
         category: cluster
         filename: get-cluster-metrocluster-operations.html
   "/cluster/metrocluster/operations/{uuid}":
     get:
       x-doc:
-        title: Retrieves information about a specific metrocluster operation
+        title: Retrieve information about a MetroCluster operation
         category: cluster
         filename: get-cluster-metrocluster-operations-.html
   "/cluster/metrocluster/svms":
     get:
       x-doc:
-        title: Retrieves configuration information for all pairs of svms in metrocluster
+        title: Retrieve configuration information for all SVM pairs in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-svms.html
   "/cluster/metrocluster/svms/{cluster.uuid}/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves configuration information for an svm
+        title: Retrieve configuration information for an SVM
         category: cluster
         filename: get-cluster-metrocluster-svms-.html
   "/cluster/nodes":
     get:
       x-doc:
-        title: Retrieves the nodes in the cluster
+        title: Retrieve the nodes in the cluster
         category: cluster
         filename: get-cluster-nodes.html
     post:
       x-doc:
-        title: Adds a node or nodes to the cluster
+        title: Add a node or nodes to the cluster
         category: cluster
         filename: post-cluster-nodes.html
   "/cluster/nodes/{uuid}":
     delete:
       x-doc:
-        title: Deletes a node from the cluster
+        title: Delete a node from the cluster
         category: cluster
         filename: delete-cluster-nodes-.html
     get:
@@ -473,547 +471,547 @@ paths:
         filename: get-cluster-nodes-.html
     patch:
       x-doc:
-        title: Updates the node information
+        title: Update the node information
         category: cluster
         filename: patch-cluster-nodes-.html
   "/cluster/nodes/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for a node
+        title: Retrieve historical performance metrics for a node
         category: cluster
         filename: get-cluster-nodes-metrics.html
   "/cluster/ntp/keys":
     get:
       x-doc:
-        title: Retrieves the collection of ntp symmetric authentication keys
+        title: Retrieve the collection of NTP symmetric authentication keys
         category: cluster
         filename: get-cluster-ntp-keys.html
     post:
       x-doc:
-        title: Creates an ntp symmetric authentication key entry
+        title: Create an NTP symmetric authentication key entry
         category: cluster
         filename: post-cluster-ntp-keys.html
   "/cluster/ntp/keys/{id}":
     delete:
       x-doc:
-        title: Deletes an ntp key
+        title: Delete an NTP key
         category: cluster
         filename: delete-cluster-ntp-keys-.html
     get:
       x-doc:
-        title: Retrieves the details of a specific ntp symmetric authentication key
+        title: Retrieve details of a specific NTP symmetric authentication key
         category: cluster
         filename: get-cluster-ntp-keys-.html
     patch:
       x-doc:
-        title: Updates the details of a specific ntp symmetric authentication key
+        title: Update the details of a specific NTP symmetric authentication key
         category: cluster
         filename: patch-cluster-ntp-keys-.html
   "/cluster/ntp/servers":
     get:
       x-doc:
-        title: Retrieves the collection of external ntp time servers
+        title: Retrieve a collection of external NTP time servers
         category: cluster
         filename: get-cluster-ntp-servers.html
     post:
       x-doc:
-        title: Validates the provided external ntp time server
+        title: Validate an external NTP time server
         category: cluster
         filename: post-cluster-ntp-servers.html
   "/cluster/ntp/servers/{server}":
     delete:
       x-doc:
-        title: Deletes an external ntp server used by ontap
+        title: Delete an external NTP server used by ONTAP
         category: cluster
         filename: delete-cluster-ntp-servers-.html
     get:
       x-doc:
-        title: Retrieves the configuration of an external ntp server used by ontap
+        title: Retrieve the configuration of an external NTP server used by ONTAP
         category: cluster
         filename: get-cluster-ntp-servers-.html
     patch:
       x-doc:
-        title: Updates the configuration of an ntp server used by the ontap cluster
+        title: Update the configuration of an NTP server used by the ONTAP cluster
           after validation
         category: cluster
         filename: patch-cluster-ntp-servers-.html
   "/cluster/peers":
     get:
       x-doc:
-        title: Retrieves the collection of cluster peers
+        title: Retrieve the collection of cluster peers
         category: cluster
         filename: get-cluster-peers.html
     post:
       x-doc:
-        title: Creates a peering relationship
+        title: Create a peering relationship
         category: cluster
         filename: post-cluster-peers.html
   "/cluster/peers/{uuid}":
     delete:
       x-doc:
-        title: Deletes a cluster peer
+        title: Delete a cluster peer
         category: cluster
         filename: delete-cluster-peers-.html
     get:
       x-doc:
-        title: Retrieves a specific cluster peer instance
+        title: Retrieve a cluster peer instance
         category: cluster
         filename: get-cluster-peers-.html
     patch:
       x-doc:
-        title: Updates a cluster peer instance
+        title: Update a cluster peer instance
         category: cluster
         filename: patch-cluster-peers-.html
   "/cluster/schedules":
     get:
       x-doc:
-        title: Retrieves a schedule
+        title: Retrieve a schedule
         category: cluster
         filename: get-cluster-schedules.html
     post:
       x-doc:
-        title: Creates a schedule
+        title: Create a schedule
         category: cluster
         filename: post-cluster-schedules.html
   "/cluster/schedules/{uuid}":
     delete:
       x-doc:
-        title: Deletes a schedule
+        title: Delete a schedule
         category: cluster
         filename: delete-cluster-schedules-.html
     get:
       x-doc:
-        title: Retrieves a schedule
+        title: Retrieve a schedule -DUP
         category: cluster
         filename: get-cluster-schedules-.html
     patch:
       x-doc:
-        title: Updates a schedule
+        title: Update a schedule
         category: cluster
         filename: patch-cluster-schedules-.html
   "/cluster/sensors":
     get:
       x-doc:
-        title: Retrieves environment sensors
+        title: Retrieve environment sensors
         category: cluster
         filename: get-cluster-sensors.html
   "/cluster/sensors/{node.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieves environment sensors
+        title: Retrieve environment sensors -DUP
         category: cluster
         filename: get-cluster-sensors-.html
   "/cluster/software":
     get:
       x-doc:
-        title: Retrieves the software profile of a cluster
+        title: Retrieve the software profile of a cluster
         category: cluster
         filename: get-cluster-software.html
     patch:
       x-doc:
-        title: Updates the cluster software version
+        title: Update the cluster software version
         category: cluster
         filename: patch-cluster-software.html
   "/cluster/software/download":
     get:
       x-doc:
-        title: Retrieves the software or firmware download status
+        title: Retrieve the software or firmware download status
         category: cluster
         filename: get-cluster-software-download.html
     post:
       x-doc:
-        title: Downloads a software or firmware package from the server
+        title: Download a software or firmware package from the server
         category: cluster
         filename: post-cluster-software-download.html
   "/cluster/software/history":
     get:
       x-doc:
-        title: Retrieves the history details for software installation requests
+        title: Retrieve history details for software installation requests
         category: cluster
         filename: get-cluster-software-history.html
   "/cluster/software/packages":
     get:
       x-doc:
-        title: Retrieves the software packages for a cluster
+        title: Retrieve software packages for a cluster
         category: cluster
         filename: get-cluster-software-packages.html
   "/cluster/software/packages/{version}":
     delete:
       x-doc:
-        title: Deletes a software package from the cluster
+        title: Delete a software package from the cluster
         category: cluster
         filename: delete-cluster-software-packages-.html
     get:
       x-doc:
-        title: Retrieves the software package information
+        title: Retrieve software package information
         category: cluster
         filename: get-cluster-software-packages-.html
   "/cluster/software/upload":
     post:
       x-doc:
-        title: Uploads a software or firmware package located on the local filesystem
+        title: Upload a software or firmware package located on the local file system
         category: cluster
         filename: post-cluster-software-upload.html
   "/cluster/web":
     get:
       x-doc:
-        title: Retrieves the web services configuration
+        title: Retrieve the web services configuration
         category: cluster
         filename: get-cluster-web.html
     patch:
       x-doc:
-        title: Updates the web services configuration
+        title: Update the web services configuration
         category: cluster
         filename: patch-cluster-web.html
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
-        title: Retrieves group-membership cache settings
+        title: Retrieve group-membership cache settings
         category: name-services
         filename: get-name-services-cache-group-membership-settings.html
   "/name-services/cache/group-membership/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves a group-membership cache setting for a given svm
+        title: Retrieve a group-membership cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-group-membership-settings-.html
     patch:
       x-doc:
-        title: Updates a group-membership cache setting
+        title: Update a group-membership cache setting
         category: name-services
         filename: patch-name-services-cache-group-membership-settings-.html
   "/name-services/cache/host/settings":
     get:
       x-doc:
-        title: Retrieves host cache settings
+        title: Retrieve host cache settings
         category: name-services
         filename: get-name-services-cache-host-settings.html
   "/name-services/cache/host/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves a host cache setting for a given svm
+        title: Retrieve a host cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-host-settings-.html
     patch:
       x-doc:
-        title: Updates a host cache setting
+        title: Update a host cache setting
         category: name-services
         filename: patch-name-services-cache-host-settings-.html
   "/name-services/cache/netgroup/settings":
     get:
       x-doc:
-        title: Retrieves netgroups cache settings
+        title: Retrieve netgroup cache settings
         category: name-services
         filename: get-name-services-cache-netgroup-settings.html
   "/name-services/cache/netgroup/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves a netgroup cache setting for a given svm
+        title: Retrieve a netgroup cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-netgroup-settings-.html
     patch:
       x-doc:
-        title: Updates a netgroup cache setting
+        title: Update a netgroup cache setting
         category: name-services
         filename: patch-name-services-cache-netgroup-settings-.html
   "/name-services/cache/setting":
     get:
       x-doc:
-        title: Retrieves a global nameservice cache setting
+        title: Retrieve a global name service cache setting
         category: name-services
         filename: get-name-services-cache-setting.html
     patch:
       x-doc:
-        title: Updates a global nameservice cache setting
+        title: Update a global name service cache setting
         category: name-services
         filename: patch-name-services-cache-setting.html
   "/name-services/cache/unix-group/settings":
     get:
       x-doc:
-        title: Retrieves unix-group cache settings
+        title: Retrieve UNIX group cache settings
         category: name-services
         filename: get-name-services-cache-unix-group-settings.html
   "/name-services/cache/unix-group/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves a unix-group cache setting for a given svm
+        title: Retrieve a UNIX group cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-unix-group-settings-.html
     patch:
       x-doc:
-        title: Updates unix-group cache settings
+        title: Update UNIX group cache settings
         category: name-services
         filename: patch-name-services-cache-unix-group-settings-.html
   "/name-services/cache/unix-user/settings":
     get:
       x-doc:
-        title: Retrieves unix-user cache settings
+        title: Retrieve UNIX user cache settings
         category: name-services
         filename: get-name-services-cache-unix-user-settings.html
   "/name-services/cache/unix-user/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves unix-user cache settings for a given svm
+        title: Retrieve UNIX user cache settings for an SVM
         category: name-services
         filename: get-name-services-cache-unix-user-settings-.html
     patch:
       x-doc:
-        title: Updates a unix-user cache setting
+        title: Update a UNIX user cache setting
         category: name-services
         filename: patch-name-services-cache-unix-user-settings-.html
   "/name-services/dns":
     get:
       x-doc:
-        title: Retrieves the dns configurations of all svms
+        title: Retrieve the DNS configurations for all SVMs
         category: name-services
         filename: get-name-services-dns.html
     post:
       x-doc:
-        title: Creates dns domain and server configurations for an svm
+        title: Create DNS domain and server configurations for an SVM
         category: name-services
         filename: post-name-services-dns.html
   "/name-services/dns/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes dns domain configuration of the specified svm
+        title: Delete DNS domain configuration for an SVM 
         category: name-services
         filename: delete-name-services-dns-.html
     get:
       x-doc:
-        title: Retrieves dns domain and server configuration of an svm
+        title: Retrieve DNS domain and server configurations for an SVM
         category: name-services
         filename: get-name-services-dns-.html
     patch:
       x-doc:
-        title: Updates dns domain and server configurations of an svm
+        title: Update DNS domain and server configurations for an SVM
         category: name-services
         filename: patch-name-services-dns-.html
   "/name-services/host-record/{svm.uuid}/{host}":
     get:
       x-doc:
-        title: Retrieves the ip address of the specified hostname
+        title: Retrieve the IP address of the specified hostname
         category: name-services
         filename: get-name-services-host-record-.html
   "/name-services/ldap":
     get:
       x-doc:
-        title: Retrieves the ldap configurations for all svms
+        title: Retrieve the LDAP configuration for all SVMs
         category: name-services
         filename: get-name-services-ldap.html
     post:
       x-doc:
-        title: Creates an ldap configuration for an svm
+        title: Create an LDAP configuration for an SVM
         category: name-services
         filename: post-name-services-ldap.html
   "/name-services/ldap-schemas":
     get:
       x-doc:
-        title: Retrieves all the ldap schemas
+        title: Retrieve all LDAP schemas
         category: name-services
         filename: get-name-services-ldap-schemas.html
     post:
       x-doc:
-        title: Creates an ldap schema
+        title: Create an LDAP schema
         category: name-services
         filename: post-name-services-ldap-schemas.html
   "/name-services/ldap-schemas/{owner.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes an existing schema
+        title: Delete an existing schema
         category: name-services
         filename: delete-name-services-ldap-schemas-.html
     get:
       x-doc:
-        title: Retrieves ldap schema details for a given owner and schema
+        title: Retrieve LDAP schema details for an owner and schema
         category: name-services
         filename: get-name-services-ldap-schemas-.html
     patch:
       x-doc:
-        title: Updates ldap schema details for a given owner and schema
+        title: Update LDAP schema details for an owner and schema
         category: name-services
         filename: patch-name-services-ldap-schemas-.html
   "/name-services/ldap/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the ldap configuration of the specified svm
+        title: Delete the LDAP configuration for an SVM
         category: name-services
         filename: delete-name-services-ldap-.html
     get:
       x-doc:
-        title: Retrieves ldap configuration for an svm
+        title: Retrieve LDAP configuration for an svm
         category: name-services
         filename: get-name-services-ldap-.html
     patch:
       x-doc:
-        title: Updates an ldap configuration of an svm
+        title: Update LDAP configuration of an SVM
         category: name-services
         filename: patch-name-services-ldap-.html
   "/name-services/local-hosts":
     get:
       x-doc:
-        title: Retrieves all ip to hostname mappings for all svms of the cluster
+        title: Retrieve IP to hostname mappings for all SVMs in the cluster
         category: name-services
         filename: get-name-services-local-hosts.html
     post:
       x-doc:
-        title: Creates a new ip to hostname mapping
+        title: Create a new IP to hostname mapping
         category: name-services
         filename: post-name-services-local-hosts.html
   "/name-services/local-hosts/{owner.uuid}/{address}":
     delete:
       x-doc:
-        title: Deletes an existing host object
+        title: Delete an existing host object
         category: name-services
         filename: delete-name-services-local-hosts-.html
     get:
       x-doc:
-        title: Retrieves hostname mapping for a svm
+        title: Retrieve hostname mapping for an SVM
         category: name-services
         filename: get-name-services-local-hosts-.html
     patch:
       x-doc:
-        title: Updates hostname mapping for a svm
+        title: Update hostname mapping for an SVM
         category: name-services
         filename: patch-name-services-local-hosts-.html
   "/name-services/name-mappings":
     get:
       x-doc:
-        title: Retrieves hostname mapping for all svms
+        title: Retrieve hostname mapping for all SVMs
         category: name-services
         filename: get-name-services-name-mappings.html
     post:
       x-doc:
-        title: Creates hostname mappings for a svm
+        title: Create hostname mappings for an SVM
         category: name-services
         filename: post-name-services-name-mappings.html
   "/name-services/name-mappings/{svm.uuid}/{direction}/{index}":
     delete:
       x-doc:
-        title: Deletes the name mapping configuration
+        title: Delete the name mapping configuration
         category: name-services
         filename: delete-name-services-name-mappings--.html
     get:
       x-doc:
-        title: Retrieves the name mapping configuration of an svm
+        title: Retrieve the name mapping configuration for an SVM 
         category: name-services
         filename: get-name-services-name-mappings--.html
     patch:
       x-doc:
-        title: Updates the name mapping configuration of an svm
+        title: Update the name mapping configuration for an SVM 
         category: name-services
         filename: patch-name-services-name-mappings--.html
   "/name-services/netgroup-files/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the netgroup file for a given svm
+        title: Delete the netgroup file for an SVM
         category: name-services
         filename: delete-name-services-netgroup-files-.html
     get:
       x-doc:
-        title: Retrieves the netgroup file details
+        title: Retrieve the netgroup file details
         category: name-services
         filename: get-name-services-netgroup-files-.html
   "/name-services/nis":
     get:
       x-doc:
-        title: Retrieves nis domain configurations of all the svms
+        title: Retrieve NIS domain configurations of all SVMs
         category: name-services
         filename: get-name-services-nis.html
     post:
       x-doc:
-        title: Creates an nis domain and server confguration for a data svm
+        title: Create NIS domain and server configuration for a data SVM
         category: name-services
         filename: post-name-services-nis.html
   "/name-services/nis/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the nis domain configuration of an svm
+        title: Delete NIS domain configuration for an SVM
         category: name-services
         filename: delete-name-services-nis-.html
     get:
       x-doc:
-        title: Retrieves nis domain and server configurations of an svm
+        title: Retrieve NIS domain and server configurations for an SVM
         category: name-services
         filename: get-name-services-nis-.html
     patch:
       x-doc:
-        title: Updates nis domain and server configuration of an svm
+        title: Update NIS domain and server configuration for an SVM
         category: name-services
         filename: patch-name-services-nis-.html
   "/name-services/unix-groups":
     get:
       x-doc:
-        title: Retrieves the unix groups for all of the svms
+        title: Retrieve the UNIX groups for all SVMs
         category: name-services
         filename: get-name-services-unix-groups.html
     post:
       x-doc:
-        title: Creates the local unix group configuration for the specified svm
+        title: Create local UNIX group configuration for an SVM 
         category: name-services
         filename: post-name-services-unix-groups.html
   "/name-services/unix-groups/{svm.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a unix group configuration for the specified svm
+        title: Delete UNIX group configuration for an SVM
         category: name-services
         filename: delete-name-services-unix-groups-.html
     get:
       x-doc:
-        title: Retrieves unix group information for the specified group and svm
+        title: Retrieve UNIX group information for a group and SVM
         category: name-services
         filename: get-name-services-unix-groups-.html
     patch:
       x-doc:
-        title: Updates the unix group information of the specified group in the specified svm
+        title: Update the UNIX group information for a group in an SVM
         category: name-services
         filename: patch-name-services-unix-groups-.html
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users":
     get:
       x-doc:
-        title: Retrieves users for the specified unix group and svm
+        title: Retrieve users for a UNIX group and SVM
         category: name-services
         filename: get-name-services-unix-groups--users.html
     post:
       x-doc:
-        title: Adds users to the specified unix group and svm
+        title: Adds users to a UNIX group and SVM
         category: name-services
         filename: post-name-services-unix-groups--users.html
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users/{name}":
     delete:
       x-doc:
-        title: Deletes a user from the specified unix group
+        title: Delete a user from a UNIX group
         category: name-services
         filename: delete-name-services-unix-groups--users-.html
     get:
       x-doc:
-        title: Retrieves users for the specified unix group and svm
+        title: Retrieve users for a UNIX group and SVM
         category: name-services
         filename: get-name-services-unix-groups--users-.html
   "/name-services/unix-users":
     get:
       x-doc:
-        title: Retrieves all of the unix users for all of the svms
+        title: Retrieve all of the UNIX users for all of the SVMs
         category: name-services
         filename: get-name-services-unix-users.html
     post:
       x-doc:
-        title: Creates the local unix user configuration for an svm
+        title: Create local UNIX user configuration for an SVM
         category: name-services
         filename: post-name-services-unix-users.html
   "/name-services/unix-users/{svm.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a unix user configuration for the specified svm
+        title: Delete a UNIX user configuration for an SVM
         category: name-services
         filename: delete-name-services-unix-users-.html
     get:
       x-doc:
-        title: Retrieves unix user information for the specified user and svm
+        title: Retrieve UNIX user information for a user and SVM
         category: name-services
         filename: get-name-services-unix-users-.html
     patch:
       x-doc:
-        title: Updates unix user information for the specified user and svm
+        title: Update UNIX user information for a user and SVM
         category: name-services
         filename: patch-name-services-unix-users-.html
   "/network/ethernet/broadcast-domains":
