@@ -164,7 +164,7 @@ paths:
   "/cloud/targets":
     get:
       x-doc:
-        title: Retrieve the collection of cloud targets in the cluster
+        title: Retrieve a collection of cloud targets in the cluster
         category: cloud
         filename: get-cloud-targets.html
     post:
@@ -272,7 +272,7 @@ paths:
   "/cluster/licensing/capacity-pools/{serial_number}":
     get:
       x-doc:
-        title: Retrieve information about the capacity pool
+        title: Retrieve information about a capacity pool
         category: cluster
         filename: get-cluster-licensing-capacity-pools-.html
   "/cluster/licensing/license-managers":
@@ -289,7 +289,7 @@ paths:
         filename: get-cluster-licensing-license-managers-.html
     patch:
       x-doc:
-        title: Update the license manager configuration
+        title: Update license manager configuration
         category: cluster
         filename: patch-cluster-licensing-license-managers-.html
   "/cluster/licensing/licenses":
@@ -328,12 +328,12 @@ paths:
   "/cluster/mediators/{uuid}":
     delete:
       x-doc:
-        title: Delete the Mediator
+        title: Delete a Mediator
         category: cluster
         filename: delete-cluster-mediators-.html
     get:
       x-doc:
-        title: Retrieve the Mediator state and configuration
+        title: Retrieve Mediator state and configuration
         category: cluster
         filename: get-cluster-mediators-.html
   "/cluster/metrics":
@@ -361,7 +361,7 @@ paths:
   "/cluster/metrocluster/diagnostics":
     get:
       x-doc:
-        title: Retrieve the results of a diagnostic operation for the MetroCluster
+        title: Retrieve  diagnostic operation results for the MetroCluster
           configuration
         category: cluster
         filename: get-cluster-metrocluster-diagnostics.html
@@ -483,7 +483,7 @@ paths:
   "/cluster/ntp/keys":
     get:
       x-doc:
-        title: Retrieve the collection of NTP symmetric authentication keys
+        title: Retrieve a collection of NTP symmetric authentication keys
         category: cluster
         filename: get-cluster-ntp-keys.html
     post:
@@ -499,12 +499,12 @@ paths:
         filename: delete-cluster-ntp-keys-.html
     get:
       x-doc:
-        title: Retrieve details of a specific NTP symmetric authentication key
+        title: Retrieve details of a NTP symmetric authentication key
         category: cluster
         filename: get-cluster-ntp-keys-.html
     patch:
       x-doc:
-        title: Update the details of a specific NTP symmetric authentication key
+        title: Update the details of a NTP symmetric authentication key
         category: cluster
         filename: patch-cluster-ntp-keys-.html
   "/cluster/ntp/servers":
@@ -789,7 +789,7 @@ paths:
   "/name-services/host-record/{svm.uuid}/{host}":
     get:
       x-doc:
-        title: Retrieve the IP address of the specified hostname
+        title: Retrieve the IP address of a hostname
         category: name-services
         filename: get-name-services-host-record-.html
   "/name-services/ldap":
@@ -838,7 +838,7 @@ paths:
         filename: delete-name-services-ldap-.html
     get:
       x-doc:
-        title: Retrieve LDAP configuration for an svm
+        title: Retrieve LDAP configuration for an SVM
         category: name-services
         filename: get-name-services-ldap-.html
     patch:
@@ -1017,1349 +1017,1335 @@ paths:
   "/network/ethernet/broadcast-domains":
     get:
       x-doc:
-        title: Retrieves a collection of broadcast domains for the entire cluster
+        title: Retrieve a collection of broadcast domains for the entire cluster
         category: networking
         filename: get-network-ethernet-broadcast-domains.html
     post:
       x-doc:
-        title: Creates a new broadcast domain
+        title: Create a new broadcast domain
         category: networking
         filename: post-network-ethernet-broadcast-domains.html
   "/network/ethernet/broadcast-domains/{uuid}":
     delete:
       x-doc:
-        title: Deletes a broadcast domain
+        title: Delete a broadcast domain
         category: networking
         filename: delete-network-ethernet-broadcast-domains-.html
     get:
       x-doc:
-        title: Retrieves details of a broadcast domain
+        title: Retrieve details of a broadcast domain
         category: networking
         filename: get-network-ethernet-broadcast-domains-.html
     patch:
       x-doc:
-        title: Updates the properties of a broadcast domain
+        title: Update the properties of a broadcast domain
         category: networking
         filename: patch-network-ethernet-broadcast-domains-.html
   "/network/ethernet/ports":
     get:
       x-doc:
-        title: Retrieves a collection of ports
+        title: Retrieve a collection of ports
         category: networking
         filename: get-network-ethernet-ports.html
     post:
       x-doc:
-        title: Creates a new vlan or lag
+        title: Create a new VLAN or LAG
         category: networking
         filename: post-network-ethernet-ports.html
   "/network/ethernet/ports/{uuid}":
     delete:
       x-doc:
-        title: Deletes a vlan or lag
+        title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
     get:
       x-doc:
-        title: Retrieves the details of a physical port, vlan, or lag
+        title: Retrieve the details of a physical port, VLAN, or LAG
         category: networking
         filename: get-network-ethernet-ports-.html
     patch:
       x-doc:
-        title: Updates a port
+        title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
   "/network/ethernet/ports/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for a port
+        title: Retrieve historical port performance metrics
         category: networking
         filename: get-network-ethernet-ports-metrics.html
   "/network/ethernet/switch/ports":
     get:
       x-doc:
-        title: Retrieves the ethernet switch ports
+        title: Retrieve Ethernet switch ports
         category: networking
         filename: get-network-ethernet-switch-ports.html
   "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
     get:
       x-doc:
-        title: Retrieves an ethernet switch port
+        title: Retrieve an Ethernet switch port
         category: networking
         filename: get-network-ethernet-switch-ports--.html
   "/network/ethernet/switches":
     get:
       x-doc:
-        title: Retrieves the ethernet switches attached to the chassis
+        title: Retrieve Ethernet switches attached to a chassis
         category: networking
         filename: get-network-ethernet-switches.html
     post:
       x-doc:
-        title: Creates an ethernet switch
+        title: Create an Ethernet switch
         category: networking
         filename: post-network-ethernet-switches.html
   "/network/ethernet/switches/{name}":
     delete:
       x-doc:
-        title: Deletes an ethernet switch
+        title: Delete an Ethernet switch
         category: networking
         filename: delete-network-ethernet-switches-.html
     get:
       x-doc:
-        title: Retrieves the details of an ethernet switch
+        title: Retrieve the details of an Ethernet switch
         category: networking
         filename: get-network-ethernet-switches-.html
     patch:
       x-doc:
-        title: Updates ethernet switch rest api
+        title: Update an Ethernet switch
         category: networking
         filename: patch-network-ethernet-switches-.html
   "/network/fc/fabrics":
     get:
       x-doc:
-        title: Retrieves fibre channel fabrics
+        title: Retrieve fibre channel fabrics
         category: networking
         filename: get-network-fc-fabrics.html
   "/network/fc/fabrics/{fabric.name}/switches":
     get:
       x-doc:
-        title: Retrieves the fibre channel switches of a fibre channel fabric
+        title: Retrieve fibre channel fabric switches
         category: networking
         filename: get-network-fc-fabrics-switches.html
   "/network/fc/fabrics/{fabric.name}/switches/{wwn}":
     get:
       x-doc:
-        title: Retrieves a fibre channel switch
+        title: Retrieve a fibre channel switch
         category: networking
         filename: get-network-fc-fabrics-switches-.html
   "/network/fc/fabrics/{fabric.name}/zones":
     get:
       x-doc:
-        title: Retrieves the zones of the active zoneset of a fibre channel fabric
+        title: Retrieve zones of a fibre channel fabric
         category: networking
         filename: get-network-fc-fabrics-zones.html
   "/network/fc/fabrics/{fabric.name}/zones/{name}":
     get:
       x-doc:
-        title: Retrieves a zone of the active zoneset of a fibre channel fabric
+        title: Retrieve a zone of a fibre channel fabric
         category: networking
         filename: get-network-fc-fabrics-zones-.html
   "/network/fc/fabrics/{name}":
     get:
       x-doc:
-        title: Retrieves a fibre channel fabric
+        title: Retrieve a fibre channel fabric
         category: networking
         filename: get-network-fc-fabrics-.html
   "/network/fc/interfaces":
     get:
       x-doc:
-        title: Retrieves fc interfaces
+        title: Retrieves FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
     post:
       x-doc:
-        title: Creates an fc interface
+        title: Create an FC interface
         category: networking
         filename: post-network-fc-interfaces.html
   "/network/fc/interfaces/{uuid}":
     delete:
       x-doc:
-        title: Deletes an fc interface
+        title: Delete an FC interface
         category: networking
         filename: delete-network-fc-interfaces-.html
     get:
       x-doc:
-        title: Retrieves an fc interface
+        title: Retrieve an FC interface
         category: networking
         filename: get-network-fc-interfaces-.html
     patch:
       x-doc:
-        title: Updates an fc interface
+        title: Update an FC interface
         category: networking
         filename: patch-network-fc-interfaces-.html
   "/network/fc/interfaces/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for an fc interface
+        title: Retrieve historical FC interface performance metrics
         category: networking
         filename: get-network-fc-interfaces-metrics.html
   "/network/fc/logins":
     get:
       x-doc:
-        title: Retrieves fc logins
+        title: Retrieve FC logins
         category: SAN
         filename: get-network-fc-logins.html
   "/network/fc/logins/{interface.uuid}/{initiator.wwpn}":
     get:
       x-doc:
-        title: Retrieves an fc login
+        title: Retrieve an FC login
         category: SAN
         filename: get-network-fc-logins-.html
   "/network/fc/ports":
     get:
       x-doc:
-        title: Retrieves fc ports
+        title: Retrieve FC ports
         category: networking
         filename: get-network-fc-ports.html
   "/network/fc/ports/{uuid}":
     get:
       x-doc:
-        title: Retrieves an fc port
+        title: Retrieve an FC port
         category: networking
         filename: get-network-fc-ports-.html
     patch:
       x-doc:
-        title: Updates an fc port
+        title: Update an FC port
         category: networking
         filename: patch-network-fc-ports-.html
   "/network/fc/ports/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for an fc port
+        title: Retrieve FC port historical performance metrics 
         category: networking
         filename: get-network-fc-ports-metrics.html
   "/network/fc/wwpn-aliases":
     get:
       x-doc:
-        title: Retrieves fc wwpn aliases
+        title: Retrieve FC WWPN aliases
         category: SAN
         filename: get-network-fc-wwpn-aliases.html
     post:
       x-doc:
-        title: Creates an fc wwpn alias
+        title: Create an FC WWPN alias
         category: SAN
         filename: post-network-fc-wwpn-aliases.html
   "/network/fc/wwpn-aliases/{svm.uuid}/{alias}":
     delete:
       x-doc:
-        title: Deletes an fc wwpn alias
+        title: Delete an FC WWPN alias
         category: SAN
         filename: delete-network-fc-wwpn-aliases-.html
     get:
       x-doc:
-        title: Retrieves an fc wwpn alias
+        title: Retrieve an FC WWPN alias
         category: SAN
         filename: get-network-fc-wwpn-aliases-.html
   "/network/http-proxy":
     get:
       x-doc:
-        title: Retrieves the http proxy configurations of all the svms and cluster
-          ipspaces
+        title: Retrieve http proxy configurations for all SVMs and cluster
+          IPspaces
         category: networking
         filename: get-network-http-proxy.html
     post:
       x-doc:
-        title: Creates an http proxy configuration for an svm or a cluster ipspace
+        title: Create http proxy configuration for an SVM or a cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
   "/network/http-proxy/{uuid}":
     delete:
       x-doc:
-        title: Deletes the http proxy configuration of the specified svm or cluster ipspace
+        title: Delete http proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: delete-network-http-proxy-.html
     get:
       x-doc:
-        title: Displays the http proxy server, port, and ipspace of the specified svm or cluster ipspace
+        title: Display http proxy server, port, and IPspace for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
     patch:
       x-doc:
-        title: Updates the proxy server, port, username, and password parameters
+        title: Update proxy server, port, username, and password parameters
         category: networking
         filename: patch-network-http-proxy-.html
   "/network/ip/bgp/peer-groups":
     get:
       x-doc:
-        title: Retrieves the details of all bgp peer groups for vip
+        title: Retrieve all BGP peer group details for VIP
         category: networking
         filename: get-network-ip-bgp-peer-groups.html
     post:
       x-doc:
-        title: Creates a new bgp peer group for vip
+        title: Create a new BGP peer group for VIP
         category: networking
         filename: post-network-ip-bgp-peer-groups.html
   "/network/ip/bgp/peer-groups/{uuid}":
     delete:
       x-doc:
-        title: Deletes a bgp peer group for vip
+        title: Delete a BGP peer group for VIP
         category: networking
         filename: delete-network-ip-bgp-peer-groups-.html
     get:
       x-doc:
-        title: Retrieves details of a bgp peer group for vip
+        title: Retrieve details of a BGP peer group for VIP
         category: networking
         filename: get-network-ip-bgp-peer-groups-.html
     patch:
       x-doc:
-        title: Updates a bgp peer group for vip
+        title: Update a BGP peer group for VIP
         category: networking
         filename: patch-network-ip-bgp-peer-groups-.html
   "/network/ip/interfaces":
     get:
       x-doc:
-        title: Retrieves the details of all ip interfaces
+        title: Retrieve all IP interface details
         category: networking
         filename: get-network-ip-interfaces.html
     post:
       x-doc:
-        title: Creates a new cluster-scoped or svm-scoped interface
+        title: Create a new cluster-scoped or SVM-scoped interface
         category: networking
         filename: post-network-ip-interfaces.html
   "/network/ip/interfaces/{uuid}":
     delete:
       x-doc:
-        title: Deletes an ip interface
+        title: Delete an IP interface
         category: networking
         filename: delete-network-ip-interfaces-.html
     get:
       x-doc:
-        title: Retrieves details for a specific ip interface
+        title: Retrieve details for an IP interface
         category: networking
         filename: get-network-ip-interfaces-.html
     patch:
       x-doc:
-        title: Updates an ip interface
+        title: Update an IP interface
         category: networking
         filename: patch-network-ip-interfaces-.html
   "/network/ip/interfaces/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for an interface
+        title: Retrieve interface historical performance metrics 
         category: networking
         filename: get-network-ip-interfaces-metrics.html
   "/network/ip/routes":
     get:
       x-doc:
-        title: Retrieves the collection of ip routes
+        title: Retrieve an IP routes collection
         category: networking
         filename: get-network-ip-routes.html
     post:
       x-doc:
-        title: Creates a cluster-scoped or svm-scoped static route
+        title: Create a cluster-scoped or SVM-scoped static route
         category: networking
         filename: post-network-ip-routes.html
   "/network/ip/routes/{uuid}":
     delete:
       x-doc:
-        title: Deletes a specific ip route
+        title: Delete an IP route
         category: networking
         filename: delete-network-ip-routes-.html
     get:
       x-doc:
-        title: Retrieves the details of a specific ip route
+        title: Retrieve details for an IP route
         category: networking
         filename: get-network-ip-routes-.html
   "/network/ip/service-policies":
     get:
       x-doc:
-        title: Retrieves a collection of service policies
+        title: Retrieve a service policies collection 
         category: networking
         filename: get-network-ip-service-policies.html
     post:
       x-doc:
-        title: Creates a service policy for network interfaces
+        title: Create a service policy for network interfaces
         category: networking
         filename: post-network-ip-service-policies.html
   "/network/ip/service-policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a service policy for network interfaces
+        title: Delete a service policy for network interfaces
         category: networking
         filename: delete-network-ip-service-policies-.html
     get:
       x-doc:
-        title: Retrieves a specific service policy
+        title: Retrieve a service policy
         category: networking
         filename: get-network-ip-service-policies-.html
     patch:
       x-doc:
-        title: Updates a service policy for network interfaces
+        title: Update a service policy for network interfaces
         category: networking
         filename: patch-network-ip-service-policies-.html
   "/network/ip/subnets":
     get:
       x-doc:
-        title: Retrieves details for all subnets
+        title: Retrieve details for all subnets
         category: networking
         filename: get-network-ip-subnets.html
     post:
       x-doc:
-        title: Creates a new named subnet
+        title: Create a new named subnet
         category: networking
         filename: post-network-ip-subnets.html
   "/network/ip/subnets/{uuid}":
     delete:
       x-doc:
-        title: Deletes an ip subnet
+        title: Delete an IP subnet
         category: networking
         filename: delete-network-ip-subnets-.html
     get:
       x-doc:
-        title: Retrieves details for a specific ip subnet
+        title: Retrieve details for a specific IP subnet
         category: networking
         filename: get-network-ip-subnets-.html
     patch:
       x-doc:
-        title: Updates an ip subnet
+        title: Update an IP subnet
         category: networking
         filename: patch-network-ip-subnets-.html
   "/network/ipspaces":
     get:
       x-doc:
-        title: Retrieves a collection of ipspaces for the entire cluster
+        title: Retrieve a collection of IPspaces for a cluster
         category: networking
         filename: get-network-ipspaces.html
     post:
       x-doc:
-        title: Creates a new domain within which ip addresses are unique
+        title: Create a new domain where IP addresses are unique
         category: networking
         filename: post-network-ipspaces.html
   "/network/ipspaces/{uuid}":
     delete:
       x-doc:
-        title: Deletes an ipspace object
+        title: Delete an IPspace object
         category: networking
         filename: delete-network-ipspaces-.html
     get:
       x-doc:
-        title: Retrieves information about a specific ipspace
+        title: Retrieve information about an IPspace
         category: networking
         filename: get-network-ipspaces-.html
     patch:
       x-doc:
-        title: Updates an ipspace object
+        title: Update an IPspace object
         category: networking
         filename: patch-network-ipspaces-.html
   "/protocols/active-directory":
     get:
       x-doc:
-        title: Retrieves active directory accounts for all svms
+        title: Retrieve active directory accounts for all SVMs
         category: NAS
         filename: get-protocols-active-directory.html
     post:
       x-doc:
-        title: Creates an active directory account for a given svm
+        title: Create an active directory account for an SVM
         category: NAS
         filename: post-protocols-active-directory.html
   "/protocols/active-directory/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the active directory account for a given svm
+        title: Delete an active directory account for an SVM
         category: NAS
         filename: delete-protocols-active-directory-.html
     get:
       x-doc:
-        title: Retrieves the active directory account for a given svm
+        title: Retrieve an active directory account for an SVM
         category: NAS
         filename: get-protocols-active-directory-.html
     patch:
       x-doc:
-        title: Modifies the active directory account for a given svm
+        title: Modify an active directory account for an SVM 
         category: NAS
         filename: patch-protocols-active-directory-.html
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieves the active directory preferred dc configuration of an svm
+        title: Retrieve active directory preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers.html
     post:
       x-doc:
-        title: Creates an active directory preferred dc configuration for an svm
+        title: Create an active directory preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-active-directory-preferred-domain-controllers.html
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Deletes the active directory preferred dc configuration of the specified svm and domain
+        title: Delete active directory preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieves the active directory preferred dc configuration of an svm
+        title: Retrieve active directory preferred DC configuration for an SVM - DUP
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
   "/protocols/audit":
     get:
       x-doc:
-        title: Retrieves audit configurations
+        title: Retrieve audit configurations
         category: NAS
         filename: get-protocols-audit.html
     post:
       x-doc:
-        title: Creates an audit configuration
+        title: Create audit configuration
         category: NAS
         filename: post-protocols-audit.html
   "/protocols/audit/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes an audit configuration
+        title: Delete audit configuration
         category: NAS
         filename: delete-protocols-audit-.html
     get:
       x-doc:
-        title: Retrieves an audit configuration for an svm
+        title: Retrieve audit configuration for an SVM
         category: NAS
         filename: get-protocols-audit-.html
     patch:
       x-doc:
-        title: Updates an audit configuration for an svm
+        title: Update audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-.html
   "/protocols/audit/{svm.uuid}/object-store":
     delete:
       x-doc:
-        title: Deletes an s3 audit configuration
+        title: Delete S3 audit configuration
         category: NAS
         filename: delete-protocols-audit-object-store.html
     get:
       x-doc:
-        title: Retrieves s3 audit configurations
+        title: Retrieve S3 audit configurations
         category: NAS
         filename: get-protocols-audit-object-store.html
     patch:
       x-doc:
-        title: Updates an s3 audit configuration for an svm
+        title: Update S3 audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-object-store.html
     post:
       x-doc:
-        title: Creates an s3 audit configuration
+        title: Create S3 audit configuration
         category: NAS
         filename: post-protocols-audit-object-store.html
   "/protocols/cifs/connections":
     get:
       x-doc:
-        title: Retrieves the cifs connection information for all svms
+        title: Retrieve CIFS connection information for all SVMs
         category: NAS
         filename: get-protocols-cifs-connections.html
   "/protocols/cifs/domains":
     get:
       x-doc:
-        title: Retrieves the cifs domain-related information of all svms
+        title: Retrieve CIFS domain-related information of all SVMs
         category: NAS
         filename: get-protocols-cifs-domains.html
   "/protocols/cifs/domains/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves the cifs domain-related information of the specified svm
+        title: Retrieve CIFS domain-related information for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-.html
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieves the cifs domain preferred dc configuration of an svm
+        title: Retrieve CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers.html
     post:
       x-doc:
-        title: Creates a cifs preferred dc configuration for an svm
+        title: Create CIFS preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-domains-preferred-domain-controllers.html
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Deletes the cifs domain preferred dc configuration of the specified svm and domain
+        title: Delete CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieves the cifs domain preferred dc configuration of an svm
+        title: Retrieve CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
   "/protocols/cifs/group-policies":
     get:
       x-doc:
-        title: Retrieves group policy objects that are yet to be applied for all svms
+        title: Retrieve group policy objects that not yet applied for all SVMs
         category: NAS
         filename: get-protocols-cifs-group-policies.html
   "/protocols/cifs/group-policies/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves group policy objects that are yet to be applied for specified
-          svm
+        title: Retrieve group policy objects that are not yet applied for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-.html
     patch:
       x-doc:
-        title: Creates a background task to update the gpo settings for specified
-          svm
+        title: Create a background task to update the GPO settings for an SVM
         category: NAS
         filename: patch-protocols-cifs-group-policies-.html
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies":
     get:
       x-doc:
-        title: Retrieves applied central access policies for specified svm
+        title: Retrieve applied central access policies for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-policies.html
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies/{name}":
     get:
       x-doc:
-        title: Retrieves applied central access policy for specified svm
+        title: Retrieve an applied central access policy for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-policies-.html
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules":
     get:
       x-doc:
-        title: Retrieves applied central access rules for specified svm
+        title: Retrieve applied central access rules for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-rules.html
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules/{name}":
     get:
       x-doc:
-        title: Retrieves applied central access rule for specified svm
+        title: Retrieve an applied central access rule for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-rules-.html
   "/protocols/cifs/group-policies/{svm.uuid}/objects":
     get:
       x-doc:
-        title: Retrieves applied group policy objects for specified svm
+        title: Retrieve applied group policy objects for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-objects.html
   "/protocols/cifs/group-policies/{svm.uuid}/objects/{index}":
     get:
       x-doc:
-        title: Retrieves applied group policy object for specified svm
+        title: Retrieve an applied group policy object for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-objects-.html
   "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups":
     get:
       x-doc:
-        title: Retrieves applied policies of restricted groups for specified svm
+        title: Retrieve applied restricted group policies for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-restricted-groups.html
   "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups/{policy_index}/{group_name}":
     get:
       x-doc:
-        title: Retrieves applied policy of restricted group for specified svm
+        title: Retrieve an applied restricted group policy for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-restricted-groups-.html
   "/protocols/cifs/home-directory/search-paths":
     get:
       x-doc:
-        title: Retrieves cifs home directory search paths
+        title: Retrieve CIFs home directory search paths
         category: NAS
         filename: get-protocols-cifs-home-directory-search-paths.html
     post:
       x-doc:
-        title: Creates a home directory search path
+        title: Create a home directory search path
         category: NAS
         filename: post-protocols-cifs-home-directory-search-paths.html
   "/protocols/cifs/home-directory/search-paths/{svm.uuid}/{index}":
     delete:
       x-doc:
-        title: Deletes a cifs home directory search path
+        title: Delete a CIFS home directory search path
         category: NAS
         filename: delete-protocols-cifs-home-directory-search-paths-.html
     get:
       x-doc:
-        title: Retrieves a cifs home directory search path of an svm
+        title: Retrieve a CIFS home directory search path for an SVM
         category: NAS
         filename: get-protocols-cifs-home-directory-search-paths-.html
     patch:
       x-doc:
-        title: Reorders a cifs home directory search path
+        title: Re-order a CIFS home directory search path
         category: NAS
         filename: patch-protocols-cifs-home-directory-search-paths-.html
   "/protocols/cifs/local-groups":
     get:
       x-doc:
-        title: Retrieves the local groups for all of the svms
+        title: Retrieve local groups for all SVMs
         category: NAS
         filename: get-protocols-cifs-local-groups.html
     post:
       x-doc:
-        title: Creates the local group configuration for the specified svm
+        title: Create local group configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-local-groups.html
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members":
     delete:
       x-doc:
-        title: Deletes the local users, active directory users, or active directory
-          groups from the specified local group and svm
+        title: Delete local users or active directory users and groups from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members.html
     get:
       x-doc:
-        title: Retrieves local users, active directory users and active directory
-          groups which are members of the specified local group and svm
+        title: Retrieve local users and active directory users and groups that belong to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members.html
     post:
       x-doc:
-        title: Adds local users, active directory users and active directory groups
-          to the specified local group and svm
+        title: Add local users and active directory users and groups to a local group and SVM
         category: NAS
         filename: post-protocols-cifs-local-groups--members.html
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members/{name}":
     delete:
       x-doc:
-        title: Deletes the local user, active directory user and/or active directory
-          group from the specified local group and svm
+        title: Delete a local user or active directory user or group from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members-.html
     get:
       x-doc:
-        title: Retrieves local user, active directory user and active directory group
-          which is member of the specified local group and svm
+        title: Retrieve a local user, active directory user or group that belongs to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members-.html
   "/protocols/cifs/local-groups/{svm.uuid}/{sid}":
     delete:
       x-doc:
-        title: Deletes a local group configuration for the specified svm
+        title: Delete a local group configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups-.html
     get:
       x-doc:
-        title: Retrieves local group information for the specified group and svm
+        title: Retrieve local group information for a group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups-.html
     patch:
       x-doc:
-        title: Updates the local group information of the specified group in the specified
-          svm
+        title: Update local group information for a group in an SVM
         category: NAS
         filename: patch-protocols-cifs-local-groups-.html
   "/protocols/cifs/local-users":
     get:
       x-doc:
-        title: Retrieves local users for all of the svms
+        title: Retrieve local users for all SVMs
         category: NAS
         filename: get-protocols-cifs-local-users.html
     post:
       x-doc:
-        title: Creates the local user configuration for an svm
+        title: Create local user configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-local-users.html
   "/protocols/cifs/local-users/{svm.uuid}/{sid}":
     delete:
       x-doc:
-        title: Deletes a local user configuration for the specified svm
+        title: Delete local user configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-users-.html
     get:
       x-doc:
-        title: Retrieves local user information for the specified user and svm
+        title: Retrieve local user information for a user and SVM
         category: NAS
         filename: get-protocols-cifs-local-users-.html
     patch:
       x-doc:
-        title: Updates local user information for the specified user and svm
+        title: Update local user information for a user and SVM
         category: NAS
         filename: patch-protocols-cifs-local-users-.html
   "/protocols/cifs/netbios":
     get:
       x-doc:
-        title: Retrieves netbios information
+        title: Retrieve NetBios information
         category: NAS
         filename: get-protocols-cifs-netbios.html
   "/protocols/cifs/services":
     get:
       x-doc:
-        title: Retrieves cifs servers
+        title: Retrieve CIFS servers
         category: NAS
         filename: get-protocols-cifs-services.html
     post:
       x-doc:
-        title: Creates a cifs server
+        title: Create a CIFS server
         category: NAS
         filename: post-protocols-cifs-services.html
   "/protocols/cifs/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes a cifs server and related cifs configurations
+        title: Delete a CIFS server and related configurations
         category: NAS
         filename: delete-protocols-cifs-services-.html
     get:
       x-doc:
-        title: Retrieves a cifs server
+        title: Retrieve a CIFS server
         category: NAS
         filename: get-protocols-cifs-services-.html
     patch:
       x-doc:
-        title: Updates both the mandatory and optional parameters of the cifs configuration
+        title: Update CIFS mandatory and optional parameters 
         category: NAS
         filename: patch-protocols-cifs-services-.html
   "/protocols/cifs/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the cifs protocol of an
+        title: Retrieve historical performance metrics for an SVM's CIFS protocol 
           svm
         category: NAS
         filename: get-protocols-cifs-services-metrics.html
   "/protocols/cifs/session/files":
     get:
       x-doc:
-        title: Retrieves cifs open files
+        title: Retrieve CIFS open files
         category: NAS
         filename: get-protocols-cifs-session-files.html
   "/protocols/cifs/session/files/{node.uuid}/{svm.uuid}/{identifier}/{connection.identifier}/{session.identifier}":
     delete:
       x-doc:
-        title: Closes open files identified by svm
+        title: Close open files identified by SVM
         category: NAS
         filename: delete-protocols-cifs-session-files---.html
     get:
       x-doc:
-        title: Retrieves specific cifs open file
+        title: Retrieve a CIFS open file
         category: NAS
         filename: get-protocols-cifs-session-files---.html
   "/protocols/cifs/sessions":
     get:
       x-doc:
-        title: Retrieves the cifs sessions information for all svms
+        title: Retrieve CIFS session information for all SVMs
         category: NAS
         filename: get-protocols-cifs-sessions.html
   "/protocols/cifs/sessions/{node.uuid}/{svm.uuid}/{identifier}/{connection_id}":
     delete:
       x-doc:
-        title: Deletes smb session information on a node for an svm
+        title: Delete SMB session information for an SVM node
         category: NAS
         filename: delete-protocols-cifs-sessions--.html
     get:
       x-doc:
-        title: Retrieves specific smb session information for a specific smb connection
-          in a node on an svm
+        title: Retrieve SMB session information for an SMB connection in a SVM node
         category: NAS
         filename: get-protocols-cifs-sessions--.html
   "/protocols/cifs/shadow-copies":
     get:
       x-doc:
-        title: Retrieves shadowcopies
+        title: Retrieve shadow copies
         category: NAS
         filename: get-protocols-cifs-shadow-copies.html
   "/protocols/cifs/shadow-copies/{client_uuid}":
     get:
       x-doc:
-        title: Retrieves a shadowcopy
+        title: Retrieve a shadow copy
         category: NAS
         filename: get-protocols-cifs-shadow-copies-.html
     patch:
       x-doc:
-        title: Updates a shadowcopy
+        title: Update a shadow copy
         category: NAS
         filename: patch-protocols-cifs-shadow-copies-.html
   "/protocols/cifs/shadowcopy-sets":
     get:
       x-doc:
-        title: Retrieves shadowcopy sets
+        title: Retrieve shadow copy sets
         category: NAS
         filename: get-protocols-cifs-shadowcopy-sets.html
   "/protocols/cifs/shadowcopy-sets/{uuid}":
     get:
       x-doc:
-        title: Retrieves a shadowcopy set
+        title: Retrieve a shadow copy set
         category: NAS
         filename: get-protocols-cifs-shadowcopy-sets-.html
     patch:
       x-doc:
-        title: Updates a shadowcopy set
+        title: Update a shadow copy set
         category: NAS
         filename: patch-protocols-cifs-shadowcopy-sets-.html
   "/protocols/cifs/shares":
     get:
       x-doc:
-        title: Retrieves cifs shares
+        title: Retrieve CIFS shares
         category: NAS
         filename: get-protocols-cifs-shares.html
     post:
       x-doc:
-        title: Creates a cifs share
+        title: Create a CIFS share
         category: NAS
         filename: post-protocols-cifs-shares.html
   "/protocols/cifs/shares/{svm.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a cifs share
+        title: Delete a CIFS share
         category: NAS
         filename: delete-protocols-cifs-shares-.html
     get:
       x-doc:
-        title: Retrieves a cifs share
+        title: Retrieve a CIFS share
         category: NAS
         filename: get-protocols-cifs-shares-.html
     patch:
       x-doc:
-        title: Updates a cifs share
+        title: Update a CIFS share
         category: NAS
         filename: patch-protocols-cifs-shares-.html
   "/protocols/cifs/shares/{svm.uuid}/{share}/acls":
     get:
       x-doc:
-        title: Retrieves the share-level acl on a cifs share
+        title: Retrieve a share-level ACL on a CIFS share
         category: NAS
         filename: get-protocols-cifs-shares--acls.html
     post:
       x-doc:
-        title: Creates a share-level acl on a cifs share
+        title: Create a share-level ACL on a CIFS share
         category: NAS
         filename: post-protocols-cifs-shares--acls.html
   "/protocols/cifs/shares/{svm.uuid}/{share}/acls/{user_or_group}/{type}":
     delete:
       x-doc:
-        title: Deletes a share-level acl on a cifs share
+        title: Delete a share-level ACL on a CIFS share
         category: NAS
         filename: delete-protocols-cifs-shares--acls-.html
     get:
       x-doc:
-        title: Retrieves the share-level acl on cifs share for a specified user or
+        title: Retrieve a share-level ACL on a CIFS share for a user or
           group
         category: NAS
         filename: get-protocols-cifs-shares--acls-.html
     patch:
       x-doc:
-        title: Updates a share-level acl on a cifs share
+        title: Update a share-level ACL on a CIFS share
         category: NAS
         filename: patch-protocols-cifs-shares--acls-.html
   "/protocols/cifs/unix-symlink-mapping":
     get:
       x-doc:
-        title: Retrieves unix symbolic link mappings for cifs clients
+        title: Retrieve UNIX symbolic link mappings for CIFS clients
         category: NAS
         filename: get-protocols-cifs-unix-symlink-mapping.html
     post:
       x-doc:
-        title: Creates a unix symbolic link mapping for a cifs client
+        title: Create a UNIX symbolic link mapping for a CIFS client
         category: NAS
         filename: post-protocols-cifs-unix-symlink-mapping.html
   "/protocols/cifs/unix-symlink-mapping/{svm.uuid}/{unix_path}":
     delete:
       x-doc:
-        title: Deletes the unix symbolic link mapping for cifs clients
+        title: Delete UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: delete-protocols-cifs-unix-symlink-mapping-.html
     get:
       x-doc:
-        title: Retrieves a unix symbolic link mapping for cifs clients
+        title: Retrieve a UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: get-protocols-cifs-unix-symlink-mapping-.html
     patch:
       x-doc:
-        title: Updates the unix symbolic link mapping for cifs clients
+        title: Update UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: patch-protocols-cifs-unix-symlink-mapping-.html
   "/protocols/cifs/users-and-groups/bulk-import/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves information about the import operation status of the cifs
-          local users, groups, and group memberships
+        title: Retrieve import operation status for CIFS local users, groups, and group memberships
         category: NAS
         filename: get-protocols-cifs-users-and-groups-bulk-import-.html
     patch:
       x-doc:
-        title: Uploads the status of the bulk-import of the specified svm to the specified uri
+        title: Upload the bulk-import status of an SVM to a URI
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-bulk-import-.html
     post:
       x-doc:
-        title: Loads cifs local users,groups and group memberships file from the specified url
+        title: Load CIFS local users, groups and group membership files from a URL
         category: NAS
         filename: post-protocols-cifs-users-and-groups-bulk-import-.html
   "/protocols/cifs/users-and-groups/privileges":
     get:
       x-doc:
-        title: Retrieves privileges of the specified local or active directory user
+        title: Retrieve privileges for a local or active directory user
           or group and svm
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
       x-doc:
-        title: Adds privileges to the specified local or active directory user or group and svm
+        title: Add privileges to a local or active directory user or group and SVM
         category: NAS
         filename: post-protocols-cifs-users-and-groups-privileges.html
   "/protocols/cifs/users-and-groups/privileges/{svm.uuid}/{name}":
     get:
       x-doc:
-        title: Retrieves privileges of the specified local or active directory user or group and svm
+        title: Retrieve privileges for a local or active directory user or group and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges-.html
     patch:
       x-doc:
-        title: Updates privileges of the specified local or active directory user
+        title: Update privileges for a local or active directory user
           or group and svm
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-privileges-.html
   "/protocols/file-security/effective-permissions/{svm.uuid}/{path}":
     get:
       x-doc:
-        title: Retrieves effective security permissions on a file
+        title: Retrieve effective security permissions on a file
         category: NAS
         filename: get-protocols-file-security-effective-permissions-.html
   "/protocols/file-security/permissions/{svm.uuid}/{path}":
     delete:
       x-doc:
-        title: Removes all slag acls for specified path
+        title: Remove all SLAG ACLs for a path
         category: NAS
         filename: delete-protocols-file-security-permissions-.html
     get:
       x-doc:
-        title: Retrieves  file permissions
+        title: Retrieve file permissions
         category: NAS
         filename: get-protocols-file-security-permissions-.html
     patch:
       x-doc:
-        title: Updates sd specific information
+        title: Update SD information
         category: NAS
         filename: patch-protocols-file-security-permissions-.html
     post:
       x-doc:
-        title: Applies an sd  to the given path
+        title: Apply a SD to a path
         category: NAS
         filename: post-protocols-file-security-permissions-.html
   "/protocols/file-security/permissions/{svm.uuid}/{path}/acl":
     post:
       x-doc:
-        title: Adds the new sacl/dacl ace
+        title: Add a new SACL or DACL ACE
         category: NAS
         filename: post-protocols-file-security-permissions--acl.html
   "/protocols/file-security/permissions/{svm.uuid}/{path}/acl/{user}":
     delete:
       x-doc:
-        title: Deletes the sacl/dacl acl
+        title: Delete a SACL or DACL ACL
         category: NAS
         filename: delete-protocols-file-security-permissions--acl-.html
     patch:
       x-doc:
-        title: Updates the sacls/dacls
+        title: Update SACLs or DACLs
         category: NAS
         filename: patch-protocols-file-security-permissions--acl-.html
   "/protocols/fpolicy":
     get:
       x-doc:
-        title: Retrieves an fpolicy configuration
+        title: Retrieve FPolicy configuration
         category: NAS
         filename: get-protocols-fpolicy.html
     post:
       x-doc:
-        title: Creates an fpolicy configuration
+        title: Create FPolicy configuration
         category: NAS
         filename: post-protocols-fpolicy.html
   "/protocols/fpolicy/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the fpolicy configuration for the specified svm
+        title: Delete FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-.html
     get:
       x-doc:
-        title: Retrieves an fpolicy configuration of an svm
+        title: Retrieve FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-.html
   "/protocols/fpolicy/{svm.uuid}/connections":
     get:
       x-doc:
-        title: Retrieves the statuses of fpolicy servers
+        title: Retrieve status of FPolicy servers
         category: NAS
         filename: get-protocols-fpolicy-connections.html
   "/protocols/fpolicy/{svm.uuid}/connections/{node.uuid}/{policy.name}/{server}":
     get:
       x-doc:
-        title: Retrieves the status of an fpolicy server
+        title: Retrieve status of an FPolicy server
         category: NAS
         filename: get-protocols-fpolicy-connections--.html
     patch:
       x-doc:
-        title: Updates the status of an fpolicy server
+        title: Update FPolicy server status 
         category: NAS
         filename: patch-protocols-fpolicy-connections--.html
   "/protocols/fpolicy/{svm.uuid}/engines":
     get:
       x-doc:
-        title: Retrieves fpolicy engine configurations of all the engines for a specified
-          svm
+        title: Retrieve FPolicy engine configuration for all engines of an SVM 
         category: NAS
         filename: get-protocols-fpolicy-engines.html
     post:
       x-doc:
-        title: Creates an fpolicy engine configuration for a specified svm
+        title: Create FPolicy engine configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-engines.html
   "/protocols/fpolicy/{svm.uuid}/engines/{name}":
     delete:
       x-doc:
-        title: Deletes the fpolicy external engine configuration
+        title: Delete FPolicy external engine configuration
         category: NAS
         filename: delete-protocols-fpolicy-engines-.html
     get:
       x-doc:
-        title: Retrieves a particular fpolicy engine configuration of a specifed svm
+        title: Retrieve particular FPolicy engine configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-engines-.html
     patch:
       x-doc:
-        title: Updates a specific fpolicy engine configuration of an svm
+        title: Update specific FPolicy engine configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-engines-.html
   "/protocols/fpolicy/{svm.uuid}/events":
     get:
       x-doc:
-        title: Retrieves fpolicy event configurations for all events for a specified
-          svm
+        title: Retrieve FPolicy event configuration for all events for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events.html
     post:
       x-doc:
-        title: Creates an fpolicy event configuration for a specified svm
+        title: Create FPolicy event configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-events.html
   "/protocols/fpolicy/{svm.uuid}/events/{name}":
     delete:
       x-doc:
-        title: Deletes a specific fpolicy event configuration for an svm
+        title: Delete specific FPolicy event configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-events-.html
     get:
       x-doc:
-        title: Retrieves a specific fpolicy event configuration for an svm
+        title: Retrieve specific FPolicy event configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events-.html
     patch:
       x-doc:
-        title: Updates a specific fpolicy event configuration for an svm
+        title: Update specific FPolicy event configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-events-.html
   "/protocols/fpolicy/{svm.uuid}/policies":
     get:
       x-doc:
-        title: Retrieves the fpolicy policy configuration of an svm
+        title: Retrieve FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies.html
     post:
       x-doc:
-        title: Creates an fpolicy policy configuration for the specified svm
+        title: Create FPolicy configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-policies.html
   "/protocols/fpolicy/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
-        title: Deletes a particular fpolicy policy configuration for a specified svm
+        title: Delete a specific FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-policies-.html
     get:
       x-doc:
-        title: Retrieves a particular fpolicy policy configuration for a specified
-          svm
+        title: Retrieve a specific FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies-.html
     patch:
       x-doc:
-        title: Updates a particular fpolicy policy configuration for a specified svm
+        title: Update a specific FPolicy configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-policies-.html
   "/protocols/locks":
     get:
       x-doc:
-        title: Retrieves locks details
+        title: Retrieve locks details
         category: NAS
         filename: get-protocols-locks.html
   "/protocols/locks/{uuid}":
     delete:
       x-doc:
-        title: Deletes locks of given parameter
+        title: Delete locks of given parameter
         category: NAS
         filename: delete-protocols-locks-.html
     get:
       x-doc:
-        title: Retrieves the lock for a specific uuid
+        title: Retrieve the lock for a specific UUID
         category: NAS
         filename: get-protocols-locks-.html
   "/protocols/ndmp":
     get:
       x-doc:
-        title: Retrieves the current ndmp mode
+        title: Retrieve the current NDMP mode
         category: ndmp
         filename: get-protocols-ndmp.html
     patch:
       x-doc:
-        title: Updates the ndmp mode
+        title: Update NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
   "/protocols/ndmp/nodes":
     get:
       x-doc:
-        title: Retrieves ndmp node configurations for all of the nodes
+        title: Retrieve NDMP node configurations for all nodes
         category: ndmp
         filename: get-protocols-ndmp-nodes.html
   "/protocols/ndmp/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieves an ndmp node configuration for a specific node
+        title: Retrieve NDMP node configuration for a node
         category: ndmp
         filename: get-protocols-ndmp-nodes-.html
     patch:
       x-doc:
-        title: Updates the ndmp node configuration for a specific node
+        title: Update NDMP node configuration for a node
         category: ndmp
         filename: patch-protocols-ndmp-nodes-.html
   "/protocols/ndmp/sessions":
     get:
       x-doc:
-        title: Retrieves a collection of ndmp sessions
+        title: Retrieve NDMP sessions
         category: ndmp
         filename: get-protocols-ndmp-sessions.html
   "/protocols/ndmp/sessions/{owner.uuid}/{session.id}":
     delete:
       x-doc:
-        title: Deletes a specific ndmp session
+        title: Delete a NDMP session
         category: ndmp
         filename: delete-protocols-ndmp-sessions-.html
     get:
       x-doc:
-        title: Retrieves the details of a specific ndmp session
+        title: Retrieve details of a NDMP session
         category: ndmp
         filename: get-protocols-ndmp-sessions-.html
   "/protocols/ndmp/svms":
     get:
       x-doc:
-        title: Retrieves ndmp configurations for all svms
+        title: Retrieve NDMP configurations for all SVMs
         category: ndmp
         filename: get-protocols-ndmp-svms.html
   "/protocols/ndmp/svms/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves an ndmp configuration for a specific svm
+        title: Retrieve NDMP configuration for an SVM
         category: ndmp
         filename: get-protocols-ndmp-svms-.html
     patch:
       x-doc:
-        title: Updates the ndmp configuration for a specific svm
+        title: Update NDMP configuration for an SVM
         category: ndmp
         filename: patch-protocols-ndmp-svms-.html
   "/protocols/ndmp/svms/{svm.uuid}/passwords/{user}":
     get:
       x-doc:
-        title: Generates and retrieves the password for the specified ndmp user
+        title: Generate and retrieve the password for a NDMP user
         category: ndmp
         filename: get-protocols-ndmp-svms-passwords-.html
   "/protocols/nfs/connected-client-maps":
     get:
       x-doc:
-        title: Retrieves nfs clients information
+        title: Retrieve NFS clients information
         category: NAS
         filename: get-protocols-nfs-connected-client-maps.html
   "/protocols/nfs/connected-client-settings":
     get:
       x-doc:
-        title: Retrieves the nfs connected-client cache settings of the cluster
+        title: Retrieve NFS connected-client cache settings for the cluster
         category: NAS
         filename: get-protocols-nfs-connected-client-settings.html
     patch:
       x-doc:
-        title: Updates the properties of the nfs connected-client cache settings
+        title: Update NFS connected-client cache settings properties
         category: NAS
         filename: patch-protocols-nfs-connected-client-settings.html
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
-        title: Retrieves the nfs configuration of svms
+        title: Retrieve an SVM's NFS configuration 
         category: NAS
         filename: get-protocols-nfs-connected-clients.html
   "/protocols/nfs/export-policies":
     get:
       x-doc:
-        title: Retrieves export policies
+        title: Retrieve export policies
         category: NAS
         filename: get-protocols-nfs-export-policies.html
     post:
       x-doc:
-        title: Creates an export policy
+        title: Create an export policy
         category: NAS
         filename: post-protocols-nfs-export-policies.html
   "/protocols/nfs/export-policies/{id}":
     delete:
       x-doc:
-        title: Deletes an export policy
+        title: Delete an export policy
         category: NAS
         filename: delete-protocols-nfs-export-policies-.html
     get:
       x-doc:
-        title: Retrieves an export policy
+        title: Retrieve an export policy
         category: NAS
         filename: get-protocols-nfs-export-policies-.html
     patch:
       x-doc:
-        title: Updates the properties of an export policy to change an export policy
-          name or replace all export policy rules
+        title: Update export policy properties to change an export policy name or replace all export policy rules
         category: NAS
         filename: patch-protocols-nfs-export-policies-.html
   "/protocols/nfs/export-policies/{policy.id}/rules":
     get:
       x-doc:
-        title: Retrieves export policy rules
+        title: Retrieve export policy rules
         category: NAS
         filename: get-protocols-nfs-export-policies-rules.html
     post:
       x-doc:
-        title: Creates an export policy rule
+        title: Create an export policy rule
         category: NAS
         filename: post-protocols-nfs-export-policies-rules.html
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}":
     delete:
       x-doc:
-        title: Deletes an export policy rule
+        title: Delete an export policy rule
         category: NAS
         filename: delete-protocols-nfs-export-policies-rules-.html
     get:
       x-doc:
-        title: Retrieves an export policy rule
+        title: Retrieve an export policy rule
         category: NAS
         filename: get-protocols-nfs-export-policies-rules-.html
     patch:
       x-doc:
-        title: Updates the properties of an export policy rule to change an export
+        title: Update the properties of an export policy rule to change an export
           policy rule's index or fields
         category: NAS
         filename: patch-protocols-nfs-export-policies-rules-.html
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients":
     get:
       x-doc:
-        title: Retrieves export policy rule clients
+        title: Retrieve export policy rule clients
         category: NAS
         filename: get-protocols-nfs-export-policies-rules-clients.html
     post:
       x-doc:
-        title: Creates an export policy rule client
+        title: Create an export policy rule client
         category: NAS
         filename: post-protocols-nfs-export-policies-rules-clients.html
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients/{match}":
     delete:
       x-doc:
-        title: Deletes an export policy client
+        title: Delete an export policy client
         category: NAS
         filename: delete-protocols-nfs-export-policies-rules-clients-.html
   "/protocols/nfs/kerberos/interfaces":
     get:
       x-doc:
-        title: Retrieves kerberos interfaces
+        title: Retrieve Kerberos interfaces
         category: NAS
         filename: get-protocols-nfs-kerberos-interfaces.html
   "/protocols/nfs/kerberos/interfaces/{interface.uuid}":
     get:
       x-doc:
-        title: Retrieves a kerberos interface
+        title: Retrieve a Kerberos interface
         category: NAS
         filename: get-protocols-nfs-kerberos-interfaces-.html
     patch:
       x-doc:
-        title: Updates the properties of a kerberos interface
+        title: Update Kerberos interface properties
         category: NAS
         filename: patch-protocols-nfs-kerberos-interfaces-.html
   "/protocols/nfs/kerberos/realms":
     get:
       x-doc:
-        title: Retrieves kerberos realms
+        title: Retrieve Kerberos realms
         category: NAS
         filename: get-protocols-nfs-kerberos-realms.html
     post:
       x-doc:
-        title: Creates a kerberos realm
+        title: Create a Kerberos realm
         category: NAS
         filename: post-protocols-nfs-kerberos-realms.html
   "/protocols/nfs/kerberos/realms/{svm.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a kerberos realm
+        title: Delete a Kerberos realm
         category: NAS
         filename: delete-protocols-nfs-kerberos-realms-.html
     get:
@@ -2369,311 +2355,309 @@ paths:
         filename: get-protocols-nfs-kerberos-realms-.html
     patch:
       x-doc:
-        title: Updates the properties of a kerberos realm
+        title: Update the properties of a Kerberos realm
         category: NAS
         filename: patch-protocols-nfs-kerberos-realms-.html
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves the nfs configuration of svms
+        title: Retrieves NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
     post:
       x-doc:
-        title: Creates an nfs configuration for an svm
+        title: Create an NFS configuration for an SVM
         category: NAS
         filename: post-protocols-nfs-services.html
   "/protocols/nfs/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the nfs configuration of an svm
+        title: Delete NFS configuration for an SVM
         category: NAS
         filename: delete-protocols-nfs-services-.html
     get:
       x-doc:
-        title: Retrieves the nfs configuration of an svm
+        title: Retrieve NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-services-.html
     patch:
       x-doc:
-        title: Updates the nfs configuration of an svm
+        title: Update NFS configuration for an SVM
         category: NAS
         filename: patch-protocols-nfs-services-.html
   "/protocols/nfs/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the nfs protocol of an
-          svm
+        title: Retrieve historical performance metrics for SVM NFS protocol
         category: NAS
         filename: get-protocols-nfs-services-metrics.html
   "/protocols/nvme/interfaces":
     get:
       x-doc:
-        title: Retrieves nvme interfaces
+        title: Retrieve NVMe interfaces
         category: NVMe
         filename: get-protocols-nvme-interfaces.html
   "/protocols/nvme/interfaces/{uuid}":
     get:
       x-doc:
-        title: Retrieves an nvme interface
+        title: Retrieve an NVMe interface
         category: NVMe
         filename: get-protocols-nvme-interfaces-.html
   "/protocols/nvme/services":
     get:
       x-doc:
-        title: Retrieves nvme services
+        title: Retrieve NVMe services
         category: NVMe
         filename: get-protocols-nvme-services.html
     post:
       x-doc:
-        title: Creates an nvme service
+        title: Create an NVMe service
         category: NVMe
         filename: post-protocols-nvme-services.html
   "/protocols/nvme/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes an nvme service
+        title: Delete an NVMe service
         category: NVMe
         filename: delete-protocols-nvme-services-.html
     get:
       x-doc:
-        title: Retrieves an nvme service
+        title: Retrieve an NVMe service
         category: NVMe
         filename: get-protocols-nvme-services-.html
     patch:
       x-doc:
-        title: Updates an nvme service
+        title: Update an NVMe service
         category: NVMe
         filename: patch-protocols-nvme-services-.html
   "/protocols/nvme/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for nvme protocol of an svm
+        title: Retrieve historical performance metrics for SVM NVMe protocol
         category: NVMe
         filename: get-protocols-nvme-services-metrics.html
   "/protocols/nvme/subsystem-controllers":
     get:
       x-doc:
-        title: Retrieves nvme subsystem controllers
+        title: Retrieve NVMe subsystem controllers
         category: NVMe
         filename: get-protocols-nvme-subsystem-controllers.html
   "/protocols/nvme/subsystem-controllers/{subsystem.uuid}/{id}":
     get:
       x-doc:
-        title: Retrieves an nvme subsystem controller
+        title: Retrieve an NVMe subsystem controller
         category: NVMe
         filename: get-protocols-nvme-subsystem-controllers-.html
   "/protocols/nvme/subsystem-maps":
     get:
       x-doc:
-        title: Retrieves nvme subsystem maps
+        title: Retrieve NVMe subsystem maps
         category: NVMe
         filename: get-protocols-nvme-subsystem-maps.html
     post:
       x-doc:
-        title: Creates an nvme subsystem map
+        title: Create an NVMe subsystem map
         category: NVMe
         filename: post-protocols-nvme-subsystem-maps.html
   "/protocols/nvme/subsystem-maps/{subsystem.uuid}/{namespace.uuid}":
     delete:
       x-doc:
-        title: Deletes an nvme subsystem map
+        title: Delete an NVMe subsystem map
         category: NVMe
         filename: delete-protocols-nvme-subsystem-maps-.html
     get:
       x-doc:
-        title: Retrieves an nvme subsystem map
+        title: Retrieve an NVMe subsystem map
         category: NVMe
         filename: get-protocols-nvme-subsystem-maps-.html
   "/protocols/nvme/subsystems":
     get:
       x-doc:
-        title: Retrieves nvme subsystems
+        title: Retrieve NVMe subsystems
         category: NVMe
         filename: get-protocols-nvme-subsystems.html
     post:
       x-doc:
-        title: Creates an nvme subsystem
+        title: Create an NVMe subsystem
         category: NVMe
         filename: post-protocols-nvme-subsystems.html
   "/protocols/nvme/subsystems/{subsystem.uuid}/hosts":
     get:
       x-doc:
-        title: Retrieves the nvme subsystem hosts of an nvme subsystem
+        title: Retrieve NVMe subsystem hosts 
         category: NVMe
         filename: get-protocols-nvme-subsystems-hosts.html
     post:
       x-doc:
-        title: Adds nvme subsystem host(s) to an nvme subsystem
+        title: Add NVMe subsystem hosts
         category: NVMe
         filename: post-protocols-nvme-subsystems-hosts.html
   "/protocols/nvme/subsystems/{subsystem.uuid}/hosts/{nqn}":
     delete:
       x-doc:
-        title: Deletes an nvme subsystem host from an nvme subsystem
+        title: Delete an NVMe subsystem host 
         category: NVMe
         filename: delete-protocols-nvme-subsystems-hosts-.html
     get:
       x-doc:
-        title: Retrieves an nvme subsystem host of an nvme subsystem
+        title: Retrieve an NVMe subsystem host 
         category: NVMe
         filename: get-protocols-nvme-subsystems-hosts-.html
   "/protocols/nvme/subsystems/{uuid}":
     delete:
       x-doc:
-        title: Removes an nvme subsystem
+        title: Remove an NVMe subsystem
         category: NVMe
         filename: delete-protocols-nvme-subsystems-.html
     get:
       x-doc:
-        title: Retrieves an nvme subsystem
+        title: Retrieve an NVMe subsystem
         category: NVMe
         filename: get-protocols-nvme-subsystems-.html
     patch:
       x-doc:
-        title: Updates an nvme subsystem
+        title: Update an NVMe subsystem
         category: NVMe
         filename: patch-protocols-nvme-subsystems-.html
   "/protocols/s3/buckets":
     get:
       x-doc:
-        title: Retrieves all s3 buckets for all svms
+        title: Retrieve all S3 buckets for all SVMs
         category: Object-store
         filename: get-protocols-s3-buckets.html
     post:
       x-doc:
-        title: Creates the s3 bucket configuration of an svm
+        title: Create S3 bucket configuration for an svm
         category: Object-store
         filename: post-protocols-s3-buckets.html
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
       x-doc:
-        title: Deletes the s3 bucket configuration of an svm
+        title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
     get:
       x-doc:
-        title: Retrieves the s3 bucket configuration of an svm
+        title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
     patch:
       x-doc:
-        title: Updates the s3 bucket configuration of an svm
+        title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
   "/protocols/s3/services":
     get:
       x-doc:
-        title: Retrieves the s3 server configuration for all svms
+        title: Retrieve S3 server configuration for all SVMs
         category: Object-store
         filename: get-protocols-s3-services.html
     post:
       x-doc:
-        title: Creates an s3 server, users, and buckets configurations
+        title: Create S3 server, users, and buckets configurations
         category: Object-store
         filename: post-protocols-s3-services.html
   "/protocols/s3/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the s3 server configuration of an svm
+        title: Delete S3 server configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-.html
     get:
       x-doc:
-        title: Retrieves the s3 server configuration of an svm
+        title: Retrieve S3 server configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-.html
     patch:
       x-doc:
-        title: Updates the s3 server configuration of an svm
+        title: Update S3 server configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-.html
   "/protocols/s3/services/{svm.uuid}/buckets":
     get:
       x-doc:
-        title: Retrieves the s3 bucket configuration of an svm
+        title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
     post:
       x-doc:
-        title: Creates the s3 bucket configuration of an svm
+        title: Create S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Deletes the s3 bucket configuration of an SVM
+        title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
       x-doc:
-        title: Retrieves the s3 bucket configuration of an svm
+        title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets-.html
     patch:
       x-doc:
-        title: Updates the s3 bucket configuration of an svm
+        title: Update S3 bucket configuration of for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
-        title: Retrieves the s3 group configuration
+        title: Retrieve S3 group configuration
         category: Object-store
         filename: get-protocols-s3-services-groups.html
     post:
       x-doc:
-        title: Creates the s3 group configuration
+        title: Create S3 group configuration
         category: Object-store
         filename: post-protocols-s3-services-groups.html
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
     delete:
       x-doc:
-        title: Deletes the s3 group configuration of an svm
+        title: Delete S3 group configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-groups-.html
     get:
       x-doc:
-        title: Retrieves the s3 group configuration of an svm
+        title: Retrieve S3 group configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-groups-.html
     patch:
       x-doc:
-        title: Updates the s3 group configuration of an svm
+        title: Update S3 group configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-groups-.html
   "/protocols/s3/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the s3 protocol of an
-          svm
+        title: Retrieve S3 protocol historical performance metrics for an SVM  
         category: Object-store
         filename: get-protocols-s3-services-metrics.html
   "/protocols/s3/services/{svm.uuid}/policies":
     get:
       x-doc:
-        title: Retrieves the s3 policies svm configuration
+        title: Retrieve S3 policies in SVM configuration
         category: Object-store
         filename: get-protocols-s3-services-policies.html
     post:
       x-doc:
-        title: Creates the s3 policy configuration ----
+        title: Create S3 policy configuration
         category: Object-store
         filename: post-protocols-s3-services-policies.html
   "/protocols/s3/services/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
-        title: Deletes the s3 policy configuration of an svm
+        title: Deletes S3 policy configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-policies-.html
     get:
       x-doc:
-        title: Retrieves the s3 policy configuration of an svm
+        title: Retrieve S3 policy configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-policies-.html
     patch:
       x-doc:
-        title: Updates the s3 policy configuration of an svm
+        title: Update S3 policy configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-policies-.html
   "/protocols/s3/services/{svm.uuid}/users":
