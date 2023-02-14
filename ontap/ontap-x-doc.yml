@@ -20,29 +20,29 @@ paths:
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve Snapshot copies of an application component 
+        title: Retrieve application component Snapshot copies   
         category: application
         filename: get-application-applications-components-snapshots.html
     post:
       x-doc:
-        title: Create a Snapshot copy of an application component 
+        title: Create an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Delete a Snapshot copy of an application component 
+        title: Delete an application component Snapshot copy  
         category: application
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve a Snapshot copy of an application component -- DUP
+        title: Retrieve an application component Snapshot copy  -- DUP
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restore a Snapshot copy of an application component 
+        title: Restore an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots-restore.html
   "/application/applications/{application.uuid}/components/{uuid}":
@@ -54,35 +54,35 @@ paths:
   "/application/applications/{application.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve a Snapshot copy of an application 
+        title: Retrieve an application Snapshot copy 
         category: application
         filename: get-application-applications-snapshots.html
     post:
       x-doc:
-        title: Create a Snapshot copy of an application 
+        title: Create an application Snapshot copy  
         category: application
         filename: post-application-applications-snapshots.html
   "/application/applications/{application.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Delete a Snapshot copy of an application  
+        title: Delete an application Snapshot copy  
         category: application
         filename: delete-application-applications-snapshots-.html
     get:
       x-doc:
-        title: Retrieve a Snapshot copy of an application component DUP
+        title: Retrieve an application component Snapshot copy  DUP
         category: application
         filename: get-application-applications-snapshots-.html
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
-        title: Restore an Snapshot copy of an application
+        title: Restore an application Snapshot copy 
         category: application
         filename: post-application-applications-snapshots-restore.html
   "/application/applications/{uuid}":
     delete:
       x-doc:
-        title: Delete an application and all associated data
+        title: Delete an application and all data
         category: application
         filename: delete-application-applications-.html
     get:
@@ -92,7 +92,7 @@ paths:
         filename: get-application-applications-.html
     patch:
       x-doc:
-        title: Update the application properties
+        title: Update application properties
         category: application
         filename: patch-application-applications-.html
   "/application/consistency-groups":
@@ -109,28 +109,28 @@ paths:
   "/application/consistency-groups/{consistency_group.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve Snapshot copies for a consistency group
+        title: Retrieve consistency group Snapshot copies 
         category: application
         filename: get-application-consistency-groups-snapshots.html
     post:
       x-doc:
-        title: Create a Snapshot copy of an existing consistency group
+        title: Create a consistency group Snapshot copy 
         category: application
         filename: post-application-consistency-groups-snapshots.html
   "/application/consistency-groups/{consistency_group.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Delete a Snapshot copy of a consistency group
+        title: Delete a consistency group Snapshot copy 
         category: application
         filename: delete-application-consistency-groups-snapshots-.html
     get:
       x-doc:
-        title: Retrieve details of a Snapshot copy for a consistency group
+        title: Retrieve a consistency group Snapshot copy 
         category: application
         filename: get-application-consistency-groups-snapshots-.html
     patch:
       x-doc:
-        title: Complete a Snapshot copy operation of a consistency group
+        title: Complete a consistency group Snapshot copy operation 
         category: application
         filename: patch-application-consistency-groups-snapshots-.html
   "/application/consistency-groups/{uuid}":
@@ -164,7 +164,7 @@ paths:
   "/cloud/targets":
     get:
       x-doc:
-        title: Retrieve a collection of cloud targets in the cluster
+        title: Retrieve cloud targets in the cluster
         category: cloud
         filename: get-cloud-targets.html
     post:
@@ -175,23 +175,23 @@ paths:
   "/cloud/targets/{uuid}":
     delete:
       x-doc:
-        title: Delete a cloud target specified by the UUID
+        title: Delete a cloud target using the UUID
         category: cloud
         filename: delete-cloud-targets-.html
     get:
       x-doc:
-        title: Retrieve a cloud target specified by the UUID
+        title: Retrieve a cloud target using the UUID
         category: cloud
         filename: get-cloud-targets-.html
     patch:
       x-doc:
-        title: Update a cloud target specified by the UUID
+        title: Update a cloud target using the UUID
         category: cloud
         filename: patch-cloud-targets-.html
   "/cluster":
     get:
       x-doc:
-        title: Retrieve the cluster configuration
+        title: Retrieve cluster configuration
         category: cluster
         filename: get-cluster.html
     patch:
@@ -219,13 +219,13 @@ paths:
   "/cluster/counter/tables":
     get:
       x-doc:
-        title: Retrieve a collection of counter tables with schema definitions
+        title: Retrieve counter tables with schema definitions
         category: cluster
         filename: get-cluster-counter-tables.html
   "/cluster/counter/tables/{counter_table.name}/rows":
     get:
       x-doc:
-        title: Retrieve a collection of counter rows
+        title: Retrieve counter rows
         category: cluster
         filename: get-cluster-counter-tables-rows.html
   "/cluster/counter/tables/{counter_table.name}/rows/{id}":
@@ -237,25 +237,25 @@ paths:
   "/cluster/counter/tables/{name}":
     get:
       x-doc:
-        title: Retrieve information about a counter table
+        title: Retrieve counter table details
         category: cluster
         filename: get-cluster-counter-tables-.html
   "/cluster/firmware/history":
     get:
       x-doc:
-        title: Retrieve the history details for firmware update requests
+        title: Retrieve history details for firmware update requests
         category: cluster
         filename: get-cluster-firmware-history.html
   "/cluster/jobs":
     get:
       x-doc:
-        title: Retrieve a list of recent asynchronous jobs
+        title: Retrieve recent asynchronous jobs
         category: cluster
         filename: get-cluster-jobs.html
   "/cluster/jobs/{uuid}":
     get:
       x-doc:
-        title: Retrieve the details of an asynchronous job
+        title: Retrieve details of an asynchronous job
         category: cluster
         filename: get-cluster-jobs-.html
     patch:
@@ -266,7 +266,7 @@ paths:
   "/cluster/licensing/capacity-pools":
     get:
       x-doc:
-        title: Retrieve a collection of capacity pools
+        title: Retrieve capacity pools
         category: cluster
         filename: get-cluster-licensing-capacity-pools.html
   "/cluster/licensing/capacity-pools/{serial_number}":
@@ -278,13 +278,13 @@ paths:
   "/cluster/licensing/license-managers":
     get:
       x-doc:
-        title: Retrieve a collection of license managers
+        title: Retrieve license managers
         category: cluster
         filename: get-cluster-licensing-license-managers.html
   "/cluster/licensing/license-managers/{uuid}":
     get:
       x-doc:
-        title: Retrieve information about the license manager
+        title: Retrieve information about a license manager
         category: cluster
         filename: get-cluster-licensing-license-managers-.html
     patch:
@@ -295,7 +295,7 @@ paths:
   "/cluster/licensing/licenses":
     get:
       x-doc:
-        title: Retrieve a collection of license packages
+        title: Retrieve license packages
         category: cluster
         filename: get-cluster-licensing-licenses.html
     post:
@@ -355,13 +355,13 @@ paths:
         filename: patch-cluster-metrocluster.html
     post:
       x-doc:
-        title: Set up a MetroCluster
+        title: Setup a MetroCluster configuration
         category: cluster
         filename: post-cluster-metrocluster.html
   "/cluster/metrocluster/diagnostics":
     get:
       x-doc:
-        title: Retrieve  diagnostic operation results for the MetroCluster
+        title: Retrieve diagnostic operation results for a MetroCluster
           configuration
         category: cluster
         filename: get-cluster-metrocluster-diagnostics.html
@@ -395,15 +395,14 @@ paths:
   "/cluster/metrocluster/interconnects":
     get:
       x-doc:
-        title: Retrieve a list of interconnect adapter information for nodes in the
+        title: Retrieve interconnect adapter information for nodes in a
           MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-interconnects.html
   "/cluster/metrocluster/interconnects/{node.uuid}/{partner_type}/{adapter}":
     get:
       x-doc:
-        title: Retrieve information about a MetroCluster interconnect for a specific
-          partner type and adapter
+        title: Retrieve information about a MetroCluster interconnect for a partner type and adapter
         category: cluster
         filename: get-cluster-metrocluster-interconnects--.html
     patch:
@@ -420,13 +419,13 @@ paths:
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve the node configuration in the MetroCluster
+        title: Retrieve node configuration in the MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
   "/cluster/metrocluster/operations":
     get:
       x-doc:
-        title: Retrieve a list of MetroCluster operations on the local cluster
+        title: Retrieve MetroCluster operations on the local cluster
         category: cluster
         filename: get-cluster-metrocluster-operations.html
   "/cluster/metrocluster/operations/{uuid}":
@@ -438,7 +437,7 @@ paths:
   "/cluster/metrocluster/svms":
     get:
       x-doc:
-        title: Retrieve configuration information for all SVM pairs in MetroCluster
+        title: Retrieve configuration information for all SVM pairs in a MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-svms.html
   "/cluster/metrocluster/svms/{cluster.uuid}/{svm.uuid}":
@@ -510,7 +509,7 @@ paths:
   "/cluster/ntp/servers":
     get:
       x-doc:
-        title: Retrieve a collection of external NTP time servers
+        title: Retrieve external NTP time servers
         category: cluster
         filename: get-cluster-ntp-servers.html
     post:
@@ -538,7 +537,7 @@ paths:
   "/cluster/peers":
     get:
       x-doc:
-        title: Retrieve the collection of cluster peers
+        title: Retrieve cluster peers
         category: cluster
         filename: get-cluster-peers.html
     post:
@@ -1017,7 +1016,7 @@ paths:
   "/network/ethernet/broadcast-domains":
     get:
       x-doc:
-        title: Retrieve a collection of broadcast domains for the entire cluster
+        title: Retrieve broadcast domains for the entire cluster
         category: networking
         filename: get-network-ethernet-broadcast-domains.html
     post:
@@ -1044,7 +1043,7 @@ paths:
   "/network/ethernet/ports":
     get:
       x-doc:
-        title: Retrieve a collection of ports
+        title: Retrieve ports
         category: networking
         filename: get-network-ethernet-ports.html
     post:
@@ -1330,7 +1329,7 @@ paths:
   "/network/ip/routes":
     get:
       x-doc:
-        title: Retrieve an IP routes collection
+        title: Retrieve IP routes 
         category: networking
         filename: get-network-ip-routes.html
     post:
@@ -1352,7 +1351,7 @@ paths:
   "/network/ip/service-policies":
     get:
       x-doc:
-        title: Retrieve a service policies collection 
+        title: Retrieve service policies 
         category: networking
         filename: get-network-ip-service-policies.html
     post:
@@ -1406,7 +1405,7 @@ paths:
   "/network/ipspaces":
     get:
       x-doc:
-        title: Retrieve a collection of IPspaces for a cluster
+        title: Retrieve IPspaces for a cluster
         category: networking
         filename: get-network-ipspaces.html
     post:
