@@ -317,7 +317,7 @@ paths:
   "/cluster/mediators":
     get:
       x-doc:
-        title: Retrieve Mediators configured in the cluster
+        title: Retrieve ONTAP Mediators configured in the cluster
         category: cluster
         filename: get-cluster-mediators.html
     post:
@@ -1775,7 +1775,7 @@ paths:
   "/protocols/cifs/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieve historical performance metrics for an SVM's CIFS protocol 
+        title: Retrieve CIFS protocol historical performance metrics for an SVM
           svm
         category: NAS
         filename: get-protocols-cifs-services-metrics.html
