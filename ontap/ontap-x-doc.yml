@@ -4628,7 +4628,7 @@ paths:
   "/storage/snaplock/litigations/{litigation.id}/operations/{id}":
     delete:
       x-doc:
-        title: Aborts the ongoing legal-hold operation
+        title: Aborts the ongoing legal-hold operation 
         category: snaplock
         filename: delete-storage-snaplock-litigations-operations-.html
     get:
