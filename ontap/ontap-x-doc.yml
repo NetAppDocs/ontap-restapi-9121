@@ -70,7 +70,7 @@ paths:
         filename: delete-application-applications-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy  DUP
+        title: Retrieve an application component Snapshot copy --  DUP
         category: application
         filename: get-application-applications-snapshots-.html
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
@@ -82,7 +82,7 @@ paths:
   "/application/applications/{uuid}":
     delete:
       x-doc:
-        title: Delete an application and all data
+        title: Delete an application and all associated data
         category: application
         filename: delete-application-applications-.html
     get:
@@ -103,7 +103,7 @@ paths:
         filename: get-application-consistency-groups.html
     post:
       x-doc:
-        title: Create a consistency group with one or more consistency groups
+        title: Create a consistency group 
         category: application
         filename: post-application-consistency-groups.html
   "/application/consistency-groups/{consistency_group.uuid}/snapshots":
@@ -196,7 +196,7 @@ paths:
         filename: get-cluster.html
     patch:
       x-doc:
-        title: Update cluster configuration after the cluster is created
+        title: Update cluster configuration 
         category: cluster
         filename: patch-cluster.html
     post:
@@ -322,18 +322,18 @@ paths:
         filename: get-cluster-mediators.html
     post:
       x-doc:
-        title: Create and connect a Mediator
+        title: Create and connect an ONTAP Mediator
         category: cluster
         filename: post-cluster-mediators.html
   "/cluster/mediators/{uuid}":
     delete:
       x-doc:
-        title: Delete a Mediator
+        title: Delete an ONTAP Mediator
         category: cluster
         filename: delete-cluster-mediators-.html
     get:
       x-doc:
-        title: Retrieve Mediator state and configuration
+        title: Retrieve ONTAP Mediator state and configuration
         category: cluster
         filename: get-cluster-mediators-.html
   "/cluster/metrics":
@@ -367,7 +367,7 @@ paths:
         filename: get-cluster-metrocluster-diagnostics.html
     post:
       x-doc:
-        title: Start a MetroCluster diagnostic operation or set up a schedule for periodic diagnostics
+        title: Start MetroCluster diagnostics or set up a schedule for periodic diagnostics
         category: cluster
         filename: post-cluster-metrocluster-diagnostics.html
   "/cluster/metrocluster/dr-groups":
@@ -465,24 +465,24 @@ paths:
         filename: delete-cluster-nodes-.html
     get:
       x-doc:
-        title: Retrieves information for the node
+        title: Retrieve node information
         category: cluster
         filename: get-cluster-nodes-.html
     patch:
       x-doc:
-        title: Update the node information
+        title: Update node information
         category: cluster
         filename: patch-cluster-nodes-.html
   "/cluster/nodes/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieve historical performance metrics for a node
+        title: Retrieve node historical performance metrics 
         category: cluster
         filename: get-cluster-nodes-metrics.html
   "/cluster/ntp/keys":
     get:
       x-doc:
-        title: Retrieve a collection of NTP symmetric authentication keys
+        title: Retrieve NTP symmetric authentication keys
         category: cluster
         filename: get-cluster-ntp-keys.html
     post:
@@ -498,12 +498,12 @@ paths:
         filename: delete-cluster-ntp-keys-.html
     get:
       x-doc:
-        title: Retrieve details of a NTP symmetric authentication key
+        title: Retrieve NTP symmetric authentication key details
         category: cluster
         filename: get-cluster-ntp-keys-.html
     patch:
       x-doc:
-        title: Update the details of a NTP symmetric authentication key
+        title: Update NTP symmetric authentication key details
         category: cluster
         filename: patch-cluster-ntp-keys-.html
   "/cluster/ntp/servers":
@@ -580,7 +580,7 @@ paths:
         filename: delete-cluster-schedules-.html
     get:
       x-doc:
-        title: Retrieve a schedule -DUP
+        title: Retrieve a schedule using the UUID
         category: cluster
         filename: get-cluster-schedules-.html
     patch:
@@ -597,14 +597,13 @@ paths:
   "/cluster/sensors/{node.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieve environment sensors -DUP
+        title: Retrieve environment sensors using the node UUID
         category: cluster
         filename: get-cluster-sensors-.html
   "/cluster/software":
     get:
       x-doc:
-        title: Retrieve the software profile of a cluster
-        category: cluster
+        title: Retrieve the cluster software profile
         filename: get-cluster-software.html
     patch:
       x-doc:
@@ -619,19 +618,19 @@ paths:
         filename: get-cluster-software-download.html
     post:
       x-doc:
-        title: Download a software or firmware package from the server
+        title: Download a software or firmware package
         category: cluster
         filename: post-cluster-software-download.html
   "/cluster/software/history":
     get:
       x-doc:
-        title: Retrieve history details for software installation requests
+        title: Retrieve software installation requests history details 
         category: cluster
         filename: get-cluster-software-history.html
   "/cluster/software/packages":
     get:
       x-doc:
-        title: Retrieve software packages for a cluster
+        title: Retrieve cluster software packages 
         category: cluster
         filename: get-cluster-software-packages.html
   "/cluster/software/packages/{version}":
@@ -989,7 +988,7 @@ paths:
   "/name-services/unix-users":
     get:
       x-doc:
-        title: Retrieve all of the UNIX users for all of the SVMs
+        title: Retrieve all UNIX users for all SVMs
         category: name-services
         filename: get-name-services-unix-users.html
     post:
@@ -1032,12 +1031,12 @@ paths:
         filename: delete-network-ethernet-broadcast-domains-.html
     get:
       x-doc:
-        title: Retrieve details of a broadcast domain
+        title: Retrieve broadcast domain details
         category: networking
         filename: get-network-ethernet-broadcast-domains-.html
     patch:
       x-doc:
-        title: Update the properties of a broadcast domain
+        title: Update broadcast domain properties
         category: networking
         filename: patch-network-ethernet-broadcast-domains-.html
   "/network/ethernet/ports":
@@ -1059,7 +1058,7 @@ paths:
         filename: delete-network-ethernet-ports-.html
     get:
       x-doc:
-        title: Retrieve the details of a physical port, VLAN, or LAG
+        title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
     patch:
@@ -1133,13 +1132,13 @@ paths:
   "/network/fc/fabrics/{fabric.name}/zones":
     get:
       x-doc:
-        title: Retrieve zones of a fibre channel fabric
+        title: Retrieve fibre channel fabric zones
         category: networking
         filename: get-network-fc-fabrics-zones.html
   "/network/fc/fabrics/{fabric.name}/zones/{name}":
     get:
       x-doc:
-        title: Retrieve a zone of a fibre channel fabric
+        title: Retrieve a fibre channel fabric zone
         category: networking
         filename: get-network-fc-fabrics-zones-.html
   "/network/fc/fabrics/{name}":
@@ -1178,7 +1177,7 @@ paths:
   "/network/fc/interfaces/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieve historical FC interface performance metrics
+        title: Retrieve FC interface historical performance metrics
         category: networking
         filename: get-network-fc-interfaces-metrics.html
   "/network/fc/logins":
@@ -1247,7 +1246,7 @@ paths:
         filename: get-network-http-proxy.html
     post:
       x-doc:
-        title: Create http proxy configuration for an SVM or a cluster IPspace
+        title: Create a http proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
   "/network/http-proxy/{uuid}":
@@ -1258,7 +1257,7 @@ paths:
         filename: delete-network-http-proxy-.html
     get:
       x-doc:
-        title: Display http proxy server, port, and IPspace for an SVM or cluster IPspace
+        title: Display http proxy server, port, and IPspace information for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
     patch:
@@ -1410,7 +1409,7 @@ paths:
         filename: get-network-ipspaces.html
     post:
       x-doc:
-        title: Create a new domain where IP addresses are unique
+        title: Create a new domain with unique IP addresses 
         category: networking
         filename: post-network-ipspaces.html
   "/network/ipspaces/{uuid}":
@@ -1547,7 +1546,7 @@ paths:
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieve CIFS domain preferred DC configuration for an SVM
+        title: Retrieve CIFS preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers.html
     post:
@@ -1688,12 +1687,12 @@ paths:
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members/{name}":
     delete:
       x-doc:
-        title: Delete a local user or active directory user or group from a local group and SVM
+        title: Delete a local user, or active directory user or group from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members-.html
     get:
       x-doc:
-        title: Retrieve a local user, active directory user or group that belongs to a local group and SVM
+        title: Retrieve a local user, active directory user or group belonging to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members-.html
   "/protocols/cifs/local-groups/{svm.uuid}/{sid}":
@@ -1893,8 +1892,7 @@ paths:
         filename: delete-protocols-cifs-shares--acls-.html
     get:
       x-doc:
-        title: Retrieve a share-level ACL on a CIFS share for a user or
-          group
+        title: Retrieve a share-level ACL on a CIFS share for a user or group
         category: NAS
         filename: get-protocols-cifs-shares--acls-.html
     patch:
@@ -2136,13 +2134,13 @@ paths:
   "/protocols/locks":
     get:
       x-doc:
-        title: Retrieve locks details
+        title: Retrieve lock details
         category: NAS
         filename: get-protocols-locks.html
   "/protocols/locks/{uuid}":
     delete:
       x-doc:
-        title: Delete locks of given parameter
+        title: Delete locks for a parameter
         category: NAS
         filename: delete-protocols-locks-.html
     get:
@@ -2158,7 +2156,7 @@ paths:
         filename: get-protocols-ndmp.html
     patch:
       x-doc:
-        title: Update NDMP mode
+        title: Update the NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
   "/protocols/ndmp/nodes":
@@ -2292,8 +2290,7 @@ paths:
         filename: get-protocols-nfs-export-policies-rules-.html
     patch:
       x-doc:
-        title: Update the properties of an export policy rule to change an export
-          policy rule's index or fields
+        title: Update the properties of an export policy rule 
         category: NAS
         filename: patch-protocols-nfs-export-policies-rules-.html
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients":
