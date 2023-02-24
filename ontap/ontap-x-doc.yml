@@ -2759,7 +2759,7 @@ paths:
         filename: get-protocols-san-igroups-igroups.html
     post:
       x-doc:
-        title: Add one or more nested initiator groups to an initiator group
+        title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
@@ -2781,7 +2781,7 @@ paths:
         filename: get-protocols-san-igroups-initiators.html
     post:
       x-doc:
-        title: Add one or more initiators to an initiator group
+        title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
@@ -2941,7 +2941,7 @@ paths:
         filename: get-protocols-san-portSet.html
     post:
       x-doc:
-        title: Create portSet
+        title: Create a portSet
         category: SAN
         filename: post-protocols-san-portSet.html
   "/protocols/san/portSet/{portset.uuid}/interfaces":
@@ -3169,8 +3169,7 @@ paths:
   "/security/anti-ransomware/suspects/{volume.uuid}":
     delete:
       x-doc:
-        title: Clear either all the suspect files of a volume or suspect files of
-          a volume based on file format or suspect time provided
+        title: Clear suspect files of a volume 
         category: security
         filename: delete-security-anti-ransomware-suspects-.html
   "/security/audit":
@@ -3221,8 +3220,7 @@ paths:
   "/security/authentication/cluster/ad-proxy":
     delete:
       x-doc:
-        title: Delete data svm configured as a tunnel for active directory based
-          authentication for cluster user accounts
+        title: Delete data svm configured as a tunnel 
         category: security
         filename: delete-security-authentication-cluster-ad-proxy.html
     get:
@@ -3232,14 +3230,12 @@ paths:
         filename: get-security-authentication-cluster-ad-proxy.html
     patch:
       x-doc:
-        title: Update data svm configured as a tunnel for active directory based
-          authentication for cluster user accounts
+        title: Update data svm configured as a tunnel 
         category: security
         filename: patch-security-authentication-cluster-ad-proxy.html
     post:
       x-doc:
-        title: Confgure a data svm as a proxy for active directory based authentication
-          for cluster user accounts
+        title: Confgure a data svm as a proxy 
         category: security
         filename: post-security-authentication-cluster-ad-proxy.html
   "/security/authentication/cluster/ldap":
@@ -3302,7 +3298,7 @@ paths:
         filename: patch-security-authentication-cluster-saml-sp.html
     post:
       x-doc:
-        title: Create a saml service provider configuration
+        title: Create an saml service provider configuration
         category: security
         filename: post-security-authentication-cluster-saml-sp.html
   "/security/authentication/password":
@@ -3325,7 +3321,7 @@ paths:
   "/security/authentication/publickeys/{owner.uuid}/{account.name}/{index}":
     delete:
       x-doc:
-        title: Delete the public key for a user account
+        title: Delete a public key for a user account
         category: security
         filename: delete-security-authentication-publickeys--.html
     get:
@@ -3335,7 +3331,7 @@ paths:
         filename: get-security-authentication-publickeys--.html
     patch:
       x-doc:
-        title: Update the public key for a user account
+        title: Update a public key for a user account
         category: security
         filename: patch-security-authentication-publickeys--.html
   "/security/aws-kms":
@@ -3352,13 +3348,13 @@ paths:
   "/security/aws-kms/{aws_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey or re-version an aws kms key encryption key (kek) for aws kms
+        title: Rekey or re-version an aws kms key encryption key for aws kms
         category: security
         filename: post-security-aws-kms-rekey-external.html
   "/security/aws-kms/{aws_kms.uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekeys svm kek for an aws kms
+        title: Rekey svm kek for an aws kms
         category: security
         filename: post-security-aws-kms-rekey-internal.html
   "/security/aws-kms/{aws_kms.uuid}/restore":
@@ -3397,8 +3393,8 @@ paths:
   "/security/azure-key-vaults/{azure_key_vault.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey the external key in the key hierarchy for an svm with an akv
-          configuration
+        title: Rekey the external key in the key hierarchy 
+        
         category: security
         filename: post-security-azure-key-vaults-rekey-external.html
   "/security/azure-key-vaults/{uuid}":
@@ -3420,8 +3416,7 @@ paths:
   "/security/azure-key-vaults/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekey the internal key in the key hierarchy for an svm with an akv
-          configuration
+        title: Rekey the internal key in the key hierarchy for an svm 
         category: security
         filename: post-security-azure-key-vaults-rekey-internal.html
   "/security/azure-key-vaults/{uuid}/restore":
@@ -3472,14 +3467,13 @@ paths:
         filename: get-security-gcp-kms.html
     post:
       x-doc:
-        title: Confgure Google Cloud kms configuration for the specified svm
+        title: Confgure Google Cloud kms configuration for an svm
         category: security
         filename: post-security-gcp-kms.html
   "/security/gcp-kms/{gcp_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey the external key in the key hierarchy for an svm with a google
-          cloud kms configuration
+        title: Rekey the external key in the key hierarchy for an svm 
         category: security
         filename: post-security-gcp-kms-rekey-external.html
   "/security/gcp-kms/{uuid}":
@@ -3502,8 +3496,7 @@ paths:
   "/security/gcp-kms/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekey the internal key in the key hierarchy for an svm with a google
-          cloud kms configuration
+        title: Rekey the internal key in the key hierarchy for an svm 
         category: security
         filename: post-security-gcp-kms-rekey-internal.html
   "/security/gcp-kms/{uuid}/restore":
@@ -3515,12 +3508,12 @@ paths:
   "/security/ipsec":
     get:
       x-doc:
-        title: Retrieve ipsec configuration via rest apis
+        title: Retrieve ipsec configuration through rest apis
         category: security
         filename: get-security-ipsec.html
     patch:
       x-doc:
-        title: Update ipsec configuration via rest apis
+        title: Update ipsec configuration through rest apis
         category: security
         filename: patch-security-ipsec.html
   "/security/ipsec/ca-certificates":
@@ -3576,13 +3569,13 @@ paths:
   "/security/ipsec/security-associations":
     get:
       x-doc:
-        title: Retrieve an ipsec and ike (internet key exchange) security associations
+        title: Retrieve an ipsec and ike security associations
         category: security
         filename: get-security-ipsec-security-associations.html
   "/security/ipsec/security-associations/{uuid}":
     get:
       x-doc:
-        title: Retrieve an ipsec or ike (internet key exchange) security
+        title: Retrieve an ipsec or ike security
           association
         category: security
         filename: get-security-ipsec-security-associations-.html
@@ -3646,7 +3639,7 @@ paths:
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
-        title: Migrates svm keys between security key managers
+        title: Migrate svm keys between security key managers
         category: security
         filename: post-security-key-managers-migrate.html
   "/security/key-managers/{uuid}":
@@ -3723,7 +3716,7 @@ paths:
         filename: get-security-multi-admin-verify.html
     patch:
       x-doc:
-        title: Modify the multi-admin-verify configuration
+        title: Modify multi-admin-verify configuration
         category: security
         filename: patch-security-multi-admin-verify.html
   "/security/multi-admin-verify/approval-groups":
@@ -3821,12 +3814,12 @@ paths:
   "/security/roles/{owner.uuid}/{name}":
     delete:
       x-doc:
-        title: Delete the specified role
+        title: Delete a role
         category: security
         filename: delete-security-roles-.html
     get:
       x-doc:
-        title: Retrieve the details of the specified role
+        title: Retrieve the details of a role
         category: security
         filename: get-security-roles-.html
   "/security/roles/{owner.uuid}/{name}/privileges":
@@ -3837,22 +3830,19 @@ paths:
         filename: get-security-roles--privileges.html
     post:
       x-doc:
-        title: Add a privilege tuple (of rest uri or command/command directory path,
-          its access level and an optional query, if the "path" refers to a command/command
-          directory path) to an existing role
+        title: Add a privilege tuple to an existing role
         category: security
         filename: post-security-roles--privileges.html
   "/security/roles/{owner.uuid}/{name}/privileges/{path}":
     delete:
       x-doc:
-        title: Delete a privilege tuple (of rest uri or command/command directory
-          path, its access level and an optional query) from the role
+        title: Delete a privilege tuple from the role
         category: security
         filename: delete-security-roles--privileges-.html
     get:
       x-doc:
         title: Retrieve the access level for a rest api path or command/command directory
-          path for the specified role
+          path for a role
         category: security
         filename: get-security-roles--privileges-.html
     patch:
@@ -3876,18 +3866,18 @@ paths:
   "/security/ssh/svms":
     get:
       x-doc:
-        title: Retrieve the ssh server configuration for all the svms
+        title: Retrieve the ssh server configuration for all svms
         category: security
         filename: get-security-ssh-svms.html
   "/security/ssh/svms/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieve the ssh server configuration for the specified svm
+        title: Retrieve the ssh server configuration for an svm
         category: security
         filename: get-security-ssh-svms-.html
     patch:
       x-doc:
-        title: Update the ssh server configuration for the specified svm
+        title: Update the ssh server configuration for an svm
         category: security
         filename: patch-security-ssh-svms-.html
   "/snapmirror/policies":
@@ -3920,8 +3910,7 @@ paths:
   "/snapmirror/relationships":
     get:
       x-doc:
-        title: Retrieve information for snapmirror relationships whose destination
-          endpoints are in the current svm or the current cluster, depending on the
+        title: Retrieve information for snapmirror relationships depending on the
           cluster context
         category: snapmirror
         filename: get-snapmirror-relationships.html
@@ -3933,7 +3922,7 @@ paths:
   "/snapmirror/relationships/{relationship.uuid}/transfers":
     get:
       x-doc:
-        title: Retrieve the list of ongoing snapmirror transfers for the specified
+        title: Retrieve a list of ongoing snapmirror transfers for the specified
           relationship
         category: snapmirror
         filename: get-snapmirror-relationships-transfers.html
@@ -3950,7 +3939,7 @@ paths:
         filename: get-snapmirror-relationships-transfers-.html
     patch:
       x-doc:
-        title: Aborts an ongoing snapmirror transfer
+        title: Abort an ongoing snapmirror transfer
         category: snapmirror
         filename: patch-snapmirror-relationships-transfers-.html
   "/snapmirror/relationships/{uuid}":
@@ -3972,23 +3961,23 @@ paths:
   "/storage/aggregates":
     get:
       x-doc:
-        title: Retrieve the collection of aggregates for the entire cluster
+        title: Retrieve a collection of aggregates for the entire cluster
         category: storage
         filename: get-storage-aggregates.html
     post:
       x-doc:
-        title: Create the collection of aggregates for the entire cluster
+        title: Create a collection of aggregates for the entire cluster
         category: storage
         filename: post-storage-aggregates.html
   "/storage/aggregates/{aggregate.uuid}/cloud-stores":
     get:
       x-doc:
-        title: Retrieve the collection of cloud stores used by an aggregate
+        title: Retrieve a collection of cloud stores used by an aggregate
         category: storage
         filename: get-storage-aggregates-cloud-stores.html
     post:
       x-doc:
-        title: Attaches an object store to an aggregate, or Add a second object store
+        title: Attach an object store to an aggregate or add a second object store
           as a mirror
         category: storage
         filename: post-storage-aggregates-cloud-stores.html
@@ -4013,24 +4002,24 @@ paths:
   "/storage/aggregates/{aggregate.uuid}/plexes":
     get:
       x-doc:
-        title: Retrieve the collection of plexes for the specified aggregate
+        title: Retrieve a collection of plexes for an aggregate
         category: storage
         filename: get-storage-aggregates-plexes.html
   "/storage/aggregates/{aggregate.uuid}/plexes/{name}":
     get:
       x-doc:
-        title: Retrieve the plex specified by the aggregate uuid and plex name
+        title: Retrieve a plex specified by the aggregate uuid and plex name
         category: storage
         filename: get-storage-aggregates-plexes-.html
   "/storage/aggregates/{uuid}":
     delete:
       x-doc:
-        title: Delete the aggregate specified by the uuid
+        title: Delete an aggregate specified by the uuid
         category: storage
         filename: delete-storage-aggregates-.html
     get:
       x-doc:
-        title: Retrieve the aggregate specified by the uuid
+        title: Retrieve an aggregate specified by the uuid
         category: storage
         filename: get-storage-aggregates-.html
     patch:
@@ -4060,7 +4049,7 @@ paths:
   "/storage/cluster":
     get:
       x-doc:
-        title: Reports cluster wide storage details across different tiers
+        title: Report cluster-wide storage details across different tiers
         category: storage
         filename: get-storage-cluster.html
   "/storage/disks":
@@ -4071,7 +4060,7 @@ paths:
         filename: get-storage-disks.html
     patch:
       x-doc:
-        title: Update disk ownership, changes authentication keys, or sanitizes disks
+        title: Update disk ownership, change authentication keys, or sanitize disks
         category: storage
         filename: patch-storage-disks.html
   "/storage/disks/{name}":
@@ -4118,7 +4107,7 @@ paths:
   "/storage/file/clone/tokens":
     get:
       x-doc:
-        title: Retrieve information for the specified token
+        title: Retrieve information for a token
         category: storage
         filename: get-storage-file-clone-tokens.html
     post:
@@ -4162,13 +4151,13 @@ paths:
   "/storage/file/moves/{node.uuid}/{uuid}/{index}":
     get:
       x-doc:
-        title: Checks the status of an active file move operation
+        title: Check the status of an active file move operation
         category: storage
         filename: get-storage-file-moves--.html
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
-        title: Retrieve flexcache in the cluster
+        title: Retrieve a flexcache in the cluster
         category: storage
         filename: get-storage-flexcache-flexcaches.html
     post:
@@ -4189,7 +4178,7 @@ paths:
         filename: get-storage-flexcache-flexcaches-.html
     patch:
       x-doc:
-        title: Prepopulates a flexcache volume in the cluster
+        title: Pre-populate a flexcache volume in the cluster
         category: storage
         filename: patch-storage-flexcache-flexcaches-.html
   "/storage/flexcache/origins":
@@ -4206,7 +4195,7 @@ paths:
         filename: get-storage-flexcache-origins-.html
     patch:
       x-doc:
-        title: Modify origin options for a origin volume in the cluster
+        title: Modify origin options for an origin volume in the cluster
         category: storage
         filename: patch-storage-flexcache-origins-.html
   "/storage/luns":
@@ -4501,7 +4490,7 @@ paths:
   "/storage/snaplock/compliance-clocks":
     get:
       x-doc:
-        title: Retrieve the snaplock complianceclock for all of the nodes in the
+        title: Retrieve the snaplock complianceclock for nodes in a
           cluster
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks.html
@@ -4513,7 +4502,7 @@ paths:
   "/storage/snaplock/compliance-clocks/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve SnapLock complianceclock for a specific node
+        title: Retrieve SnapLock complianceclock for a node
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks-.html
   "/storage/snaplock/event-retention/operations":
@@ -4530,7 +4519,7 @@ paths:
   "/storage/snaplock/event-retention/operations/{id}":
     delete:
       x-doc:
-        title: Abort an ongoing ebr operation
+        title: Abort an ongoing EBR operation
         category: snaplock
         filename: delete-storage-snaplock-event-retention-operations-.html
     get:
@@ -4625,13 +4614,13 @@ paths:
     get:
       x-doc:
         title: Retrieve ongoing operations for a litigation
-          id
+          ID
         category: snaplock
         filename: get-storage-snaplock-litigations-.html
   "/storage/snaplock/litigations/{litigation.id}/files":
     get:
       x-doc:
-        title: Display files for the specified litigation id
+        title: Display files for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-files.html
   "/storage/snaplock/litigations/{litigation.id}/operations":
@@ -4648,7 +4637,7 @@ paths:
         filename: delete-storage-snaplock-litigations-operations-.html
     get:
       x-doc:
-        title: Retrieve the status of legal-hold for the specified operation id
+        title: Retrieve the status of legal-hold for an operation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-operations-.html
   "/storage/snapshot-policies":
@@ -4818,7 +4807,7 @@ paths:
   "/storage/volumes/{volume.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve volume snapshot copies
+        title: Retrieve volume Snapshot copies
         category: storage
         filename: get-storage-volumes-snapshots.html
     post:
@@ -4845,7 +4834,7 @@ paths:
   "/storage/volumes/{volume.uuid}/top-metrics/clients":
     get:
       x-doc:
-        title: Retrieve clients with the most io activity
+        title: Retrieve clients with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-clients.html
   "/storage/volumes/{volume.uuid}/top-metrics/directories":
@@ -4870,7 +4859,7 @@ paths:
   "/support/auto-update":
     get:
       x-doc:
-        title: Retrieve tcurrent status of an automatic update feature
+        title: Retrieve current status of an automatic update feature
         category: support
         filename: get-support-auto-update.html
     patch:
@@ -4893,13 +4882,13 @@ paths:
         filename: get-support-auto-update-configurations-.html
     patch:
       x-doc:
-        title: Update configuration for an automatic update
+        title: Modify configuration for an automatic update
         category: support
         filename: patch-support-auto-update-configurations-.html
   "/support/auto-update/update":
     get:
       x-doc:
-        title: Retrieve status of all Update
+        title: Retrieve status of all updates
         category: support
         filename: get-support-auto-update-update.html
   "/support/auto-update/update/{uuid}":
@@ -4921,7 +4910,7 @@ paths:
         filename: get-support-autosupport.html
     patch:
       x-doc:
-        title: Update Autosupport configuration for the entire cluster
+        title: Update AutoSupport configuration for the entire cluster
         category: support
         filename: patch-support-autosupport.html
   "/support/autosupport/messages":
@@ -5127,7 +5116,7 @@ paths:
     get:
       x-doc:
         title: Retrieve SNMP tarphost details
-          configured for that traphost
+          
         category: support
         filename: get-support-snmp-traphosts-.html
   "/support/snmp/users":
@@ -5193,7 +5182,7 @@ paths:
         filename: get-svm-migrations-.html
     patch:
       x-doc:
-        title: Update actions that can be performed during an svm migration
+        title: Update actions performed during an svm migration
         category: svm
         filename: patch-svm-migrations-.html
   "/svm/peer-permissions":
