@@ -2637,2266 +2637,2229 @@ paths:
         filename: get-protocols-s3-services-policies.html
     post:
       x-doc:
-        title: Create S3 policy configuration
+        title: Create an S3 policy configuration
         category: Object-store
         filename: post-protocols-s3-services-policies.html
   "/protocols/s3/services/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
-        title: Deletes S3 policy configuration for an SVM
+        title: Delete an S3 policy configuration
         category: Object-store
         filename: delete-protocols-s3-services-policies-.html
     get:
       x-doc:
-        title: Retrieve S3 policy configuration for an SVM
+        title: Retrieve an S3 policy configuration
         category: Object-store
         filename: get-protocols-s3-services-policies-.html
     patch:
       x-doc:
-        title: Update S3 policy configuration for an SVM
+        title: Update an S3 policy configuration
         category: Object-store
         filename: patch-protocols-s3-services-policies-.html
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieves the s3 user configuration
+        title: Retrieve an S3 user configuration
         category: Object-store
         filename: get-protocols-s3-services-users.html
     post:
       x-doc:
-        title: Creates the s3 user configuration
+        title: Create an S3 user configuration
         category: Object-store
         filename: post-protocols-s3-services-users.html
   "/protocols/s3/services/{svm.uuid}/users/{name}":
     delete:
       x-doc:
-        title: Deletes the s3 user configuration of an svm
+        title: Delete an S3 user configuration
         category: Object-store
         filename: delete-protocols-s3-services-users-.html
     get:
       x-doc:
-        title: Retrieves the s3 user configuration of an svm
+        title: Retrieve an S3 user configuration
         category: Object-store
         filename: get-protocols-s3-services-users-.html
     patch:
       x-doc:
-        title: Updates the s3 user configuration of an svm
+        title: Update an S3 user configuration
         category: Object-store
         filename: patch-protocols-s3-services-users-.html
   "/protocols/san/fcp/services":
     get:
       x-doc:
-        title: Retrieves fc protocol services
+        title: Retrieve FC protocol services
         category: SAN
         filename: get-protocols-san-fcp-services.html
     post:
       x-doc:
-        title: Creates an fc protocol service
+        title: Create an FC protocol service
         category: SAN
         filename: post-protocols-san-fcp-services.html
   "/protocols/san/fcp/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes an fc protocol service
+        title: Delete an FC protocol service
         category: SAN
         filename: delete-protocols-san-fcp-services-.html
     get:
       x-doc:
-        title: Retrieves an fc protocol service
+        title: Retrieve an FC protocol service
         category: SAN
         filename: get-protocols-san-fcp-services-.html
     patch:
       x-doc:
-        title: Updates an fc protocol service
+        title: Update an FC protocol service
         category: SAN
         filename: patch-protocols-san-fcp-services-.html
   "/protocols/san/fcp/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the fc protocol service
-          of an svm
+        title: Retrieve historical performance metrics for the FC protocol service
+          of an SVM
         category: SAN
         filename: get-protocols-san-fcp-services-metrics.html
   "/protocols/san/igroups":
     get:
       x-doc:
-        title: Retrieves initiator groups
+        title: Retrieve initiator groups
         category: SAN
         filename: get-protocols-san-igroups.html
     post:
       x-doc:
-        title: Creates an initiator group
+        title: Create an initiator group
         category: SAN
         filename: post-protocols-san-igroups.html
   "/protocols/san/igroups/{igroup.uuid}/igroups":
     get:
       x-doc:
-        title: Retrieves nested initiator groups of an initiator group
+        title: Retrieve nested initiator groups of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups.html
     post:
       x-doc:
-        title: Adds one or more nested initiator groups to an initiator group
+        title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
     delete:
       x-doc:
-        title: Removes a nested initiator group from an initiator group
+        title: Remove a nested initiator group from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-igroups-.html
     get:
       x-doc:
-        title: Retrieves a nested initiator group of an initiator group
+        title: Retrieve a nested initiator group of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups-.html
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
       x-doc:
-        title: Retrieves initiators of an initiator group
+        title: Retrieve initiators of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators.html
     post:
       x-doc:
-        title: Adds one or more initiators to an initiator group
+        title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
     delete:
       x-doc:
-        title: Deletes an initiator from an initiator group
+        title: Delete an initiator from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-initiators-.html
     get:
       x-doc:
-        title: Retrieves an initiator of an initiator group
+        title: Retrieve an initiator of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
     patch:
       x-doc:
-        title: Updates an initiator of an initiator group
+        title: Update an initiator of an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
   "/protocols/san/igroups/{uuid}":
     delete:
       x-doc:
-        title: Deletes an initiator group
+        title: Delete an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-.html
     get:
       x-doc:
-        title: Retrieves an initiator group
+        title: Retrieve an initiator group
         category: SAN
         filename: get-protocols-san-igroups-.html
     patch:
       x-doc:
-        title: Updates an initiator group
+        title: Update an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-.html
   "/protocols/san/iscsi/credentials":
     get:
       x-doc:
-        title: Retrieves iscsi credentials
+        title: Retrieve iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials.html
     post:
       x-doc:
-        title: Creates iscsi credentials
+        title: Create iSCSI credentials
         category: SAN
         filename: post-protocols-san-iscsi-credentials.html
   "/protocols/san/iscsi/credentials/{svm.uuid}/{initiator}":
     delete:
       x-doc:
-        title: Deletes specified iscsi credentials
+        title: Delete iSCSI credentials
         category: SAN
         filename: delete-protocols-san-iscsi-credentials-.html
     get:
       x-doc:
-        title: Retrieves specified iscsi credentials
+        title: Retrieve iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials-.html
     patch:
       x-doc:
-        title: Updates specified iscsi credentials
+        title: Update iSCSI credentials
         category: SAN
         filename: patch-protocols-san-iscsi-credentials-.html
   "/protocols/san/iscsi/services":
     get:
       x-doc:
-        title: Retrieves iscsi services
+        title: Retrieve iSCSI services
         category: SAN
         filename: get-protocols-san-iscsi-services.html
     post:
       x-doc:
-        title: Creates an iscsi service
+        title: Create an iSCSI service
         category: SAN
         filename: post-protocols-san-iscsi-services.html
   "/protocols/san/iscsi/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes an iscsi service
+        title: Delete an iSCSI service
         category: SAN
         filename: delete-protocols-san-iscsi-services-.html
     get:
       x-doc:
-        title: Retrieves an iscsi service
+        title: Retrieve an iSCSI service
         category: SAN
         filename: get-protocols-san-iscsi-services-.html
     patch:
       x-doc:
-        title: Updates an iscsi service
+        title: Update an iSCSI service
         category: SAN
         filename: patch-protocols-san-iscsi-services-.html
   "/protocols/san/iscsi/services/{svm.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for the iscsi protocol of
-          an svm
+        title: Retrieve historical performance metrics for the iSCSI protocol of
+          an SVM
         category: SAN
         filename: get-protocols-san-iscsi-services-metrics.html
   "/protocols/san/iscsi/sessions":
     get:
       x-doc:
-        title: Retrieves iscsi sessions
+        title: Retrieve iSCSI sessions
         category: SAN
         filename: get-protocols-san-iscsi-sessions.html
   "/protocols/san/iscsi/sessions/{svm.uuid}/{tpgroup}/{tsih}":
     get:
       x-doc:
-        title: Retrieves an iscsi session
+        title: Retrieve an iSCSI session
         category: SAN
         filename: get-protocols-san-iscsi-sessions--.html
   "/protocols/san/lun-maps":
     get:
       x-doc:
-        title: Retrieves lun maps
+        title: Retrieve LUN maps
         category: SAN
         filename: get-protocols-san-lun-maps.html
     post:
       x-doc:
-        title: Creates a lun map
+        title: Create a LUN map
         category: SAN
         filename: post-protocols-san-lun-maps.html
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}":
     delete:
       x-doc:
-        title: Deletes a lun map
+        title: Delete a LUN map
         category: SAN
         filename: delete-protocols-san-lun-maps-.html
     get:
       x-doc:
-        title: Retrieves a lun map
+        title: Retrieve a LUN map
         category: SAN
         filename: get-protocols-san-lun-maps-.html
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes":
     get:
       x-doc:
-        title: Retrieves lun map reporting nodes
+        title: Retrieve LUN map reporting nodes
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes.html
     post:
       x-doc:
-        title: Adds a reporting node and its ha partner to a lun map
+        title: Add a reporting node and its HA partner to a LUN map
         category: SAN
         filename: post-protocols-san-lun-maps--reporting-nodes.html
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes/{uuid}":
     delete:
       x-doc:
-        title: Removes a reporting node and its ha partner from a lun map
+        title: Remove a reporting node and its HA partner from a LUN map
         category: SAN
         filename: delete-protocols-san-lun-maps--reporting-nodes-.html
     get:
       x-doc:
-        title: Retrieves a lun map reporting node
+        title: Retrieve a LUN map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
-  "/protocols/san/portsets":
+  "/protocols/san/portSet":
     get:
       x-doc:
-        title: Retrieves portsets
+        title: Retrieve a portset
         category: SAN
-        filename: get-protocols-san-portsets.html
+        filename: get-protocols-san-portSet.html
     post:
       x-doc:
-        title: Creates portsets
+        title: Create a portset
         category: SAN
-        filename: post-protocols-san-portsets.html
-  "/protocols/san/portsets/{portset.uuid}/interfaces":
+        filename: post-protocols-san-portSet.html
+  "/protocols/san/portSet/{portset.uuid}/interfaces":
     get:
       x-doc:
-        title: Retrieves portset network interfaces
+        title: Retrieve portset network interfaces
         category: SAN
-        filename: get-protocols-san-portsets-interfaces.html
+        filename: get-protocols-san-portSet-interfaces.html
     post:
       x-doc:
-        title: Adds portset network interfaces
+        title: Add portset network interfaces
         category: SAN
-        filename: post-protocols-san-portsets-interfaces.html
-  "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
+        filename: post-protocols-san-portSet-interfaces.html
+  "/protocols/san/portSet/{portset.uuid}/interfaces/{uuid}":
     delete:
       x-doc:
-        title: Deletes portset network interfaces
+        title: Delete portset network interfaces
         category: SAN
-        filename: delete-protocols-san-portsets-interfaces-.html
+        filename: delete-protocols-san-portSet-interfaces-.html
     get:
       x-doc:
-        title: Retrieves portset network interfaces
+        title: Retrieve portset network interfaces
         category: SAN
-        filename: get-protocols-san-portsets-interfaces-.html
-  "/protocols/san/portsets/{uuid}":
+        filename: get-protocols-san-portSet-interfaces-.html
+  "/protocols/san/portSet/{uuid}":
     delete:
       x-doc:
-        title: Deletes a portset
+        title: Delete a portset
         category: SAN
-        filename: delete-protocols-san-portsets-.html
+        filename: delete-protocols-san-portSet-.html
     get:
       x-doc:
-        title: Retrieves a portset
+        title: Retrieve a portset
         category: SAN
-        filename: get-protocols-san-portsets-.html
+        filename: get-protocols-san-portSet-.html
   "/protocols/san/vvol-bindings":
     get:
       x-doc:
-        title: Retrieves vvol bindings
+        title: Retrieve vVol bindings
         category: SAN
         filename: get-protocols-san-vvol-bindings.html
     post:
       x-doc:
-        title: Creates a vvol binding
+        title: Create a vVol binding
         category: SAN
         filename: post-protocols-san-vvol-bindings.html
   "/protocols/san/vvol-bindings/{protocol_endpoint.uuid}/{vvol.uuid}":
     delete:
       x-doc:
-        title: Deletes a vvol binding
+        title: Delete a vVol binding
         category: SAN
         filename: delete-protocols-san-vvol-bindings-.html
     get:
       x-doc:
-        title: Retrieves a vvol binding
+        title: Retrieve a vVol binding
         category: SAN
         filename: get-protocols-san-vvol-bindings-.html
   "/protocols/vscan":
     get:
       x-doc:
-        title: Retrieves the vscan configuration
+        title: Retrieve the Vscan configuration
         category: NAS
         filename: get-protocols-vscan.html
     post:
       x-doc:
-        title: Creates a vscan configuration, which includes a list of scanner-pools,
-          vscan on-access policies and vscan on-demand policies
+        title: Create a Vscan configuration
         category: NAS
         filename: post-protocols-vscan.html
   "/protocols/vscan/server-status":
     get:
       x-doc:
-        title: Retrieves a vscan server status
+        title: Retrieve Vscan server status
         category: NAS
         filename: get-protocols-vscan-server-status.html
   "/protocols/vscan/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes a vscan configuration
+        title: Delete a Vscan configuration
         category: NAS
         filename: delete-protocols-vscan-.html
     get:
       x-doc:
-        title: Retrieves the vscan configuration for a specified svm
+        title: Retrieve the Vscan configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-.html
     patch:
       x-doc:
-        title: Updates the vscan configuration of an svm
+        title: Update the Vscan configuration for an SVM 
         category: NAS
         filename: patch-protocols-vscan-.html
   "/protocols/vscan/{svm.uuid}/events":
     get:
       x-doc:
-        title: Retrieves vscan events, which are generated by the cluster to capture
-          important events
+        title: Retrieve Vscan events
         category: NAS
         filename: get-protocols-vscan-events.html
   "/protocols/vscan/{svm.uuid}/on-access-policies":
     get:
       x-doc:
-        title: Retrieves the vscan on-access policy
+        title: Retrieve Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
     post:
       x-doc:
-        title: Creates a vscan on-access policy
+        title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
       x-doc:
-        title: Deletes the anti-virus on-access policy configuration
+        title: Delete an anti-virus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
     get:
       x-doc:
-        title: Retrieves the vscan on-access policy configuration of an svm
+        title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
     patch:
       x-doc:
-        title: Updates the vscan on-access policy configuration and/or enables/disables
-          the vscan on-access policy of an svm
+        title: Update Vscan On-Access policy configuration 
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
       x-doc:
-        title: Retrieves the vscan on-demand policy
+        title: Retrieve Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
     post:
       x-doc:
-        title: Creates a vscan on-demand policy
+        title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
       x-doc:
-        title: Deletes the vscan on-demand configuration
+        title: Delete Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
     get:
       x-doc:
-        title: Retrieves the vscan on-demand configuration of an svm
+        title: Retrieve Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
     patch:
       x-doc:
-        title: Updates the vscan on-demand policy configuration of an svm
+        title: Update Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
       x-doc:
-        title: Retrieves the vscan scanner-pool configuration of an svm
+        title: Retrieve Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools.html
     post:
       x-doc:
-        title: Creates a vscan scanner-pool configuration for a specified svm
+        title: Create a Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: post-protocols-vscan-scanner-pools.html
   "/protocols/vscan/{svm.uuid}/scanner-pools/{name}":
     delete:
       x-doc:
-        title: Deletes a vscan scanner-pool configuration
+        title: Delete a Vscan scanner-pool configuration
         category: NAS
         filename: delete-protocols-vscan-scanner-pools-.html
     get:
       x-doc:
-        title: Retrieves the configuration of a specified scanner-pool of an svm
+        title: Retrieve the configuration of a scanner-pool for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools-.html
     patch:
       x-doc:
-        title: Updates the vscan scanner-pool configuration of an svm
+        title: Update the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
   "/security":
     get:
       x-doc:
-        title: Retrieves information about the security configured on the cluster
+        title: Retrieve information about the security configured on the cluster
         category: security
         filename: get-security.html
     patch:
       x-doc:
-        title: Updates the software fips mode or enables conversion of non-encrypted
-          metadata volumes to encrypted metadata volumes and non-nae aggregates to
-          nae aggregates
+        title: Update the software FIPS mode or enable conversion of non-encrypted
+          metadata volumes to encrypted metadata volumes and non-NAE aggregates to
+          NAE aggregates
         category: security
         filename: patch-security.html
   "/security/accounts":
     get:
       x-doc:
-        title: Retrieves a list of user accounts in the cluster
+        title: Retrieve a list of user accounts in the cluster
         category: security
         filename: get-security-accounts.html
     post:
       x-doc:
-        title: Creates a new user account
+        title: Create a new user account
         category: security
         filename: post-security-accounts.html
   "/security/accounts/{owner.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a user account
+        title: Delete a user account
         category: security
         filename: delete-security-accounts-.html
     get:
       x-doc:
-        title: Retrieves a specific user account
+        title: Retrieve a specific user account
         category: security
         filename: get-security-accounts-.html
     patch:
       x-doc:
-        title: Updates a user account
+        title: Update a user account
         category: security
         filename: patch-security-accounts-.html
   "/security/anti-ransomware/suspects":
     get:
       x-doc:
-        title: Retrieves information on the suspects generated by the anti-ransomware
+        title: Retrieve information on the suspects generated by the anti-ransomware
           analytics
         category: security
         filename: get-security-anti-ransomware-suspects.html
   "/security/anti-ransomware/suspects/{volume.uuid}":
     delete:
       x-doc:
-        title: Clears either all the suspect files of a volume or suspect files of
-          a volume based on file format or suspect time provided
+        title: Clear suspect files of a volume 
         category: security
         filename: delete-security-anti-ransomware-suspects-.html
   "/security/audit":
     get:
       x-doc:
-        title: Retrieves administrative audit settings for get requests
+        title: Retrieve administrative audit settings for GET requests
         category: security
         filename: get-security-audit.html
     patch:
       x-doc:
-        title: Updates administrative audit settings for get requests
+        title: Update administrative audit settings for GET requests
         category: security
         filename: patch-security-audit.html
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Defines a remote syslog/splunk server for sending audit information
-          to
+        title: Define a remote syslog/splunk server for receiving audit information
         category: security
         filename: get-security-audit-destinations.html
     post:
       x-doc:
-        title: Defines remote syslog/splunk server information
+        title: Define remote syslog/splunk server information
         category: security
         filename: post-security-audit-destinations.html
   "/security/audit/destinations/{address}/{port}":
     delete:
       x-doc:
-        title: Deletes remote syslog/splunk server information
+        title: Delete remote syslog/splunk server information
         category: security
         filename: delete-security-audit-destinations-.html
     get:
       x-doc:
-        title: Retrieves remote syslog/splunk server information
+        title: Retrieve remote syslog/splunk server information
         category: security
         filename: get-security-audit-destinations-.html
     patch:
       x-doc:
-        title: Updates remote syslog/splunk server information
+        title: Update remote syslog/splunk server information
         category: security
         filename: patch-security-audit-destinations-.html
   "/security/audit/messages":
     get:
       x-doc:
-        title: Retrieves the administrative audit log viewer
+        title: Retrieve administrative audit log viewer
         category: security
         filename: get-security-audit-messages.html
   "/security/authentication/cluster/ad-proxy":
     delete:
       x-doc:
-        title: Deletes the data svm configured as a tunnel for active directory based
-          authentication for cluster user accounts
+        title: Delete a data SVM configured as a tunnel 
         category: security
         filename: delete-security-authentication-cluster-ad-proxy.html
     get:
       x-doc:
-        title: Retrieves svm information configured as an active directory domain-tunnel
+        title: Retrieve SVM information configured as an active directory domain-tunnel
         category: security
         filename: get-security-authentication-cluster-ad-proxy.html
     patch:
       x-doc:
-        title: Updates the data svm configured as a tunnel for active directory based
-          authentication for cluster user accounts
+        title: Update a data SVM configured as a tunnel 
         category: security
         filename: patch-security-authentication-cluster-ad-proxy.html
     post:
       x-doc:
-        title: Configures a data svm as a proxy for active directory based authentication
-          for cluster user accounts
+        title: Confgure a data SVM as a proxy 
         category: security
         filename: post-security-authentication-cluster-ad-proxy.html
   "/security/authentication/cluster/ldap":
     delete:
       x-doc:
-        title: Deletes the ldap configuration of the cluster
+        title: Delete LDAP configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-ldap.html
     get:
       x-doc:
-        title: Retrieves the ldap configuration of the cluster
+        title: Retrieve LDAP configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-ldap.html
     patch:
       x-doc:
-        title: Updates the ldap configuration of the cluster
+        title: Update LDAP configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-ldap.html
     post:
       x-doc:
-        title: Creates the ldap configuration of the cluster
+        title: Create LDAP configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-ldap.html
   "/security/authentication/cluster/nis":
     delete:
       x-doc:
-        title: Deletes the nis configuration of the cluster
+        title: Delete NIS configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-nis.html
     get:
       x-doc:
-        title: Retrieves the nis configuration of the cluster
+        title: Retrieve NIS configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-nis.html
     patch:
       x-doc:
-        title: Updates the nis configuration of the cluster
+        title: Update NIS configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-nis.html
     post:
       x-doc:
-        title: Creates the nis configuration of the cluster
+        title: Create NIS configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-nis.html
   "/security/authentication/cluster/saml-sp":
     delete:
       x-doc:
-        title: Deletes a saml service provider configuration
+        title: Delete a SAML service provider configuration
         category: security
         filename: delete-security-authentication-cluster-saml-sp.html
     get:
       x-doc:
-        title: Retrieves a saml service provider configuration
+        title: Retrieve a SAML service provider configuration
         category: security
         filename: get-security-authentication-cluster-saml-sp.html
     patch:
       x-doc:
-        title: Updates a saml service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
     post:
       x-doc:
-        title: Creates a saml service provider configuration
+        title: Create an SAML service provider configuration
         category: security
         filename: post-security-authentication-cluster-saml-sp.html
   "/security/authentication/password":
     post:
       x-doc:
-        title: Updates the password for a user account
+        title: Update user account password
         category: security
         filename: post-security-authentication-password.html
   "/security/authentication/publickeys":
     get:
       x-doc:
-        title: Retrieves the public keys configured for user accounts
+        title: Retrieve public keys configured for user accounts
         category: security
         filename: get-security-authentication-publickeys.html
     post:
       x-doc:
-        title: Creates a public key for a user account
+        title: Create a public key for a user account
         category: security
         filename: post-security-authentication-publickeys.html
   "/security/authentication/publickeys/{owner.uuid}/{account.name}/{index}":
     delete:
       x-doc:
-        title: Deletes the public key for a user account
+        title: Delete a public key for a user account
         category: security
         filename: delete-security-authentication-publickeys--.html
     get:
       x-doc:
-        title: Retrieves the public keys configured for a user account
+        title: Retrieve public keys configured for a user account
         category: security
         filename: get-security-authentication-publickeys--.html
     patch:
       x-doc:
-        title: Updates the public key for a user account
+        title: Update a public key for a user account
         category: security
         filename: patch-security-authentication-publickeys--.html
   "/security/aws-kms":
     get:
       x-doc:
-        title: Retrieves all aws kms instances configured for all clusters and svms
+        title: Retrieve all AWS KMS instances configured for all clusters and SVMs
         category: security
         filename: get-security-aws-kms.html
     post:
       x-doc:
-        title: Configures the aws kms configuration for the specified svm
+        title: Confgure the AWS KMS configuration for an SVM
         category: security
         filename: post-security-aws-kms.html
   "/security/aws-kms/{aws_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekeys or re-versions the aws kms key encryption key (kek) for the
-          given aws kms
+        title: Rekey or re-version an AWS KMS key encryption key for AWS KMS
         category: security
         filename: post-security-aws-kms-rekey-external.html
   "/security/aws-kms/{aws_kms.uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekeys svm kek for the given aws kms
+        title: Rekey SVM KEK for an AWS KMS
         category: security
         filename: post-security-aws-kms-rekey-internal.html
   "/security/aws-kms/{aws_kms.uuid}/restore":
     post:
       x-doc:
-        title: Restores the keys for an svm from a configured aws kms
+        title: Restore keys for an SVM from a configured AWS KMS
         category: security
         filename: post-security-aws-kms-restore.html
   "/security/aws-kms/{uuid}":
     delete:
       x-doc:
-        title: Deletes an aws kms configuration
+        title: Delete an AWS KMS configuration
         category: security
         filename: delete-security-aws-kms-.html
     get:
       x-doc:
-        title: Retrieves the aws kms configuration for the svm specified by the uuid
+        title: Retrieve an AWS KMS configuration for an SVM specified by the UUID
         category: security
         filename: get-security-aws-kms-.html
     patch:
       x-doc:
-        title: Updates the aws kms configuration
+        title: Update an AWS KMS configuration
         category: security
         filename: patch-security-aws-kms-.html
   "/security/azure-key-vaults":
     get:
       x-doc:
-        title: Retrieves akvs configured for all clusters and svms
+        title: Retrieve AKVs configured for all clusters and SVMs
         category: security
         filename: get-security-azure-key-vaults.html
     post:
       x-doc:
-        title: Configures the akv configuration for all clusters and svms
+        title: Confgure an AKV configuration for all clusters and SVMs
         category: security
         filename: post-security-azure-key-vaults.html
   "/security/azure-key-vaults/{azure_key_vault.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekeys the external key in the key hierarchy for an svm with an akv
-          configuration
+        title: Rekey the external key in the key hierarchy 
         category: security
         filename: post-security-azure-key-vaults-rekey-external.html
   "/security/azure-key-vaults/{uuid}":
     delete:
       x-doc:
-        title: Deletes an akv configuration
+        title: Delete an AKV configuration
         category: security
         filename: delete-security-azure-key-vaults-.html
     get:
       x-doc:
-        title: Retrieves the akv configuration for the svm specified by the uuid
+        title: Retrieve AKV configuration for an SVM specified by the UUID
         category: security
         filename: get-security-azure-key-vaults-.html
     patch:
       x-doc:
-        title: Updates the akv configuration
+        title: Update the AKV configuration
         category: security
         filename: patch-security-azure-key-vaults-.html
   "/security/azure-key-vaults/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekeys the internal key in the key hierarchy for an svm with an akv
-          configuration
+        title: Rekey the internal key in the key hierarchy for an SVM 
         category: security
         filename: post-security-azure-key-vaults-rekey-internal.html
   "/security/azure-key-vaults/{uuid}/restore":
     post:
       x-doc:
-        title: Restores the keys for an svm from a configured akv
+        title: Restore keys for an SVM from a configured AKV
         category: security
         filename: post-security-azure-key-vaults-restore.html
   "/security/certificate-signing-request":
     post:
       x-doc:
-        title: Creates certificate signing request
+        title: Create a certificate signing request
         category: security
         filename: post-security-certificate-signing-request.html
   "/security/certificates":
     get:
       x-doc:
-        title: Retrieves security certificates
+        title: Retrieve security certificates
         category: security
         filename: get-security-certificates.html
     post:
       x-doc:
-        title: Creates or installs security certificates
+        title: Create or install security certificates
         category: security
         filename: post-security-certificates.html
   "/security/certificates/{ca.uuid}/sign":
     post:
       x-doc:
-        title: Signs security certificates
+        title: Sign security certificates
         category: security
         filename: post-security-certificates-sign.html
   "/security/certificates/{uuid}":
     delete:
       x-doc:
-        title: Deletes security certificates
+        title: Delete security certificates
         category: security
         filename: delete-security-certificates-.html
     get:
       x-doc:
-        title: Retrieves security certificates
+        title: Retrieve security certificates
         category: security
         filename: get-security-certificates-.html
   "/security/gcp-kms":
     get:
       x-doc:
-        title: Retrieves google cloud kms configurations for all clusters and svms
+        title: Retrieve Google Cloud KMS configurations for all clusters and SVMs
         category: security
         filename: get-security-gcp-kms.html
     post:
       x-doc:
-        title: Configures the google cloud kms configuration for the specified svm
+        title: Confgure Google Cloud KMS configuration for an SVM
         category: security
         filename: post-security-gcp-kms.html
   "/security/gcp-kms/{gcp_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekeys the external key in the key hierarchy for an svm with a google
-          cloud kms configuration
+        title: Rekey the external key in the key hierarchy for an SVM 
         category: security
         filename: post-security-gcp-kms-rekey-external.html
   "/security/gcp-kms/{uuid}":
     delete:
       x-doc:
-        title: Deletes a google cloud kms configuration
+        title: Delete a Google Cloud KMS configuration
         category: security
         filename: delete-security-gcp-kms-.html
     get:
       x-doc:
-        title: Retrieves the google cloud kms configuration for the svm specified
-          by the uuid
+        title: Retrieve the Google Cloud KMS configuration for an SVM specified
+          by the UUID
         category: security
         filename: get-security-gcp-kms-.html
     patch:
       x-doc:
-        title: Updates the google cloud kms configuration
+        title: Update the Google Cloud KMS configuration
         category: security
         filename: patch-security-gcp-kms-.html
   "/security/gcp-kms/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekeys the internal key in the key hierarchy for an svm with a google
-          cloud kms configuration
+        title: Rekey the internal key in the key hierarchy for an SVM
         category: security
         filename: post-security-gcp-kms-rekey-internal.html
   "/security/gcp-kms/{uuid}/restore":
     post:
       x-doc:
-        title: Restores the keys for an svm from a configured google cloud kms
+        title: Restore keys for an SVM from a Google Cloud KMS
         category: security
         filename: post-security-gcp-kms-restore.html
   "/security/ipsec":
     get:
       x-doc:
-        title: Retrieves ipsec configuration via rest apis
+        title: Retrieve IPsec configuration using REST APIs
         category: security
         filename: get-security-ipsec.html
     patch:
       x-doc:
-        title: Updates ipsec configuration via rest apis
+        title: Update IPsec configuration using REST APIs
         category: security
         filename: patch-security-ipsec.html
   "/security/ipsec/ca-certificates":
     get:
       x-doc:
-        title: Retrieves the collection of ipsec ca certificates configured for cluster
-          and all svms
+        title: Retrieve IPsec CA certificates configured for the cluster
+          and all SVMs
         category: security
         filename: get-security-ipsec-ca-certificates.html
     post:
       x-doc:
-        title: Adds ca certificate to ipsec
+        title: Add a CA certificate to IPsec
         category: security
         filename: post-security-ipsec-ca-certificates.html
   "/security/ipsec/ca-certificates/{certificate.uuid}":
     delete:
       x-doc:
-        title: Deletes the ipsec ca certificate with the specified uuid from ipsec
+        title: Delete a CA certificate with the specified UUID from IPsec
         category: security
         filename: delete-security-ipsec-ca-certificates-.html
     get:
       x-doc:
-        title: Retrieves a specific ca certificate configured for ipsec
+        title: Retrieve a CA certificate configured for IPpsec
         category: security
         filename: get-security-ipsec-ca-certificates-.html
   "/security/ipsec/policies":
     get:
       x-doc:
-        title: Retrieves the collection of ipsec policies
+        title: Retrieve IPsec policies
         category: security
         filename: get-security-ipsec-policies.html
     post:
       x-doc:
-        title: Creates an ipsec policy
+        title: Create an IPsec policy
         category: security
         filename: post-security-ipsec-policies.html
   "/security/ipsec/policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a specific ipsec policy
+        title: Delete an IPsec policy
         category: security
         filename: delete-security-ipsec-policies-.html
     get:
       x-doc:
-        title: Retrieves a specific ipsec policy
+        title: Retrieve an IPsec policy
         category: security
         filename: get-security-ipsec-policies-.html
     patch:
       x-doc:
-        title: Updates a specific ipsec policy
+        title: Update an IPsec policy
         category: security
         filename: patch-security-ipsec-policies-.html
   "/security/ipsec/security-associations":
     get:
       x-doc:
-        title: Retrieves the ipsec and ike (internet key exchange) security associations
+        title: Retrieve IPsec and IKE security associations
         category: security
         filename: get-security-ipsec-security-associations.html
   "/security/ipsec/security-associations/{uuid}":
     get:
       x-doc:
-        title: Retrieves a specific ipsec or ike (internet key exchange) security
+        title: Retrieve an IPsec or IKE security association
           association
         category: security
         filename: get-security-ipsec-security-associations-.html
   "/security/key-manager-configs":
     get:
       x-doc:
-        title: Retrieves key manager configurations
+        title: Retrieve key manager configurations
         category: security
         filename: get-security-key-manager-configs.html
     patch:
       x-doc:
-        title: Updates key manager configurations
+        title: Update key manager configurations
         category: security
         filename: patch-security-key-manager-configs.html
   "/security/key-managers":
     get:
       x-doc:
-        title: Retrieves key managers
+        title: Retrieve key managers
         category: security
         filename: get-security-key-managers.html
     post:
       x-doc:
-        title: Creates a key manager
+        title: Create a key manager
         category: security
         filename: post-security-key-managers.html
   "/security/key-managers/{security_key_manager.uuid}/auth-keys":
     get:
       x-doc:
-        title: Retrieves a list of all authentication keys associated with the admin
-          svm
+        title: Retrieve authentication keys associated with the admin SVM
         category: security
         filename: get-security-key-managers-auth-keys.html
     post:
       x-doc:
-        title: Creates an authentication key
+        title: Create an authentication key
         category: security
         filename: post-security-key-managers-auth-keys.html
   "/security/key-managers/{security_key_manager.uuid}/auth-keys/{key_id}":
     delete:
       x-doc:
-        title: Deletes an authentication key
+        title: Delete an authentication key
         category: security
         filename: delete-security-key-managers-auth-keys-.html
     get:
       x-doc:
-        title: Lists all authentication keys associated with admin svm
+        title: List all authentication keys associated with the admin SVM
         category: security
         filename: get-security-key-managers-auth-keys-.html
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids":
     get:
       x-doc:
-        title: Retrieves key manager configurations
+        title: Retrieve key manager configurations
         category: security
         filename: get-security-key-managers-keys-key-ids.html
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids/{key_id}":
     get:
       x-doc:
-        title: Retrieves key management keys information for specified keys
+        title: Retrieve key management key information for specified keys
         category: security
         filename: get-security-key-managers-keys-key-ids-.html
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
-        title: Migrates svm keys between security key managers
+        title: Migrate SVM keys between security key managers
         category: security
         filename: post-security-key-managers-migrate.html
   "/security/key-managers/{uuid}":
     delete:
       x-doc:
-        title: Deletes key managers
+        title: Delete key managers
         category: security
         filename: delete-security-key-managers-.html
     get:
       x-doc:
-        title: Retrieves key managers
+        title: Retrieve key managers
         category: security
         filename: get-security-key-managers-.html
     patch:
       x-doc:
-        title: Updates key managers
+        title: Update key managers
         category: security
         filename: patch-security-key-managers-.html
   "/security/key-managers/{uuid}/key-servers":
     get:
       x-doc:
-        title: Lists key servers configured in an external key manager
+        title: List key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers.html
     post:
       x-doc:
-        title: Adds primary key servers to an external key manager
+        title: Add primary key servers to an external key manager
         category: security
         filename: post-security-key-managers-key-servers.html
   "/security/key-managers/{uuid}/key-servers/{server}":
     delete:
       x-doc:
-        title: Deletes a primary key server
+        title: Delete a primary key server
         category: security
         filename: delete-security-key-managers-key-servers-.html
     get:
       x-doc:
-        title: Retrieves key servers configured in an external key manager
+        title: Retrieve key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers-.html
     patch:
       x-doc:
-        title: Updates a primary key server
+        title: Update a primary key server
         category: security
         filename: patch-security-key-managers-key-servers-.html
   "/security/key-stores":
     get:
       x-doc:
-        title: Retrieves keystores
+        title: Retrieve keystores
         category: security
         filename: get-security-key-stores.html
   "/security/login/messages":
     get:
       x-doc:
-        title: Retrieves login banner and messages of the day
+        title: Retrieve login banner and messages of the day
         category: security
         filename: get-security-login-messages.html
   "/security/login/messages/{uuid}":
     get:
       x-doc:
-        title: Retrieves login messages configuration by uuid
+        title: Retrieve login messages configuration by UUID
         category: security
         filename: get-security-login-messages-.html
     patch:
       x-doc:
-        title: Updates the login messages configuration
+        title: Update login messages configuration
         category: security
         filename: patch-security-login-messages-.html
   "/security/multi-admin-verify":
     get:
       x-doc:
-        title: Retrieves the multi-admin-verify configuration
+        title: Retrieve multi-admin-verify configuration
         category: security
         filename: get-security-multi-admin-verify.html
     patch:
       x-doc:
-        title: Modifies the multi-admin-verify configuration
+        title: Modify multi-admin-verify configuration
         category: security
         filename: patch-security-multi-admin-verify.html
   "/security/multi-admin-verify/approval-groups":
     get:
       x-doc:
-        title: Retrieves multi-admin-verify approval groups
+        title: Retrieve multi-admin-verify approval groups
         category: security
         filename: get-security-multi-admin-verify-approval-groups.html
     post:
       x-doc:
-        title: Creates a multi-admin-verify approval group
+        title: Create a multi-admin-verify approval group
         category: security
         filename: post-security-multi-admin-verify-approval-groups.html
   "/security/multi-admin-verify/approval-groups/{owner.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a multi-admin-verify approval group
+        title: Delete a multi-admin-verify approval group
         category: security
         filename: delete-security-multi-admin-verify-approval-groups-.html
     get:
       x-doc:
-        title: Retrieves a multi-admin-verify approval group
+        title: Retrieve a multi-admin-verify approval group
         category: security
         filename: get-security-multi-admin-verify-approval-groups-.html
     patch:
       x-doc:
-        title: Updates a multi-admin-verify approval group
+        title: Update a multi-admin-verify approval group
         category: security
         filename: patch-security-multi-admin-verify-approval-groups-.html
   "/security/multi-admin-verify/requests":
     get:
       x-doc:
-        title: Retrieves multi-admin-verify requests
+        title: Retrieve multi-admin-verify requests
         category: security
         filename: get-security-multi-admin-verify-requests.html
     post:
       x-doc:
-        title: Creates a multi-admin-verify request
+        title: Create a multi-admin-verify request
         category: security
         filename: post-security-multi-admin-verify-requests.html
   "/security/multi-admin-verify/requests/{index}":
     delete:
       x-doc:
-        title: Deletes a multi-admin-verify request
+        title: Delete a multi-admin-verify request
         category: security
         filename: delete-security-multi-admin-verify-requests-.html
     get:
       x-doc:
-        title: Retrieves a multi-admin-verify request
+        title: Retrieve a multi-admin-verify request
         category: security
         filename: get-security-multi-admin-verify-requests-.html
     patch:
       x-doc:
-        title: Updates a multi-admin-verify request
+        title: Update a multi-admin-verify request
         category: security
         filename: patch-security-multi-admin-verify-requests-.html
   "/security/multi-admin-verify/rules":
     get:
       x-doc:
-        title: Retrieves multi-admin-verify rules
+        title: Retrieve multi-admin-verify rules
         category: security
         filename: get-security-multi-admin-verify-rules.html
     post:
       x-doc:
-        title: Creates a multi-admin-verify rule
+        title: Create a multi-admin-verify rule
         category: security
         filename: post-security-multi-admin-verify-rules.html
   "/security/multi-admin-verify/rules/{owner.uuid}/{operation}":
     delete:
       x-doc:
-        title: Deletes a multi-admin-verify rule
+        title: Delete a multi-admin-verify rule
         category: security
         filename: delete-security-multi-admin-verify-rules-.html
     get:
       x-doc:
-        title: Retrieves a multi-admin-verify rule
+        title: Retrieve a multi-admin-verify rule
         category: security
         filename: get-security-multi-admin-verify-rules-.html
     patch:
       x-doc:
-        title: Updates a multi-admin-verify rule
+        title: Update a multi-admin-verify rule
         category: security
         filename: patch-security-multi-admin-verify-rules-.html
   "/security/roles":
     get:
       x-doc:
-        title: Retrieves a list of roles configured in the cluster
+        title: Retrieve a list of roles configured in the cluster
         category: security
         filename: get-security-roles.html
     post:
       x-doc:
-        title: Creates a new cluster-scoped role or an svm-scoped role
+        title: Create a new cluster-scoped or SVM-scoped role
         category: security
         filename: post-security-roles.html
   "/security/roles/{owner.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes the specified role
+        title: Delete a role
         category: security
         filename: delete-security-roles-.html
     get:
       x-doc:
-        title: Retrieves the details of the specified role
+        title: Retrieve the details of a role
         category: security
         filename: get-security-roles-.html
   "/security/roles/{owner.uuid}/{name}/privileges":
     get:
       x-doc:
-        title: Retrieves privilege details of the specified role
+        title: Retrieve privilege details of the specified role
         category: security
         filename: get-security-roles--privileges.html
     post:
       x-doc:
-        title: Adds a privilege tuple (of rest uri or command/command directory path,
-          its access level and an optional query, if the "path" refers to a command/command
-          directory path) to an existing role
+        title: Add a privilege tuple to an existing role
         category: security
         filename: post-security-roles--privileges.html
   "/security/roles/{owner.uuid}/{name}/privileges/{path}":
     delete:
       x-doc:
-        title: Deletes a privilege tuple (of rest uri or command/command directory
-          path, its access level and an optional query) from the role
+        title: Delete a privilege tuple from the role
         category: security
         filename: delete-security-roles--privileges-.html
     get:
       x-doc:
-        title: Retrieves the access level for a rest api path or command/command directory
-          path for the specified role
+        title: Retrieve the access level for a REST API path or command/command directory
+          path for a role
         category: security
         filename: get-security-roles--privileges-.html
     patch:
       x-doc:
-        title: Updates the access level for a rest api path or command/command directory
+        title: Update the access level for a REST API path or command/command directory
           path
         category: security
         filename: patch-security-roles--privileges-.html
   "/security/ssh":
     get:
       x-doc:
-        title: Retrieves the cluster ssh server ciphers, mac algorithms, key exchange
+        title: Retrieve the cluster SSH server ciphers, mac algorithms, key exchange
           algorithms, and connection limits
         category: security
         filename: get-security-ssh.html
     patch:
       x-doc:
-        title: Updates the ssh server setting for a cluster
+        title: Update the SSH server setting for a cluster
         category: security
         filename: patch-security-ssh.html
   "/security/ssh/svms":
     get:
       x-doc:
-        title: Retrieves the ssh server configuration for all the svms
+        title: Retrieve the SSH server configuration for all SVMs
         category: security
         filename: get-security-ssh-svms.html
   "/security/ssh/svms/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieves the ssh server configuration for the specified svm
+        title: Retrieve the SSH server configuration for an SVM
         category: security
         filename: get-security-ssh-svms-.html
     patch:
       x-doc:
-        title: Updates the ssh server configuration for the specified svm
+        title: Update the SSH server configuration for an SVM
         category: security
         filename: patch-security-ssh-svms-.html
   "/snapmirror/policies":
     get:
       x-doc:
-        title: Retrieves snapmirror policies of type async and sync
+        title: Retrieve SnapMirror async and sync policy types 
         category: snapmirror
         filename: get-snapmirror-policies.html
     post:
       x-doc:
-        title: Creates a snapmirror policy
+        title: Create a SnapMirror policy
         category: snapmirror
         filename: post-snapmirror-policies.html
   "/snapmirror/policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapmirror policy
+        title: Delete a SnapMirror policy
         category: snapmirror
         filename: delete-snapmirror-policies-.html
     get:
       x-doc:
-        title: Retrieves a specific snapmirror policy
+        title: Retrieve a specific SnapMirror policy
         category: snapmirror
         filename: get-snapmirror-policies-.html
     patch:
       x-doc:
-        title: Updates the snapmirror policy
+        title: Update the SnapMirror policy
         category: snapmirror
         filename: patch-snapmirror-policies-.html
   "/snapmirror/relationships":
     get:
       x-doc:
-        title: Retrieves information for snapmirror relationships whose destination
-          endpoints are in the current svm or the current cluster, depending on the
+        title: Retrieve information for SnapMirror relationships depending on the
           cluster context
         category: snapmirror
         filename: get-snapmirror-relationships.html
     post:
       x-doc:
-        title: Creates a snapmirror relationship
+        title: Create a SnapMirror relationship
         category: snapmirror
         filename: post-snapmirror-relationships.html
   "/snapmirror/relationships/{relationship.uuid}/transfers":
     get:
       x-doc:
-        title: Retrieves the list of ongoing snapmirror transfers for the specified
+        title: Retrieve a list of ongoing SnapMirror transfers for the specified
           relationship
         category: snapmirror
         filename: get-snapmirror-relationships-transfers.html
     post:
       x-doc:
-        title: Starts a snapmirror transfer operation
+        title: Start a SnapMirror transfer operation
         category: snapmirror
         filename: post-snapmirror-relationships-transfers.html
   "/snapmirror/relationships/{relationship.uuid}/transfers/{uuid}":
     get:
       x-doc:
-        title: Retrieves the attributes of a specific ongoing snapmirror transfer
+        title: Retrieve the attributes of a ongoing SnapMirror transfer
         category: snapmirror
         filename: get-snapmirror-relationships-transfers-.html
     patch:
       x-doc:
-        title: Aborts an ongoing snapmirror transfer
+        title: Abort an ongoing SnapMirror transfer
         category: snapmirror
         filename: patch-snapmirror-relationships-transfers-.html
   "/snapmirror/relationships/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapmirror relationship
+        title: Delete a SnapMirror relationship
         category: snapmirror
         filename: delete-snapmirror-relationships-.html
     get:
       x-doc:
-        title: Retrieves a snapmirror relationship
+        title: Retrieve a SnapMirror relationship
         category: snapmirror
         filename: get-snapmirror-relationships-.html
     patch:
       x-doc:
-        title: Updates a snapmirror relationship
+        title: Update a SnapMirror relationship
         category: snapmirror
         filename: patch-snapmirror-relationships-.html
   "/storage/aggregates":
     get:
       x-doc:
-        title: Retrieves the collection of aggregates for the entire cluster
+        title: Retrieve a collection of aggregates for the entire cluster
         category: storage
         filename: get-storage-aggregates.html
     post:
       x-doc:
-        title: Creates the collection of aggregates for the entire cluster
+        title: Create a collection of aggregates for the entire cluster
         category: storage
         filename: post-storage-aggregates.html
   "/storage/aggregates/{aggregate.uuid}/cloud-stores":
     get:
       x-doc:
-        title: Retrieves the collection of cloud stores used by an aggregate
+        title: Retrieve a collection of cloud stores used by an aggregate
         category: storage
         filename: get-storage-aggregates-cloud-stores.html
     post:
       x-doc:
-        title: Attaches an object store to an aggregate, or adds a second object store
+        title: Attach an object store to an aggregate or add a second object store
           as a mirror
         category: storage
         filename: post-storage-aggregates-cloud-stores.html
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
-        title: Removes the specified cloud target from the aggregate
+        title: Remove the specified cloud target from the aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
     get:
       x-doc:
-        title: Retrieves the cloud store for the aggregate using the specified cloud
-          target uuid
+        title: Retrieve the cloud store for the aggregate using a cloud target UUID
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
     patch:
       x-doc:
-        title: Updates the cloud store specified by the uuid with the fields in the
-          body
+        title: Update the cloud store specified by the UUID with fields in the body
         category: storage
         filename: patch-storage-aggregates-cloud-stores-.html
   "/storage/aggregates/{aggregate.uuid}/plexes":
     get:
       x-doc:
-        title: Retrieves the collection of plexes for the specified aggregate
+        title: Retrieve a collection of plexes for an aggregate
         category: storage
         filename: get-storage-aggregates-plexes.html
   "/storage/aggregates/{aggregate.uuid}/plexes/{name}":
     get:
       x-doc:
-        title: Retrieves the plex specified by the aggregate uuid and plex name
+        title: Retrieve a plex specified by the aggregate UUID and plex name
         category: storage
         filename: get-storage-aggregates-plexes-.html
   "/storage/aggregates/{uuid}":
     delete:
       x-doc:
-        title: Deletes the aggregate specified by the uuid
+        title: Delete an aggregate specified by the UUID
         category: storage
         filename: delete-storage-aggregates-.html
     get:
       x-doc:
-        title: Retrieves the aggregate specified by the uuid
+        title: Retrieve an aggregate specified by the UUID
         category: storage
         filename: get-storage-aggregates-.html
     patch:
       x-doc:
-        title: Updates the aggregate specified by the uuid with the properties in
-          the body
+        title: Update the aggregate specified by the UUID with properties in the body
         category: storage
         filename: patch-storage-aggregates-.html
   "/storage/aggregates/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for an aggregate
+        title: Retrieve historical performance metrics for an aggregate
         category: storage
         filename: get-storage-aggregates-metrics.html
   "/storage/bridges":
     get:
       x-doc:
-        title: Retrieves a collection of bridges
+        title: Retrieve a collection of bridges
         category: storage
         filename: get-storage-bridges.html
   "/storage/bridges/{wwn}":
     get:
       x-doc:
-        title: Retrieves a specific bridge
+        title: Retrieve a specific bridge
         category: storage
         filename: get-storage-bridges-.html
   "/storage/cluster":
     get:
       x-doc:
-        title: Reports cluster wide storage details across different tiers
+        title: Report cluster-wide storage details across different tiers
         category: storage
         filename: get-storage-cluster.html
   "/storage/disks":
     get:
       x-doc:
-        title: Retrieves a collection of disks
+        title: Retrieve a collection of disks
         category: storage
         filename: get-storage-disks.html
     patch:
       x-doc:
-        title: Updates disk ownership, changes authentication keys, or sanitizes disks
+        title: Update disk ownership, change authentication keys, or sanitize disks
         category: storage
         filename: patch-storage-disks.html
   "/storage/disks/{name}":
     get:
       x-doc:
-        title: Retrieves a specific disk
+        title: Retrieve a specific disk
         category: storage
         filename: get-storage-disks-.html
   "/storage/file/clone":
     post:
       x-doc:
-        title: Creates a clone of the file
+        title: Create a clone of the file
         category: storage
         filename: post-storage-file-clone.html
   "/storage/file/clone/split-loads":
     get:
       x-doc:
-        title: Retrieves the clone split load of a node
+        title: Retrieve the clone split load of a node
         category: storage
         filename: get-storage-file-clone-split-loads.html
   "/storage/file/clone/split-loads/{node.uuid}":
     get:
       x-doc:
-        title: Retrieves volume file clone split load rest
+        title: Retrieve volume file clone split load rest
         category: storage
         filename: get-storage-file-clone-split-loads-.html
     patch:
       x-doc:
-        title: Updates the maximum split load
+        title: Update the maximum split load
         category: storage
         filename: patch-storage-file-clone-split-loads-.html
   "/storage/file/clone/split-status":
     get:
       x-doc:
-        title: Retrieves file clone split status of all volumes in the node
+        title: Retrieve file clone split status of all volumes in the node
         category: storage
         filename: get-storage-file-clone-split-status.html
   "/storage/file/clone/split-status/{volume.uuid}":
     get:
       x-doc:
-        title: Retrieves file clone split status of all volumes
+        title: Retrieve file clone split status of all volumes
         category: storage
         filename: get-storage-file-clone-split-status-.html
   "/storage/file/clone/tokens":
     get:
       x-doc:
-        title: Retrieves information for the specified token
+        title: Retrieve information for a token
         category: storage
         filename: get-storage-file-clone-tokens.html
     post:
       x-doc:
-        title: Creates a new token to reserve the split load
+        title: Create a new token to reserve the split load
         category: storage
         filename: post-storage-file-clone-tokens.html
   "/storage/file/clone/tokens/{node.uuid}/{uuid}":
     delete:
       x-doc:
-        title: Deletes a specific file clone token
+        title: Delete a specific file clone token
         category: storage
         filename: delete-storage-file-clone-tokens-.html
     get:
       x-doc:
-        title: Retrieves a file clone token
+        title: Retrieve a file clone token
         category: storage
         filename: get-storage-file-clone-tokens-.html
     patch:
       x-doc:
-        title: Updates a file clone token
+        title: Update a file clone token
         category: storage
         filename: patch-storage-file-clone-tokens-.html
   "/storage/file/copy":
     post:
       x-doc:
-        title: Starts a file copy operation
+        title: Start a file copy operation
         category: storage
         filename: post-storage-file-copy.html
   "/storage/file/moves":
     get:
       x-doc:
-        title: Retrieves all ongoing file move operations in the cluster
+        title: Retrieve all ongoing file move operations in the cluster
         category: storage
         filename: get-storage-file-moves.html
     post:
       x-doc:
-        title: Starts a file move operation
+        title: Start a file move operation
         category: storage
         filename: post-storage-file-moves.html
   "/storage/file/moves/{node.uuid}/{uuid}/{index}":
     get:
       x-doc:
-        title: Checks the status of an active file move operation
+        title: Check the status of an active file move operation
         category: storage
         filename: get-storage-file-moves--.html
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
-        title: Retrieves flexcache in the cluster
+        title: Retrieve a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-flexcaches.html
     post:
       x-doc:
-        title: Creates a flexcache in the cluster
+        title: Create a FlexCache in the cluster
         category: storage
         filename: post-storage-flexcache-flexcaches.html
   "/storage/flexcache/flexcaches/{uuid}":
     delete:
       x-doc:
-        title: Deletes a flexcache
+        title: Delete a FlexCache
         category: storage
         filename: delete-storage-flexcache-flexcaches-.html
     get:
       x-doc:
-        title: Retrieves attributes of the flexcache in the cluster
+        title: Retrieve attributes of the FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-flexcaches-.html
     patch:
       x-doc:
-        title: Prepopulates a flexcache volume in the cluster
+        title: Pre-populate a FlexCache volume in the cluster
         category: storage
         filename: patch-storage-flexcache-flexcaches-.html
   "/storage/flexcache/origins":
     get:
       x-doc:
-        title: Retrieves origin of flexcache in the cluster
+        title: Retrieve the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins.html
   "/storage/flexcache/origins/{uuid}":
     get:
       x-doc:
-        title: Retrieves attributes of the origin of a flexcache in the cluster
+        title: Retrieve attributes of the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
     patch:
       x-doc:
-        title: Modifies origin options for a origin volume in the cluster
+        title: Modify origin options for an origin volume in the cluster
         category: storage
         filename: patch-storage-flexcache-origins-.html
   "/storage/luns":
     get:
       x-doc:
-        title: Retrieves luns
+        title: Retrieve LUNs
         category: SAN
         filename: get-storage-luns.html
     post:
       x-doc:
-        title: Creates a lun
+        title: Create a LUN
         category: SAN
         filename: post-storage-luns.html
   "/storage/luns/{lun.uuid}/attributes":
     get:
       x-doc:
-        title: Retrieves lun attributes
+        title: Retrieve LUN attributes
         category: SAN
         filename: get-storage-luns-attributes.html
     post:
       x-doc:
-        title: Adds an attribute to a lun
+        title: Add an attribute to a LUN
         category: SAN
         filename: post-storage-luns-attributes.html
   "/storage/luns/{lun.uuid}/attributes/{name}":
     delete:
       x-doc:
-        title: Deletes a lun attribute
+        title: Delete a LUN attribute
         category: SAN
         filename: delete-storage-luns-attributes-.html
     get:
       x-doc:
-        title: Retrieves a lun attribute
+        title: Retrieve a LUN attribute
         category: SAN
         filename: get-storage-luns-attributes-.html
     patch:
       x-doc:
-        title: Updates a lun attribute value
+        title: Update a LUN attribute value
         category: SAN
         filename: patch-storage-luns-attributes-.html
   "/storage/luns/{uuid}":
     delete:
       x-doc:
-        title: Deletes a lun
+        title: Delete a LUN
         category: SAN
         filename: delete-storage-luns-.html
     get:
       x-doc:
-        title: Retrieves lun properties or data
+        title: Retrieve LUN properties or data
         category: SAN
         filename: get-storage-luns-.html
     patch:
       x-doc:
-        title: Updates an existing lun
+        title: Update an existing LUN
         category: SAN
         filename: patch-storage-luns-.html
   "/storage/luns/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for a lun
+        title: Retrieve historical performance metrics for a LUN
         category: SAN
         filename: get-storage-luns-metrics.html
   "/storage/namespaces":
     get:
       x-doc:
-        title: Retrieves nvme namespaces
+        title: Retrieve NVMe namespaces
         category: NVMe
         filename: get-storage-namespaces.html
     post:
       x-doc:
-        title: Creates an nvme namespace
+        title: Create an NVMe namespace
         category: NVMe
         filename: post-storage-namespaces.html
   "/storage/namespaces/{uuid}":
     delete:
       x-doc:
-        title: Deletes an nvme namespace
+        title: Delete an NVMe namespace
         category: NVMe
         filename: delete-storage-namespaces-.html
     get:
       x-doc:
-        title: Retrieves an nvme namespace
+        title: Retrieve an NVMe namespace
         category: NVMe
         filename: get-storage-namespaces-.html
     patch:
       x-doc:
-        title: Updates an nvme namespace
+        title: Update an NVMe namespace
         category: NVMe
         filename: patch-storage-namespaces-.html
   "/storage/namespaces/{uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for an nvme namespace
+        title: Retrieve historical performance metrics for an NVMe namespace
         category: NVMe
         filename: get-storage-namespaces-metrics.html
   "/storage/pools":
     get:
       x-doc:
-        title: Retrieves the collection of storage pools for the entire cluster
+        title: Retrieve storage pools for the entire cluster
         category: storage
         filename: get-storage-pools.html
     post:
       x-doc:
-        title: Creates a new storage pool using available solid state capacity attached
-          to the nodes specified
+        title: Create a new storage pool 
         category: storage
         filename: post-storage-pools.html
   "/storage/pools/{uuid}":
     delete:
       x-doc:
-        title: Deletes the storage pool specified by the uuid
+        title: Delete a storage pool specified by the UUID
         category: storage
         filename: delete-storage-pools-.html
     get:
       x-doc:
-        title: Retrieves the storage pool specified by the uuid
+        title: Retrieve a storage pool specified by the UUID
         category: storage
         filename: get-storage-pools-.html
     patch:
       x-doc:
-        title: Updates the storage pool specified by the uuid with the properties
-          in the body
+        title: Update a storage pool specified by the UUID with properties in the body
         category: storage
         filename: patch-storage-pools-.html
   "/storage/ports":
     get:
       x-doc:
-        title: Retrieves a collection of storage ports
+        title: Retrieve storage ports
         category: storage
         filename: get-storage-ports.html
   "/storage/ports/{node.uuid}/{name}":
     get:
       x-doc:
-        title: Retrieves a specific storage port
+        title: Retrieve a storage port
         category: storage
         filename: get-storage-ports-.html
     patch:
       x-doc:
-        title: Updates a storage port
+        title: Update a storage port
         category: storage
         filename: patch-storage-ports-.html
   "/storage/qos/policies":
     get:
       x-doc:
-        title: Retrieves a collection of qos policies
+        title: Retrieve QoS policies
         category: storage
         filename: get-storage-qos-policies.html
     post:
       x-doc:
-        title: Creates a qos policy
+        title: Create a QoS policy
         category: storage
         filename: post-storage-qos-policies.html
   "/storage/qos/policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a qos policy
+        title: Delete a QoS policy
         category: storage
         filename: delete-storage-qos-policies-.html
     get:
       x-doc:
-        title: Retrieves a specific qos policy
+        title: Retrieve a QoS policy
         category: storage
         filename: get-storage-qos-policies-.html
     patch:
       x-doc:
-        title: Updates a specific qos policy
+        title: Update a QoS policy
         category: storage
         filename: patch-storage-qos-policies-.html
   "/storage/qos/workloads":
     get:
       x-doc:
-        title: Retrieves a collection of qos workloads
+        title: Retrieve QoS workloads
         category: storage
         filename: get-storage-qos-workloads.html
   "/storage/qos/workloads/{uuid}":
     get:
       x-doc:
-        title: Retrieves a specific qos workload
+        title: Retrieve a QoS workload
         category: storage
         filename: get-storage-qos-workloads-.html
   "/storage/qtrees":
     get:
       x-doc:
-        title: Retrieves qtrees configured for all flexvol volumes or flexgroup volumes
+        title: Retrieve qtrees 
         category: storage
         filename: get-storage-qtrees.html
     post:
       x-doc:
-        title: Creates a qtree in a flexvol volume or a flexgroup volume
+        title: Create a qtree in a FlexVol or FlexGroup volume
         category: storage
         filename: post-storage-qtrees.html
   "/storage/qtrees/{volume.uuid}/{id}":
     delete:
       x-doc:
-        title: Deletes a qtree
+        title: Delete a qtree
         category: storage
         filename: delete-storage-qtrees-.html
     get:
       x-doc:
-        title: Retrieves properties for a specific qtree
+        title: Retrieve qtree properties 
         category: storage
         filename: get-storage-qtrees-.html
     patch:
       x-doc:
-        title: Updates properties for a specific qtree
+        title: Update properties for a qtree
         category: storage
         filename: patch-storage-qtrees-.html
   "/storage/quota/reports":
     get:
       x-doc:
-        title: Retrieves the quota report records for all flexvol volumes and flexgroup
-          volumes
+        title: Retrieve the quota report records for all FlexVol and FlexGroup volumes
         category: storage
         filename: get-storage-quota-reports.html
   "/storage/quota/reports/{volume.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieves a specific quota report record
+        title: Retrieve a specific quota report record
         category: storage
         filename: get-storage-quota-reports-.html
   "/storage/quota/rules":
     get:
       x-doc:
-        title: Retrieves quota policy rules configured for all flexvol volumes and
-          flexgroup volumes
+        title: Retrieve quota policy rules for all FlexVol and FlexGroup volumes
         category: storage
         filename: get-storage-quota-rules.html
     post:
       x-doc:
-        title: Creates a quota policy rule for a flexvol or a flexgroup volume
+        title: Create a quota policy rule for a FlexVol or a FlexGroup volume
         category: storage
         filename: post-storage-quota-rules.html
   "/storage/quota/rules/{uuid}":
     delete:
       x-doc:
-        title: Deletes a quota policy rule
+        title: Delete a quota policy rule
         category: storage
         filename: delete-storage-quota-rules-.html
     get:
       x-doc:
-        title: Retrieves properties for a specific quota policy rule
+        title: Retrieve quota policy rule properties 
         category: storage
         filename: get-storage-quota-rules-.html
     patch:
       x-doc:
-        title: Updates properties of a specific quota policy rule
+        title: Update quota policy rule properties 
         category: storage
         filename: patch-storage-quota-rules-.html
   "/storage/shelves":
     get:
       x-doc:
-        title: Retrieves a collection of shelves
+        title: Retrieve shelves
         category: storage
         filename: get-storage-shelves.html
   "/storage/shelves/{uid}":
     get:
       x-doc:
-        title: Retrieves a specific shelf
+        title: Retrieve a shelf
         category: storage
         filename: get-storage-shelves-.html
     patch:
       x-doc:
-        title: Updates a shelf location led
+        title: Update a shelf location led
         category: storage
         filename: patch-storage-shelves-.html
   "/storage/snaplock/audit-logs":
     get:
       x-doc:
-        title: Retrieves a list of svms configured with audit log volumes
+        title: Retrieve SVM configured with audit log volumes
         category: snaplock
         filename: get-storage-snaplock-audit-logs.html
     post:
       x-doc:
-        title: Creates a snaplock log configuration for an svm
+        title: Create a SnapLock log configuration for an SVM
         category: snaplock
         filename: post-storage-snaplock-audit-logs.html
   "/storage/snaplock/audit-logs/{svm.uuid}":
     delete:
       x-doc:
-        title: Disassociates snaplock audit logs
+        title: Disassociate SnapLock audit logs
         category: snaplock
         filename: delete-storage-snaplock-audit-logs-.html
     get:
       x-doc:
-        title: Retrieves snaplock audit logs
+        title: Retrieve SnapLock audit logs
         category: snaplock
         filename: get-storage-snaplock-audit-logs-.html
     patch:
       x-doc:
-        title: Updates snaplock audit logs
+        title: Update SnapLock audit logs
         category: snaplock
         filename: patch-storage-snaplock-audit-logs-.html
   "/storage/snaplock/compliance-clocks":
     get:
       x-doc:
-        title: Retrieves the snaplock complianceclock for all of the nodes in the
+        title: Retrieve the SnapLock ComplianceClock for nodes in a
           cluster
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks.html
     post:
       x-doc:
-        title: Initializes the snaplock complianceclock
+        title: Initialize a SnapLock ComplianceClock
         category: snaplock
         filename: post-storage-snaplock-compliance-clocks.html
   "/storage/snaplock/compliance-clocks/{node.uuid}":
     get:
       x-doc:
-        title: Retrieves the snaplock complianceclock for a specific node
+        title: Retrieve a SnapLock ComplianceClock for a node
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks-.html
   "/storage/snaplock/event-retention/operations":
     get:
       x-doc:
-        title: Retrieves a list of all ebr operations
+        title: Retrieve EBR operations
         category: snaplock
         filename: get-storage-snaplock-event-retention-operations.html
     post:
       x-doc:
-        title: Creates an ebr policy
+        title: Create an EBR policy
         category: snaplock
         filename: post-storage-snaplock-event-retention-operations.html
   "/storage/snaplock/event-retention/operations/{id}":
     delete:
       x-doc:
-        title: Aborts an ongoing ebr operation
+        title: Abort an ongoing EBR operation
         category: snaplock
         filename: delete-storage-snaplock-event-retention-operations-.html
     get:
       x-doc:
-        title: Retrieves a list of attributes for an ebr operation
+        title: Retrieve attributes for an EBR operation
         category: snaplock
         filename: get-storage-snaplock-event-retention-operations-.html
   "/storage/snaplock/event-retention/policies":
     get:
       x-doc:
-        title: Retrieves all event retention policies for an svm
+        title: Retrieve event retention policies for an SVM
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies.html
     post:
       x-doc:
-        title: Creates an event based retention (ebr) policy for an svm
+        title: Create an EBR policy for an SVM
         category: snaplock
         filename: post-storage-snaplock-event-retention-policies.html
   "/storage/snaplock/event-retention/policies/{policy.name}":
     delete:
       x-doc:
-        title: Deletes the specified event based retention (ebr) policy
+        title: Delete an EBR policy
         category: snaplock
         filename: delete-storage-snaplock-event-retention-policies-.html
     get:
       x-doc:
-        title: Retrieves a list of attributes of the specified event based retention
-          (ebr) policy
+        title: Retrieve attributes of an EBR policy
+          
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies-.html
     patch:
       x-doc:
-        title: Updates the retention period of an event based retention (ebr) policy
+        title: Update the retention period of an EBR policy
         category: snaplock
         filename: patch-storage-snaplock-event-retention-policies-.html
   "/storage/snaplock/file-fingerprints":
     get:
       x-doc:
-        title: Retrieves a list of all the fingerprint operations of the specified
-          svm and volume
+        title: Retrieve fingerprint operations of an SVM and volume
         category: snaplock
         filename: get-storage-snaplock-file-fingerprints.html
     post:
       x-doc:
-        title: Creates a fingerprint computation session on the file and returns a
-          session-id
+        title: Create a fingerprint computation session 
         category: snaplock
         filename: post-storage-snaplock-file-fingerprints.html
   "/storage/snaplock/file-fingerprints/{id}":
     delete:
       x-doc:
-        title: Aborts an in-progress fingerprint operation
+        title: Abort a fingerprint operation
         category: snaplock
         filename: delete-storage-snaplock-file-fingerprints-.html
     get:
       x-doc:
-        title: Retrieves the file fingerprint information for a specific session id
+        title: Retrieve the file fingerprint information for a specific session ID
         category: snaplock
         filename: get-storage-snaplock-file-fingerprints-.html
   "/storage/snaplock/file/{volume.uuid}/{path}":
     delete:
       x-doc:
-        title: Deletes unexpired worm files of a snaplock enterprise volume
+        title: Delete unexpired worm files of a SnapLock enterprise volume
         category: snaplock
         filename: delete-storage-snaplock-file-.html
     get:
       x-doc:
-        title: Retrieves the snaplock retention details of the specified file
+        title: Retrieve SnapLock retention details of a file
         category: snaplock
         filename: get-storage-snaplock-file-.html
     patch:
       x-doc:
-        title: Updates the snaplock retention time of a file or extends the retention
-          time of a worm file
+        title: Update the SnapLock retention time of a file 
         category: snaplock
         filename: patch-storage-snaplock-file-.html
   "/storage/snaplock/litigations":
     get:
       x-doc:
-        title: Retrieves the list of litigations under an svm
+        title: Retrieve litigations under an SVM
         category: snaplock
         filename: get-storage-snaplock-litigations.html
     post:
       x-doc:
-        title: Starts a  legal-hold
+        title: Start a legal-hold operation
         category: snaplock
         filename: post-storage-snaplock-litigations.html
   "/storage/snaplock/litigations/{id}":
     delete:
       x-doc:
-        title: Creates a legal-hold end on all of the files for the specified litigation
-          id
+        title: Create a legal-hold end on all of the files for a litigation ID
         category: snaplock
         filename: delete-storage-snaplock-litigations-.html
     get:
       x-doc:
-        title: Retrieves the list of ongoing operations for the specified litigation
-          id
+        title: Retrieve ongoing operations for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-.html
   "/storage/snaplock/litigations/{litigation.id}/files":
     get:
       x-doc:
-        title: Displays the list of files for the specified litigation id
+        title: Display files for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-files.html
   "/storage/snaplock/litigations/{litigation.id}/operations":
     post:
       x-doc:
-        title: Creates or removes litigations for the specified path
+        title: Create or remove litigations for a path
         category: snaplock
         filename: post-storage-snaplock-litigations-operations.html
   "/storage/snaplock/litigations/{litigation.id}/operations/{id}":
     delete:
       x-doc:
-        title: Aborts the ongoing legal-hold operation 
+        title: Abort the ongoing legal-hold operation
         category: snaplock
         filename: delete-storage-snaplock-litigations-operations-.html
     get:
       x-doc:
-        title: Retrieves the status of legal-hold for the specified operation id
+        title: Retrieve the status of legal-hold for an operation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-operations-.html
   "/storage/snapshot-policies":
     get:
       x-doc:
-        title: Retrieves a collection of snapshot copy policies
+        title: Retrieve Snapshot copy policies
         category: storage
         filename: get-storage-snapshot-policies.html
     post:
       x-doc:
-        title: Creates a snapshot copy policy
+        title: Create a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies.html
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules":
     get:
       x-doc:
-        title: Retrieves a collection of snapshot copy policy schedules
+        title: Retrieve Snapshot copy policy schedules
         category: storage
         filename: get-storage-snapshot-policies-schedules.html
     post:
       x-doc:
-        title: Adds a schedule to a snapshot copy policy
+        title: Add a schedule to a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies-schedules.html
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules/{schedule.uuid}":
     delete:
       x-doc:
-        title: Deletes a schedule from a snapshot copy policy
+        title: Delete a schedule from a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-schedules-.html
     get:
       x-doc:
-        title: Retrieves details of a specific snapshot copy policy schedule
+        title: Retrieve Snapshot copy policy schedule details
         category: storage
         filename: get-storage-snapshot-policies-schedules-.html
     patch:
       x-doc:
-        title: Updates a snapshot copy policy schedule
+        title: Update a Snapshot copy policy schedule
         category: storage
         filename: patch-storage-snapshot-policies-schedules-.html
   "/storage/snapshot-policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a snapshot copy policy
+        title: Delete a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-.html
     get:
       x-doc:
-        title: Retrieves details of a specific snapshot copy policy
+        title: Retrieve Snapshot copy policy details
         category: storage
         filename: get-storage-snapshot-policies-.html
     patch:
       x-doc:
-        title: Updates a snapshot copy policy
+        title: Update a Snapshot copy policy
         category: storage
         filename: patch-storage-snapshot-policies-.html
   "/storage/switches":
     get:
       x-doc:
-        title: Retrieves a collection of storage switches
+        title: Retrieve storage switches
         category: storage
         filename: get-storage-switches.html
   "/storage/switches/{name}":
     get:
       x-doc:
-        title: Retrieves a specific storage switch
+        title: Retrieve a specific storage switch
         category: storage
         filename: get-storage-switches-.html
   "/storage/tape-devices":
     get:
       x-doc:
-        title: Retrieves a collection of tape devices
+        title: Retrieve tape devices
         category: storage
         filename: get-storage-tape-devices.html
   "/storage/tape-devices/{node.uuid}/{device_id}":
     get:
       x-doc:
-        title: Retrieves a specific tape device
+        title: Retrieve a tape device
         category: storage
         filename: get-storage-tape-devices-.html
     patch:
       x-doc:
-        title: Updates a specific tape device
+        title: Update a tape device
         category: storage
         filename: patch-storage-tape-devices-.html
   "/storage/volume-efficiency-policies":
     get:
       x-doc:
-        title: Retrieves a collection of volume efficiency policies
+        title: Retrieve volume efficiency policies
         category: storage
         filename: get-storage-volume-efficiency-policies.html
     post:
       x-doc:
-        title: Creates a volume efficiency policy
+        title: Create a volume efficiency policy
         category: storage
         filename: post-storage-volume-efficiency-policies.html
   "/storage/volume-efficiency-policies/{uuid}":
     delete:
       x-doc:
-        title: Deletes a volume efficiency policy
+        title: Delete a volume efficiency policy
         category: storage
         filename: delete-storage-volume-efficiency-policies-.html
     get:
       x-doc:
-        title: Retrieves the details of the specified volume efficiency policy
+        title: Retrieve volume efficiency policy details
         category: storage
         filename: get-storage-volume-efficiency-policies-.html
     patch:
       x-doc:
-        title: Updates a volume efficiency policy
+        title: Update a volume efficiency policy
         category: storage
         filename: patch-storage-volume-efficiency-policies-.html
   "/storage/volumes":
     get:
       x-doc:
-        title: Retrieves volumes
+        title: Retrieve volumes
         category: storage
         filename: get-storage-volumes.html
     post:
       x-doc:
-        title: Creates a volume on a specified svm and storage aggregates
+        title: Create a volume on SVM and storage aggregates
         category: storage
         filename: post-storage-volumes.html
   "/storage/volumes/{uuid}":
     delete:
       x-doc:
-        title: Deletes a volume
+        title: Delete a volume
         category: storage
         filename: delete-storage-volumes-.html
     get:
       x-doc:
-        title: Retrieves a volume
+        title: Retrieve a volume
         category: storage
         filename: get-storage-volumes-.html
     patch:
       x-doc:
-        title: Updates the attributes of a volume
+        title: Update volume attributes
         category: storage
         filename: patch-storage-volumes-.html
   "/storage/volumes/{volume.uuid}/files/{path}":
     delete:
       x-doc:
-        title: Deletes an existing file or directory query-based delete operations
-          are not supported
+        title: Delete an existing file or directory 
         category: storage
         filename: delete-storage-volumes-files-.html
     get:
       x-doc:
-        title: Retrieves a list of files and directories for a given directory or
-          returns only the properties of a single given directory or file of a volume
+        title: Retrieve files and directories 
         category: storage
         filename: get-storage-volumes-files-.html
     patch:
       x-doc:
-        title: Writes to an existing file with the supplied data or modifies the size,
-          name, space reservation information, qos policy, or hole range information
-          of a file query-based patch operations are not supported
+        title: Write to an existing file with the supplied data 
         category: storage
         filename: patch-storage-volumes-files-.html
     post:
       x-doc:
-        title: Creates a new file with the supplied data, a new directory or a new
-          symlink
+        title: Create a new file with the supplied data
         category: storage
         filename: post-storage-volumes-files-.html
   "/storage/volumes/{volume.uuid}/metrics":
     get:
       x-doc:
-        title: Retrieves historical performance metrics for a volume
+        title: Retrieve historical performance metrics for a volume
         category: storage
         filename: get-storage-volumes-metrics.html
   "/storage/volumes/{volume.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieves a collection of volume snapshot copies
+        title: Retrieve volume Snapshot copies
         category: storage
         filename: get-storage-volumes-snapshots.html
     post:
       x-doc:
-        title: Creates a volume snapshot copy
+        title: Create a volume Snapshot copy
         category: storage
         filename: post-storage-volumes-snapshots.html
   "/storage/volumes/{volume.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
-        title: Deletes a volume snapshot copy
+        title: Delete a volume Snapshot copy
         category: storage
         filename: delete-storage-volumes-snapshots-.html
     get:
       x-doc:
-        title: Retrieves details of a specific volume snapshot copy
+        title: Retrieve volume Snapshot copy details
         category: storage
         filename: get-storage-volumes-snapshots-.html
     patch:
       x-doc:
-        title: Updates a volume snapshot copy
+        title: Update a volume Snapshot copy
         category: storage
         filename: patch-storage-volumes-snapshots-.html
   "/storage/volumes/{volume.uuid}/top-metrics/clients":
     get:
       x-doc:
-        title: Retrieves a list of clients with the most io activity
+        title: Retrieve clients with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-clients.html
   "/storage/volumes/{volume.uuid}/top-metrics/directories":
     get:
       x-doc:
-        title: Retrieves a list of directories with the greatest value performance
+        title: Retrieve directories with the greatest value performance
           metric or capacity metric
         category: storage
         filename: get-storage-volumes-top-metrics-directories.html
   "/storage/volumes/{volume.uuid}/top-metrics/files":
     get:
       x-doc:
-        title: Retrieves a list of files with the most io activity
+        title: Retrieve files with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-files.html
   "/storage/volumes/{volume.uuid}/top-metrics/users":
     get:
       x-doc:
-        title: Retrieves a list of users with the most io activity
+        title: Retrieve users with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-users.html
   "/support/auto-update":
     get:
       x-doc:
-        title: Retrieves the current status of the automatic update feature and the
-          end user license agreement (eula)
+        title: Retrieve current status of an automatic update feature
         category: support
         filename: get-support-auto-update.html
     patch:
       x-doc:
-        title: Updates the current enabled status of the automatic update feature
-          and accepts the eula
+        title: Update current enabled status of an automatic update feature
         category: support
         filename: patch-support-auto-update.html
   "/support/auto-update/configurations":
     get:
       x-doc:
-        title: Retrieves the configuration for automatic update
+        title: Retrieve configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations.html
   "/support/auto-update/configurations/{uuid}":
     get:
       x-doc:
-        title: Retrieves the configuration for a specified automatic update
+        title: Retrieve configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations-.html
     patch:
       x-doc:
-        title: Updates the configuration for a specified automatic update
+        title: Modify configuration for an automatic update
         category: support
         filename: patch-support-auto-update-configurations-.html
   "/support/auto-update/update":
     get:
       x-doc:
-        title: Retrieves the status of all updates
+        title: Retrieve status of all updates
         category: support
         filename: get-support-auto-update-update.html
   "/support/auto-update/update/{uuid}":
     get:
       x-doc:
-        title: Retrieves the status of an update
+        title: Retrieve the status of an update
         category: support
         filename: get-support-auto-update-update-.html
     patch:
@@ -4907,400 +4870,399 @@ paths:
   "/support/autosupport":
     get:
       x-doc:
-        title: Retrieves the autosupport configuration of the cluster and if requested,
-          returns connectivity issues with the autosupport configuration
+        title: Retrieve the AutoSupport configuration 
         category: support
         filename: get-support-autosupport.html
     patch:
       x-doc:
-        title: Updates the autosupport configuration for the entire cluster
+        title: Update AutoSupport configuration for the entire cluster
         category: support
         filename: patch-support-autosupport.html
   "/support/autosupport/messages":
     get:
       x-doc:
-        title: Retrieves autosupport message history from all nodes in the cluster
+        title: Retrieve AutoSupport message history
         category: support
         filename: get-support-autosupport-messages.html
     post:
       x-doc:
-        title: Creates and sends an autosupport message with the provided input parameters
+        title: Create and send an AutoSupport message
         category: support
         filename: post-support-autosupport-messages.html
   "/support/configuration-backup":
     get:
       x-doc:
-        title: Retrieves the cluster configuration backup information
+        title: Retrieve cluster configuration backup information
         category: support
         filename: get-support-configuration-backup.html
     patch:
       x-doc:
-        title: Updates the cluster configuration backup information
+        title: Update cluster configuration backup information
         category: support
         filename: patch-support-configuration-backup.html
   "/support/configuration-backup/backups":
     get:
       x-doc:
-        title: Retrieves a list of configuration backup files
+        title: Retrieve configuration backup files
         category: support
         filename: get-support-configuration-backup-backups.html
     post:
       x-doc:
-        title: Creates a configuration backup
+        title: Create a configuration backup
         category: support
         filename: post-support-configuration-backup-backups.html
   "/support/configuration-backup/backups/{node.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a configuration backup
+        title: Delete a configuration backup
         category: support
         filename: delete-support-configuration-backup-backups-.html
     get:
       x-doc:
-        title: Retrieves details of the specified configuration backup file
+        title: Retrieve configuration backup file details
         category: support
         filename: get-support-configuration-backup-backups-.html
   "/support/coredump/coredumps":
     get:
       x-doc:
-        title: Retrieves a collection of coredumps
+        title: Retrieve core dumps
         category: support
         filename: get-support-coredump-coredumps.html
   "/support/coredump/coredumps/{node.uuid}/{name}":
     delete:
       x-doc:
-        title: Deletes a core dump
+        title: Delete a core dump
         category: support
         filename: delete-support-coredump-coredumps-.html
     get:
       x-doc:
-        title: Retrieves a specific core dump
+        title: Retrieve a core dump
         category: support
         filename: get-support-coredump-coredumps-.html
   "/support/ems":
     get:
       x-doc:
-        title: Retrieves the ems configuration
+        title: Retrieve EMS configuration
         category: support
         filename: get-support-ems.html
     patch:
       x-doc:
-        title: Updates the ems configuration
+        title: Update EMS configuration
         category: support
         filename: patch-support-ems.html
   "/support/ems/application-logs":
     post:
       x-doc:
-        title: Creates an app
+        title: Create an app
         category: support
         filename: post-support-ems-application-logs.html
   "/support/ems/destinations":
     get:
       x-doc:
-        title: Retrieves a collection of event destinations
+        title: Retrieve a collection of event destinations
         category: support
         filename: get-support-ems-destinations.html
     post:
       x-doc:
-        title: Creates an event destination
+        title: Create an event destination
         category: support
         filename: post-support-ems-destinations.html
   "/support/ems/destinations/{name}":
     delete:
       x-doc:
-        title: Deletes an event destination
+        title: Delete an event destination
         category: support
         filename: delete-support-ems-destinations-.html
     get:
       x-doc:
-        title: Retrieves event destinations
+        title: Retrieve event destinations
         category: support
         filename: get-support-ems-destinations-.html
     patch:
       x-doc:
-        title: Updates an event destination
+        title: Update an event destination
         category: support
         filename: patch-support-ems-destinations-.html
   "/support/ems/events":
     get:
       x-doc:
-        title: Retrieves a collection of observed events
+        title: Retrieve observed events
         category: support
         filename: get-support-ems-events.html
   "/support/ems/filters":
     get:
       x-doc:
-        title: Retrieves a collection of event filters
+        title: Retrieve event filters
         category: support
         filename: get-support-ems-filters.html
     post:
       x-doc:
-        title: Creates an event filter
+        title: Create an event filter
         category: support
         filename: post-support-ems-filters.html
   "/support/ems/filters/{name}":
     delete:
       x-doc:
-        title: Deletes an event filter
+        title: Delete an event filter
         category: support
         filename: delete-support-ems-filters-.html
     get:
       x-doc:
-        title: Retrieves an event filter
+        title: Retrieve an event filter
         category: support
         filename: get-support-ems-filters-.html
     patch:
       x-doc:
-        title: Updates an event filter
+        title: Update an event filter
         category: support
         filename: patch-support-ems-filters-.html
   "/support/ems/filters/{name}/rules":
     get:
       x-doc:
-        title: Retrieves event filter rules
+        title: Retrieve event filter rules
         category: support
         filename: get-support-ems-filters-rules.html
     post:
       x-doc:
-        title: Creates an event filter rule
+        title: Create an event filter rule
         category: support
         filename: post-support-ems-filters-rules.html
   "/support/ems/filters/{name}/rules/{index}":
     delete:
       x-doc:
-        title: Deletes an event filter rule
+        title: Delete an event filter rule
         category: support
         filename: delete-support-ems-filters-rules-.html
     get:
       x-doc:
-        title: Retrieves an event filter rule
+        title: Retrieve an event filter rule
         category: support
         filename: get-support-ems-filters-rules-.html
     patch:
       x-doc:
-        title: Updates an event filter rule
+        title: Update an event filter rule
         category: support
         filename: patch-support-ems-filters-rules-.html
   "/support/ems/messages":
     get:
       x-doc:
-        title: Retrieves the event catalog definitions
+        title: Retrieve event catalog definitions
         category: support
         filename: get-support-ems-messages.html
   "/support/snmp":
     get:
       x-doc:
-        title: Retrieves the cluster wide snmp configuration
+        title: Retrieve cluster-wide SNMP configuration
         category: support
         filename: get-support-snmp.html
     patch:
       x-doc:
-        title: Updates the cluster wide snmp configuration
+        title: Update cluster-wide SNMP configuration
         category: support
         filename: patch-support-snmp.html
   "/support/snmp/traphosts":
     get:
       x-doc:
-        title: Retrieves the list of snmp traphosts along with the snmp users configured
-          for those traphosts
+        title: Retrieve SNMP traphosts
+          
         category: support
         filename: get-support-snmp-traphosts.html
     post:
       x-doc:
-        title: Creates snmp traphosts
+        title: Create SNMP traphosts
         category: support
         filename: post-support-snmp-traphosts.html
   "/support/snmp/traphosts/{host}":
     delete:
       x-doc:
-        title: Deletes an snmp traphost
+        title: Delete an SNMP traphost
         category: support
         filename: delete-support-snmp-traphosts-.html
     get:
       x-doc:
-        title: Retrieves the details of an snmp traphost along with the snmp user
-          configured for that traphost
+        title: Retrieve SNMP traphost details
+          
         category: support
         filename: get-support-snmp-traphosts-.html
   "/support/snmp/users":
     get:
       x-doc:
-        title: Retrieves the list of snmp users on the cluster
+        title: Retrieve SNMP users on the cluster
         category: support
         filename: get-support-snmp-users.html
     post:
       x-doc:
-        title: Creates either a cluster-scoped or an svm-scoped snmp user
+        title: Create a cluster-scoped or an SVM-scoped SNMP user
         category: support
         filename: post-support-snmp-users.html
   "/support/snmp/users/{engine_id}/{name}":
     delete:
       x-doc:
-        title: Deletes an snmp user
+        title: Delete an SNMP user
         category: support
         filename: delete-support-snmp-users-.html
     get:
       x-doc:
-        title: Retrieves the details of an snmp user
+        title: Retrieve SNMP user details
         category: support
         filename: get-support-snmp-users-.html
     patch:
       x-doc:
-        title: Updates the comment parameter of an snmp user
+        title: Update comment parameter of an SNMP user
         category: support
         filename: patch-support-snmp-users-.html
   "/svm/migrations":
     get:
       x-doc:
-        title: Retrieves the svm migration status
+        title: Retrieve SVM migration status
         category: svm
         filename: get-svm-migrations.html
     post:
       x-doc:
-        title: Creates an svm migration operation
+        title: Create an SVM migration operation
         category: svm
         filename: post-svm-migrations.html
   "/svm/migrations/{svm_migration.uuid}/volumes":
     get:
       x-doc:
-        title: Retrieves the transfer status of the volumes in the svm
+        title: Retrieve transfer status of volumes in an SVM
         category: svm
         filename: get-svm-migrations-volumes.html
   "/svm/migrations/{svm_migration.uuid}/volumes/{volume.uuid}":
     get:
       x-doc:
-        title: Retrieves the volume transfer status of the specified volume
+        title: Retrieve volume transfer status for a volume
         category: svm
         filename: get-svm-migrations-volumes-.html
   "/svm/migrations/{uuid}":
     delete:
       x-doc:
-        title: Deletes the svm migration
+        title: Delete SVM migrations
         category: svm
         filename: delete-svm-migrations-.html
     get:
       x-doc:
-        title: Retrieves the migration status of an individual svm
+        title: Retrieve migration status for an SVM
         category: svm
         filename: get-svm-migrations-.html
     patch:
       x-doc:
-        title: Actions that can be performed during an svm migration
+        title: Update actions performed during an SVM migration
         category: svm
         filename: patch-svm-migrations-.html
   "/svm/peer-permissions":
     get:
       x-doc:
-        title: Retrieves the list of svm peer permissions
+        title: Retrieve SVM peer permissions
         category: svm
         filename: get-svm-peer-permissions.html
     post:
       x-doc:
-        title: Creates an svm peer permission
+        title: Create an SVM peer permission
         category: svm
         filename: post-svm-peer-permissions.html
   "/svm/peer-permissions/{cluster_peer.uuid}/{svm.uuid}":
     delete:
       x-doc:
-        title: Deletes the svm peer permissions
+        title: Delete SVM peer permissions
         category: svm
         filename: delete-svm-peer-permissions-.html
     get:
       x-doc:
-        title: Retrieves the svm peer permission instance
+        title: Retrieve an SVM peer permission instance
         category: svm
         filename: get-svm-peer-permissions-.html
     patch:
       x-doc:
-        title: Updates the svm peer permissions
+        title: Update SVM peer permissions
         category: svm
         filename: patch-svm-peer-permissions-.html
   "/svm/peers":
     get:
       x-doc:
-        title: Retrieves the list of svm peer relationships
+        title: Retrieve SVM peer relationships
         category: svm
         filename: get-svm-peers.html
     post:
       x-doc:
-        title: Creates a new svm peer relationship
+        title: Create a new SVM peer relationship
         category: svm
         filename: post-svm-peers.html
   "/svm/peers/{uuid}":
     delete:
       x-doc:
-        title: Deletes the svm peer relationship
+        title: Delete an SVM peer relationship
         category: svm
         filename: delete-svm-peers-.html
     get:
       x-doc:
-        title: Retrieves the svm peer relationship instance
+        title: Retrieve an SVM peer relationship instance
         category: svm
         filename: get-svm-peers-.html
     patch:
       x-doc:
-        title: Updates the svm peer relationship
+        title: Update an SVM peer relationship
         category: svm
         filename: patch-svm-peers-.html
   "/svm/svms":
     get:
       x-doc:
-        title: Retrieves a list of svms and individual svm properties
+        title: Retrieve SVMs and SVM properties
         category: svm
         filename: get-svm-svms.html
     post:
       x-doc:
-        title: Creates and provisions an svm
+        title: Create and provision an SVM
         category: svm
         filename: post-svm-svms.html
   "/svm/svms/{svm.uuid}/top-metrics/clients":
     get:
       x-doc:
-        title: Lists clients with the most I/O activity
+        title: List clients with the most I/O activity
         category: svm
         filename: get-svm-svms-top-metrics-clients.html
   "/svm/svms/{svm.uuid}/top-metrics/directories":
     get:
       x-doc:
-        title: Lists directories with the most I/O activity
+        title: List directories with the most I/O activity
         category: svm
         filename: get-svm-svms-top-metrics-directories.html
   "/svm/svms/{svm.uuid}/top-metrics/files":
     get:
       x-doc:
-        title: Lists files with the most I/O activity
+        title: List files with the most I/O activity
         category: svm
         filename: get-svm-svms-top-metrics-files.html
   "/svm/svms/{svm.uuid}/top-metrics/users":
     get:
       x-doc:
-        title: Lists users with the most I/O activity
+        title: List users with the most I/O activity
         category: svm
         filename: get-svm-svms-top-metrics-users.html
   "/svm/svms/{svm.uuid}/web":
     get:
       x-doc:
-        title: Retrieves the web services security configuration
+        title: Retrieve web services security configuration
         category: svm
         filename: get-svm-svms-web.html
     patch:
       x-doc:
-        title: Updates the web services security configuration
+        title: Update web services security configuration
         category: svm
         filename: patch-svm-svms-web.html
   "/svm/svms/{uuid}":
     delete:
       x-doc:
-        title: Deletes an svm
+        title: Delete an SVM
         category: svm
         filename: delete-svm-svms-.html
     get:
       x-doc:
-        title: Retrieves the properties for an individual svm
+        title: Retrieve SVM properties 
         category: svm
         filename: get-svm-svms-.html
     patch:
       x-doc:
-        title: Updates svm properties
+        title: Update SVM properties
         category: svm
         filename: patch-svm-svms-.html
