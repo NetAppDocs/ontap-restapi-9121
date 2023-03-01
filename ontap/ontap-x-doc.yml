@@ -36,7 +36,7 @@ paths:
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy  -- DUP
+        title: Retrieve an application component Snapshot copy  
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
@@ -367,7 +367,7 @@ paths:
         filename: get-cluster-metrocluster-diagnostics.html
     post:
       x-doc:
-        title: Start MetroCluster diagnostics or set up a schedule for periodic diagnostics
+        title: Start MetroCluster diagnostics or set up a periodic diagnostic schedule
         category: cluster
         filename: post-cluster-metrocluster-diagnostics.html
   "/cluster/metrocluster/dr-groups":
@@ -384,7 +384,7 @@ paths:
   "/cluster/metrocluster/dr-groups/{id}":
     delete:
       x-doc:
-        title: Remove a DR group from a current MetroCluster IP configuration
+        title: Remove a DR group from a MetroCluster IP configuration
         category: cluster
         filename: delete-cluster-metrocluster-dr-groups-.html
     get:
@@ -1474,7 +1474,7 @@ paths:
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieve active directory preferred DC configuration for an SVM - DUP
+        title: Retrieve active directory preferred DC configuration for an SVM using the FQDN
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
   "/protocols/audit":
@@ -1568,13 +1568,13 @@ paths:
   "/protocols/cifs/group-policies":
     get:
       x-doc:
-        title: Retrieve group policy objects that not yet applied for all SVMs
+        title: Retrieve unapplied group policy objects for all SVMs
         category: NAS
         filename: get-protocols-cifs-group-policies.html
   "/protocols/cifs/group-policies/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieve group policy objects that are not yet applied for an SVM
+        title: Retrieve unapplied group policy objects for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-.html
     patch:
@@ -1633,7 +1633,7 @@ paths:
   "/protocols/cifs/home-directory/search-paths":
     get:
       x-doc:
-        title: Retrieve CIFs home directory search paths
+        title: Retrieve CIFS home directory search paths
         category: NAS
         filename: get-protocols-cifs-home-directory-search-paths.html
     post:
@@ -1947,7 +1947,7 @@ paths:
     get:
       x-doc:
         title: Retrieve privileges for a local, or active directory user
-          or group and svm
+          or group and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
@@ -2346,7 +2346,7 @@ paths:
         filename: delete-protocols-nfs-kerberos-realms-.html
     get:
       x-doc:
-        title: Retrieves a kerberos realm
+        title: Retrieve a Kerberos realm
         category: NAS
         filename: get-protocols-nfs-kerberos-realms-.html
     patch:
@@ -2769,12 +2769,12 @@ paths:
         filename: delete-protocols-san-igroups-initiators-.html
     get:
       x-doc:
-        title: Retrieve an initiator of an initiator group
+        title: Retrieve an initiator 
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
     patch:
       x-doc:
-        title: Update an initiator of an initiator group
+        title: Update an initiator 
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
   "/protocols/san/igroups/{uuid}":
@@ -3018,7 +3018,7 @@ paths:
   "/protocols/vscan/{svm.uuid}/on-access-policies":
     get:
       x-doc:
-        title: Retrieve Vscan On-Access policy
+        title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
     post:
@@ -3045,7 +3045,7 @@ paths:
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
       x-doc:
-        title: Retrieve Vscan On-Demand policy
+        title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
     post:
@@ -3324,13 +3324,13 @@ paths:
   "/security/aws-kms/{aws_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey or re-version an AWS KMS key encryption key for AWS KMS
+        title: Re-key or re-version an AWS KMS key encryption key for AWS KMS
         category: security
         filename: post-security-aws-kms-rekey-external.html
   "/security/aws-kms/{aws_kms.uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekey SVM KEK for an AWS KMS
+        title: Re-key SVM KEK for an AWS KMS
         category: security
         filename: post-security-aws-kms-rekey-internal.html
   "/security/aws-kms/{aws_kms.uuid}/restore":
@@ -3369,7 +3369,7 @@ paths:
   "/security/azure-key-vaults/{azure_key_vault.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey the external key in the key hierarchy 
+        title: Re-key the external key in the key hierarchy 
         category: security
         filename: post-security-azure-key-vaults-rekey-external.html
   "/security/azure-key-vaults/{uuid}":
@@ -3391,7 +3391,7 @@ paths:
   "/security/azure-key-vaults/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekey the internal key in the key hierarchy for an SVM 
+        title: Re-key the internal key in the key hierarchy for an SVM 
         category: security
         filename: post-security-azure-key-vaults-rekey-internal.html
   "/security/azure-key-vaults/{uuid}/restore":
@@ -3448,7 +3448,7 @@ paths:
   "/security/gcp-kms/{gcp_kms.uuid}/rekey-external":
     post:
       x-doc:
-        title: Rekey the external key in the key hierarchy for an SVM 
+        title: Re-key the external key in the key hierarchy for an SVM 
         category: security
         filename: post-security-gcp-kms-rekey-external.html
   "/security/gcp-kms/{uuid}":
@@ -3471,7 +3471,7 @@ paths:
   "/security/gcp-kms/{uuid}/rekey-internal":
     post:
       x-doc:
-        title: Rekey the internal key in the key hierarchy for an SVM
+        title: Re-key the internal key in the key hierarchy for an SVM
         category: security
         filename: post-security-gcp-kms-rekey-internal.html
   "/security/gcp-kms/{uuid}/restore":
@@ -3551,7 +3551,6 @@ paths:
     get:
       x-doc:
         title: Retrieve an IPsec or IKE security association
-          association
         category: security
         filename: get-security-ipsec-security-associations-.html
   "/security/key-manager-configs":
@@ -3913,7 +3912,7 @@ paths:
         filename: get-snapmirror-relationships-transfers-.html
     patch:
       x-doc:
-        title: Abort an ongoing SnapMirror transfer
+        title: Cancel an ongoing SnapMirror transfer
         category: snapmirror
         filename: patch-snapmirror-relationships-transfers-.html
   "/snapmirror/relationships/{uuid}":
@@ -4598,7 +4597,7 @@ paths:
   "/storage/snaplock/litigations/{litigation.id}/operations/{id}":
     delete:
       x-doc:
-        title: Abort the ongoing legal-hold operation
+        title: Cancel the ongoing legal-hold operation
         category: snaplock
         filename: delete-storage-snaplock-litigations-operations-.html
     get:
@@ -5108,7 +5107,7 @@ paths:
         filename: get-support-snmp-users-.html
     patch:
       x-doc:
-        title: Update comment parameter of an SNMP user
+        title: Update the comment parameter of an SNMP user
         category: support
         filename: patch-support-snmp-users-.html
   "/svm/migrations":
