@@ -4486,7 +4486,7 @@ paths:
   "/storage/snaplock/event-retention/operations/{id}":
     delete:
       x-doc:
-        title: Abort an ongoing EBR operation
+        title: Cancel an ongoing EBR operation
         category: snaplock
         filename: delete-storage-snaplock-event-retention-operations-.html
     get:
@@ -4536,7 +4536,7 @@ paths:
   "/storage/snaplock/file-fingerprints/{id}":
     delete:
       x-doc:
-        title: Abort a fingerprint operation
+        title: Cancel a fingerprint operation
         category: snaplock
         filename: delete-storage-snaplock-file-fingerprints-.html
     get:
