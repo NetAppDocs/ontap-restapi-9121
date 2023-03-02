@@ -36,7 +36,7 @@ paths:
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy  
+        title: Retrieve an application component Snapshot copy using the component UUID 
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
@@ -54,7 +54,7 @@ paths:
   "/application/applications/{application.uuid}/snapshots":
     get:
       x-doc:
-        title: Retrieve an application Snapshot copy using the component UUID
+        title: Retrieve an application Snapshot copy
         category: application
         filename: get-application-applications-snapshots.html
     post:
