@@ -2920,8 +2920,8 @@ paths:
       x-doc:
         title: Create a portset
         category: SAN
-        filename: post-protocols-san-portSet.html
-  "/protocols/san/portSet/{portset.uuid}/interfaces":
+        filename: post-protocols-san-portset.html
+  "/protocols/san/portset/{portset.uuid}/interfaces":
     get:
       x-doc:
         title: Retrieve portset network interfaces
