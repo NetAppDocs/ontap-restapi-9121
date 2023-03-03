@@ -175,17 +175,17 @@ paths:
   "/cloud/targets/{uuid}":
     delete:
       x-doc:
-        title: Delete a cloud target using the UUID
+        title: Delete a cloud target 
         category: cloud
         filename: delete-cloud-targets-.html
     get:
       x-doc:
-        title: Retrieve a cloud target using the UUID
+        title: Retrieve a cloud target 
         category: cloud
         filename: get-cloud-targets-.html
     patch:
       x-doc:
-        title: Update a cloud target using the UUID
+        title: Update a cloud target 
         category: cloud
         filename: patch-cloud-targets-.html
   "/cluster":
@@ -3957,12 +3957,12 @@ paths:
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
-        title: Remove the specified cloud target from the aggregate
+        title: Remove a cloud target from the aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
     get:
       x-doc:
-        title: Retrieve the cloud store for the aggregate using a cloud target UUID
+        title: Retrieve the cloud store for a aggregate 
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
     patch:
