@@ -130,7 +130,7 @@ paths:
         filename: get-application-consistency-groups-snapshots-.html
     patch:
       x-doc:
-        title: Complete a consistency group Snapshot copy operation 
+        title: Complete a consistency group Snapshot copy operation
         category: application
         filename: patch-application-consistency-groups-snapshots-.html
   "/application/consistency-groups/{uuid}":
@@ -219,7 +219,7 @@ paths:
   "/cluster/counter/tables":
     get:
       x-doc:
-        title: Retrieve counter tables with schema definitions
+        title: Retrieve counter tables with schema definitions 
         category: cluster
         filename: get-cluster-counter-tables.html
   "/cluster/counter/tables/{counter_table.name}/rows":
@@ -272,7 +272,7 @@ paths:
   "/cluster/licensing/capacity-pools/{serial_number}":
     get:
       x-doc:
-        title: Retrieve information about a capacity pool
+        title: Retrieve capacity pool information
         category: cluster
         filename: get-cluster-licensing-capacity-pools-.html
   "/cluster/licensing/license-managers":
@@ -284,7 +284,7 @@ paths:
   "/cluster/licensing/license-managers/{uuid}":
     get:
       x-doc:
-        title: Retrieve information about a license manager
+        title: Retrieve license manager information
         category: cluster
         filename: get-cluster-licensing-license-managers-.html
     patch:
@@ -355,7 +355,7 @@ paths:
         filename: patch-cluster-metrocluster.html
     post:
       x-doc:
-        title: Setup a MetroCluster configuration
+        title: Set-up a MetroCluster configuration
         category: cluster
         filename: post-cluster-metrocluster.html
   "/cluster/metrocluster/diagnostics":
@@ -613,7 +613,7 @@ paths:
   "/cluster/software/download":
     get:
       x-doc:
-        title: Retrieve the software or firmware download status
+        title: Retrieve software or firmware download status
         category: cluster
         filename: get-cluster-software-download.html
     post:
@@ -765,23 +765,23 @@ paths:
         filename: get-name-services-dns.html
     post:
       x-doc:
-        title: Create DNS domain and server configurations for an SVM
+        title: Create DNS domain and server configurations 
         category: name-services
         filename: post-name-services-dns.html
   "/name-services/dns/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete DNS domain configuration for an SVM 
+        title: Delete DNS domain configuration  
         category: name-services
         filename: delete-name-services-dns-.html
     get:
       x-doc:
-        title: Retrieve DNS domain and server configurations for an SVM
+        title: Retrieve DNS domain and server configurations
         category: name-services
         filename: get-name-services-dns-.html
     patch:
       x-doc:
-        title: Update DNS domain and server configurations for an SVM
+        title: Update DNS domain and server configurations 
         category: name-services
         filename: patch-name-services-dns-.html
   "/name-services/host-record/{svm.uuid}/{host}":
@@ -831,7 +831,7 @@ paths:
   "/name-services/ldap/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete the LDAP configuration for an SVM
+        title: Delete LDAP configuration for an SVM
         category: name-services
         filename: delete-name-services-ldap-.html
     get:
@@ -841,7 +841,7 @@ paths:
         filename: get-name-services-ldap-.html
     patch:
       x-doc:
-        title: Update LDAP configuration of an SVM
+        title: Update LDAP configuration for an SVM
         category: name-services
         filename: patch-name-services-ldap-.html
   "/name-services/local-hosts":
