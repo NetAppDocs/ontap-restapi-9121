@@ -2943,7 +2943,7 @@ paths:
         title: Retrieve portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
-  "/protocols/san/portSet/{uuid}":
+  "/protocols/san/portsets/{uuid}":
     delete:
       x-doc:
         title: Delete a portset
