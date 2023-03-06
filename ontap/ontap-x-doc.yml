@@ -2915,45 +2915,45 @@ paths:
       x-doc:
         title: Retrieve a portset
         category: SAN
-        filename: get-protocols-san-portSet.html
+        filename: get-protocols-san-portsets.html
     post:
       x-doc:
         title: Create a portset
         category: SAN
-        filename: post-protocols-san-portset.html
+        filename: post-protocols-san-portsets.html
   "/protocols/san/portset/{portset.uuid}/interfaces":
     get:
       x-doc:
         title: Retrieve portset network interfaces
         category: SAN
-        filename: get-protocols-san-portSet-interfaces.html
+        filename: get-protocols-san-portsets-interfaces.html
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
-        filename: post-protocols-san-portSet-interfaces.html
-  "/protocols/san/portSet/{portset.uuid}/interfaces/{uuid}":
+        filename: post-protocols-san-portsets-interfaces.html
+  "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
       x-doc:
         title: Delete portset network interfaces
         category: SAN
-        filename: delete-protocols-san-portSet-interfaces-.html
+        filename: delete-protocols-san-portsets-interfaces-.html
     get:
       x-doc:
         title: Retrieve portset network interfaces
         category: SAN
-        filename: get-protocols-san-portSet-interfaces-.html
+        filename: get-protocols-san-portsets-interfaces-.html
   "/protocols/san/portSet/{uuid}":
     delete:
       x-doc:
         title: Delete a portset
         category: SAN
-        filename: delete-protocols-san-portSet-.html
+        filename: delete-protocols-san-portsets-.html
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
-        filename: get-protocols-san-portSet-.html
+        filename: get-protocols-san-portsets-.html
   "/protocols/san/vvol-bindings":
     get:
       x-doc:
