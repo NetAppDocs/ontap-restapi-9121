@@ -2910,7 +2910,7 @@ paths:
         title: Retrieve a LUN map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
-  "/protocols/san/portSet":
+  "/protocols/san/portsets":
     get:
       x-doc:
         title: Retrieve a portset
