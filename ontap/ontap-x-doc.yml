@@ -1103,7 +1103,7 @@ paths:
         filename: delete-network-ethernet-switches-.html
     get:
       x-doc:
-        title: Retrieve the details of an Ethernet switch
+        title: Retrieve Ethernet switch details
         category: networking
         filename: get-network-ethernet-switches-.html
     patch:
