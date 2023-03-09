@@ -664,18 +664,18 @@ paths:
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
-        title: Retrieve group-membership cache settings
+        title: Retrieve group membership cache settings
         category: name-services
         filename: get-name-services-cache-group-membership-settings.html
   "/name-services/cache/group-membership/settings/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieve a group-membership cache setting for an SVM
+        title: Retrieve a group membership cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-group-membership-settings-.html
     patch:
       x-doc:
-        title: Update a group-membership cache setting
+        title: Update a group membership cache setting
         category: name-services
         filename: patch-name-services-cache-group-membership-settings-.html
   "/name-services/cache/host/settings":
@@ -3039,7 +3039,7 @@ paths:
         filename: get-protocols-vscan-on-access-policies-.html
     patch:
       x-doc:
-        title: Manage Vscan On-Access policy configuration 
+        title: Manage Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
@@ -3105,8 +3105,7 @@ paths:
     patch:
       x-doc:
         title: Update the software FIPS mode or enable conversion of non-encrypted
-          metadata volumes to encrypted metadata volumes and non-NAE aggregates to
-          NAE aggregates
+          metadata volumes non-NAE aggregates 
         category: security
         filename: patch-security.html
   "/security/accounts":
