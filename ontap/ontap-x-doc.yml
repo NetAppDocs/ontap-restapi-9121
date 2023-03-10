@@ -1546,12 +1546,12 @@ paths:
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieve CIFS preferred DC configuration for an SVM
+        title: Retrieve CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers.html
     post:
       x-doc:
-        title: Create CIFS preferred DC configuration for an SVM
+        title: Create CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-domains-preferred-domain-controllers.html
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
@@ -1562,7 +1562,7 @@ paths:
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieve CIFS domain preferred DC configuration for an SVM
+        title: Retrieve CIFS domain preferred DC configuration for an SVM using the server IP
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
   "/protocols/cifs/group-policies":
