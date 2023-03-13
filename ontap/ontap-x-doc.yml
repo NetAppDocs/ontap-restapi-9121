@@ -3162,28 +3162,28 @@ paths:
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Define a remote syslog/splunk server for receiving audit information
+        title: Define a remote syslog or splunk server to recieve audit information
         category: security
         filename: get-security-audit-destinations.html
     post:
       x-doc:
-        title: Define remote syslog/splunk server information
+        title: Define remote syslog or splunk server information
         category: security
         filename: post-security-audit-destinations.html
   "/security/audit/destinations/{address}/{port}":
     delete:
       x-doc:
-        title: Delete remote syslog/splunk server information
+        title: Delete remote syslog or splunk server information
         category: security
         filename: delete-security-audit-destinations-.html
     get:
       x-doc:
-        title: Retrieve remote syslog/splunk server information
+        title: Retrieve remote syslog or splunk server information
         category: security
         filename: get-security-audit-destinations-.html
     patch:
       x-doc:
-        title: Update remote syslog/splunk server information
+        title: Update remote syslog or splunk server information
         category: security
         filename: patch-security-audit-destinations-.html
   "/security/audit/messages":
