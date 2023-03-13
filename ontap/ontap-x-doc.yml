@@ -36,7 +36,7 @@ paths:
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve an application component Snapshot copy using the component UUID 
+        title: Retrieve a specific application component Snapshot copy
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
@@ -520,17 +520,17 @@ paths:
   "/cluster/ntp/servers/{server}":
     delete:
       x-doc:
-        title: Delete an external NTP server used by ONTAP
+        title: Delete an external NTP server 
         category: cluster
         filename: delete-cluster-ntp-servers-.html
     get:
       x-doc:
-        title: Retrieve the configuration of an external NTP server used by ONTAP
+        title: Retrieve the configuration of an external NTP server
         category: cluster
         filename: get-cluster-ntp-servers-.html
     patch:
       x-doc:
-        title: Update the configuration of an NTP server used by the ONTAP cluster
+        title: Update the configuration of an NTP server 
           after validation
         category: cluster
         filename: patch-cluster-ntp-servers-.html
@@ -564,7 +564,7 @@ paths:
   "/cluster/schedules":
     get:
       x-doc:
-        title: Retrieve a schedule
+        title: Retrieve schedules
         category: cluster
         filename: get-cluster-schedules.html
     post:
@@ -580,7 +580,7 @@ paths:
         filename: delete-cluster-schedules-.html
     get:
       x-doc:
-        title: Retrieve a schedule using the UUID
+        title: Retrieve a schedule
         category: cluster
         filename: get-cluster-schedules-.html
     patch:
@@ -597,7 +597,7 @@ paths:
   "/cluster/sensors/{node.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieve environment sensors using the node UUID
+        title: Retrieve environment sensors for a node
         category: cluster
         filename: get-cluster-sensors-.html
   "/cluster/software":
@@ -1431,50 +1431,50 @@ paths:
   "/protocols/active-directory":
     get:
       x-doc:
-        title: Retrieve active directory accounts for all SVMs
+        title: Retrieve Active Directory accounts for all SVMs
         category: NAS
         filename: get-protocols-active-directory.html
     post:
       x-doc:
-        title: Create an active directory account for an SVM
+        title: Create an Active Directory account for an SVM
         category: NAS
         filename: post-protocols-active-directory.html
   "/protocols/active-directory/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete an active directory account for an SVM
+        title: Delete an Active Directory account for an SVM
         category: NAS
         filename: delete-protocols-active-directory-.html
     get:
       x-doc:
-        title: Retrieve an active directory account for an SVM
+        title: Retrieve an Active Directory account for an SVM
         category: NAS
         filename: get-protocols-active-directory-.html
     patch:
       x-doc:
-        title: Modify an active directory account for an SVM 
+        title: Modify an Active Directory account for an SVM 
         category: NAS
         filename: patch-protocols-active-directory-.html
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieve active directory preferred DC configuration for an SVM
+        title: Retrieve Active Directory preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers.html
     post:
       x-doc:
-        title: Create an active directory preferred DC configuration for an SVM
+        title: Create an Active Directory preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-active-directory-preferred-domain-controllers.html
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Delete active directory preferred DC configuration for an SVM and domain
+        title: Delete Active Directory preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieve active directory preferred DC configuration for an SVM using the FQDN
+        title: Retrieve Active Directory preferred DC configuration for an SVM and server IP
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
   "/protocols/audit":
@@ -1562,7 +1562,7 @@ paths:
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieve CIFS domain preferred DC configuration for an SVM using the server IP
+        title: Retrieve CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
   "/protocols/cifs/group-policies":
@@ -1671,28 +1671,28 @@ paths:
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members":
     delete:
       x-doc:
-        title: Delete local users or active directory users and groups from a local group and SVM
+        title: Delete local users or Active Directory users and groups from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members.html
     get:
       x-doc:
-        title: Retrieve local users and active directory users and groups that belong to a local group and SVM
+        title: Retrieve local users and Active Directory users and groups that belong to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members.html
     post:
       x-doc:
-        title: Add local users and active directory users and groups to a local group and SVM
+        title: Add local users and Active Directory users and groups to a local group and SVM
         category: NAS
         filename: post-protocols-cifs-local-groups--members.html
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members/{name}":
     delete:
       x-doc:
-        title: Delete a local user, or active directory user or group from a local group and SVM
+        title: Delete a local user, or Active Directory user or group from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members-.html
     get:
       x-doc:
-        title: Retrieve a local user, active directory user or group belonging to a local group and SVM
+        title: Retrieve a local user, Active Directory user or group belonging to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members-.html
   "/protocols/cifs/local-groups/{svm.uuid}/{sid}":
@@ -1946,24 +1946,24 @@ paths:
   "/protocols/cifs/users-and-groups/privileges":
     get:
       x-doc:
-        title: Retrieve privileges for a local, or active directory user
+        title: Retrieve privileges for a local, or Active Directory user
           or group and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
       x-doc:
-        title: Add privileges to a local, or active directory user or group and SVM
+        title: Add privileges to a local, or Active Directory user or group and SVM
         category: NAS
         filename: post-protocols-cifs-users-and-groups-privileges.html
   "/protocols/cifs/users-and-groups/privileges/{svm.uuid}/{name}":
     get:
       x-doc:
-        title: Retrieve privileges for a local, or active directory user or group and SVM
+        title: Retrieve privileges for a local, or Active Directory user or group and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges-.html
     patch:
       x-doc:
-        title: Update privileges for a local, or active directory user
+        title: Update privileges for a local, or Active Directory user
           or group and SVM
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-privileges-.html
@@ -2263,7 +2263,7 @@ paths:
         filename: get-protocols-nfs-export-policies-.html
     patch:
       x-doc:
-        title: Update export policy properties to change an export policy name or replace all export policy rules
+        title: Update export policy properties
         category: NAS
         filename: patch-protocols-nfs-export-policies-.html
   "/protocols/nfs/export-policies/{policy.id}/rules":
@@ -2659,7 +2659,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieve an S3 user configuration
+        title: Retrieve SVM configuration for an S3 user 
         category: Object-store
         filename: get-protocols-s3-services-users.html
     post:
@@ -2675,7 +2675,7 @@ paths:
         filename: delete-protocols-s3-services-users-.html
     get:
       x-doc:
-        title: Retrieve an S3 user configuration
+        title: Retrieve S3 user configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-users-.html
     patch:
@@ -2812,7 +2812,7 @@ paths:
         filename: delete-protocols-san-iscsi-credentials-.html
     get:
       x-doc:
-        title: Retrieve iSCSI credentials
+        title: Retrieve specified iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials-.html
     patch:
@@ -2940,7 +2940,7 @@ paths:
         filename: delete-protocols-san-portsets-interfaces-.html
     get:
       x-doc:
-        title: Retrieve portset network interfaces
+        title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
   "/protocols/san/portsets/{uuid}":
@@ -3200,7 +3200,7 @@ paths:
         filename: delete-security-authentication-cluster-ad-proxy.html
     get:
       x-doc:
-        title: Retrieve SVM information configured as an active directory domain-tunnel
+        title: Retrieve SVM information configured as an Active Directory domain-tunnel
         category: security
         filename: get-security-authentication-cluster-ad-proxy.html
     patch:
@@ -4839,7 +4839,7 @@ paths:
   "/support/auto-update/configurations/{uuid}":
     get:
       x-doc:
-        title: Retrieve configuration for an automatic update
+        title: Retrieve specific configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations-.html
     patch:
