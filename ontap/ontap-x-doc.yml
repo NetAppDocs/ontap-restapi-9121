@@ -36,7 +36,7 @@ paths:
         filename: delete-application-applications-components-snapshots-.html
     get:
       x-doc:
-        title: Retrieve a specific application component Snapshot copy
+        title: Retrieve a Snapshot copy for a specific application component 
         category: application
         filename: get-application-applications-components-snapshots-.html
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
@@ -1946,8 +1946,8 @@ paths:
   "/protocols/cifs/users-and-groups/privileges":
     get:
       x-doc:
-        title: Retrieve privileges for a local, or Active Directory user
-          or group and SVM
+        title: Retrieve privileges for all local, or Active Directory users
+          or groups and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
@@ -2572,28 +2572,28 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets":
     get:
       x-doc:
-        title: Retrieve S3 bucket configuration for an SVM
+        title: Retrieve all fields for all S3 buckets for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
     post:
       x-doc:
-        title: Create S3 bucket configuration for an SVM
+        title: Create an S3 bucket with QoS policies and event selector for an SVM
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for an SVM
+        title: Delete S3 bucket configuration for a specific SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
       x-doc:
-        title: Retrieve S3 bucket configuration for an SVM
+        title: Retrieve a specific S3 bucket for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets-.html
     patch:
       x-doc:
-        title: Update S3 bucket configuration of for an SVM
+        title: Update an S3 bucket policy and event selector for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
   "/protocols/s3/services/{svm.uuid}/groups":
