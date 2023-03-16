@@ -1947,7 +1947,7 @@ paths:
     get:
       x-doc:
         title: Retrieve privileges for all local, or Active Directory users
-          or groups and SVM
+          or groups and SVMs
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
     post:
