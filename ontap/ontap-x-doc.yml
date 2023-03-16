@@ -1474,7 +1474,7 @@ paths:
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
     get:
       x-doc:
-        title: Retrieve Active Directory preferred DC configuration for an SVM and server IP
+        title: Retrieve Active Directory preferred DC configuration for an SVM and domain
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
   "/protocols/audit":
