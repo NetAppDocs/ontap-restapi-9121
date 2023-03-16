@@ -2812,7 +2812,7 @@ paths:
         filename: delete-protocols-san-iscsi-credentials-.html
     get:
       x-doc:
-        title: Retrieve specified iSCSI credentials
+        title: Retrieve specific iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials-.html
     patch:
