@@ -2572,18 +2572,18 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets":
     get:
       x-doc:
-        title: Retrieve all fields for all S3 buckets for an SVM
+        title: Retrieve S3 bucket configurations for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
     post:
       x-doc:
-        title: Create an S3 bucket with QoS policies and event selector for an SVM
+        title: Create an S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for a specific SVM
+        title: Delete S3 bucket configuration for a an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
@@ -2593,7 +2593,7 @@ paths:
         filename: get-protocols-s3-services-buckets-.html
     patch:
       x-doc:
-        title: Update an S3 bucket policy and event selector for an SVM
+        title: Update an S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
   "/protocols/s3/services/{svm.uuid}/groups":
