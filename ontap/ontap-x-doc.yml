@@ -355,7 +355,7 @@ paths:
         filename: patch-cluster-metrocluster.html
     post:
       x-doc:
-        title: Set-up a MetroCluster configuration
+        title: Set up a MetroCluster configuration
         category: cluster
         filename: post-cluster-metrocluster.html
   "/cluster/metrocluster/diagnostics":
