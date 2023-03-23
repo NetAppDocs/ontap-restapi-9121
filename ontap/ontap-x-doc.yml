@@ -378,7 +378,7 @@ paths:
         filename: get-cluster-metrocluster-dr-groups.html
     post:
       x-doc:
-        title: Create a new DR group in a MetroCluster IP configuration
+        title: Create a new DR group in a MetroCluster IP configuration 
         category: cluster
         filename: post-cluster-metrocluster-dr-groups.html
   "/cluster/metrocluster/dr-groups/{id}":
