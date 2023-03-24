@@ -395,8 +395,7 @@ paths:
   "/cluster/metrocluster/interconnects":
     get:
       x-doc:
-        title: Retrieve interconnect adapter information for nodes in a
-          MetroCluster
+        title: Retrieve interconnect adapter information for nodes in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-interconnects.html
   "/cluster/metrocluster/interconnects/{node.uuid}/{partner_type}/{adapter}":
@@ -419,7 +418,7 @@ paths:
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve node configuration in the MetroCluster
+        title: Retrieve node configuration in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
   "/cluster/metrocluster/operations":
@@ -437,7 +436,7 @@ paths:
   "/cluster/metrocluster/svms":
     get:
       x-doc:
-        title: Retrieve configuration information for all SVM pairs in a MetroCluster
+        title: Retrieve configuration information for all SVM pairs in a MetroCluster configuration
         category: cluster
         filename: get-cluster-metrocluster-svms.html
   "/cluster/metrocluster/svms/{cluster.uuid}/{svm.uuid}":
@@ -449,18 +448,18 @@ paths:
   "/cluster/nodes":
     get:
       x-doc:
-        title: Retrieve the nodes in the cluster
+        title: Retrieve nodes in a cluster
         category: cluster
         filename: get-cluster-nodes.html
     post:
       x-doc:
-        title: Add a node or nodes to the cluster
+        title: Add a node or nodes to a cluster
         category: cluster
         filename: post-cluster-nodes.html
   "/cluster/nodes/{uuid}":
     delete:
       x-doc:
-        title: Delete a node from the cluster
+        title: Delete a node from a cluster
         category: cluster
         filename: delete-cluster-nodes-.html
     get:
@@ -525,12 +524,12 @@ paths:
         filename: delete-cluster-ntp-servers-.html
     get:
       x-doc:
-        title: Retrieve the configuration of an external NTP server
+        title: Retrieve an external NTP server configuration
         category: cluster
         filename: get-cluster-ntp-servers-.html
     patch:
       x-doc:
-        title: Update the configuration of an NTP server 
+        title: Update an NTP server configuration 
           after validation
         category: cluster
         filename: patch-cluster-ntp-servers-.html
@@ -760,7 +759,7 @@ paths:
   "/name-services/dns":
     get:
       x-doc:
-        title: Retrieve the DNS configurations for all SVMs
+        title: Retrieve DNS configurations for all SVMs
         category: name-services
         filename: get-name-services-dns.html
     post:
@@ -787,13 +786,13 @@ paths:
   "/name-services/host-record/{svm.uuid}/{host}":
     get:
       x-doc:
-        title: Retrieve the IP address of a hostname
+        title: Retrieve an IP address of a hostname
         category: name-services
         filename: get-name-services-host-record-.html
   "/name-services/ldap":
     get:
       x-doc:
-        title: Retrieve the LDAP configuration for all SVMs
+        title: Retrieve an LDAP configuration for all SVMs
         category: name-services
         filename: get-name-services-ldap.html
     post:
@@ -847,7 +846,7 @@ paths:
   "/name-services/local-hosts":
     get:
       x-doc:
-        title: Retrieve IP to hostname mappings for all SVMs in the cluster
+        title: Retrieve IP to hostname mappings for all SVMs in a cluster
         category: name-services
         filename: get-name-services-local-hosts.html
     post:
@@ -939,7 +938,7 @@ paths:
   "/name-services/unix-groups":
     get:
       x-doc:
-        title: Retrieve the UNIX groups for all SVMs
+        title: Retrieve UNIX groups for all SVMs
         category: name-services
         filename: get-name-services-unix-groups.html
     post:
@@ -960,7 +959,7 @@ paths:
         filename: get-name-services-unix-groups-.html
     patch:
       x-doc:
-        title: Update the UNIX group information for a group in an SVM
+        title: Update UNIX group information for a group in an SVM
         category: name-services
         filename: patch-name-services-unix-groups-.html
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users":
@@ -1393,7 +1392,7 @@ paths:
         filename: delete-network-ip-subnets-.html
     get:
       x-doc:
-        title: Retrieve details for a specific IP subnet
+        title: Retrieve IP subnet details
         category: networking
         filename: get-network-ip-subnets-.html
     patch:
@@ -1991,7 +1990,7 @@ paths:
         filename: patch-protocols-file-security-permissions-.html
     post:
       x-doc:
-        title: Apply a SD to a path
+        title: Apply an SD to a path
         category: NAS
         filename: post-protocols-file-security-permissions-.html
   "/protocols/file-security/permissions/{svm.uuid}/{path}/acl":
@@ -2185,12 +2184,12 @@ paths:
   "/protocols/ndmp/sessions/{owner.uuid}/{session.id}":
     delete:
       x-doc:
-        title: Delete a NDMP session
+        title: Delete an NDMP session
         category: ndmp
         filename: delete-protocols-ndmp-sessions-.html
     get:
       x-doc:
-        title: Retrieve details of a NDMP session
+        title: Retrieve NDMP session details
         category: ndmp
         filename: get-protocols-ndmp-sessions-.html
   "/protocols/ndmp/svms":
@@ -2213,7 +2212,7 @@ paths:
   "/protocols/ndmp/svms/{svm.uuid}/passwords/{user}":
     get:
       x-doc:
-        title: Generate and retrieve the password for a NDMP user
+        title: Generate and retrieve the password for an NDMP user
         category: ndmp
         filename: get-protocols-ndmp-svms-passwords-.html
   "/protocols/nfs/connected-client-maps":
@@ -2225,7 +2224,7 @@ paths:
   "/protocols/nfs/connected-client-settings":
     get:
       x-doc:
-        title: Retrieve NFS connected-client cache settings for the cluster
+        title: Retrieve NFS connected-client cache settings for a cluster
         category: NAS
         filename: get-protocols-nfs-connected-client-settings.html
     patch:
@@ -2351,7 +2350,7 @@ paths:
         filename: get-protocols-nfs-kerberos-realms-.html
     patch:
       x-doc:
-        title: Update the properties of a Kerberos realm
+        title: Update Kerberos realm properties 
         category: NAS
         filename: patch-protocols-nfs-kerberos-realms-.html
   "/protocols/nfs/services":
@@ -3029,7 +3028,7 @@ paths:
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
       x-doc:
-        title: Delete an anti-virus On-Access policy configuration
+        title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
     get:
@@ -3268,12 +3267,12 @@ paths:
         filename: get-security-authentication-cluster-saml-sp.html
     patch:
       x-doc:
-        title: Update a SAML service provider configuration
+        title: Update SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
     post:
       x-doc:
-        title: Create an SAML service provider configuration
+        title: Create a SAML service provider configuration
         category: security
         filename: post-security-authentication-cluster-saml-sp.html
   "/security/authentication/password":
@@ -3362,7 +3361,7 @@ paths:
         filename: get-security-azure-key-vaults.html
     post:
       x-doc:
-        title: Confgure an AKV configuration for all clusters and SVMs
+        title: Create an AKV configuration for all clusters and SVMs
         category: security
         filename: post-security-azure-key-vaults.html
   "/security/azure-key-vaults/{azure_key_vault.uuid}/rekey-external":
@@ -3441,7 +3440,7 @@ paths:
         filename: get-security-gcp-kms.html
     post:
       x-doc:
-        title: Confgure Google Cloud KMS configuration for an SVM
+        title: Create Google Cloud KMS configuration for an SVM
         category: security
         filename: post-security-gcp-kms.html
   "/security/gcp-kms/{gcp_kms.uuid}/rekey-external":
@@ -3481,19 +3480,18 @@ paths:
   "/security/ipsec":
     get:
       x-doc:
-        title: Retrieve IPsec configuration using REST APIs
+        title: Retrieve IPsec configuration 
         category: security
         filename: get-security-ipsec.html
     patch:
       x-doc:
-        title: Update IPsec configuration using REST APIs
+        title: Update IPsec configuration
         category: security
         filename: patch-security-ipsec.html
   "/security/ipsec/ca-certificates":
     get:
       x-doc:
-        title: Retrieve IPsec CA certificates configured for the cluster
-          and all SVMs
+        title: Retrieve IPsec CA certificates configured for the cluster and all SVMs
         category: security
         filename: get-security-ipsec-ca-certificates.html
     post:
@@ -3825,8 +3823,7 @@ paths:
   "/security/ssh":
     get:
       x-doc:
-        title: Retrieve the cluster SSH server ciphers, mac algorithms, key exchange
-          algorithms, and connection limits
+        title: Retrieve cluster SSH server ciphers, mac algorithms, key exchange algorithms, and connection limits
         category: security
         filename: get-security-ssh.html
     patch:
@@ -3881,8 +3878,7 @@ paths:
   "/snapmirror/relationships":
     get:
       x-doc:
-        title: Retrieve information for SnapMirror relationships depending on the
-          cluster context
+        title: Retrieve information for SnapMirror relationships
         category: snapmirror
         filename: get-snapmirror-relationships.html
     post:
@@ -3893,8 +3889,7 @@ paths:
   "/snapmirror/relationships/{relationship.uuid}/transfers":
     get:
       x-doc:
-        title: Retrieve a list of ongoing SnapMirror transfers for the specified
-          relationship
+        title: Retrieve ongoing SnapMirror transfers for a relationship
         category: snapmirror
         filename: get-snapmirror-relationships-transfers.html
     post:
@@ -3905,7 +3900,7 @@ paths:
   "/snapmirror/relationships/{relationship.uuid}/transfers/{uuid}":
     get:
       x-doc:
-        title: Retrieve the attributes of a ongoing SnapMirror transfer
+        title: Retrieve attributes of an ongoing SnapMirror transfer
         category: snapmirror
         filename: get-snapmirror-relationships-transfers-.html
     patch:
@@ -3932,12 +3927,12 @@ paths:
   "/storage/aggregates":
     get:
       x-doc:
-        title: Retrieve a collection of aggregates for the entire cluster
+        title: Retrieve a collection of aggregates for an entire cluster
         category: storage
         filename: get-storage-aggregates.html
     post:
       x-doc:
-        title: Create a collection of aggregates for the entire cluster
+        title: Create a collection of aggregates for an entire cluster
         category: storage
         filename: post-storage-aggregates.html
   "/storage/aggregates/{aggregate.uuid}/cloud-stores":
@@ -3955,17 +3950,17 @@ paths:
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
-        title: Remove a cloud target from the aggregate
+        title: Remove a cloud target from an aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
     get:
       x-doc:
-        title: Retrieve the cloud store for a aggregate 
+        title: Retrieve the cloud store for an aggregate 
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
     patch:
       x-doc:
-        title: Update the cloud store specified by the UUID with fields in the body
+        title: Update a cloud store by UUID
         category: storage
         filename: patch-storage-aggregates-cloud-stores-.html
   "/storage/aggregates/{aggregate.uuid}/plexes":
@@ -4545,7 +4540,7 @@ paths:
   "/storage/snaplock/file/{volume.uuid}/{path}":
     delete:
       x-doc:
-        title: Delete unexpired worm files of a SnapLock enterprise volume
+        title: Delete unexpired WORM files of a SnapLock enterprise volume
         category: snaplock
         filename: delete-storage-snaplock-file-.html
     get:
@@ -4872,7 +4867,7 @@ paths:
         filename: get-support-autosupport.html
     patch:
       x-doc:
-        title: Update AutoSupport configuration for the entire cluster
+        title: Update AutoSupport configuration for an entire cluster
         category: support
         filename: patch-support-autosupport.html
   "/support/autosupport/messages":
@@ -5084,7 +5079,7 @@ paths:
   "/support/snmp/users":
     get:
       x-doc:
-        title: Retrieve SNMP users on the cluster
+        title: Retrieve SNMP users on a cluster
         category: support
         filename: get-support-snmp-users.html
     post:
