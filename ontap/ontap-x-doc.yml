@@ -2369,71 +2369,83 @@ paths:
   "/protocols/ndmp":
     get:
       x-doc:
-        title: Retrieve the current NDMP mode
+        title: Retrieve current NDMP mode
         category: ndmp
         filename: get-protocols-ndmp.html
+        subcategory: Manage NDMP mode
     patch:
       x-doc:
-        title: Update the NDMP mode
+        title: Update NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
+        subcategory: Manage NDMP mode
   "/protocols/ndmp/nodes":
     get:
       x-doc:
         title: Retrieve NDMP node configurations for all nodes
         category: ndmp
         filename: get-protocols-ndmp-nodes.html
+        subcategory: Manage NDMP node configurations
   "/protocols/ndmp/nodes/{node.uuid}":
     get:
       x-doc:
         title: Retrieve NDMP node configuration for a node
         category: ndmp
         filename: get-protocols-ndmp-nodes-.html
+        subcategory: Manage NDMP node configurations
     patch:
       x-doc:
         title: Update NDMP node configuration for a node
         category: ndmp
         filename: patch-protocols-ndmp-nodes-.html
+        subcategory: Manage NDMP node configurations
   "/protocols/ndmp/sessions":
     get:
       x-doc:
         title: Retrieve NDMP sessions
         category: ndmp
         filename: get-protocols-ndmp-sessions.html
+        subcategory: Manage NDMP session configurations
   "/protocols/ndmp/sessions/{owner.uuid}/{session.id}":
     delete:
       x-doc:
         title: Delete an NDMP session
         category: ndmp
         filename: delete-protocols-ndmp-sessions-.html
+        subcategory: Manage NDMP session configurations
     get:
       x-doc:
         title: Retrieve NDMP session details
         category: ndmp
         filename: get-protocols-ndmp-sessions-.html
+        subcategory: Manage NDMP session configurations
   "/protocols/ndmp/svms":
     get:
       x-doc:
         title: Retrieve NDMP configurations for all SVMs
         category: ndmp
         filename: get-protocols-ndmp-svms.html
+        subcategory: Manage NDMP configuration of SVM
   "/protocols/ndmp/svms/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve NDMP configuration for an SVM
         category: ndmp
         filename: get-protocols-ndmp-svms-.html
+        subcategory: Manage NDMP configuration of SVM
     patch:
       x-doc:
         title: Update NDMP configuration for an SVM
         category: ndmp
         filename: patch-protocols-ndmp-svms-.html
+        subcategory: Manage NDMP configuration of SVM
   "/protocols/ndmp/svms/{svm.uuid}/passwords/{user}":
     get:
       x-doc:
         title: Generate and retrieve the password for an NDMP user
         category: ndmp
         filename: get-protocols-ndmp-svms-passwords-.html
+        subcategory: Generate NDMP user password
   "/protocols/nfs/connected-client-maps":
     get:
       x-doc:
