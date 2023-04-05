@@ -1419,26 +1419,26 @@ paths:
         title: Retrieve FC WWPN aliases
         category: SAN
         filename: get-network-fc-wwpn-aliases.html
-        subcategory: Manage HTTP proxy configuration
+        subcategory: Manage FC WWPN aliases
     post:
       x-doc:
         title: Create an FC WWPN alias
         category: SAN
         filename: post-network-fc-wwpn-aliases.html
-        subcategory: Manage HTTP proxy configuration
+        subcategory: Manage FC WWPN aliases
   "/network/fc/wwpn-aliases/{svm.uuid}/{alias}":
     delete:
       x-doc:
         title: Delete an FC WWPN alias
         category: SAN
         filename: delete-network-fc-wwpn-aliases-.html
-        subcategory: Manage HTTP proxy configuration
+        subcategory: Manage FC WWPN aliases
     get:
       x-doc:
         title: Retrieve an FC WWPN alias
         category: SAN
         filename: get-network-fc-wwpn-aliases-.html
-        subcategory: Manage HTTP proxy configuration
+        subcategory: Manage FC WWPN aliases
   "/network/http-proxy":
     get:
       x-doc:
@@ -2953,130 +2953,154 @@ paths:
         title: Retrieve initiator groups
         category: SAN
         filename: get-protocols-san-igroups.html
+        subcategory: Manage SAN iGroups
     post:
       x-doc:
         title: Create an initiator group
         category: SAN
         filename: post-protocols-san-igroups.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/igroups/{igroup.uuid}/igroups":
     get:
       x-doc:
         title: Retrieve nested initiator groups of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups.html
+        subcategory: Manage SAN iGroups
     post:
       x-doc:
         title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
     delete:
       x-doc:
         title: Remove a nested initiator group from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-igroups-.html
+        subcategory: Manage SAN iGroups
     get:
       x-doc:
         title: Retrieve a nested initiator group of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups-.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
       x-doc:
         title: Retrieve initiators of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators.html
+        subcategory: Manage SAN iGroups
     post:
       x-doc:
         title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
     delete:
       x-doc:
         title: Delete an initiator from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-initiators-.html
+        subcategory: Manage SAN iGroups
     get:
       x-doc:
         title: Retrieve an initiator 
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
+        subcategory: Manage SAN iGroups
     patch:
       x-doc:
         title: Update an initiator 
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/igroups/{uuid}":
     delete:
       x-doc:
         title: Delete an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-.html
+        subcategory: Manage SAN iGroups
     get:
       x-doc:
         title: Retrieve an initiator group
         category: SAN
         filename: get-protocols-san-igroups-.html
+        subcategory: Manage SAN iGroups
     patch:
       x-doc:
         title: Update an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-.html
+        subcategory: Manage SAN iGroups
   "/protocols/san/iscsi/credentials":
     get:
       x-doc:
         title: Retrieve iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials.html
+        subcategory: Manage iSCSI credentials
     post:
       x-doc:
         title: Create iSCSI credentials
         category: SAN
         filename: post-protocols-san-iscsi-credentials.html
+        subcategory: Manage iSCSI credentials
   "/protocols/san/iscsi/credentials/{svm.uuid}/{initiator}":
     delete:
       x-doc:
         title: Delete iSCSI credentials
         category: SAN
         filename: delete-protocols-san-iscsi-credentials-.html
+        subcategory: Manage iSCSI credentials
     get:
       x-doc:
         title: Retrieve specific iSCSI credentials
         category: SAN
         filename: get-protocols-san-iscsi-credentials-.html
+        subcategory: Manage iSCSI credentials
     patch:
       x-doc:
         title: Update iSCSI credentials
         category: SAN
         filename: patch-protocols-san-iscsi-credentials-.html
+        subcategory: Manage iSCSI credentials
   "/protocols/san/iscsi/services":
     get:
       x-doc:
         title: Retrieve iSCSI services
         category: SAN
         filename: get-protocols-san-iscsi-services.html
+        subcategory: Manage iSCSI services
     post:
       x-doc:
         title: Create an iSCSI service
         category: SAN
         filename: post-protocols-san-iscsi-services.html
+        subcategory: Manage iSCSI services
   "/protocols/san/iscsi/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete an iSCSI service
         category: SAN
         filename: delete-protocols-san-iscsi-services-.html
+        subcategory: Manage iSCSI services
     get:
       x-doc:
         title: Retrieve an iSCSI service
         category: SAN
         filename: get-protocols-san-iscsi-services-.html
+        subcategory: Manage iSCSI services
     patch:
       x-doc:
         title: Update an iSCSI service
         category: SAN
         filename: patch-protocols-san-iscsi-services-.html
+        subcategory: Manage iSCSI services
   "/protocols/san/iscsi/services/{svm.uuid}/metrics":
     get:
       x-doc:
@@ -3084,128 +3108,151 @@ paths:
           an SVM
         category: SAN
         filename: get-protocols-san-iscsi-services-metrics.html
+        subcategory: Manage iSCSI services
   "/protocols/san/iscsi/sessions":
     get:
       x-doc:
         title: Retrieve iSCSI sessions
         category: SAN
         filename: get-protocols-san-iscsi-sessions.html
+        subcategory: View iSCSI sessions
   "/protocols/san/iscsi/sessions/{svm.uuid}/{tpgroup}/{tsih}":
     get:
       x-doc:
         title: Retrieve an iSCSI session
         category: SAN
         filename: get-protocols-san-iscsi-sessions--.html
+        subcategory: View iSCSI sessions
   "/protocols/san/lun-maps":
     get:
       x-doc:
         title: Retrieve LUN maps
         category: SAN
         filename: get-protocols-san-lun-maps.html
+        subcategory: Manage SAN LUN maps
     post:
       x-doc:
         title: Create a LUN map
         category: SAN
         filename: post-protocols-san-lun-maps.html
+        subcategory: Manage SAN LUN maps
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}":
     delete:
       x-doc:
         title: Delete a LUN map
         category: SAN
         filename: delete-protocols-san-lun-maps-.html
+        subcategory: Manage SAN LUN maps
     get:
       x-doc:
         title: Retrieve a LUN map
         category: SAN
         filename: get-protocols-san-lun-maps-.html
+        subcategory: Manage SAN LUN maps
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes":
     get:
       x-doc:
         title: Retrieve LUN map reporting nodes
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes.html
+        subcategory: Add, remover or discover LUN map reporting nodes
     post:
       x-doc:
         title: Add a reporting node and its HA partner to a LUN map
         category: SAN
         filename: post-protocols-san-lun-maps--reporting-nodes.html
+        subcategory: Add, remover or discover LUN map reporting nodes
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes/{uuid}":
     delete:
       x-doc:
         title: Remove a reporting node and its HA partner from a LUN map
         category: SAN
         filename: delete-protocols-san-lun-maps--reporting-nodes-.html
+        subcategory: Add, remover or discover LUN map reporting nodes
     get:
       x-doc:
         title: Retrieve a LUN map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
+        subcategory: Add, remover or discover LUN map reporting nodes
   "/protocols/san/portsets":
     get:
       x-doc:
         title: Retrieve portsets
         category: SAN
         filename: get-protocols-san-portsets.html
+        subcategory: Manage SAN postSets
     post:
       x-doc:
         title: Create a portset
         category: SAN
         filename: post-protocols-san-portsets.html
+        subcategory: Manage SAN postSets
   "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
       x-doc:
         title: Retrieve portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces.html
+        subcategory: Manage SAN postSets
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
         filename: post-protocols-san-portsets-interfaces.html
+        subcategory: Manage SAN postSets
   "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
       x-doc:
         title: Delete portset network interfaces
         category: SAN
         filename: delete-protocols-san-portsets-interfaces-.html
+        subcategory: Manage SAN postSets
     get:
       x-doc:
         title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
+        subcategory: Manage SAN postSets
   "/protocols/san/portsets/{uuid}":
     delete:
       x-doc:
         title: Delete a portset
         category: SAN
         filename: delete-protocols-san-portsets-.html
+        subcategory: Manage SAN postSets
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
         filename: get-protocols-san-portsets-.html
+        subcategory: Manage SAN postSets
   "/protocols/san/vvol-bindings":
     get:
       x-doc:
         title: Retrieve vVol bindings
         category: SAN
         filename: get-protocols-san-vvol-bindings.html
+        subcategory: Manage SAN vVol bindings
     post:
       x-doc:
         title: Create a vVol binding
         category: SAN
         filename: post-protocols-san-vvol-bindings.html
+        subcategory: Manage SAN vVol bindings
   "/protocols/san/vvol-bindings/{protocol_endpoint.uuid}/{vvol.uuid}":
     delete:
       x-doc:
         title: Delete a vVol binding
         category: SAN
         filename: delete-protocols-san-vvol-bindings-.html
+        subcategory: Manage SAN vVol bindings
     get:
       x-doc:
         title: Retrieve a vVol binding
         category: SAN
         filename: get-protocols-san-vvol-bindings-.html
+        subcategory: Manage SAN vVol bindings
   "/protocols/vscan":
     get:
       x-doc:
@@ -4398,60 +4445,72 @@ paths:
         title: Retrieve LUNs
         category: SAN
         filename: get-storage-luns.html
+        subcategory: Manage LUNs
     post:
       x-doc:
         title: Create a LUN
         category: SAN
         filename: post-storage-luns.html
+        subcategory: Manage LUNs
   "/storage/luns/{lun.uuid}/attributes":
     get:
       x-doc:
         title: Retrieve LUN attributes
         category: SAN
         filename: get-storage-luns-attributes.html
+        subcategory: Manage LUN attributes
+
     post:
       x-doc:
         title: Add an attribute to a LUN
         category: SAN
         filename: post-storage-luns-attributes.html
+        subcategory: Manage LUN attributes
   "/storage/luns/{lun.uuid}/attributes/{name}":
     delete:
       x-doc:
         title: Delete a LUN attribute
         category: SAN
         filename: delete-storage-luns-attributes-.html
+        subcategory: Manage LUN attributes
     get:
       x-doc:
         title: Retrieve a LUN attribute
         category: SAN
         filename: get-storage-luns-attributes-.html
+        subcategory: Manage LUN attributes
     patch:
       x-doc:
         title: Update a LUN attribute value
         category: SAN
         filename: patch-storage-luns-attributes-.html
+        subcategory: Manage LUN attributes
   "/storage/luns/{uuid}":
     delete:
       x-doc:
         title: Delete a LUN
         category: SAN
         filename: delete-storage-luns-.html
+        subcategory: Manage LUNs
     get:
       x-doc:
         title: Retrieve LUN properties or data
         category: SAN
         filename: get-storage-luns-.html
+        subcategory: Manage LUNs
     patch:
       x-doc:
         title: Update an existing LUN
         category: SAN
         filename: patch-storage-luns-.html
+        subcategory: Manage LUNs
   "/storage/luns/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve historical performance metrics for a LUN
         category: SAN
         filename: get-storage-luns-metrics.html
+        subcategory: Manage LUN attributes
   "/storage/namespaces":
     get:
       x-doc:
