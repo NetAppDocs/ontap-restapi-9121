@@ -2631,128 +2631,151 @@ paths:
         title: Retrieve NVMe interfaces
         category: NVMe
         filename: get-protocols-nvme-interfaces.html
+        subcategory: View NVMe interfaces
   "/protocols/nvme/interfaces/{uuid}":
     get:
       x-doc:
         title: Retrieve an NVMe interface
         category: NVMe
         filename: get-protocols-nvme-interfaces-.html
+        subcategory: View NVMe interfaces
   "/protocols/nvme/services":
     get:
       x-doc:
         title: Retrieve NVMe services
         category: NVMe
         filename: get-protocols-nvme-services.html
+        subcategory: Manage NVMe services
     post:
       x-doc:
         title: Create an NVMe service
         category: NVMe
         filename: post-protocols-nvme-services.html
+        subcategory: Manage NVMe services
   "/protocols/nvme/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete an NVMe service
         category: NVMe
         filename: delete-protocols-nvme-services-.html
+        subcategory: Manage NVMe services
     get:
       x-doc:
         title: Retrieve an NVMe service
         category: NVMe
         filename: get-protocols-nvme-services-.html
+        subcategory: Manage NVMe services
     patch:
       x-doc:
         title: Update an NVMe service
         category: NVMe
         filename: patch-protocols-nvme-services-.html
+        subcategory: Manage NVMe services
   "/protocols/nvme/services/{svm.uuid}/metrics":
     get:
       x-doc:
         title: Retrieve NVMe protocol historical performance metrics 
         category: NVMe
         filename: get-protocols-nvme-services-metrics.html
+        subcategory: Manage NVMe services
   "/protocols/nvme/subsystem-controllers":
     get:
       x-doc:
         title: Retrieve NVMe subsystem controllers
         category: NVMe
         filename: get-protocols-nvme-subsystem-controllers.html
+        subcategory: View NVMe subsystem controllers
   "/protocols/nvme/subsystem-controllers/{subsystem.uuid}/{id}":
     get:
       x-doc:
         title: Retrieve an NVMe subsystem controller
         category: NVMe
         filename: get-protocols-nvme-subsystem-controllers-.html
+        subcategory: View NVMe subsystem controllers
   "/protocols/nvme/subsystem-maps":
     get:
       x-doc:
         title: Retrieve NVMe subsystem maps
         category: NVMe
         filename: get-protocols-nvme-subsystem-maps.html
+        subcategory: Manage NVMe subsystem maps
     post:
       x-doc:
         title: Create an NVMe subsystem map
         category: NVMe
         filename: post-protocols-nvme-subsystem-maps.html
+        subcategory: Manage NVMe subsystem maps
   "/protocols/nvme/subsystem-maps/{subsystem.uuid}/{namespace.uuid}":
     delete:
       x-doc:
         title: Delete an NVMe subsystem map
         category: NVMe
         filename: delete-protocols-nvme-subsystem-maps-.html
+        subcategory: Manage NVMe subsystem maps
     get:
       x-doc:
         title: Retrieve an NVMe subsystem map
         category: NVMe
         filename: get-protocols-nvme-subsystem-maps-.html
+        subcategory: Manage NVMe subsystem maps
   "/protocols/nvme/subsystems":
     get:
       x-doc:
         title: Retrieve NVMe subsystems
         category: NVMe
         filename: get-protocols-nvme-subsystems.html
+        subcategory: Manage NVMe subsystems
     post:
       x-doc:
         title: Create an NVMe subsystem
         category: NVMe
         filename: post-protocols-nvme-subsystems.html
+        subcategory: Manage NVMe subsystems
   "/protocols/nvme/subsystems/{subsystem.uuid}/hosts":
     get:
       x-doc:
         title: Retrieve NVMe subsystem hosts 
         category: NVMe
         filename: get-protocols-nvme-subsystems-hosts.html
+        subcategory: Manage NVMe subsystems
     post:
       x-doc:
         title: Add NVMe subsystem hosts
         category: NVMe
         filename: post-protocols-nvme-subsystems-hosts.html
+        subcategory: Manage NVMe subsystems
   "/protocols/nvme/subsystems/{subsystem.uuid}/hosts/{nqn}":
     delete:
       x-doc:
         title: Delete an NVMe subsystem host 
         category: NVMe
         filename: delete-protocols-nvme-subsystems-hosts-.html
+        subcategory: Manage NVMe subsystems
     get:
       x-doc:
         title: Retrieve an NVMe subsystem host 
         category: NVMe
         filename: get-protocols-nvme-subsystems-hosts-.html
+        subcategory: Manage NVMe subsystems
   "/protocols/nvme/subsystems/{uuid}":
     delete:
       x-doc:
         title: Remove an NVMe subsystem
         category: NVMe
-        filename: delete-protocols-nvme-subsystems-.html
+        filename: delete-protocols-nvme-subsystems-.html#
+        subcategory: Manage NVMe subsystems
     get:
       x-doc:
         title: Retrieve an NVMe subsystem
         category: NVMe
         filename: get-protocols-nvme-subsystems-.html
+        subcategory: Manage NVMe subsystems
     patch:
       x-doc:
         title: Update an NVMe subsystem
         category: NVMe
         filename: patch-protocols-nvme-subsystems-.html
+        subcategory: Manage NVMe subsystems
   "/protocols/s3/buckets":
     get:
       x-doc:
@@ -2764,163 +2787,193 @@ paths:
         title: Create S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-buckets.html
+        subcategory: Manage S3 bucket configuration
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
       x-doc:
         title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
+        subcategory: Manage S3 bucket configuration
     get:
       x-doc:
         title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
+        subcategory: Manage S3 bucket configuration
     patch:
       x-doc:
         title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
+        subcategory: Manage S3 bucket configuration
   "/protocols/s3/services":
     get:
       x-doc:
         title: Retrieve S3 server configuration for all SVMs
         category: Object-store
         filename: get-protocols-s3-services.html
+        subcategory: Manage protocols S3 services
     post:
       x-doc:
         title: Create S3 server, users, and buckets configurations
         category: Object-store
         filename: post-protocols-s3-services.html
+        subcategory: Manage protocols S3 services
   "/protocols/s3/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete S3 server configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-.html
+        subcategory: Manage protocols S3 services
     get:
       x-doc:
         title: Retrieve S3 server configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-.html
+        subcategory: Manage protocols S3 services
     patch:
       x-doc:
         title: Update S3 server configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-.html
+        subcategory: Manage protocols S3 services
   "/protocols/s3/services/{svm.uuid}/buckets":
     get:
       x-doc:
         title: Retrieve S3 bucket configurations for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
+        subcategory: Manage S3 bucket configuration
     post:
       x-doc:
         title: Create an S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
+        subcategory: Manage S3 bucket configuration
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for a an SVM
+        title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
+        subcategory: Manage S3 bucket configuration
     get:
       x-doc:
-        title: Retrieve a specific S3 bucket for an SVM
+        title: Retrieve an S3 bucket for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets-.html
+        subcategory: Manage S3 bucket configuration
     patch:
       x-doc:
         title: Update an S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
+        subcategory: Manage S3 bucket configuration
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
         title: Retrieve S3 group configuration
         category: Object-store
         filename: get-protocols-s3-services-groups.html
+        subcategory: Manage S3 group configuration
     post:
       x-doc:
         title: Create S3 group configuration
         category: Object-store
         filename: post-protocols-s3-services-groups.html
+        subcategory: Manage S3 group configuration
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
     delete:
       x-doc:
         title: Delete S3 group configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-groups-.html
+        subcategory: Manage S3 group configuration
     get:
       x-doc:
         title: Retrieve S3 group configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-groups-.html
+        subcategory: Manage S3 group configuration
     patch:
       x-doc:
         title: Update S3 group configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-groups-.html
+        subcategory: Manage S3 group configuration
   "/protocols/s3/services/{svm.uuid}/metrics":
     get:
       x-doc:
         title: Retrieve S3 protocol historical performance metrics   
         category: Object-store
         filename: get-protocols-s3-services-metrics.html
+        subcategory: Manage S3 group configuration
   "/protocols/s3/services/{svm.uuid}/policies":
     get:
       x-doc:
         title: Retrieve S3 policies in SVM configuration
         category: Object-store
         filename: get-protocols-s3-services-policies.html
+        subcategory: Manage S3 service policies 
     post:
       x-doc:
         title: Create an S3 policy configuration
         category: Object-store
         filename: post-protocols-s3-services-policies.html
+        subcategory: Manage S3 service policies
   "/protocols/s3/services/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
         title: Delete an S3 policy configuration
         category: Object-store
         filename: delete-protocols-s3-services-policies-.html
+        subcategory: Manage S3 service policies
     get:
       x-doc:
         title: Retrieve an S3 policy configuration
         category: Object-store
         filename: get-protocols-s3-services-policies-.html
+        subcategory: Manage S3 service policies
     patch:
       x-doc:
         title: Update an S3 policy configuration
         category: Object-store
         filename: patch-protocols-s3-services-policies-.html
+        subcategory: Manage S3 service policies
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
         title: Retrieve SVM configuration for an S3 user 
         category: Object-store
         filename: get-protocols-s3-services-users.html
+        subcategory: Manage S3 service users
     post:
       x-doc:
         title: Create an S3 user configuration
         category: Object-store
         filename: post-protocols-s3-services-users.html
+        subcategory: Manage S3 service users
   "/protocols/s3/services/{svm.uuid}/users/{name}":
     delete:
       x-doc:
         title: Delete an S3 user configuration
         category: Object-store
         filename: delete-protocols-s3-services-users-.html
+        subcategory: Manage S3 service users
     get:
       x-doc:
         title: Retrieve S3 user configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-users-.html
+        subcategory: Manage S3 service users
     patch:
       x-doc:
         title: Update an S3 user configuration
         category: Object-store
         filename: patch-protocols-s3-services-users-.html
+        subcategory: Manage S3 service users
   "/protocols/san/fcp/services":
     get:
       x-doc:
@@ -4525,33 +4578,39 @@ paths:
         title: Retrieve NVMe namespaces
         category: NVMe
         filename: get-storage-namespaces.html
+        subcategory: Manage NVMe namespaces
     post:
       x-doc:
         title: Create an NVMe namespace
         category: NVMe
         filename: post-storage-namespaces.html
+        subcategory: Manage NVMe namespaces
   "/storage/namespaces/{uuid}":
     delete:
       x-doc:
         title: Delete an NVMe namespace
         category: NVMe
         filename: delete-storage-namespaces-.html
+        subcategory: Manage NVMe namespaces
     get:
       x-doc:
         title: Retrieve an NVMe namespace
         category: NVMe
         filename: get-storage-namespaces-.html
+        subcategory: Manage NVMe namespaces
     patch:
       x-doc:
         title: Update an NVMe namespace
         category: NVMe
         filename: patch-storage-namespaces-.html
+        subcategory: Manage NVMe namespaces
   "/storage/namespaces/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve historical performance metrics for an NVMe namespace
         category: NVMe
         filename: get-storage-namespaces-metrics.html
+        subcategory: Manage NVMe namespaces
   "/storage/pools":
     get:
       x-doc:
