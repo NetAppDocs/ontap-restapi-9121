@@ -4260,27 +4260,32 @@ paths:
         title: Retrieve storage pools for the entire cluster
         category: storage
         filename: get-storage-pools.html
+        subcategory: Manage storage pools
     post:
       x-doc:
         title: Create a new storage pool 
         category: storage
         filename: post-storage-pools.html
+        subcategory: Manage storage pools
   "/storage/pools/{uuid}":
     delete:
       x-doc:
         title: Delete a storage pool specified by the UUID
         category: storage
         filename: delete-storage-pools-.html
+        subcategory: Manage storage pools
     get:
       x-doc:
         title: Retrieve a storage pool specified by the UUID
         category: storage
         filename: get-storage-pools-.html
+        subcategory: Manage storage pools
     patch:
       x-doc:
-        title: Update a storage pool specified by the UUID with properties in the body
+        title: Update a storage pool specified by the UUID 
         category: storage
         filename: patch-storage-pools-.html
+        subcategory: Manage storage pools
   "/storage/ports":
     get:
       x-doc:
@@ -4304,39 +4309,46 @@ paths:
         title: Retrieve QoS policies
         category: storage
         filename: get-storage-qos-policies.html
+        subcategory: QoS policies
     post:
       x-doc:
         title: Create a QoS policy
         category: storage
         filename: post-storage-qos-policies.html
+        subcategory: QoS policies
   "/storage/qos/policies/{uuid}":
     delete:
       x-doc:
         title: Delete a QoS policy
         category: storage
         filename: delete-storage-qos-policies-.html
+        subcategory: QoS policies
     get:
       x-doc:
         title: Retrieve a QoS policy
         category: storage
         filename: get-storage-qos-policies-.html
+        subcategory: QoS policies
     patch:
       x-doc:
         title: Update a QoS policy
         category: storage
         filename: patch-storage-qos-policies-.html
+        subcategory: QoS policies
   "/storage/qos/workloads":
     get:
       x-doc:
         title: Retrieve QoS workloads
         category: storage
         filename: get-storage-qos-workloads.html
+        subcategory: QoS workloads
   "/storage/qos/workloads/{uuid}":
     get:
       x-doc:
         title: Retrieve a QoS workload
         category: storage
         filename: get-storage-qos-workloads-.html
+        subcategory: QoS workloads
   "/storage/qtrees":
     get:
       x-doc:
@@ -4506,8 +4518,7 @@ paths:
         filename: delete-storage-snaplock-event-retention-policies-.html
     get:
       x-doc:
-        title: Retrieve attributes of an EBR policy
-          
+        title: Retrieve attributes of an EBR policy     
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies-.html
     patch:
@@ -4604,54 +4615,64 @@ paths:
         title: Retrieve Snapshot copy policies
         category: storage
         filename: get-storage-snapshot-policies.html
+        subcategory: Create and retrieve Snapshot copy policies
     post:
       x-doc:
         title: Create a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies.html
+        subcategory: Create and retrieve Snapshot copy policies
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules":
     get:
       x-doc:
         title: Retrieve Snapshot copy policy schedules
         category: storage
         filename: get-storage-snapshot-policies-schedules.html
+        subcategory: Manage Snapshot copy policies and schedules
     post:
       x-doc:
         title: Add a schedule to a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies-schedules.html
+        subcategory: Manage Snapshot copy policies and schedules
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules/{schedule.uuid}":
     delete:
       x-doc:
         title: Delete a schedule from a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-schedules-.html
+        subcategory: Manage Snapshot copy policies and schedules
     get:
       x-doc:
         title: Retrieve Snapshot copy policy schedule details
         category: storage
         filename: get-storage-snapshot-policies-schedules-.html
+        subcategory: Manage Snapshot copy policies and schedules
     patch:
       x-doc:
         title: Update a Snapshot copy policy schedule
         category: storage
         filename: patch-storage-snapshot-policies-schedules-.html
+        subcategory: Manage Snapshot copy policies and schedules
   "/storage/snapshot-policies/{uuid}":
     delete:
       x-doc:
         title: Delete a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-.html
+        subcategory: Manage Snapshot copy policies and schedules
     get:
       x-doc:
         title: Retrieve Snapshot copy policy details
         category: storage
         filename: get-storage-snapshot-policies-.html
+        subcategory: Manage Snapshot copy policies and schedules
     patch:
       x-doc:
         title: Update a Snapshot copy policy
         category: storage
         filename: patch-storage-snapshot-policies-.html
+        subcategory: Manage Snapshot copy policies and schedules
   "/storage/switches":
     get:
       x-doc:
@@ -4670,131 +4691,155 @@ paths:
         title: Retrieve tape devices
         category: storage
         filename: get-storage-tape-devices.html
+        subcategory: Manage storage tape devices
   "/storage/tape-devices/{node.uuid}/{device_id}":
     get:
       x-doc:
         title: Retrieve a tape device
         category: storage
         filename: get-storage-tape-devices-.html
+        subcategory: Manage storage tape devices
     patch:
       x-doc:
         title: Update a tape device
         category: storage
         filename: patch-storage-tape-devices-.html
+        subcategory: Manage storage tape devices
   "/storage/volume-efficiency-policies":
     get:
       x-doc:
         title: Retrieve volume efficiency policies
         category: storage
         filename: get-storage-volume-efficiency-policies.html
+        subcategory: Manage volume efficiency policies
     post:
       x-doc:
         title: Create a volume efficiency policy
         category: storage
         filename: post-storage-volume-efficiency-policies.html
+        subcategory: Manage volume efficiency policies
   "/storage/volume-efficiency-policies/{uuid}":
     delete:
       x-doc:
         title: Delete a volume efficiency policy
         category: storage
         filename: delete-storage-volume-efficiency-policies-.html
+        subcategory: Manage volume efficiency policies
     get:
       x-doc:
         title: Retrieve volume efficiency policy details
         category: storage
         filename: get-storage-volume-efficiency-policies-.html
+        subcategory: Manage volume efficiency policies
     patch:
       x-doc:
         title: Update a volume efficiency policy
         category: storage
         filename: patch-storage-volume-efficiency-policies-.html
+        subcategory: Manage volume efficiency policies
   "/storage/volumes":
     get:
       x-doc:
         title: Retrieve volumes
         category: storage
         filename: get-storage-volumes.html
+        subcategory: Manage storage volumes
     post:
       x-doc:
         title: Create a volume on SVM and storage aggregates
         category: storage
         filename: post-storage-volumes.html
+        subcategory: Manage storage volumes
   "/storage/volumes/{uuid}":
     delete:
       x-doc:
         title: Delete a volume
         category: storage
         filename: delete-storage-volumes-.html
+        subcategory: Manage storage volumes
     get:
       x-doc:
         title: Retrieve a volume
         category: storage
         filename: get-storage-volumes-.html
+        subcategory: Manage storage volumes
     patch:
       x-doc:
         title: Update volume attributes
         category: storage
         filename: patch-storage-volumes-.html
+        subcategory: Manage storage volumes
   "/storage/volumes/{volume.uuid}/files/{path}":
     delete:
       x-doc:
         title: Delete an existing file or directory 
         category: storage
         filename: delete-storage-volumes-files-.html
+        subcategory: Manage files and directories
     get:
       x-doc:
         title: Retrieve files and directories 
         category: storage
         filename: get-storage-volumes-files-.html
+        subcategory: Manage files and directories
     patch:
       x-doc:
         title: Write to an existing file with the supplied data 
         category: storage
         filename: patch-storage-volumes-files-.html
+        subcategory: Manage files and directories
     post:
       x-doc:
         title: Create a new file with the supplied data
         category: storage
         filename: post-storage-volumes-files-.html
+        subcategory: Manage files and directories
   "/storage/volumes/{volume.uuid}/metrics":
     get:
       x-doc:
         title: Retrieve historical performance metrics for a volume
         category: storage
         filename: get-storage-volumes-metrics.html
+        subcategory: Manage files and directories
   "/storage/volumes/{volume.uuid}/snapshots":
     get:
       x-doc:
         title: Retrieve volume Snapshot copies
         category: storage
         filename: get-storage-volumes-snapshots.html
+        subcategory: Manage volume Snapshot copies
     post:
       x-doc:
         title: Create a volume Snapshot copy
         category: storage
         filename: post-storage-volumes-snapshots.html
+        subcategory: Manage volume Snapshot copies
   "/storage/volumes/{volume.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
         title: Delete a volume Snapshot copy
         category: storage
         filename: delete-storage-volumes-snapshots-.html
+        subcategory: Manage volume Snapshot copies
     get:
       x-doc:
         title: Retrieve volume Snapshot copy details
         category: storage
         filename: get-storage-volumes-snapshots-.html
+        subcategory: Manage volume Snapshot copies
     patch:
       x-doc:
         title: Update a volume Snapshot copy
         category: storage
         filename: patch-storage-volumes-snapshots-.html
+        subcategory: Manage volume Snapshot copies
   "/storage/volumes/{volume.uuid}/top-metrics/clients":
     get:
       x-doc:
         title: Retrieve clients with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-clients.html
+        subcategory: Retrieve clients
   "/storage/volumes/{volume.uuid}/top-metrics/directories":
     get:
       x-doc:
@@ -4802,119 +4847,139 @@ paths:
           metric or capacity metric
         category: storage
         filename: get-storage-volumes-top-metrics-directories.html
+        subcategory: Retrieve directories
   "/storage/volumes/{volume.uuid}/top-metrics/files":
     get:
       x-doc:
         title: Retrieve files with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-files.html
+        subcategory: Retrieve files
   "/storage/volumes/{volume.uuid}/top-metrics/users":
     get:
       x-doc:
         title: Retrieve users with the most I/O activity
         category: storage
         filename: get-storage-volumes-top-metrics-users.html
+        subcategory: Retrieve users
   "/support/auto-update":
     get:
       x-doc:
         title: Retrieve current status of an automatic update feature
         category: support
         filename: get-support-auto-update.html
+        subcategory: Manage an automatic update feature
     patch:
       x-doc:
         title: Update current enabled status of an automatic update feature
         category: support
         filename: patch-support-auto-update.html
+        subcategory: Manage an automatic update feature
   "/support/auto-update/configurations":
     get:
       x-doc:
         title: Retrieve configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations.html
+        subcategory: Automatic update configuration
   "/support/auto-update/configurations/{uuid}":
     get:
       x-doc:
         title: Retrieve specific configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations-.html
+        subcategory: Manage specific automatic update configuration
     patch:
       x-doc:
         title: Modify configuration for an automatic update
         category: support
         filename: patch-support-auto-update-configurations-.html
+        subcategory: Manage specific automatic update configuration
   "/support/auto-update/update":
     get:
       x-doc:
         title: Retrieve status of all updates
         category: support
         filename: get-support-auto-update-update.html
+        subcategory: Retrieve all automatic update status
   "/support/auto-update/update/{uuid}":
     get:
       x-doc:
         title: Retrieve the status of an update
         category: support
         filename: get-support-auto-update-update-.html
+        subcategory: Retrive or update the status of an automatic update
     patch:
       x-doc:
-        title: Performs an action on the update
+        title: Perform an action on the update
         category: support
         filename: patch-support-auto-update-update-.html
+        subcategory: Retrive or update the status of an automatic update
   "/support/autosupport":
     get:
       x-doc:
         title: Retrieve the AutoSupport configuration 
         category: support
         filename: get-support-autosupport.html
+        subcategory: AutoSupport configuration
     patch:
       x-doc:
         title: Update AutoSupport configuration for an entire cluster
         category: support
         filename: patch-support-autosupport.html
+        subcategory: AutoSupport configuration
   "/support/autosupport/messages":
     get:
       x-doc:
         title: Retrieve AutoSupport message history
         category: support
         filename: get-support-autosupport-messages.html
+        subcategory: Manage AutoSupport messages
     post:
       x-doc:
         title: Create and send an AutoSupport message
         category: support
         filename: post-support-autosupport-messages.html
+        subcategory: Manage AutoSupport messages
   "/support/configuration-backup":
     get:
       x-doc:
         title: Retrieve cluster configuration backup information
         category: support
         filename: get-support-configuration-backup.html
+        subcategory: Cluster configuration backup information
     patch:
       x-doc:
         title: Update cluster configuration backup information
         category: support
         filename: patch-support-configuration-backup.html
+        subcategory: Cluster configuration backup information
   "/support/configuration-backup/backups":
     get:
       x-doc:
         title: Retrieve configuration backup files
         category: support
         filename: get-support-configuration-backup-backups.html
+        subcategory: Configuration backups
     post:
       x-doc:
         title: Create a configuration backup
         category: support
         filename: post-support-configuration-backup-backups.html
+        subcategory: Configuration backups
   "/support/configuration-backup/backups/{node.uuid}/{name}":
     delete:
       x-doc:
         title: Delete a configuration backup
         category: support
         filename: delete-support-configuration-backup-backups-.html
+        subcategory: Configuration backups
     get:
       x-doc:
         title: Retrieve configuration backup file details
         category: support
         filename: get-support-configuration-backup-backups-.html
-        subcategory: Core dumps
+        subcategory: Configuration backups
   "/support/coredump/coredumps":
     get:
       x-doc:
@@ -5063,20 +5128,20 @@ paths:
         title: Retrieve event catalog definitions
         category: support
         filename: get-support-ems-messages.html
-        subcategory: EMS
+        subcategory: EMS event catalog
   "/support/snmp":
     get:
       x-doc:
         title: Retrieve cluster-wide SNMP configuration
         category: support
         filename: get-support-snmp.html
-        subcategory: Manage SNMP cluster-wide SNMP configuration
+        subcategory: Manage cluster-wide SNMP configuration
     patch:
       x-doc:
         title: Update cluster-wide SNMP configuration
         category: support
         filename: patch-support-snmp.html
-        subcategory: Manage SNMP cluster-wide SNMP configuration
+        subcategory: Manage cluster-wide SNMP configuration
   "/support/snmp/traphosts":
     get:
       x-doc:
