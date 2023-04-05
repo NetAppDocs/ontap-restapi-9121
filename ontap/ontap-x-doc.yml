@@ -230,42 +230,42 @@ paths:
         title: Retrieve a collection of chassis
         category: cluster
         filename: get-cluster-chassis.html
-        subcategory: Manage cluster chassis
+        subcategory: Retrieve cluster chassis
   "/cluster/chassis/{id}":
     get:
       x-doc:
         title: Retrieve a chassis
         category: cluster
         filename: get-cluster-chassis-.html
-        subcategory: Manage cluster chassis
+        subcategory: Retrieve cluster chassis
   "/cluster/counter/tables":
     get:
       x-doc:
         title: Retrieve counter tables with schema definitions 
         category: cluster
         filename: get-cluster-counter-tables.html
-        subcategory: Manage cluster counter tables
+        subcategory: Retrieve cluster counter tables
   "/cluster/counter/tables/{counter_table.name}/rows":
     get:
       x-doc:
         title: Retrieve counter rows
         category: cluster
         filename: get-cluster-counter-tables-rows.html
-        subcategory: Manage cluster counter tables
+        subcategory: Retrieve cluster counter tables
   "/cluster/counter/tables/{counter_table.name}/rows/{id}":
     get:
       x-doc:
         title: Retrieve a counter row
         category: cluster
         filename: get-cluster-counter-tables-rows-.html
-        subcategory: Manage cluster counter tables
+        subcategory: Retrieve cluster counter tables
   "/cluster/counter/tables/{name}":
     get:
       x-doc:
         title: Retrieve counter table details
         category: cluster
         filename: get-cluster-counter-tables-.html
-        subcategory: Manage cluster counter tables
+        subcategory: Retrieve cluster counter tables
   "/cluster/firmware/history":
     get:
       x-doc:
@@ -278,29 +278,34 @@ paths:
         title: Retrieve recent asynchronous jobs
         category: cluster
         filename: get-cluster-jobs.html
+        subcategory: View and manage cluster jobs
   "/cluster/jobs/{uuid}":
     get:
       x-doc:
         title: Retrieve details of an asynchronous job
         category: cluster
         filename: get-cluster-jobs-.html
+        subcategory: View and manage cluster jobs
     patch:
       x-doc:
         title: Update the state of an asynchronous job
         category: cluster
         filename: patch-cluster-jobs-.html
+        subcategory: View and manage cluster jobs
   "/cluster/licensing/capacity-pools":
     get:
       x-doc:
         title: Retrieve capacity pools
         category: cluster
         filename: get-cluster-licensing-capacity-pools.html
+        subcategory: Retrieve capacity pool licenses
   "/cluster/licensing/capacity-pools/{serial_number}":
     get:
       x-doc:
         title: Retrieve capacity pool information
         category: cluster
         filename: get-cluster-licensing-capacity-pools-.html
+        subcategory: Retrieve capacity pool licenses
   "/cluster/licensing/license-managers":
     get:
       x-doc:
@@ -353,44 +358,52 @@ paths:
         title: Retrieve ONTAP Mediators configured in the cluster
         category: cluster
         filename: get-cluster-mediators.html
+        subcategory: Manage cluster mediators
     post:
       x-doc:
         title: Create and connect an ONTAP Mediator
         category: cluster
         filename: post-cluster-mediators.html
+        subcategory: Manage cluster mediators
   "/cluster/mediators/{uuid}":
     delete:
       x-doc:
         title: Delete an ONTAP Mediator
         category: cluster
         filename: delete-cluster-mediators-.html
+        subcategory: Manage cluster mediators
     get:
       x-doc:
         title: Retrieve ONTAP Mediator state and configuration
         category: cluster
         filename: get-cluster-mediators-.html
+        subcategory: Manage cluster mediators
   "/cluster/metrics":
     get:
       x-doc:
         title: Retrieve historical performance metrics for the cluster
         category: cluster
         filename: get-cluster-metrics.html
+        subcategory: Manage cluster mediators
   "/cluster/metrocluster":
     get:
       x-doc:
         title: Retrieve MetroCluster status and configuration details
         category: cluster
         filename: get-cluster-metrocluster.html
+        subcategory: View and manage MetroCluster configurations
     patch:
       x-doc:
         title: Initiate a switchover, heal, or switchback operation
         category: cluster
         filename: patch-cluster-metrocluster.html
+        subcategory: View and manage MetroCluster configurations
     post:
       x-doc:
         title: Set up a MetroCluster configuration
         category: cluster
         filename: post-cluster-metrocluster.html
+        subcategory: View and manage MetroCluster configurations
   "/cluster/metrocluster/diagnostics":
     get:
       x-doc:
@@ -398,86 +411,101 @@ paths:
           configuration
         category: cluster
         filename: get-cluster-metrocluster-diagnostics.html
+        subcategory: Display MetroCluster diagnostics
     post:
       x-doc:
         title: Start MetroCluster diagnostics or set up a periodic diagnostic schedule
         category: cluster
         filename: post-cluster-metrocluster-diagnostics.html
+        subcategory: Display MetroCluster diagnostics
   "/cluster/metrocluster/dr-groups":
     get:
       x-doc:
         title: Retrieve all DR groups in a MetroCluster IP configuration
         category: cluster
         filename: get-cluster-metrocluster-dr-groups.html
+        subcategory: Manage MetroCluster DR groups
     post:
       x-doc:
         title: Create a new DR group in a MetroCluster IP configuration 
         category: cluster
         filename: post-cluster-metrocluster-dr-groups.html
+        subcategory: Manage MetroCluster DR groups
   "/cluster/metrocluster/dr-groups/{id}":
     delete:
       x-doc:
         title: Remove a DR group from a MetroCluster IP configuration
         category: cluster
         filename: delete-cluster-metrocluster-dr-groups-.html
+        subcategory: Manage MetroCluster DR groups
     get:
       x-doc:
         title: Retrieve DR group information using the DR group ID
         category: cluster
         filename: get-cluster-metrocluster-dr-groups-.html
+        subcategory: Manage MetroCluster DR groups
   "/cluster/metrocluster/interconnects":
     get:
       x-doc:
         title: Retrieve interconnect adapter information for nodes in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-interconnects.html
+        subcategory: View and update MetroCluster interconnects
   "/cluster/metrocluster/interconnects/{node.uuid}/{partner_type}/{adapter}":
     get:
       x-doc:
         title: Retrieve information about a MetroCluster interconnect for a partner type and adapter
         category: cluster
         filename: get-cluster-metrocluster-interconnects--.html
+        subcategory: View and update MetroCluster interconnects
     patch:
       x-doc:
         title: Update a MetroCluster interconnect interface
         category: cluster
         filename: patch-cluster-metrocluster-interconnects--.html
+        subcategory: View and update MetroCluster interconnects
   "/cluster/metrocluster/nodes":
     get:
       x-doc:
         title: Retrieve MetroCluster nodes and configurations
         category: cluster
         filename: get-cluster-metrocluster-nodes.html
+        subcategory: Retrieve MetroCluster node configurations
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
         title: Retrieve node configuration in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
+        subcategory: Retrieve MetroCluster node configurations
   "/cluster/metrocluster/operations":
     get:
       x-doc:
         title: Retrieve MetroCluster operations on the local cluster
         category: cluster
         filename: get-cluster-metrocluster-operations.html
+        subcategory: Retrieve MetroCluster operations
   "/cluster/metrocluster/operations/{uuid}":
     get:
       x-doc:
         title: Retrieve information about a MetroCluster operation
         category: cluster
         filename: get-cluster-metrocluster-operations-.html
+        subcategory: Retrieve MetroCluster operations
   "/cluster/metrocluster/svms":
     get:
       x-doc:
         title: Retrieve configuration information for all SVM pairs in a MetroCluster configuration
         category: cluster
         filename: get-cluster-metrocluster-svms.html
+        subcategory: Retrieve MetroCluster SVMs
   "/cluster/metrocluster/svms/{cluster.uuid}/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve configuration information for an SVM
         category: cluster
         filename: get-cluster-metrocluster-svms-.html
+        subcategory: Retrieve MetroCluster SVMs
   "/cluster/nodes":
     get:
       x-doc:
@@ -653,6 +681,7 @@ paths:
         title: Retrieve environment sensors
         category: cluster
         filename: get-cluster-sensors.html
+        subcategory: Retrieve cluster sensors
   "/cluster/sensors/{node.uuid}/{index}":
     get:
       x-doc:
@@ -724,13 +753,13 @@ paths:
         title: Retrieve the web services configuration
         category: cluster
         filename: get-cluster-web.html
-        subcategory: Manage cluster web
+        subcategory: View and update cluster web configurations
     patch:
       x-doc:
         title: Update the web services configuration
         category: cluster
         filename: patch-cluster-web.html
-        subcategory: Manage cluster web
+        subcategory: View and update cluster web configurations
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -882,44 +911,52 @@ paths:
         title: Retrieve an IP address of a hostname
         category: name-services
         filename: get-name-services-host-record-.html
+        subcategory: Retrieve host records
   "/name-services/ldap":
     get:
       x-doc:
         title: Retrieve an LDAP configuration for all SVMs
         category: name-services
         filename: get-name-services-ldap.html
+        subcategory: Manage LDAP server configurations
     post:
       x-doc:
         title: Create an LDAP configuration for an SVM
         category: name-services
         filename: post-name-services-ldap.html
+        subcategory: Manage LDAP server configurations
   "/name-services/ldap-schemas":
     get:
       x-doc:
         title: Retrieve all LDAP schemas
         category: name-services
         filename: get-name-services-ldap-schemas.html
+        subcategory: Manage LDAP schemas
     post:
       x-doc:
         title: Create an LDAP schema
         category: name-services
         filename: post-name-services-ldap-schemas.html
+        subcategory: Manage LDAP schemas
   "/name-services/ldap-schemas/{owner.uuid}/{name}":
     delete:
       x-doc:
         title: Delete an existing schema
         category: name-services
         filename: delete-name-services-ldap-schemas-.html
+        subcategory: Manage LDAP schemas
     get:
       x-doc:
         title: Retrieve LDAP schema details for an owner and schema
         category: name-services
         filename: get-name-services-ldap-schemas-.html
+        subcategory: Manage LDAP schemas
     patch:
       x-doc:
         title: Update LDAP schema details for an owner and schema
         category: name-services
         filename: patch-name-services-ldap-schemas-.html
+        subcategory: Manage LDAP schemas
   "/name-services/ldap/{svm.uuid}":
     delete:
       x-doc:
@@ -931,404 +968,477 @@ paths:
         title: Retrieve LDAP configuration for an SVM
         category: name-services
         filename: get-name-services-ldap-.html
+        subcategory: Manage LDAP schemas
     patch:
       x-doc:
         title: Update LDAP configuration for an SVM
         category: name-services
         filename: patch-name-services-ldap-.html
+        subcategory: Manage LDAP schemas
   "/name-services/local-hosts":
     get:
       x-doc:
         title: Retrieve IP to hostname mappings for all SVMs in a cluster
         category: name-services
         filename: get-name-services-local-hosts.html
+        subcategory: Manage local mapping for hostnames
     post:
       x-doc:
         title: Create a new IP to hostname mapping
         category: name-services
         filename: post-name-services-local-hosts.html
+        subcategory: Manage local mapping for hostnames
   "/name-services/local-hosts/{owner.uuid}/{address}":
     delete:
       x-doc:
         title: Delete an existing host object
         category: name-services
         filename: delete-name-services-local-hosts-.html
+        subcategory: Manage local mapping for hostnames
     get:
       x-doc:
         title: Retrieve hostname mapping for an SVM
         category: name-services
         filename: get-name-services-local-hosts-.html
+        subcategory: Manage local mapping for hostnames
     patch:
       x-doc:
         title: Update hostname mapping for an SVM
         category: name-services
         filename: patch-name-services-local-hosts-.html
+        subcategory: Manage local mapping for hostnames
   "/name-services/name-mappings":
     get:
       x-doc:
         title: Retrieve hostname mapping for all SVMs
         category: name-services
         filename: get-name-services-name-mappings.html
+        subcategory: Manage local mapping for hostnames
     post:
       x-doc:
         title: Create hostname mappings for an SVM
         category: name-services
         filename: post-name-services-name-mappings.html
+        subcategory: Manage name mappings for hostnames
   "/name-services/name-mappings/{svm.uuid}/{direction}/{index}":
     delete:
       x-doc:
         title: Delete the name mapping configuration
         category: name-services
         filename: delete-name-services-name-mappings--.html
+        subcategory: Manage name mappings for hostnames
     get:
       x-doc:
         title: Retrieve the name mapping configuration for an SVM 
         category: name-services
         filename: get-name-services-name-mappings--.html
+        subcategory: Manage name mappings for hostnames
     patch:
       x-doc:
         title: Update the name mapping configuration for an SVM 
         category: name-services
         filename: patch-name-services-name-mappings--.html
+        subcategory: Manage name mappings for hostnames
   "/name-services/netgroup-files/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete the netgroup file for an SVM
+        title: Delete a netgroup file for an SVM
         category: name-services
         filename: delete-name-services-netgroup-files-.html
+        subcategory: Display netgroup file details
     get:
       x-doc:
         title: Retrieve the netgroup file details
         category: name-services
         filename: get-name-services-netgroup-files-.html
+        subcategory: Display netgroup file details
   "/name-services/nis":
     get:
       x-doc:
         title: Retrieve NIS domain configurations of all SVMs
         category: name-services
         filename: get-name-services-nis.html
+        subcategory: Manage NIS server configurations
     post:
       x-doc:
         title: Create NIS domain and server configuration for a data SVM
         category: name-services
         filename: post-name-services-nis.html
+        subcategory: Manage NIS server configurations
   "/name-services/nis/{svm.uuid}":
     delete:
       x-doc:
         title: Delete NIS domain configuration for an SVM
         category: name-services
         filename: delete-name-services-nis-.html
+        subcategory: Manage NIS server configurations
     get:
       x-doc:
         title: Retrieve NIS domain and server configurations for an SVM
         category: name-services
         filename: get-name-services-nis-.html
+        subcategory: Manage NIS server configurations
     patch:
       x-doc:
         title: Update NIS domain and server configuration for an SVM
         category: name-services
         filename: patch-name-services-nis-.html
+        subcategory: Manage NIS server configurations
   "/name-services/unix-groups":
     get:
       x-doc:
         title: Retrieve UNIX groups for all SVMs
         category: name-services
         filename: get-name-services-unix-groups.html
+        subcategory: Manage UNIX group configurations
     post:
       x-doc:
         title: Create local UNIX group configuration for an SVM 
         category: name-services
         filename: post-name-services-unix-groups.html
+        subcategory: Manage UNIX group configurations
   "/name-services/unix-groups/{svm.uuid}/{name}":
     delete:
       x-doc:
         title: Delete UNIX group configuration for an SVM
         category: name-services
         filename: delete-name-services-unix-groups-.html
+        subcategory: Manage UNIX group configurations
     get:
       x-doc:
         title: Retrieve UNIX group information for a group and SVM
         category: name-services
         filename: get-name-services-unix-groups-.html
+        subcategory: Manage UNIX group configurations
     patch:
       x-doc:
         title: Update UNIX group information for a group in an SVM
         category: name-services
         filename: patch-name-services-unix-groups-.html
+        subcategory: Manage UNIX group configurations
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users":
     get:
       x-doc:
         title: Retrieve users for a UNIX group and SVM
         category: name-services
         filename: get-name-services-unix-groups--users.html
+        subcategory: Manage UNIX group users 
     post:
       x-doc:
         title: Adds users to a UNIX group and SVM
         category: name-services
         filename: post-name-services-unix-groups--users.html
+        subcategory: Manage UNIX group users
   "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users/{name}":
     delete:
       x-doc:
         title: Delete a user from a UNIX group
         category: name-services
         filename: delete-name-services-unix-groups--users-.html
+        subcategory: Manage UNIX group users
     get:
       x-doc:
         title: Retrieve users for a UNIX group and SVM
         category: name-services
         filename: get-name-services-unix-groups--users-.html
+        subcategory: Manage UNIX group users
   "/name-services/unix-users":
     get:
       x-doc:
         title: Retrieve all UNIX users for all SVMs
         category: name-services
         filename: get-name-services-unix-users.html
+        subcategory: Manage UNIX user configurations
     post:
       x-doc:
         title: Create local UNIX user configuration for an SVM
         category: name-services
         filename: post-name-services-unix-users.html
+        subcategory: Manage UNIX user configurations
   "/name-services/unix-users/{svm.uuid}/{name}":
     delete:
       x-doc:
         title: Delete a UNIX user configuration for an SVM
         category: name-services
         filename: delete-name-services-unix-users-.html
+        subcategory: Manage UNIX user configurations
     get:
       x-doc:
         title: Retrieve UNIX user information for a user and SVM
         category: name-services
         filename: get-name-services-unix-users-.html
+        subcategory: Manage UNIX user configurations
     patch:
       x-doc:
         title: Update UNIX user information for a user and SVM
         category: name-services
         filename: patch-name-services-unix-users-.html
+        subcategory: Manage UNIX user configurations
   "/network/ethernet/broadcast-domains":
     get:
       x-doc:
         title: Retrieve broadcast domains for the entire cluster
         category: networking
         filename: get-network-ethernet-broadcast-domains.html
+        subcategory: Manage broadcast domains
     post:
       x-doc:
         title: Create a new broadcast domain
         category: networking
         filename: post-network-ethernet-broadcast-domains.html
+        subcategory: Manage broadcast domains
   "/network/ethernet/broadcast-domains/{uuid}":
     delete:
       x-doc:
         title: Delete a broadcast domain
         category: networking
         filename: delete-network-ethernet-broadcast-domains-.html
+        subcategory: Manage broadcast domains
     get:
       x-doc:
         title: Retrieve broadcast domain details
         category: networking
         filename: get-network-ethernet-broadcast-domains-.html
+        subcategory: Manage broadcast domains
     patch:
       x-doc:
         title: Update broadcast domain properties
         category: networking
         filename: patch-network-ethernet-broadcast-domains-.html
+        subcategory: Manage broadcast domains
   "/network/ethernet/ports":
     get:
       x-doc:
         title: Retrieve ports
         category: networking
         filename: get-network-ethernet-ports.html
+        subcategory: Manage network ethernet ports
     post:
       x-doc:
         title: Create a new VLAN or LAG
         category: networking
         filename: post-network-ethernet-ports.html
+        subcategory: Manage network ethernet ports
   "/network/ethernet/ports/{uuid}":
     delete:
       x-doc:
         title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
+        subcategory: Manage network ethernet ports
     get:
       x-doc:
         title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
+        subcategory: Manage network ethernet ports
     patch:
       x-doc:
         title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
+        subcategory: Manage network ethernet ports
   "/network/ethernet/ports/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve historical port performance metrics
         category: networking
         filename: get-network-ethernet-ports-metrics.html
+        subcategory: Manage network ethernet ports
   "/network/ethernet/switch/ports":
     get:
       x-doc:
         title: Retrieve Ethernet switch ports
         category: networking
         filename: get-network-ethernet-switch-ports.html
+        subcategory: Retrieve network ethernet switch ports
   "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
     get:
       x-doc:
         title: Retrieve an Ethernet switch port
         category: networking
         filename: get-network-ethernet-switch-ports--.html
+        subcategory: Retrieve network ethernet switch ports
   "/network/ethernet/switches":
     get:
       x-doc:
         title: Retrieve Ethernet switches attached to a chassis
         category: networking
         filename: get-network-ethernet-switches.html
+        subcategory: Manage ethernet switches
     post:
       x-doc:
         title: Create an Ethernet switch
         category: networking
         filename: post-network-ethernet-switches.html
+        subcategory: Manage ethernet switches
   "/network/ethernet/switches/{name}":
     delete:
       x-doc:
         title: Delete an Ethernet switch
         category: networking
         filename: delete-network-ethernet-switches-.html
+        subcategory: Manage ethernet switches
     get:
       x-doc:
         title: Retrieve Ethernet switch details
         category: networking
         filename: get-network-ethernet-switches-.html
+        subcategory: Manage ethernet switches
     patch:
       x-doc:
         title: Update an Ethernet switch
         category: networking
         filename: patch-network-ethernet-switches-.html
+        subcategory: Manage ethernet switches
   "/network/fc/fabrics":
     get:
       x-doc:
         title: Retrieve fibre channel fabrics
         category: networking
         filename: get-network-fc-fabrics.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/fabrics/{fabric.name}/switches":
     get:
       x-doc:
         title: Retrieve fibre channel fabric switches
         category: networking
         filename: get-network-fc-fabrics-switches.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/fabrics/{fabric.name}/switches/{wwn}":
     get:
       x-doc:
         title: Retrieve a fibre channel switch
         category: networking
         filename: get-network-fc-fabrics-switches-.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/fabrics/{fabric.name}/zones":
     get:
       x-doc:
         title: Retrieve fibre channel fabric zones
         category: networking
         filename: get-network-fc-fabrics-zones.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/fabrics/{fabric.name}/zones/{name}":
     get:
       x-doc:
         title: Retrieve a fibre channel fabric zone
         category: networking
         filename: get-network-fc-fabrics-zones-.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/fabrics/{name}":
     get:
       x-doc:
         title: Retrieve a fibre channel fabric
         category: networking
         filename: get-network-fc-fabrics-.html
+        subcategory: Retrieve FC fabrics
   "/network/fc/interfaces":
     get:
       x-doc:
         title: Retrieves FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
+        subcategory: Manage FC network interfaces
     post:
       x-doc:
         title: Create an FC interface
         category: networking
         filename: post-network-fc-interfaces.html
+        subcategory: Manage FC network interfaces
   "/network/fc/interfaces/{uuid}":
     delete:
       x-doc:
         title: Delete an FC interface
         category: networking
         filename: delete-network-fc-interfaces-.html
+        subcategory: Manage FC network interfaces
     get:
       x-doc:
         title: Retrieve an FC interface
         category: networking
         filename: get-network-fc-interfaces-.html
+        subcategory: Manage FC network interfaces
     patch:
       x-doc:
         title: Update an FC interface
         category: networking
         filename: patch-network-fc-interfaces-.html
+        subcategory: Manage FC network interfaces
   "/network/fc/interfaces/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve FC interface historical performance metrics
         category: networking
         filename: get-network-fc-interfaces-metrics.html
+        subcategory: Manage FC network interfaces
   "/network/fc/logins":
     get:
       x-doc:
         title: Retrieve FC logins
         category: SAN
         filename: get-network-fc-logins.html
+        subcategory: Retrieve FC port information
   "/network/fc/logins/{interface.uuid}/{initiator.wwpn}":
     get:
       x-doc:
         title: Retrieve an FC login
         category: SAN
         filename: get-network-fc-logins-.html
+        subcategory: Retrieve FC port information
   "/network/fc/ports":
     get:
       x-doc:
         title: Retrieve FC ports
         category: networking
         filename: get-network-fc-ports.html
+        subcategory: Retrieve FC port information
   "/network/fc/ports/{uuid}":
     get:
       x-doc:
         title: Retrieve an FC port
         category: networking
         filename: get-network-fc-ports-.html
+        subcategory: Retrieve FC port information
     patch:
       x-doc:
         title: Update an FC port
         category: networking
         filename: patch-network-fc-ports-.html
+        subcategory: Retrieve FC port information
   "/network/fc/ports/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve FC port historical performance metrics 
         category: networking
         filename: get-network-fc-ports-metrics.html
+        subcategory: Retrieve FC port information
   "/network/fc/wwpn-aliases":
     get:
       x-doc:
         title: Retrieve FC WWPN aliases
         category: SAN
         filename: get-network-fc-wwpn-aliases.html
+        subcategory: Manage HTTP proxy configuration
     post:
       x-doc:
         title: Create an FC WWPN alias
         category: SAN
         filename: post-network-fc-wwpn-aliases.html
+        subcategory: Manage HTTP proxy configuration
   "/network/fc/wwpn-aliases/{svm.uuid}/{alias}":
     delete:
       x-doc:
         title: Delete an FC WWPN alias
         category: SAN
         filename: delete-network-fc-wwpn-aliases-.html
+        subcategory: Manage HTTP proxy configuration
     get:
       x-doc:
         title: Retrieve an FC WWPN alias
         category: SAN
         filename: get-network-fc-wwpn-aliases-.html
+        subcategory: Manage HTTP proxy configuration
   "/network/http-proxy":
     get:
       x-doc:
@@ -1336,87 +1446,103 @@ paths:
           IPspaces
         category: networking
         filename: get-network-http-proxy.html
+        subcategory: Manage HTTP proxy configuration
     post:
       x-doc:
-        title: Create a http proxy configuration for an SVM or cluster IPspace
+        title: Create an http proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
+        subcategory: Manage HTTP proxy configuration
   "/network/http-proxy/{uuid}":
     delete:
       x-doc:
         title: Delete http proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: delete-network-http-proxy-.html
+        subcategory: Manage HTTP proxy configuration
     get:
       x-doc:
         title: Display http proxy server, port, and IPspace information for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
+        subcategory: Manage HTTP proxy configuration
     patch:
       x-doc:
         title: Update proxy server, port, username, and password parameters
         category: networking
         filename: patch-network-http-proxy-.html
+        subcategory: Manage HTTP proxy configuration
   "/network/ip/bgp/peer-groups":
     get:
       x-doc:
         title: Retrieve all BGP peer group details for VIP
         category: networking
         filename: get-network-ip-bgp-peer-groups.html
+        subcategory: Manage BGP peer groups
     post:
       x-doc:
         title: Create a new BGP peer group for VIP
         category: networking
         filename: post-network-ip-bgp-peer-groups.html
+        subcategory: Manage BGP peer groups
   "/network/ip/bgp/peer-groups/{uuid}":
     delete:
       x-doc:
         title: Delete a BGP peer group for VIP
         category: networking
         filename: delete-network-ip-bgp-peer-groups-.html
+        subcategory: Manage BGP peer groups
     get:
       x-doc:
         title: Retrieve details of a BGP peer group for VIP
         category: networking
         filename: get-network-ip-bgp-peer-groups-.html
+        subcategory: Manage BGP peer groups
     patch:
       x-doc:
         title: Update a BGP peer group for VIP
         category: networking
         filename: patch-network-ip-bgp-peer-groups-.html
+        subcategory: Manage BGP peer groups
   "/network/ip/interfaces":
     get:
       x-doc:
         title: Retrieve all IP interface details
         category: networking
         filename: get-network-ip-interfaces.html
+        subcategory: Manage network IP interfaces
     post:
       x-doc:
         title: Create a new cluster-scoped or SVM-scoped interface
         category: networking
         filename: post-network-ip-interfaces.html
+        subcategory: Manage network IP interfaces
   "/network/ip/interfaces/{uuid}":
     delete:
       x-doc:
         title: Delete an IP interface
         category: networking
         filename: delete-network-ip-interfaces-.html
+        subcategory: Manage network IP interfaces
     get:
       x-doc:
         title: Retrieve details for an IP interface
         category: networking
         filename: get-network-ip-interfaces-.html
+        subcategory: Manage network IP interfaces
     patch:
       x-doc:
         title: Update an IP interface
         category: networking
         filename: patch-network-ip-interfaces-.html
+        subcategory: Manage network IP interfaces
   "/network/ip/interfaces/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve interface historical performance metrics 
         category: networking
         filename: get-network-ip-interfaces-metrics.html
+        subcategory: Manage network IP interfaces
   "/network/ip/routes":
     get:
       x-doc:
