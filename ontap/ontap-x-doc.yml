@@ -3854,76 +3854,90 @@ paths:
         title: Retrieve SnapMirror async and sync policy types 
         category: snapmirror
         filename: get-snapmirror-policies.html
+        subcategory: Manage SnapMirror policies
     post:
       x-doc:
         title: Create a SnapMirror policy
         category: snapmirror
         filename: post-snapmirror-policies.html
+        subcategory: Manage SnapMirror policies
   "/snapmirror/policies/{uuid}":
     delete:
       x-doc:
         title: Delete a SnapMirror policy
         category: snapmirror
         filename: delete-snapmirror-policies-.html
+        subcategory: Manage SnapMirror policies
     get:
       x-doc:
         title: Retrieve a specific SnapMirror policy
         category: snapmirror
         filename: get-snapmirror-policies-.html
+        subcategory: Manage SnapMirror policies
     patch:
       x-doc:
         title: Update the SnapMirror policy
         category: snapmirror
         filename: patch-snapmirror-policies-.html
+        subcategory: Manage SnapMirror policies
   "/snapmirror/relationships":
     get:
       x-doc:
         title: Retrieve information for SnapMirror relationships
         category: snapmirror
         filename: get-snapmirror-relationships.html
+        subcategory: Manage SnapMirror relationships
     post:
       x-doc:
         title: Create a SnapMirror relationship
         category: snapmirror
         filename: post-snapmirror-relationships.html
+        subcategory: Manage SnapMirror relationships
   "/snapmirror/relationships/{relationship.uuid}/transfers":
     get:
       x-doc:
         title: Retrieve ongoing SnapMirror transfers for a relationship
         category: snapmirror
         filename: get-snapmirror-relationships-transfers.html
+        subcategory: Manage SnapMirror relationship tranfers
     post:
       x-doc:
         title: Start a SnapMirror transfer operation
         category: snapmirror
         filename: post-snapmirror-relationships-transfers.html
+        subcategory: Manage SnapMirror relationship tranfers
   "/snapmirror/relationships/{relationship.uuid}/transfers/{uuid}":
     get:
       x-doc:
         title: Retrieve attributes of an ongoing SnapMirror transfer
         category: snapmirror
         filename: get-snapmirror-relationships-transfers-.html
+        subcategory: Manage SnapMirror relationship tranfers
     patch:
       x-doc:
         title: Cancel an ongoing SnapMirror transfer
         category: snapmirror
         filename: patch-snapmirror-relationships-transfers-.html
+        subcategory: Manage SnapMirror relationship tranfers
   "/snapmirror/relationships/{uuid}":
     delete:
       x-doc:
         title: Delete a SnapMirror relationship
         category: snapmirror
         filename: delete-snapmirror-relationships-.html
+        subcategory: Manage SnapMirror relationships
     get:
       x-doc:
         title: Retrieve a SnapMirror relationship
         category: snapmirror
         filename: get-snapmirror-relationships-.html
+        subcategory: Manage SnapMirror relationships
     patch:
       x-doc:
         title: Update a SnapMirror relationship
         category: snapmirror
         filename: patch-snapmirror-relationships-.html
+        subcategory: Manage SnapMirror relationships
   "/storage/aggregates":
     get:
       x-doc:
@@ -3969,34 +3983,40 @@ paths:
         title: Retrieve a collection of plexes for an aggregate
         category: storage
         filename: get-storage-aggregates-plexes.html
+        subcategory: Manage storage aggregate plexes
   "/storage/aggregates/{aggregate.uuid}/plexes/{name}":
     get:
       x-doc:
         title: Retrieve a plex specified by the aggregate UUID and plex name
         category: storage
         filename: get-storage-aggregates-plexes-.html
+        subcategory: Manage storage aggregate plexes
   "/storage/aggregates/{uuid}":
     delete:
       x-doc:
         title: Delete an aggregate specified by the UUID
         category: storage
         filename: delete-storage-aggregates-.html
+        subcategory: Manage storage aggregates
     get:
       x-doc:
         title: Retrieve an aggregate specified by the UUID
         category: storage
         filename: get-storage-aggregates-.html
+        subcategory: Manage storage aggregates
     patch:
       x-doc:
-        title: Update the aggregate specified by the UUID with properties in the body
+        title: Update an aggregate specified by the UUID 
         category: storage
         filename: patch-storage-aggregates-.html
+        subcategory: Manage storage aggregates
   "/storage/aggregates/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve historical performance metrics for an aggregate
         category: storage
         filename: get-storage-aggregates-metrics.html
+        subcategory: Storage aggregate metrics
   "/storage/bridges":
     get:
       x-doc:
@@ -4120,47 +4140,55 @@ paths:
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
-        title: Retrieve a FlexCache in the cluster
+        title: Retrieve a FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-flexcaches.html
+        subcategory: Manage FlexCache volumes
     post:
       x-doc:
-        title: Create a FlexCache in the cluster
+        title: Create a FlexCache volume in the cluster
         category: storage
         filename: post-storage-flexcache-flexcaches.html
+        subcategory: Manage FlexCache volumes
   "/storage/flexcache/flexcaches/{uuid}":
     delete:
       x-doc:
-        title: Delete a FlexCache
+        title: Delete a FlexCache volume
         category: storage
         filename: delete-storage-flexcache-flexcaches-.html
+        subcategory: Manage FlexCache volumes
     get:
       x-doc:
-        title: Retrieve attributes of the FlexCache in the cluster
+        title: Retrieve attributes of the FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-flexcaches-.html
+        subcategory: Manage FlexCache volumes
     patch:
       x-doc:
         title: Pre-populate a FlexCache volume in the cluster
         category: storage
         filename: patch-storage-flexcache-flexcaches-.html
+        subcategory: Manage FlexCache volumes
   "/storage/flexcache/origins":
     get:
       x-doc:
         title: Retrieve the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins.html
+        subcategory: Storage FlexCache origin volumes
   "/storage/flexcache/origins/{uuid}":
     get:
       x-doc:
         title: Retrieve attributes of the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
+        subcategory: Storage FlexCache origin volumes
     patch:
       x-doc:
         title: Modify origin options for an origin volume in the cluster
         category: storage
         filename: patch-storage-flexcache-origins-.html
+        subcategory: Storage FlexCache origin volumes
   "/storage/luns":
     get:
       x-doc:
@@ -4438,27 +4466,32 @@ paths:
         title: Retrieve SVM configured with audit log volumes
         category: snaplock
         filename: get-storage-snaplock-audit-logs.html
+        subcategory: Manage SnapLock audit logs
     post:
       x-doc:
         title: Create a SnapLock log configuration for an SVM
         category: snaplock
         filename: post-storage-snaplock-audit-logs.html
+        subcategory: Manage SnapLock audit logs
   "/storage/snaplock/audit-logs/{svm.uuid}":
     delete:
       x-doc:
         title: Disassociate SnapLock audit logs
         category: snaplock
         filename: delete-storage-snaplock-audit-logs-.html
+        subcategory: Manage SnapLock audit logs
     get:
       x-doc:
         title: Retrieve SnapLock audit logs
         category: snaplock
         filename: get-storage-snaplock-audit-logs-.html
+        subcategory: Manage SnapLock audit logs
     patch:
       x-doc:
         title: Update SnapLock audit logs
         category: snaplock
         filename: patch-storage-snaplock-audit-logs-.html
+        subcategory: Manage SnapLock audit logs
   "/storage/snaplock/compliance-clocks":
     get:
       x-doc:
@@ -4466,149 +4499,176 @@ paths:
           cluster
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks.html
+        subcategory: Manage the SnapLock ComplianceClock
     post:
       x-doc:
         title: Initialize a SnapLock ComplianceClock
         category: snaplock
         filename: post-storage-snaplock-compliance-clocks.html
+        subcategory: Manage the SnapLock ComplianceClock
   "/storage/snaplock/compliance-clocks/{node.uuid}":
     get:
       x-doc:
         title: Retrieve a SnapLock ComplianceClock for a node
         category: snaplock
         filename: get-storage-snaplock-compliance-clocks-.html
+        subcategory: Manage the SnapLock ComplianceClock
   "/storage/snaplock/event-retention/operations":
     get:
       x-doc:
         title: Retrieve EBR operations
         category: snaplock
         filename: get-storage-snaplock-event-retention-operations.html
+        subcategory: Manage event based retention operations
     post:
       x-doc:
         title: Create an EBR policy
         category: snaplock
         filename: post-storage-snaplock-event-retention-operations.html
+        subcategory: Manage event based retention operations
   "/storage/snaplock/event-retention/operations/{id}":
     delete:
       x-doc:
         title: Cancel an ongoing EBR operation
         category: snaplock
         filename: delete-storage-snaplock-event-retention-operations-.html
+        subcategory: Manage event based retention operations
     get:
       x-doc:
         title: Retrieve attributes for an EBR operation
         category: snaplock
         filename: get-storage-snaplock-event-retention-operations-.html
+        subcategory: Manage event based retention operations
   "/storage/snaplock/event-retention/policies":
     get:
       x-doc:
         title: Retrieve event retention policies for an SVM
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies.html
+        subcategory: Manage event retention policies
     post:
       x-doc:
         title: Create an EBR policy for an SVM
         category: snaplock
         filename: post-storage-snaplock-event-retention-policies.html
+        subcategory: Manage event retention policies
   "/storage/snaplock/event-retention/policies/{policy.name}":
     delete:
       x-doc:
         title: Delete an EBR policy
         category: snaplock
         filename: delete-storage-snaplock-event-retention-policies-.html
+        subcategory: Manage event retention policies
     get:
       x-doc:
         title: Retrieve attributes of an EBR policy     
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies-.html
+        subcategory: Manage event retention policies
     patch:
       x-doc:
         title: Update the retention period of an EBR policy
         category: snaplock
         filename: patch-storage-snaplock-event-retention-policies-.html
+        subcategory: Manage event retention policies
   "/storage/snaplock/file-fingerprints":
     get:
       x-doc:
         title: Retrieve fingerprint operations of an SVM and volume
         category: snaplock
         filename: get-storage-snaplock-file-fingerprints.html
+        subcategory: View key information about files and volumes
     post:
       x-doc:
         title: Create a fingerprint computation session 
         category: snaplock
         filename: post-storage-snaplock-file-fingerprints.html
+        subcategory: View key information about files and volumes
   "/storage/snaplock/file-fingerprints/{id}":
     delete:
       x-doc:
         title: Cancel a fingerprint operation
         category: snaplock
         filename: delete-storage-snaplock-file-fingerprints-.html
+        subcategory: View key information about files and volumes
     get:
       x-doc:
         title: Retrieve the file fingerprint information for a specific session ID
         category: snaplock
         filename: get-storage-snaplock-file-fingerprints-.html
+        subcategory: View key information about files and volumes
   "/storage/snaplock/file/{volume.uuid}/{path}":
     delete:
       x-doc:
         title: Delete unexpired WORM files of a SnapLock enterprise volume
         category: snaplock
         filename: delete-storage-snaplock-file-.html
+        subcategory: Manage SnapLock file retention time
     get:
       x-doc:
         title: Retrieve SnapLock retention details of a file
         category: snaplock
         filename: get-storage-snaplock-file-.html
+        subcategory: Manage SnapLock file retention time
     patch:
       x-doc:
         title: Update the SnapLock retention time of a file 
         category: snaplock
         filename: patch-storage-snaplock-file-.html
+        subcategory: Manage SnapLock file retention time
   "/storage/snaplock/litigations":
     get:
       x-doc:
         title: Retrieve litigations under an SVM
         category: snaplock
         filename: get-storage-snaplock-litigations.html
+        subcategory: Manage SnapLock storage litigations
     post:
       x-doc:
         title: Start a legal-hold operation
         category: snaplock
         filename: post-storage-snaplock-litigations.html
+        subcategory: Manage SnapLock storage litigations
   "/storage/snaplock/litigations/{id}":
     delete:
       x-doc:
         title: Create a legal-hold end on all of the files for a litigation ID
         category: snaplock
         filename: delete-storage-snaplock-litigations-.html
+        subcategory: Manage SnapLock storage litigations
     get:
       x-doc:
         title: Retrieve ongoing operations for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-.html
+        subcategory: Manage SnapLock storage litigations
   "/storage/snaplock/litigations/{litigation.id}/files":
     get:
       x-doc:
         title: Display files for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-files.html
+        subcategory: Litigation ID files
   "/storage/snaplock/litigations/{litigation.id}/operations":
     post:
       x-doc:
         title: Create or remove litigations for a path
         category: snaplock
         filename: post-storage-snaplock-litigations-operations.html
+        subcategory: Manage legal-hold operations
   "/storage/snaplock/litigations/{litigation.id}/operations/{id}":
     delete:
       x-doc:
         title: Cancel the ongoing legal-hold operation
         category: snaplock
         filename: delete-storage-snaplock-litigations-operations-.html
+        subcategory: Manage legal-hold operations
     get:
       x-doc:
         title: Retrieve the status of legal-hold for an operation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-operations-.html
+        subcategory: Manage legal-hold operations
   "/storage/snapshot-policies":
     get:
       x-doc:
