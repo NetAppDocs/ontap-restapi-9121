@@ -101,145 +101,171 @@ paths:
         title: Retrieve details of a collection or consistency group
         category: application
         filename: get-application-consistency-groups.html
+        subcategory: Manage application consistency groups
     post:
       x-doc:
         title: Create a consistency group 
         category: application
         filename: post-application-consistency-groups.html
+        subcategory: Manage application consistency groups
   "/application/consistency-groups/{consistency_group.uuid}/snapshots":
     get:
       x-doc:
         title: Retrieve consistency group Snapshot copies 
         category: application
         filename: get-application-consistency-groups-snapshots.html
+        subcategory: Manage application consistency group Snapshot copies
     post:
       x-doc:
         title: Create a consistency group Snapshot copy 
         category: application
         filename: post-application-consistency-groups-snapshots.html
+        subcategory: Manage application consistency group Snapshot copies
   "/application/consistency-groups/{consistency_group.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
         title: Delete a consistency group Snapshot copy 
         category: application
         filename: delete-application-consistency-groups-snapshots-.html
+        subcategory: Manage application consistency group Snapshot copies
     get:
       x-doc:
         title: Retrieve a consistency group Snapshot copy 
         category: application
         filename: get-application-consistency-groups-snapshots-.html
+        subcategory: Manage application consistency group Snapshot copies
     patch:
       x-doc:
         title: Complete a consistency group Snapshot copy operation
         category: application
         filename: patch-application-consistency-groups-snapshots-.html
+        subcategory: Manage application consistency group Snapshot copies
   "/application/consistency-groups/{uuid}":
     delete:
       x-doc:
         title: Delete a consistency group
         category: application
         filename: delete-application-consistency-groups-.html
+        subcategory: Manage application consistency group Snapshot copies
     get:
       x-doc:
         title: Retrieve a consistency group
         category: application
         filename: get-application-consistency-groups-.html
+        subcategory: Manage application consistency group Snapshot copies
     patch:
       x-doc:
         title: Update a consistency group
         category: application
         filename: patch-application-consistency-groups-.html
+        subcategory: Manage application consistency group Snapshot copies
   "/application/templates":
     get:
       x-doc:
         title: Retrieve application templates
         category: application
         filename: get-application-templates.html
+        subcategory: Manage application consistency group Snapshot copies
   "/application/templates/{name}":
     get:
       x-doc:
         title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
+        subcategory: Manage application consistency group Snapshot copies
   "/cloud/targets":
     get:
       x-doc:
         title: Retrieve cloud targets in the cluster
         category: cloud
         filename: get-cloud-targets.html
+        subcategory: Manage cloud targets
     post:
       x-doc:
         title: Create a cloud target
         category: cloud
         filename: post-cloud-targets.html
+        subcategory: Manage cloud targets
   "/cloud/targets/{uuid}":
     delete:
       x-doc:
         title: Delete a cloud target 
         category: cloud
         filename: delete-cloud-targets-.html
+        subcategory: Manage cloud targets
     get:
       x-doc:
         title: Retrieve a cloud target 
         category: cloud
         filename: get-cloud-targets-.html
+        subcategory: Manage cloud targets
     patch:
       x-doc:
         title: Update a cloud target 
         category: cloud
         filename: patch-cloud-targets-.html
+        subcategory: Manage cloud targets
   "/cluster":
     get:
       x-doc:
         title: Retrieve cluster configuration
         category: cluster
         filename: get-cluster.html
+        subcategory: Manage clusters
     patch:
       x-doc:
         title: Update cluster configuration 
         category: cluster
         filename: patch-cluster.html
+        subcategory: Manage clusters
     post:
       x-doc:
         title: Create a cluster
         category: cluster
         filename: post-cluster.html
+        subcategory: Manage clusters
   "/cluster/chassis":
     get:
       x-doc:
         title: Retrieve a collection of chassis
         category: cluster
         filename: get-cluster-chassis.html
+        subcategory: Manage cluster chassis
   "/cluster/chassis/{id}":
     get:
       x-doc:
         title: Retrieve a chassis
         category: cluster
         filename: get-cluster-chassis-.html
+        subcategory: Manage cluster chassis
   "/cluster/counter/tables":
     get:
       x-doc:
         title: Retrieve counter tables with schema definitions 
         category: cluster
         filename: get-cluster-counter-tables.html
+        subcategory: Manage cluster counter tables
   "/cluster/counter/tables/{counter_table.name}/rows":
     get:
       x-doc:
         title: Retrieve counter rows
         category: cluster
         filename: get-cluster-counter-tables-rows.html
+        subcategory: Manage cluster counter tables
   "/cluster/counter/tables/{counter_table.name}/rows/{id}":
     get:
       x-doc:
         title: Retrieve a counter row
         category: cluster
         filename: get-cluster-counter-tables-rows-.html
+        subcategory: Manage cluster counter tables
   "/cluster/counter/tables/{name}":
     get:
       x-doc:
         title: Retrieve counter table details
         category: cluster
         filename: get-cluster-counter-tables-.html
+        subcategory: Manage cluster counter tables
   "/cluster/firmware/history":
     get:
       x-doc:
@@ -281,39 +307,46 @@ paths:
         title: Retrieve license managers
         category: cluster
         filename: get-cluster-licensing-license-managers.html
+        subcategory: Manage cluster license managers
   "/cluster/licensing/license-managers/{uuid}":
     get:
       x-doc:
         title: Retrieve license manager information
         category: cluster
         filename: get-cluster-licensing-license-managers-.html
+        subcategory: Manage cluster license managers
     patch:
       x-doc:
         title: Update license manager configuration
         category: cluster
         filename: patch-cluster-licensing-license-managers-.html
+        subcategory: Manage cluster license managers
   "/cluster/licensing/licenses":
     get:
       x-doc:
         title: Retrieve license packages
         category: cluster
         filename: get-cluster-licensing-licenses.html
+        subcategory: Manage cluster licensing
     post:
       x-doc:
         title: Install one or more feature licenses
         category: cluster
         filename: post-cluster-licensing-licenses.html
+        subcategory: Manage cluster licensing
   "/cluster/licensing/licenses/{name}":
     delete:
       x-doc:
         title: Delete a license
         category: cluster
         filename: delete-cluster-licensing-licenses-.html
+        subcategory: Manage cluster licensing
     get:
       x-doc:
         title: Retrieve a license package
         category: cluster
         filename: get-cluster-licensing-licenses-.html
+        subcategory: Manage cluster licensing
   "/cluster/mediators":
     get:
       x-doc:
@@ -451,142 +484,169 @@ paths:
         title: Retrieve nodes in a cluster
         category: cluster
         filename: get-cluster-nodes.html
+        subcategory: Manage cluster nodes
     post:
       x-doc:
         title: Add a node or nodes to a cluster
         category: cluster
         filename: post-cluster-nodes.html
+        subcategory: Manage cluster nodes
   "/cluster/nodes/{uuid}":
     delete:
       x-doc:
         title: Delete a node from a cluster
         category: cluster
         filename: delete-cluster-nodes-.html
+        subcategory: Manage cluster nodes
     get:
       x-doc:
         title: Retrieve node information
         category: cluster
         filename: get-cluster-nodes-.html
+        subcategory: Manage cluster nodes
     patch:
       x-doc:
         title: Update node information
         category: cluster
         filename: patch-cluster-nodes-.html
+        subcategory: Manage cluster nodes
   "/cluster/nodes/{uuid}/metrics":
     get:
       x-doc:
         title: Retrieve node historical performance metrics 
         category: cluster
         filename: get-cluster-nodes-metrics.html
+        subcategory: Manage cluster nodes
   "/cluster/ntp/keys":
     get:
       x-doc:
         title: Retrieve NTP symmetric authentication keys
         category: cluster
         filename: get-cluster-ntp-keys.html
+        subcategory: Manage cluster NTP keys
     post:
       x-doc:
         title: Create an NTP symmetric authentication key entry
         category: cluster
         filename: post-cluster-ntp-keys.html
+        subcategory: Manage cluster NTP keys
   "/cluster/ntp/keys/{id}":
     delete:
       x-doc:
         title: Delete an NTP key
         category: cluster
         filename: delete-cluster-ntp-keys-.html
+        subcategory: Manage cluster NTP keys
     get:
       x-doc:
         title: Retrieve NTP symmetric authentication key details
         category: cluster
         filename: get-cluster-ntp-keys-.html
+        subcategory: Manage cluster NTP keys
     patch:
       x-doc:
         title: Update NTP symmetric authentication key details
         category: cluster
         filename: patch-cluster-ntp-keys-.html
+        subcategory: Manage cluster NTP keys
   "/cluster/ntp/servers":
     get:
       x-doc:
         title: Retrieve external NTP time servers
         category: cluster
         filename: get-cluster-ntp-servers.html
+        subcategory: Manage cluster NTP servers
     post:
       x-doc:
         title: Validate an external NTP time server
         category: cluster
         filename: post-cluster-ntp-servers.html
+        subcategory: Manage cluster NTP servers
+
   "/cluster/ntp/servers/{server}":
     delete:
       x-doc:
         title: Delete an external NTP server 
         category: cluster
         filename: delete-cluster-ntp-servers-.html
+        subcategory: Manage cluster NTP servers
     get:
       x-doc:
         title: Retrieve an external NTP server configuration
         category: cluster
         filename: get-cluster-ntp-servers-.html
+        subcategory: Manage cluster NTP servers
     patch:
       x-doc:
         title: Update an NTP server configuration 
           after validation
         category: cluster
         filename: patch-cluster-ntp-servers-.html
+        subcategory: Manage cluster NTP servers
   "/cluster/peers":
     get:
       x-doc:
         title: Retrieve cluster peers
         category: cluster
         filename: get-cluster-peers.html
+        subcategory: Manage cluster peers
     post:
       x-doc:
         title: Create a peering relationship
         category: cluster
         filename: post-cluster-peers.html
+        subcategory: Manage cluster peers
   "/cluster/peers/{uuid}":
     delete:
       x-doc:
         title: Delete a cluster peer
         category: cluster
         filename: delete-cluster-peers-.html
+        subcategory: Manage cluster peers
     get:
       x-doc:
         title: Retrieve a cluster peer instance
         category: cluster
         filename: get-cluster-peers-.html
+        subcategory: Manage cluster peers
     patch:
       x-doc:
         title: Update a cluster peer instance
         category: cluster
         filename: patch-cluster-peers-.html
+        subcategory: Manage cluster peers
   "/cluster/schedules":
     get:
       x-doc:
         title: Retrieve schedules
         category: cluster
         filename: get-cluster-schedules.html
+        subcategory: Manage cluster schedules
     post:
       x-doc:
         title: Create a schedule
         category: cluster
         filename: post-cluster-schedules.html
+        subcategory: Manage cluster schedules
   "/cluster/schedules/{uuid}":
     delete:
       x-doc:
         title: Delete a schedule
         category: cluster
         filename: delete-cluster-schedules-.html
+        subcategory: Manage cluster schedules
     get:
       x-doc:
         title: Retrieve a schedule
         category: cluster
         filename: get-cluster-schedules-.html
+        subcategory: Manage cluster schedules
     patch:
       x-doc:
         title: Update a schedule
         category: cluster
         filename: patch-cluster-schedules-.html
+        subcategory: Manage cluster schedules
   "/cluster/sensors":
     get:
       x-doc:
@@ -604,185 +664,218 @@ paths:
       x-doc:
         title: Retrieve the cluster software profile
         filename: get-cluster-software.html
+        subcategory: Manage cluster software
     patch:
       x-doc:
         title: Update the cluster software version
         category: cluster
         filename: patch-cluster-software.html
+        subcategory: Manage cluster software
   "/cluster/software/download":
     get:
       x-doc:
         title: Retrieve software or firmware download status
         category: cluster
         filename: get-cluster-software-download.html
+        subcategory: Manage cluster software
     post:
       x-doc:
         title: Download a software or firmware package
         category: cluster
         filename: post-cluster-software-download.html
+        subcategory: Manage cluster software
   "/cluster/software/history":
     get:
       x-doc:
         title: Retrieve software installation requests history details 
         category: cluster
         filename: get-cluster-software-history.html
+        subcategory: Manage cluster software
   "/cluster/software/packages":
     get:
       x-doc:
         title: Retrieve cluster software packages 
         category: cluster
         filename: get-cluster-software-packages.html
+        subcategory: Manage cluster software
   "/cluster/software/packages/{version}":
     delete:
       x-doc:
         title: Delete a software package from the cluster
         category: cluster
         filename: delete-cluster-software-packages-.html
+        subcategory: Manage cluster software
     get:
       x-doc:
         title: Retrieve software package information
         category: cluster
         filename: get-cluster-software-packages-.html
+        subcategory: Manage cluster software
   "/cluster/software/upload":
     post:
       x-doc:
         title: Upload a software or firmware package located on the local file system
         category: cluster
         filename: post-cluster-software-upload.html
+        subcategory: Manage cluster software
   "/cluster/web":
     get:
       x-doc:
         title: Retrieve the web services configuration
         category: cluster
         filename: get-cluster-web.html
+        subcategory: Manage cluster web
     patch:
       x-doc:
         title: Update the web services configuration
         category: cluster
         filename: patch-cluster-web.html
+        subcategory: Manage cluster web
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
         title: Retrieve group membership cache settings
         category: name-services
         filename: get-name-services-cache-group-membership-settings.html
+        subcategory: Manage group membership cache settings
   "/name-services/cache/group-membership/settings/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve a group membership cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-group-membership-settings-.html
+        subcategory: Manage group membership cache settings
     patch:
       x-doc:
         title: Update a group membership cache setting
         category: name-services
         filename: patch-name-services-cache-group-membership-settings-.html
+        subcategory: Manage group membership cache settings
   "/name-services/cache/host/settings":
     get:
       x-doc:
         title: Retrieve host cache settings
         category: name-services
         filename: get-name-services-cache-host-settings.html
+        subcategory: Manage host cache settings
   "/name-services/cache/host/settings/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve a host cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-host-settings-.html
+        subcategory: Manage host cache settings
     patch:
       x-doc:
         title: Update a host cache setting
         category: name-services
         filename: patch-name-services-cache-host-settings-.html
+        subcategory: Manage host cache settings
   "/name-services/cache/netgroup/settings":
     get:
       x-doc:
         title: Retrieve netgroup cache settings
         category: name-services
         filename: get-name-services-cache-netgroup-settings.html
+        subcategory: Manage netgroup cache settings
   "/name-services/cache/netgroup/settings/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve a netgroup cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-netgroup-settings-.html
+        subcategory: Manage netgroup cache settings
     patch:
       x-doc:
         title: Update a netgroup cache setting
         category: name-services
         filename: patch-name-services-cache-netgroup-settings-.html
+        subcategory: Manage netgroup cache settings
   "/name-services/cache/setting":
     get:
       x-doc:
         title: Retrieve a global name service cache setting
         category: name-services
         filename: get-name-services-cache-setting.html
+        subcategory: Manage global cache settings
     patch:
       x-doc:
         title: Update a global name service cache setting
         category: name-services
         filename: patch-name-services-cache-setting.html
+        subcategory: Manage global cache settings
   "/name-services/cache/unix-group/settings":
     get:
       x-doc:
         title: Retrieve UNIX group cache settings
         category: name-services
         filename: get-name-services-cache-unix-group-settings.html
+        subcategory: Manage UNIX group cache settings
   "/name-services/cache/unix-group/settings/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve a UNIX group cache setting for an SVM
         category: name-services
         filename: get-name-services-cache-unix-group-settings-.html
+        subcategory: Manage UNIX group cache settings
     patch:
       x-doc:
         title: Update UNIX group cache settings
         category: name-services
         filename: patch-name-services-cache-unix-group-settings-.html
+        subcategory: Manage UNIX group cache settings
   "/name-services/cache/unix-user/settings":
     get:
       x-doc:
         title: Retrieve UNIX user cache settings
         category: name-services
         filename: get-name-services-cache-unix-user-settings.html
+        subcategory: Manage UNIX user cache settings
   "/name-services/cache/unix-user/settings/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve UNIX user cache settings for an SVM
         category: name-services
         filename: get-name-services-cache-unix-user-settings-.html
+        subcategory: Manage UNIX user cache settings
     patch:
       x-doc:
         title: Update a UNIX user cache setting
         category: name-services
         filename: patch-name-services-cache-unix-user-settings-.html
+        subcategory: Manage UNIX user cache settings
   "/name-services/dns":
     get:
       x-doc:
         title: Retrieve DNS configurations for all SVMs
         category: name-services
         filename: get-name-services-dns.html
+        subcategory: Manage UNIX group cache settings
     post:
       x-doc:
         title: Create DNS domain and server configurations 
         category: name-services
         filename: post-name-services-dns.html
+        subcategory: Manage DNS configurations
   "/name-services/dns/{svm.uuid}":
     delete:
       x-doc:
         title: Delete DNS domain configuration  
         category: name-services
         filename: delete-name-services-dns-.html
+        subcategory: Manage DNS configurations
     get:
       x-doc:
         title: Retrieve DNS domain and server configurations
         category: name-services
         filename: get-name-services-dns-.html
+        subcategory: Manage DNS configurations
     patch:
       x-doc:
         title: Update DNS domain and server configurations 
         category: name-services
         filename: patch-name-services-dns-.html
+        subcategory: Manage DNS configurations
   "/name-services/host-record/{svm.uuid}/{host}":
     get:
       x-doc:
