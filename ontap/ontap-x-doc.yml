@@ -1557,103 +1557,125 @@ paths:
         title: Retrieve IP routes 
         category: networking
         filename: get-network-ip-routes.html
+        subcategory: Manage network IP routes
     post:
       x-doc:
         title: Create a cluster-scoped or SVM-scoped static route
         category: networking
         filename: post-network-ip-routes.html
+        subcategory: Manage network IP routes
   "/network/ip/routes/{uuid}":
     delete:
       x-doc:
         title: Delete an IP route
         category: networking
         filename: delete-network-ip-routes-.html
+        subcategory: Manage network IP routes
     get:
       x-doc:
         title: Retrieve details for an IP route
         category: networking
         filename: get-network-ip-routes-.html
+        subcategory: Manage network IP routes
   "/network/ip/service-policies":
     get:
       x-doc:
         title: Retrieve service policies 
         category: networking
         filename: get-network-ip-service-policies.html
+        subcategory: Manage network IP service policies
     post:
       x-doc:
         title: Create a service policy for network interfaces
         category: networking
         filename: post-network-ip-service-policies.html
+        subcategory: Manage network IP service policies
   "/network/ip/service-policies/{uuid}":
     delete:
       x-doc:
         title: Delete a service policy for network interfaces
         category: networking
         filename: delete-network-ip-service-policies-.html
+        subcategory: Manage network IP service policies
     get:
       x-doc:
         title: Retrieve a service policy
         category: networking
         filename: get-network-ip-service-policies-.html
+        subcategory: Manage network IP service policies
     patch:
       x-doc:
         title: Update a service policy for network interfaces
         category: networking
         filename: patch-network-ip-service-policies-.html
+        subcategory: Manage network IP service policies
   "/network/ip/subnets":
     get:
       x-doc:
         title: Retrieve details for all subnets
         category: networking
         filename: get-network-ip-subnets.html
+        subcategory: Manage network IP subnets
     post:
       x-doc:
         title: Create a new named subnet
         category: networking
         filename: post-network-ip-subnets.html
+        subcategory: Manage network IP subnets
   "/network/ip/subnets/{uuid}":
     delete:
       x-doc:
         title: Delete an IP subnet
         category: networking
         filename: delete-network-ip-subnets-.html
+        subcategory: Manage network IP subnets
     get:
       x-doc:
         title: Retrieve IP subnet details
         category: networking
         filename: get-network-ip-subnets-.html
+        subcategory: Manage network IP subnets
     patch:
       x-doc:
         title: Update an IP subnet
         category: networking
         filename: patch-network-ip-subnets-.html
+        subcategory: Manage network IP subnets
   "/network/ipspaces":
     get:
       x-doc:
         title: Retrieve IPspaces for a cluster
         category: networking
         filename: get-network-ipspaces.html
+        subcategory: Manage network IPspaces
     post:
       x-doc:
         title: Create a new domain with unique IP addresses 
         category: networking
         filename: post-network-ipspaces.html
+        subcategory: Manage network IPspaces
   "/network/ipspaces/{uuid}":
     delete:
       x-doc:
         title: Delete an IPspace object
         category: networking
         filename: delete-network-ipspaces-.html
+        subcategory: Manage network IPspaces
+
     get:
       x-doc:
         title: Retrieve information about an IPspace
         category: networking
         filename: get-network-ipspaces-.html
+        subcategory: Manage network IPspaces
+
     patch:
       x-doc:
         title: Update an IPspace object
         category: networking
         filename: patch-network-ipspaces-.html
+        subcategory: Manage network IPspaces
+
   "/protocols/active-directory":
     get:
       x-doc:
