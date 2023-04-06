@@ -3997,19 +3997,19 @@ paths:
         title: Delete an aggregate specified by the UUID
         category: storage
         filename: delete-storage-aggregates-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage specific storage aggregates
     get:
       x-doc:
         title: Retrieve an aggregate specified by the UUID
         category: storage
         filename: get-storage-aggregates-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage specific storage aggregates
     patch:
       x-doc:
         title: Update an aggregate specified by the UUID 
         category: storage
         filename: patch-storage-aggregates-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage specific storage aggregates
   "/storage/aggregates/{uuid}/metrics":
     get:
       x-doc:
@@ -4301,19 +4301,19 @@ paths:
         title: Delete a storage pool specified by the UUID
         category: storage
         filename: delete-storage-pools-.html
-        subcategory: Manage storage pools
+        subcategory: Manage specific storage pools
     get:
       x-doc:
         title: Retrieve a storage pool specified by the UUID
         category: storage
         filename: get-storage-pools-.html
-        subcategory: Manage storage pools
+        subcategory: Manage specific storage pools
     patch:
       x-doc:
         title: Update a storage pool specified by the UUID 
         category: storage
         filename: patch-storage-pools-.html
-        subcategory: Manage storage pools
+        subcategory: Manage specific storage pools
   "/storage/ports":
     get:
       x-doc:
@@ -4961,20 +4961,20 @@ paths:
         title: Retrieve status of all updates
         category: support
         filename: get-support-auto-update-update.html
-        subcategory: Retrieve all automatic update status
+        subcategory: Retrieve status for all automatic updates
   "/support/auto-update/update/{uuid}":
     get:
       x-doc:
         title: Retrieve the status of an update
         category: support
         filename: get-support-auto-update-update-.html
-        subcategory: Retrive or update the status of an automatic update
+        subcategory: Retrieve or update the status of an automatic update
     patch:
       x-doc:
         title: Perform an action on the update
         category: support
         filename: patch-support-auto-update-update-.html
-        subcategory: Retrive or update the status of an automatic update
+        subcategory: Retrieve or update the status of an automatic update
   "/support/autosupport":
     get:
       x-doc:
@@ -5125,63 +5125,64 @@ paths:
         title: Retrieve event filters
         category: support
         filename: get-support-ems-filters.html
-        subcategory: Manage the list of available filters
+        subcategory: Create or retrieve event filters
     post:
       x-doc:
         title: Create an event filter
         category: support
         filename: post-support-ems-filters.html
-        subcategory: Manage the list of available filters
+        subcategory: Create or retrieve event filters
   "/support/ems/filters/{name}":
     delete:
       x-doc:
         title: Delete an event filter
         category: support
         filename: delete-support-ems-filters-.html
-        subcategory: Manage an event filter
+        subcategory: Manage event filters
     get:
       x-doc:
         title: Retrieve an event filter
         category: support
         filename: get-support-ems-filters-.html
-        subcategory: Manage an event filter
+        subcategory: Manage event filters
     patch:
       x-doc:
         title: Update an event filter
         category: support
         filename: patch-support-ems-filters-.html
+        subcategory: Manage event filters
   "/support/ems/filters/{name}/rules":
     get:
       x-doc:
         title: Retrieve event filter rules
         category: support
         filename: get-support-ems-filters-rules.html
-        subcategory: Manage event filter rules
+        subcategory: Create or retrieve filter rules
     post:
       x-doc:
         title: Create an event filter rule
         category: support
         filename: post-support-ems-filters-rules.html
-        subcategory: Manage event filter rules
+        subcategory: Create or retrieve filter rules
   "/support/ems/filters/{name}/rules/{index}":
     delete:
       x-doc:
         title: Delete an event filter rule
         category: support
         filename: delete-support-ems-filters-rules-.html
-        subcategory: Manage a rule within an event filter 
+        subcategory: Manage event filter rules
     get:
       x-doc:
         title: Retrieve an event filter rule
         category: support
         filename: get-support-ems-filters-rules-.html
-        subcategory: Manage a rule within an event filter
+        subcategory: Manage event filter rules
     patch:
       x-doc:
         title: Update an event filter rule
         category: support
         filename: patch-support-ems-filters-rules-.html
-        subcategory: Manage a rule within an event filter
+        subcategory: Manage event filter rules
   "/support/ems/messages":
     get:
       x-doc:
@@ -5208,58 +5209,58 @@ paths:
         title: Retrieve SNMP traphosts    
         category: support
         filename: get-support-snmp-traphosts.html
-        subcategory: Manage SNMP traphosts
+        subcategory: Create or retrieve SNMP traphosts
     post:
       x-doc:
         title: Create SNMP traphosts
         category: support
         filename: post-support-snmp-traphosts.html
-        subcategory: Manage SNMP traphosts
+        subcategory: Create or retrieve SNMP traphosts
   "/support/snmp/traphosts/{host}":
     delete:
       x-doc:
         title: Delete an SNMP traphost
         category: support
         filename: delete-support-snmp-traphosts-.html
-        subcategory: Manage SNMP traphosts
+        subcategory: Manage individual SNMP traphosts
     get:
       x-doc:
         title: Retrieve SNMP traphost details
         category: support
         filename: get-support-snmp-traphosts-.html
-        subcategory: Manage SNMP traphosts
+        subcategory: Manage individual SNMP traphosts
   "/support/snmp/users":
     get:
       x-doc:
         title: Retrieve SNMP users on a cluster
         category: support
         filename: get-support-snmp-users.html
-        subcategory: Manage SNMP users
+        subcategory: Retrieve and create SNMP users
     post:
       x-doc:
         title: Create a cluster-scoped or an SVM-scoped SNMP user
         category: support
         filename: post-support-snmp-users.html
-        subcategory: Manage SNMP users
+        subcategory: Retrieve and create SNMP users
   "/support/snmp/users/{engine_id}/{name}":
     delete:
       x-doc:
         title: Delete an SNMP user
         category: support
         filename: delete-support-snmp-users-.html
-        subcategory: Manage SNMP users
+        subcategory: Manage individual SNMP users
     get:
       x-doc:
         title: Retrieve SNMP user details
         category: support
         filename: get-support-snmp-users-.html
-        subcategory: Manage SNMP users
+        subcategory: Manage individual SNMP users
     patch:
       x-doc:
         title: Update the comment parameter of an SNMP user
         category: support
         filename: patch-support-snmp-users-.html
-        subcategory: Manage SNMP users
+        subcategory: Manage individual SNMP users
   "/svm/migrations":
     get:
       x-doc:
