@@ -1682,343 +1682,408 @@ paths:
         title: Retrieve Active Directory accounts for all SVMs
         category: NAS
         filename: get-protocols-active-directory.html
+        subcategory: Manage Active Directory accounts
     post:
       x-doc:
         title: Create an Active Directory account for an SVM
         category: NAS
         filename: post-protocols-active-directory.html
+        subcategory: Manage Active Directory accounts
   "/protocols/active-directory/{svm.uuid}":
     delete:
       x-doc:
         title: Delete an Active Directory account for an SVM
         category: NAS
         filename: delete-protocols-active-directory-.html
+        subcategory: Manage Active Directory accounts for an SVM
     get:
       x-doc:
         title: Retrieve an Active Directory account for an SVM
         category: NAS
         filename: get-protocols-active-directory-.html
+        subcategory: Manage Active Directory accounts for an SVM
     patch:
       x-doc:
         title: Modify an Active Directory account for an SVM 
         category: NAS
         filename: patch-protocols-active-directory-.html
+        subcategory: Manage Active Directory accounts for an SVM
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
         title: Retrieve Active Directory preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers.html
+        subcategory: Manage Active Directory domain controllers 
     post:
       x-doc:
         title: Create an Active Directory preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-active-directory-preferred-domain-controllers.html
+        subcategory: Manage Active Directory domain controllers 
   "/protocols/active-directory/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
         title: Delete Active Directory preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-active-directory-preferred-domain-controllers-.html
+        subcategory: Manage Active Directory domain controllers 
     get:
       x-doc:
         title: Retrieve Active Directory preferred DC configuration for an SVM and domain
         category: NAS
         filename: get-protocols-active-directory-preferred-domain-controllers-.html
+        subcategory: Manage Active Directory domain controllers 
   "/protocols/audit":
     get:
       x-doc:
         title: Retrieve audit configurations
         category: NAS
         filename: get-protocols-audit.html
+        subcategory: Manage NAS audit configurations 
     post:
       x-doc:
         title: Create audit configuration
         category: NAS
         filename: post-protocols-audit.html
+        subcategory: Manage NAS audit configurations 
   "/protocols/audit/{svm.uuid}":
     delete:
       x-doc:
         title: Delete audit configuration
         category: NAS
         filename: delete-protocols-audit-.html
+        subcategory: Manage NAS audit configurations 
     get:
       x-doc:
         title: Retrieve audit configuration for an SVM
         category: NAS
         filename: get-protocols-audit-.html
+        subcategory: Manage NAS audit configurations 
     patch:
       x-doc:
         title: Update audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-.html
+        subcategory: Manage NAS audit configurations 
   "/protocols/audit/{svm.uuid}/object-store":
     delete:
       x-doc:
         title: Delete S3 audit configuration
         category: NAS
         filename: delete-protocols-audit-object-store.html
+        subcategory: Manage S3 audit configurations 
     get:
       x-doc:
         title: Retrieve S3 audit configurations
         category: NAS
         filename: get-protocols-audit-object-store.html
+        subcategory: Manage S3 audit configurations 
     patch:
       x-doc:
         title: Update S3 audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-object-store.html
+        subcategory: Manage S3 audit configurations 
     post:
       x-doc:
         title: Create S3 audit configuration
         category: NAS
         filename: post-protocols-audit-object-store.html
+        subcategory: Manage S3 audit configurations 
   "/protocols/cifs/connections":
     get:
       x-doc:
         title: Retrieve CIFS connection information for all SVMs
         category: NAS
         filename: get-protocols-cifs-connections.html
+        subcategory: View CIFS connection information
   "/protocols/cifs/domains":
     get:
       x-doc:
         title: Retrieve CIFS domain-related information of all SVMs
         category: NAS
         filename: get-protocols-cifs-domains.html
+        subcategory: View CIFS domain-related information
   "/protocols/cifs/domains/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve CIFS domain-related information for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-.html
+        subcategory: View CIFS domain-related information (specific SVM)
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
         title: Retrieve CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers.html
+        subcategory: Manage CIFS DC configuration
     post:
       x-doc:
         title: Create CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-domains-preferred-domain-controllers.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
         title: Delete CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
+        subcategory: Manage CIFS DC configuration
     get:
       x-doc:
         title: Retrieve CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies":
     get:
       x-doc:
         title: Retrieve unapplied group policy objects for all SVMs
         category: NAS
         filename: get-protocols-cifs-group-policies.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve unapplied group policy objects for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-.html
+        subcategory: Manage CIFS DC configuration
     patch:
       x-doc:
         title: Create a background task to update the GPO settings for an SVM
         category: NAS
         filename: patch-protocols-cifs-group-policies-.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies":
     get:
       x-doc:
         title: Retrieve applied central access policies for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-policies.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-policies/{name}":
     get:
       x-doc:
         title: Retrieve an applied central access policy for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-policies-.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules":
     get:
       x-doc:
         title: Retrieve applied central access rules for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-rules.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}/central-access-rules/{name}":
     get:
       x-doc:
         title: Retrieve an applied central access rule for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-central-access-rules-.html
+        subcategory: Manage CIFS DC configuration
   "/protocols/cifs/group-policies/{svm.uuid}/objects":
     get:
       x-doc:
         title: Retrieve applied group policy objects for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-objects.html
+        subcategory: View group policy objects 
   "/protocols/cifs/group-policies/{svm.uuid}/objects/{index}":
     get:
       x-doc:
         title: Retrieve an applied group policy object for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-objects-.html
+        subcategory: View group policy objects 
   "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups":
     get:
       x-doc:
         title: Retrieve applied restricted group policies for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-restricted-groups.html
+        subcategory: View group policy objects 
+        
   "/protocols/cifs/group-policies/{svm.uuid}/restricted-groups/{policy_index}/{group_name}":
     get:
       x-doc:
         title: Retrieve an applied restricted group policy for an SVM
         category: NAS
         filename: get-protocols-cifs-group-policies-restricted-groups-.html
+        subcategory: View group policy objects 
   "/protocols/cifs/home-directory/search-paths":
     get:
       x-doc:
         title: Retrieve CIFS home directory search paths
         category: NAS
         filename: get-protocols-cifs-home-directory-search-paths.html
+        subcategory: Manage home directory search paths
     post:
       x-doc:
         title: Create a home directory search path
         category: NAS
         filename: post-protocols-cifs-home-directory-search-paths.html
+        subcategory: Manage home directory search paths
   "/protocols/cifs/home-directory/search-paths/{svm.uuid}/{index}":
     delete:
       x-doc:
         title: Delete a CIFS home directory search path
         category: NAS
         filename: delete-protocols-cifs-home-directory-search-paths-.html
+        subcategory: Manage home directory search paths
     get:
       x-doc:
         title: Retrieve a CIFS home directory search path for an SVM
         category: NAS
         filename: get-protocols-cifs-home-directory-search-paths-.html
+        subcategory: Manage home directory search paths
     patch:
       x-doc:
         title: Re-order a CIFS home directory search path
         category: NAS
         filename: patch-protocols-cifs-home-directory-search-paths-.html
+        subcategory: Manage home directory search paths
   "/protocols/cifs/local-groups":
     get:
       x-doc:
         title: Retrieve local groups for all SVMs
         category: NAS
         filename: get-protocols-cifs-local-groups.html
+        subcategory: Manage local groups
     post:
       x-doc:
         title: Create local group configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-local-groups.html
+        subcategory: Manage local groups
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members":
     delete:
       x-doc:
         title: Delete local users or Active Directory users and groups from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members.html
+        subcategory: Manage local groups
     get:
       x-doc:
         title: Retrieve local users and Active Directory users and groups that belong to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members.html
+        subcategory: Manage local groups
     post:
       x-doc:
         title: Add local users and Active Directory users and groups to a local group and SVM
         category: NAS
         filename: post-protocols-cifs-local-groups--members.html
+        subcategory: Manage local groups
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members/{name}":
     delete:
       x-doc:
         title: Delete a local user, or Active Directory user or group from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members-.html
+        subcategory: Manage local group users
     get:
       x-doc:
         title: Retrieve a local user, Active Directory user or group belonging to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members-.html
+        subcategory: Manage local group users
   "/protocols/cifs/local-groups/{svm.uuid}/{sid}":
     delete:
       x-doc:
         title: Delete a local group configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups-.html
+        subcategory: Manage local group users
     get:
       x-doc:
         title: Retrieve local group information for a group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups-.html
+        subcategory: Manage local group users
+        
+
     patch:
       x-doc:
         title: Update local group information for a group in an SVM
         category: NAS
         filename: patch-protocols-cifs-local-groups-.html
+        subcategory: Manage local group users
   "/protocols/cifs/local-users":
     get:
       x-doc:
         title: Retrieve local users for all SVMs
         category: NAS
         filename: get-protocols-cifs-local-users.html
+        subcategory: Manage local users
     post:
       x-doc:
         title: Create local user configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-local-users.html
+        subcategory: Manage local users
   "/protocols/cifs/local-users/{svm.uuid}/{sid}":
     delete:
       x-doc:
         title: Delete local user configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-users-.html
+        subcategory: Manage local users
     get:
       x-doc:
         title: Retrieve local user information for a user and SVM
         category: NAS
         filename: get-protocols-cifs-local-users-.html
+        subcategory: Manage local users
     patch:
       x-doc:
         title: Update local user information for a user and SVM
         category: NAS
         filename: patch-protocols-cifs-local-users-.html
+        subcategory: Manage local users
   "/protocols/cifs/netbios":
     get:
       x-doc:
         title: Retrieve NetBios information
         category: NAS
         filename: get-protocols-cifs-netbios.html
+        subcategory: View NetBIOS information
   "/protocols/cifs/services":
     get:
       x-doc:
         title: Retrieve CIFS servers
         category: NAS
         filename: get-protocols-cifs-services.html
+        subcategory: Manage CIFS services
     post:
       x-doc:
         title: Create a CIFS server
         category: NAS
         filename: post-protocols-cifs-services.html
+        subcategory: Manage CIFS services
   "/protocols/cifs/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete a CIFS server and related configurations
         category: NAS
         filename: delete-protocols-cifs-services-.html
+        subcategory: Manage CIFS services
     get:
       x-doc:
         title: Retrieve a CIFS server
         category: NAS
         filename: get-protocols-cifs-services-.html
+        subcategory: Manage CIFS services
     patch:
       x-doc:
         title: Update CIFS mandatory and optional parameters 
         category: NAS
         filename: patch-protocols-cifs-services-.html
+        subcategory: Manage CIFS services
   "/protocols/cifs/services/{svm.uuid}/metrics":
     get:
       x-doc:
@@ -2026,171 +2091,202 @@ paths:
           svm
         category: NAS
         filename: get-protocols-cifs-services-metrics.html
+        subcategory: Manage CIFS services
   "/protocols/cifs/session/files":
     get:
       x-doc:
         title: Retrieve CIFS open files
         category: NAS
         filename: get-protocols-cifs-session-files.html
+        subcategory: View CIFS active file sessions
   "/protocols/cifs/session/files/{node.uuid}/{svm.uuid}/{identifier}/{connection.identifier}/{session.identifier}":
     delete:
       x-doc:
         title: Close open files identified by SVM
         category: NAS
         filename: delete-protocols-cifs-session-files---.html
+        subcategory: View CIFS active file sessions
     get:
       x-doc:
         title: Retrieve a CIFS open file
         category: NAS
         filename: get-protocols-cifs-session-files---.html
+        subcategory: View CIFS active file sessions
   "/protocols/cifs/sessions":
     get:
       x-doc:
         title: Retrieve CIFS session information for all SVMs
         category: NAS
         filename: get-protocols-cifs-sessions.html
+        subcategory: View CIFS active sessions
   "/protocols/cifs/sessions/{node.uuid}/{svm.uuid}/{identifier}/{connection_id}":
     delete:
       x-doc:
         title: Delete SMB session information for an SVM node
         category: NAS
         filename: delete-protocols-cifs-sessions--.html
+        subcategory: View CIFS active sessions
     get:
       x-doc:
         title: Retrieve SMB session information for an SMB connection in a SVM node
         category: NAS
         filename: get-protocols-cifs-sessions--.html
+        subcategory: View CIFS active sessions
   "/protocols/cifs/shadow-copies":
     get:
       x-doc:
         title: Retrieve shadow copies
         category: NAS
         filename: get-protocols-cifs-shadow-copies.html
+        subcategory: View and update shadow copy information
   "/protocols/cifs/shadow-copies/{client_uuid}":
     get:
       x-doc:
         title: Retrieve a shadow copy
         category: NAS
         filename: get-protocols-cifs-shadow-copies-.html
+        subcategory: View and update shadow copy information
     patch:
       x-doc:
         title: Update a shadow copy
         category: NAS
         filename: patch-protocols-cifs-shadow-copies-.html
+        subcategory: View and update shadow copy information
   "/protocols/cifs/shadowcopy-sets":
     get:
       x-doc:
         title: Retrieve shadow copy sets
         category: NAS
         filename: get-protocols-cifs-shadowcopy-sets.html
+        subcategory: View and update shadow copy information
   "/protocols/cifs/shadowcopy-sets/{uuid}":
     get:
       x-doc:
         title: Retrieve a shadow copy set
         category: NAS
         filename: get-protocols-cifs-shadowcopy-sets-.html
+        subcategory: View and update shadow copy information
     patch:
       x-doc:
         title: Update a shadow copy set
         category: NAS
         filename: patch-protocols-cifs-shadowcopy-sets-.html
+        subcategory: View and update shadow copy information
   "/protocols/cifs/shares":
     get:
       x-doc:
         title: Retrieve CIFS shares
         category: NAS
         filename: get-protocols-cifs-shares.html
+        subcategory: Manage CIFS shares
     post:
       x-doc:
         title: Create a CIFS share
         category: NAS
         filename: post-protocols-cifs-shares.html
+        subcategory: Manage CIFS shares
   "/protocols/cifs/shares/{svm.uuid}/{name}":
     delete:
       x-doc:
         title: Delete a CIFS share
         category: NAS
         filename: delete-protocols-cifs-shares-.html
+        subcategory: Manage CIFS shares
     get:
       x-doc:
         title: Retrieve a CIFS share
         category: NAS
         filename: get-protocols-cifs-shares-.html
+        subcategory: Manage CIFS shares
     patch:
       x-doc:
         title: Update a CIFS share
         category: NAS
         filename: patch-protocols-cifs-shares-.html
+        subcategory: Manage CIFS shares
   "/protocols/cifs/shares/{svm.uuid}/{share}/acls":
     get:
       x-doc:
         title: Retrieve a share-level ACL on a CIFS share
         category: NAS
         filename: get-protocols-cifs-shares--acls.html
+        subcategory: Manage share-level ACL
     post:
       x-doc:
         title: Create a share-level ACL on a CIFS share
         category: NAS
         filename: post-protocols-cifs-shares--acls.html
+        subcategory: Manage share-level ACL
   "/protocols/cifs/shares/{svm.uuid}/{share}/acls/{user_or_group}/{type}":
     delete:
       x-doc:
         title: Delete a share-level ACL on a CIFS share
         category: NAS
         filename: delete-protocols-cifs-shares--acls-.html
+        subcategory: Manage share-level ACL
     get:
       x-doc:
         title: Retrieve a share-level ACL on a CIFS share for a user or group
         category: NAS
         filename: get-protocols-cifs-shares--acls-.html
+        subcategory: Manage share-level ACL
     patch:
       x-doc:
         title: Update a share-level ACL on a CIFS share
         category: NAS
         filename: patch-protocols-cifs-shares--acls-.html
+        subcategory: Manage share-level ACL
   "/protocols/cifs/unix-symlink-mapping":
     get:
       x-doc:
         title: Retrieve UNIX symbolic link mappings for CIFS clients
         category: NAS
         filename: get-protocols-cifs-unix-symlink-mapping.html
+        subcategory: Manage CIFS UNIX symlink mapping
     post:
       x-doc:
         title: Create a UNIX symbolic link mapping for a CIFS client
         category: NAS
         filename: post-protocols-cifs-unix-symlink-mapping.html
+        subcategory: Manage CIFS UNIX symlink mapping
   "/protocols/cifs/unix-symlink-mapping/{svm.uuid}/{unix_path}":
     delete:
       x-doc:
         title: Delete UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: delete-protocols-cifs-unix-symlink-mapping-.html
+        subcategory: Manage CIFS UNIX symlink mapping
     get:
       x-doc:
         title: Retrieve a UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: get-protocols-cifs-unix-symlink-mapping-.html
+        subcategory: Manage CIFS UNIX symlink mapping
     patch:
       x-doc:
         title: Update UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: patch-protocols-cifs-unix-symlink-mapping-.html
+        subcategory: Manage CIFS UNIX symlink mapping
   "/protocols/cifs/users-and-groups/bulk-import/{svm.uuid}":
     get:
       x-doc:
         title: Retrieve import operation status for CIFS local users, groups, and group memberships
         category: NAS
         filename: get-protocols-cifs-users-and-groups-bulk-import-.html
+        subcategory: Perform bulk import for CIFS user groups
     patch:
       x-doc:
         title: Upload the bulk-import status of an SVM to a URI
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-bulk-import-.html
+        subcategory: Perform bulk import for CIFS user groups
     post:
       x-doc:
         title: Load CIFS local users, groups and group membership files from a URL
         category: NAS
         filename: post-protocols-cifs-users-and-groups-bulk-import-.html
+        subcategory: Perform bulk import for CIFS user groups
   "/protocols/cifs/users-and-groups/privileges":
     get:
       x-doc:
@@ -2198,204 +2294,241 @@ paths:
           or groups and SVMs
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges.html
+        subcategory: Manage CIFS user group privileges
     post:
       x-doc:
         title: Add privileges to a local, or Active Directory user or group and SVM
         category: NAS
         filename: post-protocols-cifs-users-and-groups-privileges.html
+        subcategory: Manage CIFS user group privileges
   "/protocols/cifs/users-and-groups/privileges/{svm.uuid}/{name}":
     get:
       x-doc:
         title: Retrieve privileges for a local, or Active Directory user or group and SVM
         category: NAS
         filename: get-protocols-cifs-users-and-groups-privileges-.html
+        subcategory: Manage CIFS user group privileges
     patch:
       x-doc:
         title: Update privileges for a local, or Active Directory user
           or group and SVM
         category: NAS
         filename: patch-protocols-cifs-users-and-groups-privileges-.html
+        subcategory: Manage CIFS user group privileges
   "/protocols/file-security/effective-permissions/{svm.uuid}/{path}":
     get:
       x-doc:
         title: Retrieve effective security permissions on a file
         category: NAS
         filename: get-protocols-file-security-effective-permissions-.html
+        subcategory: View file security permissions
   "/protocols/file-security/permissions/{svm.uuid}/{path}":
     delete:
       x-doc:
         title: Remove all SLAG ACLs for a path
         category: NAS
         filename: delete-protocols-file-security-permissions-.html
+        subcategory: Manage file security permissions and audit policies
     get:
       x-doc:
         title: Retrieve file permissions
         category: NAS
         filename: get-protocols-file-security-permissions-.html
+        subcategory: Manage file security permissions and audit policies
     patch:
       x-doc:
         title: Update SD information
         category: NAS
         filename: patch-protocols-file-security-permissions-.html
+        subcategory: Manage file security permissions and audit policies
     post:
       x-doc:
         title: Apply an SD to a path
         category: NAS
         filename: post-protocols-file-security-permissions-.html
+        subcategory: Manage file security permissions and audit policies
   "/protocols/file-security/permissions/{svm.uuid}/{path}/acl":
     post:
       x-doc:
         title: Add a new SACL or DACL ACE
         category: NAS
         filename: post-protocols-file-security-permissions--acl.html
+        subcategory: Manage file security permissions and audit policies
   "/protocols/file-security/permissions/{svm.uuid}/{path}/acl/{user}":
     delete:
       x-doc:
         title: Delete a SACL or DACL ACL
         category: NAS
         filename: delete-protocols-file-security-permissions--acl-.html
+        subcategory: Manage file security permissions and audit policies
     patch:
       x-doc:
         title: Update SACLs or DACLs
         category: NAS
         filename: patch-protocols-file-security-permissions--acl-.html
+        subcategory: Manage file security permissions and audit policies
   "/protocols/fpolicy":
     get:
       x-doc:
         title: Retrieve FPolicy configuration
         category: NAS
         filename: get-protocols-fpolicy.html
+        subcategory: Manage FPolicy configuration
     post:
       x-doc:
         title: Create FPolicy configuration
         category: NAS
         filename: post-protocols-fpolicy.html
+        subcategory: Manage FPolicy configuration
   "/protocols/fpolicy/{svm.uuid}":
     delete:
       x-doc:
         title: Delete FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-.html
+        subcategory: Manage FPolicy configuration
     get:
       x-doc:
         title: Retrieve FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-.html
+        subcategory: Manage FPolicy configuration
   "/protocols/fpolicy/{svm.uuid}/connections":
     get:
       x-doc:
         title: Retrieve status of FPolicy servers
         category: NAS
         filename: get-protocols-fpolicy-connections.html
+        subcategory: View and update FPolicy server configuration
   "/protocols/fpolicy/{svm.uuid}/connections/{node.uuid}/{policy.name}/{server}":
     get:
       x-doc:
         title: Retrieve status of an FPolicy server
         category: NAS
         filename: get-protocols-fpolicy-connections--.html
+        subcategory: View and update FPolicy server configuration
     patch:
       x-doc:
         title: Update FPolicy server status 
         category: NAS
         filename: patch-protocols-fpolicy-connections--.html
+        subcategory: View and update FPolicy server configuration
   "/protocols/fpolicy/{svm.uuid}/engines":
     get:
       x-doc:
         title: Retrieve FPolicy engine configuration for all engines of an SVM 
         category: NAS
         filename: get-protocols-fpolicy-engines.html
+        subcategory: Manage FPolicy engine configuration
     post:
       x-doc:
         title: Create FPolicy engine configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-engines.html
+        subcategory: Manage FPolicy engine configuration
   "/protocols/fpolicy/{svm.uuid}/engines/{name}":
     delete:
       x-doc:
         title: Delete FPolicy external engine configuration
         category: NAS
         filename: delete-protocols-fpolicy-engines-.html
+        subcategory: Manage FPolicy engine configuration
     get:
       x-doc:
         title: Retrieve particular FPolicy engine configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-engines-.html
+        subcategory: Manage FPolicy engine configuration
     patch:
       x-doc:
         title: Update specific FPolicy engine configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-engines-.html
+        subcategory: Manage FPolicy engine configuration
   "/protocols/fpolicy/{svm.uuid}/events":
     get:
       x-doc:
         title: Retrieve FPolicy event configuration for all events for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events.html
+        subcategory: Manage FPolicy event configuration
     post:
       x-doc:
         title: Create FPolicy event configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-events.html
+        subcategory: Manage FPolicy event configuration
   "/protocols/fpolicy/{svm.uuid}/events/{name}":
     delete:
       x-doc:
         title: Delete specific FPolicy event configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-events-.html
+        subcategory: Manage FPolicy event configuration
     get:
       x-doc:
         title: Retrieve specific FPolicy event configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events-.html
+        subcategory: Manage FPolicy event configuration
     patch:
       x-doc:
         title: Update specific FPolicy event configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-events-.html
+        subcategory: Manage FPolicy event configuration
   "/protocols/fpolicy/{svm.uuid}/policies":
     get:
       x-doc:
         title: Retrieve FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies.html
+        subcategory: Manage SVM FPolicy configuration
     post:
       x-doc:
         title: Create FPolicy configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-policies.html
+        subcategory: Manage SVM FPolicy configuration
   "/protocols/fpolicy/{svm.uuid}/policies/{name}":
     delete:
       x-doc:
-        title: Delete a specific FPolicy configuration for an SVM
+        title: Delete an FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-policies-.html
+        subcategory: Manage SVM FPolicy configuration
     get:
       x-doc:
-        title: Retrieve a specific FPolicy configuration for an SVM
+        title: Retrieve an FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies-.html
+        subcategory: Manage SVM FPolicy configuration
     patch:
       x-doc:
-        title: Update a specific FPolicy configuration for an SVM
+        title: Update an FPolicy configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-policies-.html
+        subcategory: Manage SVM FPolicy configuration
   "/protocols/locks":
     get:
       x-doc:
         title: Retrieve lock details
         category: NAS
         filename: get-protocols-locks.html
+        subcategory: View lock details
   "/protocols/locks/{uuid}":
     delete:
       x-doc:
         title: Delete locks for a parameter
         category: NAS
         filename: delete-protocols-locks-.html
+        subcategory: View lock details
     get:
       x-doc:
         title: Retrieve the lock for a specific UUID
         category: NAS
         filename: get-protocols-locks-.html
+        subcategory: View lock details
   "/protocols/ndmp":
     get:
       x-doc:
@@ -2482,171 +2615,202 @@ paths:
         title: Retrieve NFS clients information
         category: NAS
         filename: get-protocols-nfs-connected-client-maps.html
+        subcategory: View NFS client information
   "/protocols/nfs/connected-client-settings":
     get:
       x-doc:
         title: Retrieve NFS connected-client cache settings for a cluster
         category: NAS
         filename: get-protocols-nfs-connected-client-settings.html
+        subcategory: View and update NFS client settings
     patch:
       x-doc:
         title: Update NFS connected-client cache settings properties
         category: NAS
         filename: patch-protocols-nfs-connected-client-settings.html
+        subcategory: View and update NFS client settings
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
         title: Retrieve NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-connected-clients.html
+        subcategory: View NFS connected clients 
   "/protocols/nfs/export-policies":
     get:
       x-doc:
         title: Retrieve export policies
         category: NAS
         filename: get-protocols-nfs-export-policies.html
+        subcategory: Manage NFS export policies
     post:
       x-doc:
         title: Create an export policy
         category: NAS
         filename: post-protocols-nfs-export-policies.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/export-policies/{id}":
     delete:
       x-doc:
         title: Delete an export policy
         category: NAS
         filename: delete-protocols-nfs-export-policies-.html
+        subcategory: Manage NFS export policies
     get:
       x-doc:
         title: Retrieve an export policy
         category: NAS
         filename: get-protocols-nfs-export-policies-.html
+        subcategory: Manage NFS export policies
     patch:
       x-doc:
         title: Update export policy properties
         category: NAS
         filename: patch-protocols-nfs-export-policies-.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/export-policies/{policy.id}/rules":
     get:
       x-doc:
         title: Retrieve export policy rules
         category: NAS
         filename: get-protocols-nfs-export-policies-rules.html
+        subcategory: Manage NFS export policies
     post:
       x-doc:
         title: Create an export policy rule
         category: NAS
         filename: post-protocols-nfs-export-policies-rules.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}":
     delete:
       x-doc:
         title: Delete an export policy rule
         category: NAS
         filename: delete-protocols-nfs-export-policies-rules-.html
+        subcategory: Manage NFS export policies
     get:
       x-doc:
         title: Retrieve an export policy rule
         category: NAS
         filename: get-protocols-nfs-export-policies-rules-.html
+        subcategory: Manage NFS export policies
     patch:
       x-doc:
         title: Update the properties of an export policy rule 
         category: NAS
         filename: patch-protocols-nfs-export-policies-rules-.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients":
     get:
       x-doc:
         title: Retrieve export policy rule clients
         category: NAS
         filename: get-protocols-nfs-export-policies-rules-clients.html
+        subcategory: Manage NFS export policies
     post:
       x-doc:
         title: Create an export policy rule client
         category: NAS
         filename: post-protocols-nfs-export-policies-rules-clients.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients/{match}":
     delete:
       x-doc:
         title: Delete an export policy client
         category: NAS
         filename: delete-protocols-nfs-export-policies-rules-clients-.html
+        subcategory: Manage NFS export policies
   "/protocols/nfs/kerberos/interfaces":
     get:
       x-doc:
         title: Retrieve Kerberos interfaces
         category: NAS
         filename: get-protocols-nfs-kerberos-interfaces.html
+        subcategory: View and update Kerberos interfaces
   "/protocols/nfs/kerberos/interfaces/{interface.uuid}":
     get:
       x-doc:
         title: Retrieve a Kerberos interface
         category: NAS
         filename: get-protocols-nfs-kerberos-interfaces-.html
+        subcategory: View and update Kerberos interfaces
     patch:
       x-doc:
         title: Update Kerberos interface properties
         category: NAS
         filename: patch-protocols-nfs-kerberos-interfaces-.html
+        subcategory: View and update Kerberos interfaces
   "/protocols/nfs/kerberos/realms":
     get:
       x-doc:
         title: Retrieve Kerberos realms
         category: NAS
         filename: get-protocols-nfs-kerberos-realms.html
+        subcategory: Manage Kerberos realms
     post:
       x-doc:
         title: Create a Kerberos realm
         category: NAS
         filename: post-protocols-nfs-kerberos-realms.html
+        subcategory: Manage Kerberos realms
   "/protocols/nfs/kerberos/realms/{svm.uuid}/{name}":
     delete:
       x-doc:
         title: Delete a Kerberos realm
         category: NAS
         filename: delete-protocols-nfs-kerberos-realms-.html
+        subcategory: Manage Kerberos realms
     get:
       x-doc:
         title: Retrieve a Kerberos realm
         category: NAS
         filename: get-protocols-nfs-kerberos-realms-.html
+        subcategory: Manage Kerberos realms
     patch:
       x-doc:
         title: Update Kerberos realm properties 
         category: NAS
         filename: patch-protocols-nfs-kerberos-realms-.html
+        subcategory: Manage Kerberos realms
   "/protocols/nfs/services":
     get:
       x-doc:
         title: Retrieves NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
+        subcategory: Manage NFS services
     post:
       x-doc:
         title: Create an NFS configuration for an SVM
         category: NAS
         filename: post-protocols-nfs-services.html
+        subcategory: Manage NFS services
   "/protocols/nfs/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete NFS configuration for an SVM
         category: NAS
         filename: delete-protocols-nfs-services-.html
+        subcategory: Manage NFS services
     get:
       x-doc:
         title: Retrieve NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-services-.html
+        subcategory: Manage NFS services
     patch:
       x-doc:
         title: Update NFS configuration for an SVM
         category: NAS
         filename: patch-protocols-nfs-services-.html
+        subcategory: Manage NFS services
   "/protocols/nfs/services/{svm.uuid}/metrics":
     get:
       x-doc:
         title: Retrieve NFS protocol historical performance metrics 
         category: NAS
         filename: get-protocols-nfs-services-metrics.html
+        subcategory: Manage NFS services
   "/protocols/nvme/interfaces":
     get:
       x-doc:
@@ -3342,120 +3506,142 @@ paths:
         title: Retrieve the Vscan configuration
         category: NAS
         filename: get-protocols-vscan.html
+        subcategory: View and create Vscan configuration
     post:
       x-doc:
         title: Create a Vscan configuration
         category: NAS
         filename: post-protocols-vscan.html
+        subcategory: View and create Vscan configuration
   "/protocols/vscan/server-status":
     get:
       x-doc:
         title: Retrieve Vscan server status
         category: NAS
         filename: get-protocols-vscan-server-status.html
+        subcategory: Manage Vscan configuration
   "/protocols/vscan/{svm.uuid}":
     delete:
       x-doc:
         title: Delete a Vscan configuration
         category: NAS
         filename: delete-protocols-vscan-.html
+        subcategory: Manage Vscan configuration
     get:
       x-doc:
         title: Retrieve the Vscan configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-.html
+        subcategory: Manage Vscan configuration
     patch:
       x-doc:
         title: Update the Vscan configuration for an SVM 
         category: NAS
         filename: patch-protocols-vscan-.html
+        subcategory: Manage Vscan configuration
   "/protocols/vscan/{svm.uuid}/events":
     get:
       x-doc:
         title: Retrieve Vscan events
         category: NAS
         filename: get-protocols-vscan-events.html
+        subcategory: Manage Vscan configuration
   "/protocols/vscan/{svm.uuid}/on-access-policies":
     get:
       x-doc:
         title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
+        subcategory: Manage Vscan on-access policy
     post:
       x-doc:
         title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
+        subcategory: Manage Vscan on-access policy
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
       x-doc:
         title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
+        subcategory: Manage Vscan on-access policy
     get:
       x-doc:
         title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
+        subcategory: Manage Vscan on-access policy
     patch:
       x-doc:
         title: Manage Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
+        subcategory: Manage Vscan on-access policy
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
       x-doc:
         title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
+        subcategory: Manage Vscan on-demand policy
     post:
       x-doc:
         title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
+        subcategory: Manage Vscan on-demand policy
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
       x-doc:
         title: Delete Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
+        subcategory: Manage Vscan on-demand policy
     get:
       x-doc:
         title: Retrieve Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
+        subcategory: Manage Vscan on-demand policy
     patch:
       x-doc:
         title: Update Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
+        subcategory: Manage Vscan on-demand policy
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
       x-doc:
         title: Retrieve Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools.html
+        subcategory: Manage Vscan scanner-pool configuration
     post:
       x-doc:
         title: Create a Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: post-protocols-vscan-scanner-pools.html
+        subcategory: Manage Vscan scanner-pool configuration
   "/protocols/vscan/{svm.uuid}/scanner-pools/{name}":
     delete:
       x-doc:
         title: Delete Vscan scanner-pool configuration
         category: NAS
         filename: delete-protocols-vscan-scanner-pools-.html
+        subcategory: Manage Vscan scanner-pool configuration
     get:
       x-doc:
         title: Retrieve Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools-.html
+        subcategory: Manage Vscan scanner-pool configuration
     patch:
       x-doc:
         title: Update Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
+        subcategory: Manage Vscan scanner-pool configuration
   "/security":
     get:
       x-doc:
