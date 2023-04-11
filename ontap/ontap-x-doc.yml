@@ -4968,13 +4968,13 @@ paths:
         title: Retrieve the status of an update
         category: support
         filename: get-support-auto-update-update-.html
-        subcategory: Retrieve or update the status of an automatic update
+        subcategory: Retrieve or update the status of an automatic update 
     patch:
       x-doc:
         title: Perform an action on the update
         category: support
         filename: patch-support-auto-update-update-.html
-        subcategory: Retrieve or update the status of an automatic update
+        subcategory: Retrieve or update the status of an automatic update 
   "/support/autosupport":
     get:
       x-doc:
