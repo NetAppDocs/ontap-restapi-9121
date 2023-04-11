@@ -4854,7 +4854,7 @@ paths:
         subcategory: Manage storage volumes
     post:
       x-doc:
-        title: Create a volume on SVM and storage aggregates
+        title: Create a volume on an SVM and storage aggregates
         category: storage
         filename: post-storage-volumes.html
         subcategory: Manage storage volumes
@@ -5006,7 +5006,7 @@ paths:
   "/support/auto-update/update":
     get:
       x-doc:
-        title: Retrieve status of all updates
+        title: Retrieve all automatic update status
         category: support
         filename: get-support-auto-update-update.html
         subcategory: Retrieve status for all automatic updates
@@ -5016,13 +5016,13 @@ paths:
         title: Retrieve the status of an update
         category: support
         filename: get-support-auto-update-update-.html
-        subcategory: Retrieve or update the status of an automatic update 
+        subcategory: Manage automatic updates
     patch:
       x-doc:
         title: Perform an action on the update
         category: support
         filename: patch-support-auto-update-update-.html
-        subcategory: Retrieve or update the status of an automatic update 
+        subcategory: Manage automatic updates
   "/support/autosupport":
     get:
       x-doc:
