@@ -3944,39 +3944,46 @@ paths:
         title: Retrieve a collection of aggregates for an entire cluster
         category: storage
         filename: get-storage-aggregates.html
+        subcategory: Retrieve or create a collection of storage aggregates
     post:
       x-doc:
         title: Create a collection of aggregates for an entire cluster
         category: storage
         filename: post-storage-aggregates.html
+        subcategory: Retrieve or create a collection of storage aggregates
   "/storage/aggregates/{aggregate.uuid}/cloud-stores":
     get:
       x-doc:
         title: Retrieve a collection of cloud stores used by an aggregate
         category: storage
         filename: get-storage-aggregates-cloud-stores.html
+        subcategory: Manage storage aggregates
     post:
       x-doc:
         title: Attach an object store to an aggregate or add a second object store
           as a mirror
         category: storage
         filename: post-storage-aggregates-cloud-stores.html
+        subcategory: Manage storage aggregates
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
         title: Remove a cloud target from an aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
+        subcategory: Manage storage aggregates
     get:
       x-doc:
         title: Retrieve the cloud store for an aggregate 
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
+        subcategory: Manage storage aggregates
     patch:
       x-doc:
         title: Update a cloud store by UUID
         category: storage
         filename: patch-storage-aggregates-cloud-stores-.html
+        subcategory: Manage storage aggregates
   "/storage/aggregates/{aggregate.uuid}/plexes":
     get:
       x-doc:
@@ -3997,19 +4004,19 @@ paths:
         title: Delete an aggregate specified by the UUID
         category: storage
         filename: delete-storage-aggregates-.html
-        subcategory: Manage specific storage aggregates
+        subcategory: Manage storage aggregates
     get:
       x-doc:
         title: Retrieve an aggregate specified by the UUID
         category: storage
         filename: get-storage-aggregates-.html
-        subcategory: Manage specific storage aggregates
+        subcategory: Manage storage aggregates
     patch:
       x-doc:
         title: Update an aggregate specified by the UUID 
         category: storage
         filename: patch-storage-aggregates-.html
-        subcategory: Manage specific storage aggregates
+        subcategory: Manage storage aggregates
   "/storage/aggregates/{uuid}/metrics":
     get:
       x-doc:
@@ -4023,120 +4030,141 @@ paths:
         title: Retrieve a collection of bridges
         category: storage
         filename: get-storage-bridges.html
+        subcategory: Manage bridges
   "/storage/bridges/{wwn}":
     get:
       x-doc:
         title: Retrieve a specific bridge
         category: storage
         filename: get-storage-bridges-.html
+        subcategory: Manage bridges
   "/storage/cluster":
     get:
       x-doc:
         title: Report cluster-wide storage details across different tiers
         category: storage
         filename: get-storage-cluster.html
+        subcategory: Manage bridges
   "/storage/disks":
     get:
       x-doc:
         title: Retrieve a collection of disks
         category: storage
         filename: get-storage-disks.html
+        subcategory: Manage disks
     patch:
       x-doc:
         title: Update disk ownership, change authentication keys, or sanitize disks
         category: storage
         filename: patch-storage-disks.html
+        subcategory: Manage disks
   "/storage/disks/{name}":
     get:
       x-doc:
         title: Retrieve a specific disk
         category: storage
         filename: get-storage-disks-.html
+        subcategory: Manage disks
   "/storage/file/clone":
     post:
       x-doc:
         title: Create a clone of the file
         category: storage
         filename: post-storage-file-clone.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/split-loads":
     get:
       x-doc:
         title: Retrieve the clone split load of a node
         category: storage
         filename: get-storage-file-clone-split-loads.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/split-loads/{node.uuid}":
     get:
       x-doc:
         title: Retrieve volume file clone split load rest
         category: storage
         filename: get-storage-file-clone-split-loads-.html
+        subcategory: Manage storage file clones
     patch:
       x-doc:
         title: Update the maximum split load
         category: storage
         filename: patch-storage-file-clone-split-loads-.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/split-status":
     get:
       x-doc:
         title: Retrieve file clone split status of all volumes in the node
         category: storage
         filename: get-storage-file-clone-split-status.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/split-status/{volume.uuid}":
     get:
       x-doc:
         title: Retrieve file clone split status of all volumes
         category: storage
         filename: get-storage-file-clone-split-status-.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/tokens":
     get:
       x-doc:
         title: Retrieve information for a token
         category: storage
         filename: get-storage-file-clone-tokens.html
+        subcategory: Manage storage file clones
     post:
       x-doc:
         title: Create a new token to reserve the split load
         category: storage
         filename: post-storage-file-clone-tokens.html
+        subcategory: Manage storage file clones
   "/storage/file/clone/tokens/{node.uuid}/{uuid}":
     delete:
       x-doc:
         title: Delete a specific file clone token
         category: storage
         filename: delete-storage-file-clone-tokens-.html
+        subcategory: Manage storage file clones
     get:
       x-doc:
         title: Retrieve a file clone token
         category: storage
         filename: get-storage-file-clone-tokens-.html
+        subcategory: Manage storage file clones
     patch:
       x-doc:
         title: Update a file clone token
         category: storage
         filename: patch-storage-file-clone-tokens-.html
+        subcategory: Manage storage file clones
   "/storage/file/copy":
     post:
       x-doc:
         title: Start a file copy operation
         category: storage
         filename: post-storage-file-copy.html
+        subcategory: Manage storage file clones
   "/storage/file/moves":
     get:
       x-doc:
         title: Retrieve all ongoing file move operations in the cluster
         category: storage
         filename: get-storage-file-moves.html
+        subcategory: Manage storage file moves
     post:
       x-doc:
         title: Start a file move operation
         category: storage
         filename: post-storage-file-moves.html
+        subcategory: Manage storage file moves
   "/storage/file/moves/{node.uuid}/{uuid}/{index}":
     get:
       x-doc:
         title: Check the status of an active file move operation
         category: storage
         filename: get-storage-file-moves--.html
+        subcategory: Manage storage file moves
   "/storage/flexcache/flexcaches":
     get:
       x-doc:
@@ -4320,17 +4348,20 @@ paths:
         title: Retrieve storage ports
         category: storage
         filename: get-storage-ports.html
+        subcategory: Manage storage ports
   "/storage/ports/{node.uuid}/{name}":
     get:
       x-doc:
         title: Retrieve a storage port
         category: storage
         filename: get-storage-ports-.html
+        subcategory: Manage storage ports
     patch:
       x-doc:
         title: Update a storage port
         category: storage
         filename: patch-storage-ports-.html
+        subcategory: Manage storage ports
   "/storage/qos/policies":
     get:
       x-doc:
@@ -4383,83 +4414,98 @@ paths:
         title: Retrieve qtrees 
         category: storage
         filename: get-storage-qtrees.html
+        subcategory: Manage storage qtrees
     post:
       x-doc:
         title: Create a qtree in a FlexVol or FlexGroup volume
         category: storage
         filename: post-storage-qtrees.html
+        subcategory: Manage storage qtrees
   "/storage/qtrees/{volume.uuid}/{id}":
     delete:
       x-doc:
         title: Delete a qtree
         category: storage
         filename: delete-storage-qtrees-.html
+        subcategory: Manage storage qtrees
     get:
       x-doc:
         title: Retrieve qtree properties 
         category: storage
         filename: get-storage-qtrees-.html
+        subcategory: Manage storage qtrees
     patch:
       x-doc:
         title: Update properties for a qtree
         category: storage
         filename: patch-storage-qtrees-.html
+        subcategory: Manage storage qtrees
   "/storage/quota/reports":
     get:
       x-doc:
         title: Retrieve the quota report records for all FlexVol and FlexGroup volumes
         category: storage
         filename: get-storage-quota-reports.html
+        subcategory: Manage storage quota reports
   "/storage/quota/reports/{volume.uuid}/{index}":
     get:
       x-doc:
         title: Retrieve a specific quota report record
         category: storage
         filename: get-storage-quota-reports-.html
+        subcategory: Manage storage quota reports
   "/storage/quota/rules":
     get:
       x-doc:
         title: Retrieve quota policy rules for all FlexVol and FlexGroup volumes
         category: storage
         filename: get-storage-quota-rules.html
+        subcategory: Manage storage quota policy rules
     post:
       x-doc:
         title: Create a quota policy rule for a FlexVol or a FlexGroup volume
         category: storage
         filename: post-storage-quota-rules.html
+        subcategory: Manage storage quota policy rules
   "/storage/quota/rules/{uuid}":
     delete:
       x-doc:
         title: Delete a quota policy rule
         category: storage
         filename: delete-storage-quota-rules-.html
+        subcategory: Manage storage quota policy rules
     get:
       x-doc:
         title: Retrieve quota policy rule properties 
         category: storage
         filename: get-storage-quota-rules-.html
+        subcategory: Manage storage quota policy rules
     patch:
       x-doc:
         title: Update quota policy rule properties 
         category: storage
         filename: patch-storage-quota-rules-.html
+        subcategory: Manage storage quota policy rules
   "/storage/shelves":
     get:
       x-doc:
         title: Retrieve shelves
         category: storage
         filename: get-storage-shelves.html
+        subcategory: Manage shelves
   "/storage/shelves/{uid}":
     get:
       x-doc:
         title: Retrieve a shelf
         category: storage
         filename: get-storage-shelves-.html
+        subcategory: Manage shelves
     patch:
       x-doc:
         title: Update a shelf location led
         category: storage
         filename: patch-storage-shelves-.html
+        subcategory: Manage shelves
   "/storage/snaplock/audit-logs":
     get:
       x-doc:
@@ -4739,12 +4785,14 @@ paths:
         title: Retrieve storage switches
         category: storage
         filename: get-storage-switches.html
+        subcategory: Manage storage switches
   "/storage/switches/{name}":
     get:
       x-doc:
         title: Retrieve a specific storage switch
         category: storage
         filename: get-storage-switches-.html
+        subcategory: Manage storage switches
   "/storage/tape-devices":
     get:
       x-doc:
