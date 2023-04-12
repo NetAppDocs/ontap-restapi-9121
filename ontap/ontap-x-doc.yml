@@ -63,46 +63,46 @@ paths:
         title: Create an application Snapshot copy  
         category: application
         filename: post-application-applications-snapshots.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
   "/application/applications/{application.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
         title: Delete an application Snapshot copy  
         category: application
         filename: delete-application-applications-snapshots-.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
     get:
       x-doc:
         title: Retrieve an application Snapshot copy 
         category: application
         filename: get-application-applications-snapshots-.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
   "/application/applications/{application.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
         title: Restore an application Snapshot copy 
         category: application
         filename: post-application-applications-snapshots-restore.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
   "/application/applications/{uuid}":
     delete:
       x-doc:
         title: Delete an application and all associated data
         category: application
         filename: delete-application-applications-.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
     get:
       x-doc:
         title: Retrieve an application
         category: application
         filename: get-application-applications-.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
     patch:
       x-doc:
         title: Update application properties
         category: application
         filename: patch-application-applications-.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
   "/application/consistency-groups":
     get:
       x-doc:
@@ -173,14 +173,14 @@ paths:
         title: Retrieve application templates
         category: application
         filename: get-application-templates.html
-        subcategory: Manage application consistency group Snapshot copies
+        subcategory: View application templates
   "/application/templates/{name}":
     get:
       x-doc:
         title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
-        subcategory: Manage application consistency group Snapshot copies
+        subcategory: View application templates
   "/cloud/targets":
     get:
       x-doc:
