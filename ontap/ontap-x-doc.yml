@@ -3957,33 +3957,33 @@ paths:
         title: Retrieve a collection of cloud stores used by an aggregate
         category: storage
         filename: get-storage-aggregates-cloud-stores.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage cloud stores
     post:
       x-doc:
         title: Attach an object store to an aggregate or add a second object store
           as a mirror
         category: storage
         filename: post-storage-aggregates-cloud-stores.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage cloud stores
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
         title: Remove a cloud target from an aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage cloud stores
     get:
       x-doc:
         title: Retrieve the cloud store for an aggregate 
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage cloud stores
     patch:
       x-doc:
         title: Update a cloud store by UUID
         category: storage
         filename: patch-storage-aggregates-cloud-stores-.html
-        subcategory: Manage storage aggregates
+        subcategory: Manage cloud stores
   "/storage/aggregates/{aggregate.uuid}/plexes":
     get:
       x-doc:
@@ -4203,20 +4203,20 @@ paths:
         title: Retrieve the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins.html
-        subcategory: Storage FlexCache origin volumes
+        subcategory: Manage storage FlexCache origin volumes
   "/storage/flexcache/origins/{uuid}":
     get:
       x-doc:
         title: Retrieve attributes of the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
-        subcategory: Storage FlexCache origin volumes
+        subcategory: Manage storage FlexCache origin volumes
     patch:
       x-doc:
         title: Modify origin options for an origin volume in the cluster
         category: storage
         filename: patch-storage-flexcache-origins-.html
-        subcategory: Storage FlexCache origin volumes
+        subcategory: Manage storage FlexCache origin volumes
   "/storage/luns":
     get:
       x-doc:
@@ -4368,13 +4368,13 @@ paths:
         title: Retrieve QoS policies
         category: storage
         filename: get-storage-qos-policies.html
-        subcategory: QoS policies
+        subcategory: Manage QoS policies
     post:
       x-doc:
         title: Create a QoS policy
         category: storage
         filename: post-storage-qos-policies.html
-        subcategory: QoS policies
+        subcategory: Manage QoS policies
   "/storage/qos/policies/{uuid}":
     delete:
       x-doc:
@@ -4387,27 +4387,27 @@ paths:
         title: Retrieve a QoS policy
         category: storage
         filename: get-storage-qos-policies-.html
-        subcategory: QoS policies
+        subcategory: Manage QoS policies
     patch:
       x-doc:
         title: Update a QoS policy
         category: storage
         filename: patch-storage-qos-policies-.html
-        subcategory: QoS policies
+        subcategory: Manage QoS policies
   "/storage/qos/workloads":
     get:
       x-doc:
         title: Retrieve QoS workloads
         category: storage
         filename: get-storage-qos-workloads.html
-        subcategory: QoS workloads
+        subcategory: Manage QoS workloads
   "/storage/qos/workloads/{uuid}":
     get:
       x-doc:
         title: Retrieve a QoS workload
         category: storage
         filename: get-storage-qos-workloads-.html
-        subcategory: QoS workloads
+        subcategory: Manage QoS workloads
   "/storage/qtrees":
     get:
       x-doc:
@@ -4591,32 +4591,32 @@ paths:
         title: Retrieve event retention policies for an SVM
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies.html
-        subcategory: Manage event retention policies
+        subcategory: Manage event based retention policies
     post:
       x-doc:
         title: Create an EBR policy for an SVM
         category: snaplock
         filename: post-storage-snaplock-event-retention-policies.html
-        subcategory: Manage event retention policies
+        subcategory: Manage event based retention policies
   "/storage/snaplock/event-retention/policies/{policy.name}":
     delete:
       x-doc:
         title: Delete an EBR policy
         category: snaplock
         filename: delete-storage-snaplock-event-retention-policies-.html
-        subcategory: Manage event retention policies
+        subcategory: Manage event based retention policies
     get:
       x-doc:
         title: Retrieve attributes of an EBR policy     
         category: snaplock
         filename: get-storage-snaplock-event-retention-policies-.html
-        subcategory: Manage event retention policies
+        subcategory: Manage event based retention policies
     patch:
       x-doc:
         title: Update the retention period of an EBR policy
         category: snaplock
         filename: patch-storage-snaplock-event-retention-policies-.html
-        subcategory: Manage event retention policies
+        subcategory: Manage event based retention policies
   "/storage/snaplock/file-fingerprints":
     get:
       x-doc:
@@ -4694,7 +4694,7 @@ paths:
         title: Display files for a litigation ID
         category: snaplock
         filename: get-storage-snaplock-litigations-files.html
-        subcategory: Litigation ID files
+        subcategory: View litigation ID files
   "/storage/snaplock/litigations/{litigation.id}/operations":
     post:
       x-doc:
@@ -4989,39 +4989,39 @@ paths:
         title: Retrieve configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations.html
-        subcategory: Automatic update configuration
+        subcategory: Retrieve automatic update configuration
   "/support/auto-update/configurations/{uuid}":
     get:
       x-doc:
         title: Retrieve specific configuration for an automatic update
         category: support
         filename: get-support-auto-update-configurations-.html
-        subcategory: Manage specific automatic update configuration
+        subcategory: Manage automatic update configuration
     patch:
       x-doc:
         title: Modify configuration for an automatic update
         category: support
         filename: patch-support-auto-update-configurations-.html
-        subcategory: Manage specific automatic update configuration
-  "/support/auto-update/update":
+        subcategory: Manage automatic update configuration
+  "/support/auto-update/updates":
     get:
       x-doc:
         title: Retrieve all automatic update status
         category: support
-        filename: get-support-auto-update-update.html
+        filename: get-support-auto-update-updates.html
         subcategory: Retrieve status for all automatic updates
-  "/support/auto-update/update/{uuid}":
+  "/support/auto-update/updates/{uuid}":
     get:
       x-doc:
         title: Retrieve the status of an update
         category: support
-        filename: get-support-auto-update-update-.html
+        filename: get-support-auto-update-updates-.html
         subcategory: Manage automatic updates
     patch:
       x-doc:
         title: Perform an action on the update
         category: support
-        filename: patch-support-auto-update-update-.html
+        filename: patch-support-auto-update-updates-.html
         subcategory: Manage automatic updates
   "/support/autosupport":
     get:
@@ -5055,46 +5055,46 @@ paths:
         title: Retrieve cluster configuration backup information
         category: support
         filename: get-support-configuration-backup.html
-        subcategory: Cluster configuration backup information
+        subcategory: Manage cluster configuration backup information
     patch:
       x-doc:
         title: Update cluster configuration backup information
         category: support
         filename: patch-support-configuration-backup.html
-        subcategory: Cluster configuration backup information
+        subcategory: Manage cluster configuration backup information
   "/support/configuration-backup/backups":
     get:
       x-doc:
         title: Retrieve configuration backup files
         category: support
         filename: get-support-configuration-backup-backups.html
-        subcategory: Configuration backups
+        subcategory: Manage configuration backups
     post:
       x-doc:
         title: Create a configuration backup
         category: support
         filename: post-support-configuration-backup-backups.html
-        subcategory: Configuration backups
+        subcategory: Manage configuration backups
   "/support/configuration-backup/backups/{node.uuid}/{name}":
     delete:
       x-doc:
         title: Delete a configuration backup
         category: support
         filename: delete-support-configuration-backup-backups-.html
-        subcategory: Configuration backups
+        subcategory: Manage configuration backups
     get:
       x-doc:
         title: Retrieve configuration backup file details
         category: support
         filename: get-support-configuration-backup-backups-.html
-        subcategory: Configuration backups
+        subcategory: Manage configuration backups
   "/support/coredump/coredumps":
     get:
       x-doc:
         title: Retrieve core dumps
         category: support
         filename: get-support-coredump-coredumps.html
-        subcategory: Core dumps
+        subcategory: Manage core dumps
   "/support/coredump/coredumps/{node.uuid}/{name}":
     delete:
       x-doc:
@@ -5114,13 +5114,13 @@ paths:
         title: Retrieve EMS configuration
         category: support
         filename: get-support-ems.html
-        subcategory: EMS configuration 
+        subcategory: Manage EMS configuration 
     patch:
       x-doc:
         title: Update EMS configuration
         category: support
         filename: patch-support-ems.html
-        subcategory: EMS configuration 
+        subcategory: Manage EMS configuration 
   "/support/ems/application-logs":
     post:
       x-doc:
