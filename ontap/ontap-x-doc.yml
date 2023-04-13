@@ -95,19 +95,19 @@ paths:
         title: Delete an application and all associated data
         category: application
         filename: delete-application-applications-.html
-        subcategory: 
+        
     get:
       x-doc:
         title: Retrieve an application
         category: application
         filename: get-application-applications-.html
-        subcategory: 
+        
     patch:
       x-doc:
         title: Update application properties
         category: application
         filename: patch-application-applications-.html
-        subcategory: 
+        
   "/application/consistency-groups":
     get:
       x-doc:
@@ -2979,33 +2979,33 @@ paths:
         title: Create S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-buckets.html
-        subcategory: 
+         
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
       x-doc:
         title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
-        subcategory: 
+        
     get:
       x-doc:
         title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
-        subcategory: 
+        
     patch:
       x-doc:
         title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
-        subcategory: 
+         
   "/protocols/s3/services":
     get:
       x-doc:
         title: Retrieve S3 server configuration for all SVMs
         category: Object-store
         filename: get-protocols-s3-services.html
-        subcategory: Manage protocols S3 services
+        
     post:
       x-doc:
         title: Create S3 server, users, and buckets configurations
