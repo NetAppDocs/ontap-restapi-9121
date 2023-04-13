@@ -49,7 +49,7 @@ paths:
         title: Restore an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots-restore.html
-        subcategory: Manage Application Snapshot copies
+        subcategory: Manage application Snapshot copies
   "/application/applications/{application.uuid}/components/{uuid}":
     get:
       x-doc:
@@ -976,6 +976,7 @@ paths:
         title: Delete LDAP configuration for an SVM
         category: name-services
         filename: delete-name-services-ldap-.html
+        subcategory: Manage LDAP server configurations
     get:
       x-doc:
         title: Retrieve LDAP configuration for an SVM
