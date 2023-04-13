@@ -23,28 +23,33 @@ paths:
         title: Retrieve application component Snapshot copies   
         category: application
         filename: get-application-applications-components-snapshots.html
+        
     post:
       x-doc:
         title: Create an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots.html
+        
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
         title: Delete an application component Snapshot copy  
         category: application
         filename: delete-application-applications-components-snapshots-.html
+        
     get:
       x-doc:
         title: Retrieve a Snapshot copy for a specific application component 
         category: application
         filename: get-application-applications-components-snapshots-.html
+        
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
         title: Restore an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots-restore.html
+        subcategory: Manage Application Snapshot copies
   "/application/applications/{application.uuid}/components/{uuid}":
     get:
       x-doc:
@@ -57,7 +62,7 @@ paths:
         title: Retrieve an application Snapshot copy
         category: application
         filename: get-application-applications-snapshots.html
-        subcategory: Work with application Snapshot copies
+        subcategory: Manage application Snapshot copies
     post:
       x-doc:
         title: Create an application Snapshot copy  
