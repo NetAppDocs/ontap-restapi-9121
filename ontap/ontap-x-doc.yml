@@ -90,19 +90,19 @@ paths:
         title: Delete an application and all associated data
         category: application
         filename: delete-application-applications-.html
-        subcategory: Manage application Snapshot copies
+        subcategory: 
     get:
       x-doc:
         title: Retrieve an application
         category: application
         filename: get-application-applications-.html
-        subcategory: Manage application Snapshot copies
+        subcategory: 
     patch:
       x-doc:
         title: Update application properties
         category: application
         filename: patch-application-applications-.html
-        subcategory: Manage application Snapshot copies
+        subcategory: 
   "/application/consistency-groups":
     get:
       x-doc:
@@ -154,19 +154,19 @@ paths:
         title: Delete a consistency group
         category: application
         filename: delete-application-consistency-groups-.html
-        subcategory: Manage application consistency group Snapshot copies
+        subcategory: Manage application consistency groups
     get:
       x-doc:
         title: Retrieve a consistency group
         category: application
         filename: get-application-consistency-groups-.html
-        subcategory: Manage application consistency group Snapshot copies
+        subcategory: Manage application consistency groups
     patch:
       x-doc:
         title: Update a consistency group
         category: application
         filename: patch-application-consistency-groups-.html
-        subcategory: Manage application consistency group Snapshot copies
+        subcategory: Manage application consistency groups
   "/application/templates":
     get:
       x-doc:
@@ -2973,26 +2973,26 @@ paths:
         title: Create S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-buckets.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: 
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
       x-doc:
         title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: 
     get:
       x-doc:
         title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: 
     patch:
       x-doc:
         title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: 
   "/protocols/s3/services":
     get:
       x-doc:
@@ -3031,71 +3031,71 @@ paths:
         title: Retrieve S3 bucket configurations for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: Manage S3 service bucket configuration
     post:
       x-doc:
         title: Create an S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-services-buckets.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: Manage S3 service bucket configuration
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
         title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: Manage S3 service bucket configuration
     get:
       x-doc:
         title: Retrieve an S3 bucket for an SVM
         category: Object-store
         filename: get-protocols-s3-services-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: Manage S3 service bucket configuration
     patch:
       x-doc:
         title: Update an S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-buckets-.html
-        subcategory: Manage S3 bucket configuration
+        subcategory: Manage S3 service bucket configuration
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
         title: Retrieve S3 group configuration
         category: Object-store
         filename: get-protocols-s3-services-groups.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
     post:
       x-doc:
         title: Create S3 group configuration
         category: Object-store
         filename: post-protocols-s3-services-groups.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
     delete:
       x-doc:
         title: Delete S3 group configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-groups-.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
     get:
       x-doc:
         title: Retrieve S3 group configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-groups-.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
     patch:
       x-doc:
         title: Update S3 group configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-groups-.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
   "/protocols/s3/services/{svm.uuid}/metrics":
     get:
       x-doc:
         title: Retrieve S3 protocol historical performance metrics   
         category: Object-store
         filename: get-protocols-s3-services-metrics.html
-        subcategory: Manage S3 group configuration
+        subcategory: Manage S3 service group configuration
   "/protocols/s3/services/{svm.uuid}/policies":
     get:
       x-doc:
@@ -3166,27 +3166,32 @@ paths:
         title: Retrieve FC protocol services
         category: SAN
         filename: get-protocols-san-fcp-services.html
+        subcategory: Manage FC services for SVMs 
     post:
       x-doc:
         title: Create an FC protocol service
         category: SAN
         filename: post-protocols-san-fcp-services.html
+        subcategory: Manage FC services for SVMs 
   "/protocols/san/fcp/services/{svm.uuid}":
     delete:
       x-doc:
         title: Delete an FC protocol service
         category: SAN
         filename: delete-protocols-san-fcp-services-.html
+        subcategory: Manage FC services for SVMs 
     get:
       x-doc:
         title: Retrieve an FC protocol service
         category: SAN
         filename: get-protocols-san-fcp-services-.html
+        subcategory: Manage FC services for SVMs 
     patch:
       x-doc:
         title: Update an FC protocol service
         category: SAN
         filename: patch-protocols-san-fcp-services-.html
+        subcategory: Manage FC services for SVMs 
   "/protocols/san/fcp/services/{svm.uuid}/metrics":
     get:
       x-doc:
@@ -3194,6 +3199,7 @@ paths:
           of an SVM
         category: SAN
         filename: get-protocols-san-fcp-services-metrics.html
+        subcategory: Manage FC services for SVMs 
   "/protocols/san/igroups":
     get:
       x-doc:
@@ -3402,26 +3408,26 @@ paths:
         title: Retrieve LUN map reporting nodes
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes.html
-        subcategory: Add, remover or discover LUN map reporting nodes
+        subcategory: Add, remove, or discover LUN map reporting nodes
     post:
       x-doc:
         title: Add a reporting node and its HA partner to a LUN map
         category: SAN
         filename: post-protocols-san-lun-maps--reporting-nodes.html
-        subcategory: Add, remover or discover LUN map reporting nodes
+        subcategory: Add, remove, or discover LUN map reporting nodes
   "/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes/{uuid}":
     delete:
       x-doc:
         title: Remove a reporting node and its HA partner from a LUN map
         category: SAN
         filename: delete-protocols-san-lun-maps--reporting-nodes-.html
-        subcategory: Add, remover or discover LUN map reporting nodes
+        subcategory: Add, remove, or discover LUN map reporting nodes
     get:
       x-doc:
         title: Retrieve a LUN map reporting node
         category: SAN
         filename: get-protocols-san-lun-maps--reporting-nodes-.html
-        subcategory: Add, remover or discover LUN map reporting nodes
+        subcategory: Add, remove, or discover LUN map reporting nodes
   "/protocols/san/portsets":
     get:
       x-doc:
@@ -3903,7 +3909,7 @@ paths:
         subcategory: Manage AWS KMS 
     post:
       x-doc:
-        title: Confgure the AWS KMS configuration for an SVM
+        title: Configure the AWS KMS configuration for an SVM
         category: security
         filename: post-security-aws-kms.html
         subcategory: Manage AWS KMS 
@@ -4006,7 +4012,7 @@ paths:
         title: Create a certificate signing request
         category: security
         filename: post-security-certificate-signing-request.html
-        subcategory: Manage Azure Key Vaults 
+        subcategory: 
   "/security/certificates":
     get:
       x-doc:
@@ -4240,40 +4246,40 @@ paths:
         title: Retrieve key manager configurations
         category: security
         filename: get-security-key-managers-keys-key-ids.html
-        subcategory: Manage security key managers
+        subcategory: View security key managers
   "/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids/{key_id}":
     get:
       x-doc:
         title: Retrieve key management key information for specified keys
         category: security
         filename: get-security-key-managers-keys-key-ids-.html
-        subcategory: Manage security key managers
+        subcategory: View security key managers
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
         title: Migrate SVM keys between security key managers
         category: security
         filename: post-security-key-managers-migrate.html
-        subcategory: Manage security key managers
+        subcategory: 
   "/security/key-managers/{uuid}":
     delete:
       x-doc:
         title: Delete key managers
         category: security
         filename: delete-security-key-managers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key managers
     get:
       x-doc:
         title: Retrieve key managers
         category: security
         filename: get-security-key-managers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key managers
     patch:
       x-doc:
         title: Update key managers
         category: security
         filename: patch-security-key-managers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key managers
   "/security/key-managers/{uuid}/key-servers":
     get:
       x-doc:
@@ -4286,26 +4292,26 @@ paths:
         title: Add primary key servers to an external key manager
         category: security
         filename: post-security-key-managers-key-servers.html
-        subcategory: Manage security key managers
+        subcategory: Manage key manager servers
   "/security/key-managers/{uuid}/key-servers/{server}":
     delete:
       x-doc:
         title: Delete a primary key server
         category: security
         filename: delete-security-key-managers-key-servers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key manager servers
     get:
       x-doc:
         title: Retrieve key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key manager servers
     patch:
       x-doc:
         title: Update a primary key server
         category: security
         filename: patch-security-key-managers-key-servers-.html
-        subcategory: Manage security key managers
+        subcategory: Manage key manager servers
   "/security/key-stores":
     get:
       x-doc:
