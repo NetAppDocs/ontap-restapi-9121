@@ -22,34 +22,30 @@ paths:
       x-doc:
         title: Retrieve application component Snapshot copies   
         category: application
-        filename: get-application-applications-components-snapshots.html
-        
+        filename: get-application-applications-components-snapshots.html       
     post:
       x-doc:
         title: Create an application component Snapshot copy  
         category: application
-        filename: post-application-applications-components-snapshots.html
-        
+        filename: post-application-applications-components-snapshots.html        
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}":
     delete:
       x-doc:
         title: Delete an application component Snapshot copy  
         category: application
-        filename: delete-application-applications-components-snapshots-.html
-        
+        filename: delete-application-applications-components-snapshots-.html       
     get:
       x-doc:
         title: Retrieve a Snapshot copy for a specific application component 
         category: application
-        filename: get-application-applications-components-snapshots-.html
-        
+        filename: get-application-applications-components-snapshots-.html      
   "/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}/restore":
     post:
       x-doc:
         title: Restore an application component Snapshot copy  
         category: application
         filename: post-application-applications-components-snapshots-restore.html
-        subcategory: Manage application Snapshot copies
+       
   "/application/applications/{application.uuid}/components/{uuid}":
     get:
       x-doc:
@@ -94,20 +90,17 @@ paths:
       x-doc:
         title: Delete an application and all associated data
         category: application
-        filename: delete-application-applications-.html
-        
+        filename: delete-application-applications-.html       
     get:
       x-doc:
         title: Retrieve an application
         category: application
-        filename: get-application-applications-.html
-        
+        filename: get-application-applications-.html      
     patch:
       x-doc:
         title: Update application properties
         category: application
-        filename: patch-application-applications-.html
-        
+        filename: patch-application-applications-.html      
   "/application/consistency-groups":
     get:
       x-doc:
