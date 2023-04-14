@@ -3957,33 +3957,27 @@ paths:
         title: Retrieve a collection of cloud stores used by an aggregate
         category: storage
         filename: get-storage-aggregates-cloud-stores.html
-        subcategory: Manage cloud stores
     post:
       x-doc:
         title: Attach an object store to an aggregate or add a second object store
           as a mirror
         category: storage
         filename: post-storage-aggregates-cloud-stores.html
-        subcategory: Manage cloud stores
   "/storage/aggregates/{aggregate.uuid}/cloud-stores/{target.uuid}":
     delete:
       x-doc:
         title: Remove a cloud target from an aggregate
         category: storage
         filename: delete-storage-aggregates-cloud-stores-.html
-        subcategory: Manage cloud stores
     get:
       x-doc:
         title: Retrieve the cloud store for an aggregate 
         category: storage
         filename: get-storage-aggregates-cloud-stores-.html
-        subcategory: Manage cloud stores
     patch:
       x-doc:
-        title: Update a cloud store by UUID
-        category: storage
+        title: Update a cloud store 
         filename: patch-storage-aggregates-cloud-stores-.html
-        subcategory: Manage cloud stores
   "/storage/aggregates/{aggregate.uuid}/plexes":
     get:
       x-doc:
