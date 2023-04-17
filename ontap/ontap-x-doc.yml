@@ -885,7 +885,7 @@ paths:
         title: Retrieve DNS configurations for all SVMs
         category: name-services
         filename: get-name-services-dns.html
-        subcategory: Manage UNIX group cache settings
+        subcategory: Manage DNS configurations
     post:
       x-doc:
         title: Create DNS domain and server configurations 
@@ -917,7 +917,7 @@ paths:
         title: Retrieve an IP address of a hostname
         category: name-services
         filename: get-name-services-host-record-.html
-        subcategory: Retrieve host records
+        subcategory: View host records
   "/name-services/ldap":
     get:
       x-doc:
