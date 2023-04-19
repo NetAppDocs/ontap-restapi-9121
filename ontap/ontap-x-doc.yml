@@ -2986,11 +2986,13 @@ paths:
         category: Object-store
         filename: get-protocols-s3-buckets-.html
         
+        
     patch:
       x-doc:
         title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
+        
          
   "/protocols/s3/services":
     get:
