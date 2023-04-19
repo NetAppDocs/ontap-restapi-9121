@@ -1965,45 +1965,45 @@ paths:
         title: Delete local users or Active Directory users and groups from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members.html
-        subcategory: Manage local groups
+        subcategory: Manage local group members
     get:
       x-doc:
         title: Retrieve local users and Active Directory users and groups that belong to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members.html
-        subcategory: Manage local groups
+        subcategory: Manage local group members
     post:
       x-doc:
         title: Add local users and Active Directory users and groups to a local group and SVM
         category: NAS
         filename: post-protocols-cifs-local-groups--members.html
-        subcategory: Manage local groups
+        subcategory: Manage local group members
   "/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members/{name}":
     delete:
       x-doc:
         title: Delete a local user, or Active Directory user or group from a local group and SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups--members-.html
-        subcategory: Manage local group users
+        subcategory: Manage local group members
     get:
       x-doc:
         title: Retrieve a local user, Active Directory user or group belonging to a local group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups--members-.html
-        subcategory: Manage local group users
+        subcategory: Manage local group members
   "/protocols/cifs/local-groups/{svm.uuid}/{sid}":
     delete:
       x-doc:
         title: Delete a local group configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-groups-.html
-        subcategory: Manage local group users
+        subcategory: Manage local groups
     get:
       x-doc:
         title: Retrieve local group information for a group and SVM
         category: NAS
         filename: get-protocols-cifs-local-groups-.html
-        subcategory: Manage local group users
+        subcategory: Manage local groups
         
 
     patch:
@@ -2011,7 +2011,7 @@ paths:
         title: Update local group information for a group in an SVM
         category: NAS
         filename: patch-protocols-cifs-local-groups-.html
-        subcategory: Manage local group users
+        subcategory: Manage local groups
   "/protocols/cifs/local-users":
     get:
       x-doc:
