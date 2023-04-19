@@ -975,13 +975,13 @@ paths:
         title: Retrieve LDAP configuration for an SVM
         category: name-services
         filename: get-name-services-ldap-.html
-        subcategory: Manage LDAP schemas
+        subcategory: Manage LDAP server configurations
     patch:
       x-doc:
         title: Update LDAP configuration for an SVM
         category: name-services
         filename: patch-name-services-ldap-.html
-        subcategory: Manage LDAP schemas
+        subcategory: Manage LDAP server configurations
   "/name-services/local-hosts":
     get:
       x-doc:
@@ -1020,32 +1020,32 @@ paths:
         title: Retrieve hostname mapping for all SVMs
         category: name-services
         filename: get-name-services-name-mappings.html
-        subcategory: Manage local mapping for hostnames
+        subcategory: Manage name mappings for SVMs
     post:
       x-doc:
         title: Create hostname mappings for an SVM
         category: name-services
         filename: post-name-services-name-mappings.html
-        subcategory: Manage name mappings for hostnames
+        subcategory: Manage name mappings for SVMs
   "/name-services/name-mappings/{svm.uuid}/{direction}/{index}":
     delete:
       x-doc:
         title: Delete the name mapping configuration
         category: name-services
         filename: delete-name-services-name-mappings--.html
-        subcategory: Manage name mappings for hostnames
+        subcategory: Manage name mappings for SVMs
     get:
       x-doc:
         title: Retrieve the name mapping configuration for an SVM 
         category: name-services
         filename: get-name-services-name-mappings--.html
-        subcategory: Manage name mappings for hostnames
+        subcategory: Manage name mappings for SVMs
     patch:
       x-doc:
         title: Update the name mapping configuration for an SVM 
         category: name-services
         filename: patch-name-services-name-mappings--.html
-        subcategory: Manage name mappings for hostnames
+        subcategory: Manage name mappings for SVMs
   "/name-services/netgroup-files/{svm.uuid}":
     delete:
       x-doc:
