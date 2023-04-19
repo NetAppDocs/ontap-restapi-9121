@@ -2967,11 +2967,13 @@ paths:
         title: Retrieve all S3 buckets for all SVMs
         category: Object-store
         filename: get-protocols-s3-buckets.html
+        subcategory: Manage S3 buckets
     post:
       x-doc:
         title: Create S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-buckets.html
+        subcategory: Manage S3 buckets
          
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
@@ -2979,12 +2981,14 @@ paths:
         title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
+        subcategory: Manage S3 buckets
         
     get:
       x-doc:
         title: Retrieve S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
+        subcategory: Manage S3 buckets
         
         
     patch:
@@ -2992,6 +2996,7 @@ paths:
         title: Update S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
+        subcategory: Manage S3 buckets
         
          
   "/protocols/s3/services":
