@@ -2998,6 +2998,7 @@ paths:
         title: Retrieve S3 server configuration for all SVMs
         category: Object-store
         filename: get-protocols-s3-services.html
+        subcategory: Manage protocols S3 services
         
     post:
       x-doc:
