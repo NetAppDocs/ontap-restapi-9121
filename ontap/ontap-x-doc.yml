@@ -2582,7 +2582,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for a an SVM
+        title: Delete S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
     get:
