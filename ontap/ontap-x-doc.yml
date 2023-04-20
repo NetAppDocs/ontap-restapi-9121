@@ -5092,7 +5092,7 @@ paths:
         title: Delete a QoS policy
         category: storage
         filename: delete-storage-qos-policies-.html
-        subcategory: QoS policies
+        subcategory: Manage QoS policies
     get:
       x-doc:
         title: Retrieve a QoS policy
