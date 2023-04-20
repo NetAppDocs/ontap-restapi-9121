@@ -4632,7 +4632,7 @@ paths:
         title: Create a certificate signing request
         category: security
         filename: post-security-certificate-signing-request.html
-        subcategory: ,
+        subcategory: 
         explorer: false
 "/security/certificates":
     get:
