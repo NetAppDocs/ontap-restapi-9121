@@ -3397,7 +3397,7 @@ paths:
       x-doc:
         title: Remove an NVMe subsystem
         category: NVMe
-        filename: delete-protocols-nvme-subsystems-.html#
+        filename: delete-protocols-nvme-subsystems-.html
         subcategory: Manage NVMe subsystems
         explorer: false
     get:
