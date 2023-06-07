@@ -41,7 +41,6 @@ settings:
   - name: ONTAP
     url: /ontap-restapi-96 
     version-number: "9.6"   
-
 sidebar: 
   entries:
     - title: ONTAP 9.12.1 REST API docs 
