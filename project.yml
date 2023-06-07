@@ -1,3 +1,4 @@
+jekyll: bnorberg-custom-fields
 settings:
   name: ONTAP 9.12.1 REST API Documentation 
   github_edit: false
