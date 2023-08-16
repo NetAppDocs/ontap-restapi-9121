@@ -1547,7 +1547,7 @@ paths:
   "/network/fc/interfaces":
     get:
       x-doc:
-        title: Retrieves FC interfaces
+        title: Retrieve FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
         subcategory: Manage FC network interfaces
@@ -3195,7 +3195,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves NFS configuration for SVMs
+        title: Retrieve NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
