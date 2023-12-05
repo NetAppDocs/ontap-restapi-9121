@@ -553,7 +553,7 @@ paths:
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve node configuration in MetroCluster
+        title: Retrieve the node configuration in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
         subcategory: Retrieve MetroCluster node configurations
@@ -1405,14 +1405,14 @@ paths:
         title: Retrieve ports
         category: networking
         filename: get-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     post:
       x-doc:
         title: Create a new VLAN or LAG
         category: networking
-        filename: post-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        filename: post-network-Ethernet-ports.html
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}":
     delete:
@@ -1420,21 +1420,21 @@ paths:
         title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     get:
       x-doc:
         title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     patch:
       x-doc:
         title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}/metrics":
     get:
@@ -1442,7 +1442,7 @@ paths:
         title: Retrieve historical port performance metrics
         category: networking
         filename: get-network-ethernet-ports-metrics.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/switch/ports":
     get:
@@ -1450,7 +1450,7 @@ paths:
         title: Retrieve Ethernet switch ports
         category: networking
         filename: get-network-ethernet-switch-ports.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
     get:
@@ -1458,7 +1458,7 @@ paths:
         title: Retrieve an Ethernet switch port
         category: networking
         filename: get-network-ethernet-switch-ports--.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switches":
     get:
@@ -1466,7 +1466,7 @@ paths:
         title: Retrieve Ethernet switches attached to a chassis
         category: networking
         filename: get-network-ethernet-switches.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     post:
       x-doc:
@@ -1481,14 +1481,14 @@ paths:
         title: Delete an Ethernet switch
         category: networking
         filename: delete-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     get:
       x-doc:
         title: Retrieve Ethernet switch details
         category: networking
         filename: get-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     patch:
       x-doc:
@@ -1500,7 +1500,7 @@ paths:
   "/network/fc/fabrics":
     get:
       x-doc:
-        title: Retrieve fibre channel fabrics
+        title: Retrieve FC fabrics
         category: networking
         filename: get-network-fc-fabrics.html
         subcategory: Retrieve FC fabrics
@@ -1508,7 +1508,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/switches":
     get:
       x-doc:
-        title: Retrieve fibre channel fabric switches
+        title: Retrieve FC fabric switches
         category: networking
         filename: get-network-fc-fabrics-switches.html
         subcategory: Retrieve FC fabrics
@@ -1516,7 +1516,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/switches/{wwn}":
     get:
       x-doc:
-        title: Retrieve a fibre channel switch
+        title: Retrieve a FC switch
         category: networking
         filename: get-network-fc-fabrics-switches-.html
         subcategory: Retrieve FC fabrics
@@ -1524,7 +1524,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/zones":
     get:
       x-doc:
-        title: Retrieve fibre channel fabric zones
+        title: Retrieve FC fabric zones
         category: networking
         filename: get-network-fc-fabrics-zones.html
         subcategory: Retrieve FC fabrics
@@ -1532,7 +1532,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/zones/{name}":
     get:
       x-doc:
-        title: Retrieve a fibre channel fabric zone
+        title: Retrieve a FC fabric zone
         category: networking
         filename: get-network-fc-fabrics-zones-.html
         subcategory: Retrieve FC fabrics
@@ -1540,7 +1540,7 @@ paths:
   "/network/fc/fabrics/{name}":
     get:
       x-doc:
-        title: Retrieve a fibre channel fabric
+        title: Retrieve a FC fabric
         category: networking
         filename: get-network-fc-fabrics-.html
         subcategory: Retrieve FC fabrics
@@ -1670,7 +1670,7 @@ paths:
   "/network/http-proxy":
     get:
       x-doc:
-        title: Retrieve http proxy configurations for all SVMs and cluster
+        title: Retrieve HTTP proxy configurations for all SVMs and cluster
           IPspaces
         category: networking
         filename: get-network-http-proxy.html
@@ -1678,7 +1678,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create an http proxy configuration for an SVM or cluster IPspace
+        title: Create an HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
         subcategory: Manage HTTP proxy configuration
@@ -1686,14 +1686,14 @@ paths:
   "/network/http-proxy/{uuid}":
     delete:
       x-doc:
-        title: Delete http proxy configuration for an SVM or cluster IPspace
+        title: Delete HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: delete-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
         explorer: false
     get:
       x-doc:
-        title: Display http proxy server, port, and IPspace information for an SVM or cluster IPspace
+        title: Display HTTP proxy server, port, and IPspace information for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
@@ -2091,14 +2091,14 @@ paths:
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
       x-doc:
-        title: Retrieve CIFS domain preferred DC configuration for an SVM
+        title: Retrieve the CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers.html
         subcategory: Manage CIFS DC configuration
         explorer: false
     post:
       x-doc:
-        title: Create CIFS domain preferred DC configuration for an SVM
+        title: Create the CIFS domain preferred DC configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-domains-preferred-domain-controllers.html
         subcategory: Manage CIFS DC configuration
@@ -2106,14 +2106,14 @@ paths:
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers/{fqdn}/{server_ip}":
     delete:
       x-doc:
-        title: Delete CIFS domain preferred DC configuration for an SVM and domain
+        title: Delete the CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: delete-protocols-cifs-domains-preferred-domain-controllers-.html
         subcategory: Manage CIFS DC configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve CIFS domain preferred DC configuration for an SVM and domain
+        title: Retrieve the CIFS domain preferred DC configuration for an SVM and domain
         category: NAS
         filename: get-protocols-cifs-domains-preferred-domain-controllers-.html
         subcategory: Manage CIFS DC configuration
@@ -4107,14 +4107,14 @@ paths:
         title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
@@ -4122,21 +4122,21 @@ paths:
         title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     get:
       x-doc:
         title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policy configuration for an SVM
+        title: Update the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
@@ -4144,41 +4144,41 @@ paths:
         title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
       x-doc:
-        title: Delete Vscan On-Demand configuration
+        title: Delete a Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     get:
       x-doc:
-        title: Retrieve Vscan On-Demand configuration for an SVM
+        title: Retrieve the Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan On-Demand policy configuration for an SVM
+        title: Update the Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -4193,21 +4193,21 @@ paths:
   "/protocols/vscan/{svm.uuid}/scanner-pools/{name}":
     delete:
       x-doc:
-        title: Delete Vscan scanner-pool configuration
+        title: Delete the Vscan scanner-pool configuration
         category: NAS
         filename: delete-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan scanner-pool configuration for an SVM
+        title: Update the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -4300,7 +4300,7 @@ paths:
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Define a remote syslog or splunk server to recieve audit information
+        title: Define a remote syslog or splunk server to receive audit information
         category: security
         filename: get-security-audit-destinations.html
         subcategory: Forward audit logs to syslog/splunk servers
