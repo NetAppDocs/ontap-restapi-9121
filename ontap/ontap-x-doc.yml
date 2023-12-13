@@ -5635,7 +5635,7 @@ paths:
   "/storage/flexcache/origins":
     get:
       x-doc:
-        title: Retrieve the origin of a FlexCache in the cluster
+        title: Retrieve the origin of a FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-origins.html
         subcategory: Manage storage FlexCache origin volumes
@@ -5643,7 +5643,7 @@ paths:
   "/storage/flexcache/origins/{uuid}":
     get:
       x-doc:
-        title: Retrieve attributes of the origin of a FlexCache in the cluster
+        title: Retrieve attributes of the origin of a FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
         subcategory: Manage storage FlexCache origin volumes
