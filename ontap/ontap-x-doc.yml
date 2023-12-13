@@ -1412,7 +1412,7 @@ paths:
       x-doc:
         title: Create a new VLAN or LAG
         category: networking
-        filename: post-network-Ethernet-ports.html
+        filename: post-network-ethernet-ports.html
         subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}":
