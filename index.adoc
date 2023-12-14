@@ -1,0 +1,15 @@
+---
+layout: landing-page
+sidebar: sidebar
+permalink: index.html
+keywords: ontap, rest, api
+lead: 'The ONTAP 9.12.1 REST API documentation provides details about and parameter and response information for each ONTAP call. See the Overview page to get started.'
+summary: 'The ONTAP 9.12.1 REST API documentation provides details about and parameter and response information for each ONTAP call. See the Overview page to get started.'
+---
+
+= ONTAP 9.12.1 ONTAP REST API documentation 
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
