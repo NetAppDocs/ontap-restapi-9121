@@ -6383,7 +6383,7 @@ definitions:
       access_key_id:
         description: AWS Access Key ID of the user that has appropriate access to
           AWS KMS.
-        example: AKIATCFKZXU6GKUDQUWN
+        example: <id_value>
         type: string
         x-ntap-introduced: '9.12'
       amazon_reachability:
@@ -6554,7 +6554,7 @@ definitions:
         x-ntap-introduced: '9.12'
       secret_access_key:
         description: AWS Secret Access Key for the provided access key ID.
-        example: tyb1kA/bSr5654LncZNwNcvAOR7hu1vPo0nPrtoG
+        example: <id_value>
         format: password
         type: string
         x-ntap-introduced: '9.12'
