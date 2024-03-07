@@ -297920,17 +297920,17 @@ tags:
     \ response header also includes the _location_ of where the application can be\
     \ found if the job is successful.\n---\nPrior to creating an application, the\
     \ following prerequisites must be met for the protocols associated with the template:\n\
-    * Licences must be installed.\n  ** [`POST /cluster/licensing/licenses`](#cluster/license_create)\n\
+    * Licences must be installed.\n  * [`POST /cluster/licensing/licenses`](#cluster/license_create)\n\
     * Aggregates must exist with enough available space and IOPS to satisfy the requested\
-    \ size.\n  ** [`POST /storage/aggregates`](#storage/aggregate_create)\n* An SVM\
-    \ must exist with protocol services enabled.\n  ** [`POST /svm/svms`](#svm/svm_create)\n\
+    \ size.\n  * [`POST /storage/aggregates`](#storage/aggregate_create)\n* An SVM\
+    \ must exist with protocol services enabled.\n  * [`POST /svm/svms`](#svm/svm_create)\n\
     * LIFs must exist. For SAN applications, only High Availability groups where each\
     \ node has at least on LIF will be considered for placement of storage objects.\n\
-    \  ** [`POST /network/ip/interfaces`](#networking/network_ip_interfaces_create)\n\
-    \  ** [`POST /network/fc/interfaces`](#networking/fc_interface_create)\n---\nThe\
+    \  * [`POST /network/ip/interfaces`](#networking/network_ip_interfaces_create)\n\
+    \  * [`POST /network/fc/interfaces`](#networking/fc_interface_create)\n---\nThe\
     \ following are not required prior to creating an application, but might be necessary\
     \ before connecting to the application:\n* Network routes must be created to access\
-    \ ethernet based LIFs.\n  ** [`POST /network/ip/routes`](#networking/network_ip_routes_create)\n\
+    \ ethernet based LIFs.\n  * [`POST /network/ip/routes`](#networking/network_ip_routes_create)\n\
     * For volumes created by this operation to be successfully mounted, ONTAP requirements\
     \ related to mounting must be met.\n---\n```\n# The API:\n/api/application/applications\n\
     # The query:\nNo query is needed for this command. Optionally, you can specify\
@@ -298050,16 +298050,16 @@ tags:
     \ smart containers.\n<br/>To create a Smart Container the \"smart_container:true\"\
     \ parameter must be provided.<br/>\n---\nPrior to creating a smart container,\
     \ the following prerequisites must be met for the protocols associated with the\
-    \ template:\n* Licences must be installed.\n  ** [`POST /cluster/licensing/licenses`](#cluster/license_create)\n\
+    \ template:\n* Licences must be installed.\n  * [`POST /cluster/licensing/licenses`](#cluster/license_create)\n\
     * Aggregates must exist with enough available space to satisfy the requested size.\n\
-    \  ** [`POST /storage/aggregates`](#storage/aggregate_create)\n* An SVM must exist\
-    \ with protocol services enabled.\n  ** [`POST /svm/svms`](#svm/svm_create)\n*\
+    \  * [`POST /storage/aggregates`](#storage/aggregate_create)\n* An SVM must exist\
+    \ with protocol services enabled.\n  * [`POST /svm/svms`](#svm/svm_create)\n*\
     \ LIFs must exist. For SAN objects, only High Availability groups where each node\
-    \ has at least one LIF to be considered for placement of storage objects.\n  **\
+    \ has at least one LIF to be considered for placement of storage objects.\n  *\
     \ [`POST /network/ip/interfaces`](#networking/network_ip_interfaces_create)\n\
-    \  ** [`POST /network/fc/interfaces`](#networking/fc_interface_create)\n---\nThe\
+    \  * [`POST /network/fc/interfaces`](#networking/fc_interface_create)\n---\nThe\
     \ following are not required prior to creating a smart container:\n* Network routes\
-    \ must be created to access Ethernet-based LIFs.\n  ** [`POST /network/ip/routes`](#networking/network_ip_routes_create)\n\
+    \ must be created to access Ethernet-based LIFs.\n  * [`POST /network/ip/routes`](#networking/network_ip_routes_create)\n\
     * To mount volumes by this operation successfully, all ONTAP requirements related\
     \ to mounting must be met.\n***\n### Example\nThe following examples outline the\
     \ APIs necessary to create a smart container. Two types of smart container creation\
