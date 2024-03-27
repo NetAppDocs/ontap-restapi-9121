@@ -275082,7 +275082,7 @@ paths:
 
         * `snapshot_policy.name` - _default_
 
-        * `gaurantee.type` - _volume_
+        * `guarantee.type` - _volume_
 
         * `anti_ransomware.state` - _default_
 
