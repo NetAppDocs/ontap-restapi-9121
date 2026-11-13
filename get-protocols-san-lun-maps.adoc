@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-lun-maps.html'
+keywords: 'lun maps,retrieve lun,logical unit,san protocols,igroup filters'
 summary: 'Retrieve LUN maps'
 ---
 
 = Retrieve LUN maps
+:imagesdir: ./media/
+
+[.lead]
+Retrieves LUN maps to view the current mappings of logical unit numbers (LUNs) to initiators, which is essential for managing access to storage resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/lun-maps`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves LUN maps.
+ONTAP 9.6
 
 == Related ONTAP commands
 

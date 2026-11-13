@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nvme_services.html'
+keywords: 'nvme services,nvme controller,nvme performance,nvme latency,nvme throughput'
 summary: 'Manage NVMe services'
 ---
 
 = Manage NVMe services
+:imagesdir: ./media/
 
-
+[.lead]
+The NVMe services REST API provides endpoints to create, update, delete, and discover NVMe services for SVMs, defining the properties of NVMe controller targets. Use these endpoints to manage NVMe services, which are essential for connecting NVMe host initiators to SVMs.
 
 == Overview
 

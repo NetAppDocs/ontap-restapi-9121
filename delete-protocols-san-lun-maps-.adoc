@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-lun-maps-.html'
+keywords: 'lun map,delete lun,map removal,san protocols,lun mapping'
 summary: 'Delete a LUN map'
 ---
 
 = Delete a LUN map
+:imagesdir: ./media/
+
+[.lead]
+Removes a LUN map from the system. You use this when you need to disassociate LUNs from host initiators, often as part of storage reconfiguration or cleanup tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes a LUN map.
 

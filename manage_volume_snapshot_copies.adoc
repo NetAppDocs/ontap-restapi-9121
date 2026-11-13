@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_volume_snapshot_copies.html'
+keywords: 'snapshot copy,manage snapshot,ontap snapshot,bulk snapshot,volume snapshot'
 summary: 'Manage volume Snapshot copies'
 ---
 
 = Manage volume Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage volume Snapshot copies to capture and preserve the state of your filesystem at specific points in time. Use these endpoints to create, modify, delete, and retrieve both individual and bulk Snapshot copies across volumes.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-ndmp-svms-.html'
+keywords: 'ndmp configuration,svm ndmp,svm uuid,ndmp protocols,ndmp services'
 summary: 'Retrieve the NDMP configuration for an SVM'
 ---
 
 = Retrieve the NDMP configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the NDMP configuration for a specific SVM to review or manage NDMP settings within your storage virtual machine environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/ndmp/svms/{svm.uuid}`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Retrieves an NDMP configuration for a specific SVM.
+ONTAP 9.7
 
 == Related ONTAP commands
 

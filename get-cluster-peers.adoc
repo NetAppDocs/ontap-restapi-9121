@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-peers.html'
+keywords: 'cluster peers,retrieve peers,peer collection,cluster relationships,peer records,record limits'
 summary: 'Retrieve cluster peers'
 ---
 
 = Retrieve cluster peers
+:imagesdir: ./media/
+
+[.lead]
+Accesses cluster peers to view existing peer relationships between clusters. This helps in managing their communication and collaboration efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/peers`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the collection of cluster peers.
 

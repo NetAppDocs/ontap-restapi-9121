@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_event_destinations.html'
+keywords: 'event destinations,email notifications,syslog server,rest protocol,snmp traps'
 summary: 'Manage event destinations'
 ---
 
 = Manage event destinations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage event destinations to define where and how event information is transmitted within your ONTAP environment. Endpoints in this category let you configure various types of destinations such as email, syslog, REST API, and SNMP to ensure event notifications are received at designated locations.
 
 == Overview
 

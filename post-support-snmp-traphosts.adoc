@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-snmp-traphosts.html'
+keywords: 'snmp traphosts,snmp user,snmpv3 traphost,snmpv1 traphost,snmpv2c community,ontap credentials'
 summary: 'Create SNMP traphosts'
 ---
 
 = Create SNMP traphosts
+:imagesdir: ./media/
+
+[.lead]
+Creates SNMP traphosts to define where SNMP traps are sent for monitoring purposes. Use this to configure both SNMPv3 and SNMPv1/SNMPv2c traphosts according to your network management requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/snmp/traphosts`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Creates SNMP traphosts. While adding an SNMPv3 traphost, an SNMPv3 user configured in ONTAP must be specified. ONTAP uses this user's credentials to authenticate and/or encrypt traps sent to this SNMPv3 traphost. While adding an SNMPv1/SNMPv2c traphost, SNMPv1/SNMPv2c user or community need not be specified.
+ONTAP 9.7
+
+== Usage notes
+
+While adding an SNMPv3 traphost, an SNMPv3 user configured in ONTAP must be specified. ONTAP uses this user's credentials to authenticate and/or encrypt traps sent to this SNMPv3 traphost. While adding an SNMPv1/SNMPv2c traphost, SNMPv1/SNMPv2c user or community need not be specified.
 
 == Required properties
 

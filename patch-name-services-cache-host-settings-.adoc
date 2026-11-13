@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-name-services-cache-host-settings-.html'
+keywords: 'host cache,svm settings,host settings update,name services cache,svm uuid'
 summary: 'Update a host cache setting'
 ---
 
 = Update a host cache setting
+:imagesdir: ./media/
+
+[.lead]
+Updates the host cache setting, modifying the configuration to meet your specific requirements for managing cache behavior on the host.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/name-services/cache/host/settings/{svm.uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Updates a host cache setting.
+ONTAP 9.11
 
 == Important notes
 

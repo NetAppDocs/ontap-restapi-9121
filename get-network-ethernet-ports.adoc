@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-ethernet-ports.html'
+keywords: 'network ports,physical port,VLAN port,LAG port,cluster ports,ethernet ports'
 summary: 'Retrieve ports'
 ---
 
 = Retrieve ports
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of physical, VLAN, and LAG ports for an entire cluster to view the network configuration and manage connectivity across your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/ethernet/ports`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a collection of ports (physical, VLAN and LAG) for an entire cluster.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-event-retention-policies.html'
+keywords: 'snaplock,retention policy,event retention,snaplock policy,retention period,svm retention'
 summary: 'Create an EBR policy for an SVM'
 ---
 
 = Create an EBR policy for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates an Event Based Retention (EBR) policy for a Storage Virtual Machine (SVM) to manage data retention based on specific events. Use this endpoint when you need to define retention policies for compliance or regulatory requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/event-retention/policies`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Creates an Event Based Retention (EBR) policy for an SVM. The input parameter retention_period expects the duration in ISO 8601 format or infinite.
 

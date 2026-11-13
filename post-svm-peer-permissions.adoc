@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-svm-peer-permissions.html'
+keywords: 'svm peer permission,create peer permission,svm peering,cluster peer,peer applications,snapmirror'
 summary: 'Create an SVM peer permission'
 ---
 
 = Create an SVM peer permission
+:imagesdir: ./media/
+
+[.lead]
+Creates an SVM peer permission to establish trust between storage virtual machines (SVMs) and enable communication for specific applications. Use this when setting up peering relationships for tasks like SnapMirror replication.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/svm/peer-permissions`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an SVM peer permission.
+ONTAP 9.6
 
 == Required properties
 

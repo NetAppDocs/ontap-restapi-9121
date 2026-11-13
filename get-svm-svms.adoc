@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-svms.html'
+keywords: 'svm properties,nfs configuration,cifs protocol,export policies,network services'
 summary: 'Retrieve SVMs and SVM properties'
 ---
 
 = Retrieve SVMs and SVM properties
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details of SVMs, including their protocol configurations, export policies, name service configurations, and network services. Use this to access a comprehensive list of SVMs and selectively retrieve full details as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/svms`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a list of SVMs and individual SVM properties. This includes protocol configurations such as CIFS and NFS, export policies, name service configurations, and network services.
 

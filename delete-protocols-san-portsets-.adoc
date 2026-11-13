@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-portsets-.html'
+keywords: 'san portset,delete portset,uuid identifier,portset management,ontap lun'
 summary: 'Delete a portset'
 ---
 
 = Delete a portset
+:imagesdir: ./media/
+
+[.lead]
+Deletes a portset, removing the configuration that groups multiple network ports for managing SAN traffic.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/portsets/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Deletes a portset.
+ONTAP 9.9
 
 == Related ONTAP commands
 

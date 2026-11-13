@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security_roles.html'
+keywords: 'role based access control,security roles,access level,predefined roles,svm scoped roles,privilege tuples'
 summary: 'Manage security roles'
 ---
 
 = Manage security roles
+:imagesdir: ./media/
 
-
+[.lead]
+Manage security roles through the ONTAP REST API to define user privileges and access levels. Use these endpoints for Role Based Access Control, ensuring that user accounts are associated with roles that specify which API methods or command operations they can perform. Predefined roles offer built-in configurations, while custom roles allow for tailored privilege settings.
 
 == Overview
 

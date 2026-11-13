@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_login_message_configuration.html'
+keywords: 'login messages,login configuration,update messages,cluster messages,svm messages,login banner'
 summary: 'View and update login message configuration'
 ---
 
 = View and update login message configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Display and manage login messages configuration using this API. Retrieve login messages from the cluster or by UUID using GET requests, and update configurations with PATCH operations.
 
 == Overview
 

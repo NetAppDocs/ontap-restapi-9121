@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_google_cloud_kms.html'
+keywords: 'google cloud kms, encryption keys, key management, google cloud integration, google cloud security'
 summary: 'Manage Google Cloud KMS'
 ---
 
 = Manage Google Cloud KMS
+:imagesdir: ./media/
 
-
+[.lead]
+Integrate Google Cloud Key Management Services with ONTAP to securely store and manage encryption keys. Use these endpoints to configure, retrieve, update, and delete GCKMS settings, ensuring that ONTAP can communicate with your Google Cloud application. Advanced properties related to reachability are available upon explicit request.
 
 == Overview
 

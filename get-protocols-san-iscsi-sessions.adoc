@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-iscsi-sessions.html'
+keywords: 'iscsi sessions,vserver iscsi,initiator name,igroup uuid,target portal group'
 summary: 'Retrieve iSCSI sessions'
 ---
 
 = Retrieve iSCSI sessions
+:imagesdir: ./media/
+
+[.lead]
+Retrieves iSCSI sessions to access current session details and manage connections in your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/iscsi/sessions`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves iSCSI sessions.
+ONTAP 9.6
 
 == Related ONTAP commands
 

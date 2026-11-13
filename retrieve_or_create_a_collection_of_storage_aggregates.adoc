@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_or_create_a_collection_of_storage_aggregates.html'
+keywords: 'storage aggregates, data aggregates, cluster aggregates, aggregate creation, ssd spares'
 summary: 'Retrieve or create a collection of storage aggregates'
 ---
 
 = Retrieve or create a collection of storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+Use the Storage Aggregate API endpoints to retrieve and create collections of storage aggregates within the cluster. Retrieve aggregate information, including identifiers, node details, recommended configurations, and usable spare data to optimize storage management. Additionally, you can simulate aggregate creation with specified parameters to assess potential layouts before implementation.
 
 == Retrieving storage aggregate information
 

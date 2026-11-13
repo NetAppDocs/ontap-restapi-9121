@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_aggregates.html'
+keywords: 'storage aggregates,aggregate modification,disk count,raid type,ssd cache'
 summary: 'Manage storage aggregates'
 ---
 
 = Manage storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+The Manage storage aggregates endpoints provide operations to update and delete aggregates, expand storage capacity, and adjust caching configurations. You can modify properties such as aggregate names, node assignments, state, and encryption settings to optimize storage management in your cluster. Additionally, these endpoints support aggregate expansion, both automatic and manual, allowing for flexible disk management and capacity planning.
 
 == Updating storage aggregates
 

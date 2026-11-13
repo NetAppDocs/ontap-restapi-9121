@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-san-lun-maps--reporting-nodes.html'
+keywords: 'reporting node,lun map,ha partner,cluster node,lun mapping,igroup uuid'
 summary: 'Add a reporting node and its HA partner to a LUN map'
 ---
 
 = Add a reporting node and its HA partner to a LUN map
+:imagesdir: ./media/
+
+[.lead]
+Adds a reporting node and its HA partner to an existing LUN map. Use this endpoint when you need to enhance LUN access through additional nodes for improved redundancy or performance.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/san/lun-maps/{lun.uuid}/{igroup.uuid}/reporting-nodes`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Adds a reporting node and its HA partner to a LUN map.
 

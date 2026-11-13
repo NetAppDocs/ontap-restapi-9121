@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_ipsec_configuration.html'
+keywords: 'ipsec configuration,ipsec status,ontap security,update ipsec,view ipsec'
 summary: 'View and update IPsec configuration'
 ---
 
 = View and update IPsec configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Access and modify IPsec configuration settings to manage secure communications within your network. Use these endpoints to check the current IPsec status or update configurations as needed.
 
 == Overview
 

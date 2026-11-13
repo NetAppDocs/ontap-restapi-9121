@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_manage_cluster_jobs.html'
+keywords: 'cluster jobs,asynchronous operations,job state,terminal state,long-running jobs'
 summary: 'View and manage cluster jobs'
 ---
 
 = View and manage cluster jobs
+:imagesdir: ./media/
 
-
+[.lead]
+View and manage cluster jobs to monitor and control asynchronous operations within your system. Use these endpoints to check job statuses and update states for long-running processes. After completion, jobs are automatically deleted after a specified duration, making subsequent retrieval attempts return errors.
 
 == Overview
 

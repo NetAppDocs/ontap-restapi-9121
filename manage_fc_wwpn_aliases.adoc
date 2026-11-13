@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_wwpn_aliases.html'
+keywords: 'fibre channel,wwpn alias,alias management,san initiator,worldwide port name'
 summary: 'Manage FC WWPN aliases'
 ---
 
 = Manage FC WWPN aliases
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize the WWPN alias REST API to manage aliases for worldwide port names in your Fibre Channel environment. Creating aliases simplifies the identification of FC initiators, especially in large SANs, by replacing complex hexadecimal identifiers with recognizable names.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-snmp-traphosts-.html'
+keywords: 'snmp traphosts,snmp user,traphost details,domain name,traphost configuration'
 summary: 'Retrieve SNMP traphost details'
 ---
 
 = Retrieve SNMP traphost details
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the details of an SNMP traphost, including the SNMP user configured for that traphost. This is useful for managing and monitoring SNMP notifications.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/snmp/traphosts/{host}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves the details of an SNMP traphost along with the SNMP user configured for that traphost.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-s3-services-groups.html'
+keywords: 's3 group,group configuration,svm uuid,object store,group policies'
 summary: 'Create the S3 group configuration'
 ---
 
 = Create the S3 group configuration
+:imagesdir: ./media/
+
+[.lead]
+Creates an S3 group configuration to define group membership and attach policies within a specific Storage Virtual Machine (SVM). This configuration is essential for managing access controls and permissions for S3 resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/groups`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Creates the S3 group configuration.
+ONTAP 9.8
 
 == Important notes
 

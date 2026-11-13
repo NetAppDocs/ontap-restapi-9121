@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-session-files.html'
+keywords: 'cifs files,retrieve files,open files,cifs session,session files,protocols cifs'
 summary: 'Retrieve CIFS open files'
 ---
 
 = Retrieve CIFS open files
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about open files in CIFS, which helps you monitor and manage file access on your network efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/session/files`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves CIFS Open Files
 

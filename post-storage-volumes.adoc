@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-volumes.html'
+keywords: 'volume creation,svm volume,storage aggregates,flexvol,default snapshot policy,volume encryption'
 summary: 'Create a volume on an SVM and storage aggregates'
 ---
 
 = Create a volume on an SVM and storage aggregates
+:imagesdir: ./media/
+
+[.lead]
+Creates a volume on a specified SVM and storage aggregates to manage data storage and organization within your ONTAP environment. This operation is commonly used to allocate new storage space and configure volume settings according to specific requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/volumes`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a volume on a specified SVM and storage aggregates.
+ONTAP 9.6
 
 == Required properties
 

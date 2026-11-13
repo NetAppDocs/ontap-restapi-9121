@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ems_configuration.html'
+keywords: 'event management,notification configuration,ems filters,email destination,event notification,system events'
 summary: 'Manage EMS configuration'
 ---
 
 = Manage EMS configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Use the Event Management System (EMS) endpoints to collect, process, and manage notifications of system events. Configure event handling rules and notification destinations to ensure timely awareness of critical system occurrences.
 
 == Overview
 

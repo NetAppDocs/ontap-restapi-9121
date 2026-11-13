@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-certificates-sign.html'
+keywords: 'certificate sign,certificate authority,signing request,expiry time,hash function,root certificate'
 summary: 'Sign security certificates'
 ---
 
 = Sign security certificates
+:imagesdir: ./media/
+
+[.lead]
+Signs a certificate request using a pre-existing self-signed root certificate, which acts as a certificate authority. This operation is typically performed to manage certificate authentication within its scope, ensuring secure communications.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/certificates/{ca.uuid}/sign`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Signs a certificate.
+ONTAP 9.6
 
 == Required properties
 

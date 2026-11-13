@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-quota-reports-.html'
+keywords: 'quota report,volume uuid,quota index,storage quota,quota record'
 summary: 'Retrieve a specific quota report record'
 ---
 
 = Retrieve a specific quota report record
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a specific quota report record to review storage allocation and usage details for a particular resource. This helps in managing and optimizing storage resources effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/quota/reports/{volume.uuid}/{index}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a specific quota report record.
+ONTAP 9.6
 
 == Related ONTAP commands
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_azure_key_vaults.html'
+keywords: 'azure key vault,secure secrets,cloud key management,encryption keys,client secret authentication'
 summary: 'Manage Azure Key Vaults'
 ---
 
 = Manage Azure Key Vaults
+:imagesdir: ./media/
 
-
+[.lead]
+Manage Azure Key Vaults to securely store encryption keys for ONTAP using Azure's cloud key management service. Configure access by deploying an Azure application and provide ONTAP with necessary details like key vault name and application ID. Some advanced properties require explicit requests to populate.
 
 == Overview
 

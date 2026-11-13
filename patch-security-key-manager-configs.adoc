@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-key-manager-configs.html'
+keywords: 'key manager,security config,key manager update,security update,key manager config'
 summary: 'Update key manager configurations'
 ---
 
 = Update key manager configurations
+:imagesdir: ./media/
+
+[.lead]
+Updates key manager configurations to modify settings related to encryption management. Use this endpoint when you need to adjust key manager parameters for secure data handling.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/key-manager-configs`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates key manager configurations.
+ONTAP 9.10
 
 == Related ONTAP commands
 

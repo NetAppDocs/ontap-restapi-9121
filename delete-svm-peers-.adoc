@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-svm-peers-.html'
+keywords: 'svm peer,delete relationship,peer removal,vserver peer,uuid deletion'
 summary: 'Delete an SVM peer relationship'
 ---
 
 = Delete an SVM peer relationship
+:imagesdir: ./media/
+
+[.lead]
+Removes an SVM peer relationship when you no longer need the connection between storage virtual machines.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/svm/peers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes the SVM peer relationship.
 

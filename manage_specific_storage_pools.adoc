@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_specific_storage_pools.html'
+keywords: 'storage pools,modify storage,expand capacity,spare allocation,cache tiers'
 summary: 'Manage specific storage pools'
 ---
 
 = Manage specific storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Modify specific storage pool properties using the PATCH operation to tailor your storage environment. Adjust attributes like pool name, disk count, and spare allocation units as needed. Note that concurrent PATCH operations on the same storage pool are restricted.
 
 == Updating storage pools
 

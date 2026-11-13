@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-fpolicy-policies-.html'
+keywords: 'fpolicy policy,delete policy,fpolicy configuration,delete fpolicy,svm policy,policy disable'
 summary: 'Delete an FPolicy configuration for an SVM'
 ---
 
 = Delete an FPolicy configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Removes an FPolicy configuration from an SVM when it is no longer needed or after disabling it. This action helps you manage and streamline policy configurations within your storage virtual machine.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/policies/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes a particular FPolicy policy configuration for a specified SVM. To delete a policy, you must first disable the policy.
 

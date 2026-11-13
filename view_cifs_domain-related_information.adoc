@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_domain-related_information.html'
+keywords: 'cifs domain,smb domain,svm configuration,trust relationships,name mapping'
 summary: 'View CIFS domain-related information'
 ---
 
 = View CIFS domain-related information
+:imagesdir: ./media/
 
-
+[.lead]
+Access CIFS domain-related information for all SVMs using these endpoints. This functionality is essential for managing CIFS configurations and trust relationships across your storage virtual machines.
 
 == Overview
 

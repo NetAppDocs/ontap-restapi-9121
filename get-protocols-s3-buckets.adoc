@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-s3-buckets.html'
+keywords: 's3 buckets,s3 bucket policy,svm buckets,bucket conditions,object store server,logical used size'
 summary: 'Retrieve all S3 buckets for all SVMs'
 ---
 
 = Retrieve all S3 buckets for all SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves all S3 buckets associated with your Storage Virtual Machines (SVMs), making it possible to examine bucket configurations and policies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/s3/buckets`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves all S3 buckets for all SVMs. Note that in order to retrieve S3 bucket policy conditions, the 'fields' option should be set to '**'.
 

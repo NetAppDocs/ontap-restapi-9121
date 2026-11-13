@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-snapshots.html'
+keywords: 'volume snapshots,storage retrieval,snapshot copies,reclaimable space,delta calculation,snapshot collection'
 summary: 'Retrieve volume Snapshot copies'
 ---
 
 = Retrieve volume Snapshot copies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of volume Snapshot copies to examine their details and manage storage resources efficiently. Consider the computational cost when retrieving reclaimable space information for these snapshots, as this calculation occurs on demand.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/snapshots`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a collection of volume Snapshot copies.
+ONTAP 9.6
 
 == Expensive properties
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-azure-key-vaults.html'
+keywords: 'azure key vault,akv configuration,svm cluster,client certificate,key identifier,proxy settings'
 summary: 'Create an AKV configuration for all clusters and SVMs'
 ---
 
 = Create an AKV configuration for all clusters and SVMs
+:imagesdir: ./media/
+
+[.lead]
+Configures Azure Key Vault (AKV) settings for all clusters and storage virtual machines (SVMs). Use this to set up or update AKV integration, ensuring secure management of encryption keys across your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/azure-key-vaults`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Configures the AKV configuration for all clusters and SVMs.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_metrocluster_dr_groups.html'
+keywords: 'metrocluster dr group,create dr group,delete dr group,dr pairs,partner cluster'
 summary: 'Manage MetroCluster DR groups'
 ---
 
 = Manage MetroCluster DR groups
+:imagesdir: ./media/
 
-
+[.lead]
+Manage MetroCluster DR groups by creating, performing operations, and retrieving information related to these groups. Use these endpoints to configure DR groups within a MetroCluster over IP setup, ensuring high availability and disaster recovery capabilities.
 
 == Overview
 

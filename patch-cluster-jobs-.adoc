@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-jobs-.html'
+keywords: 'cluster jobs,job update,asynchronous job,state update,job actions'
 summary: 'Update the state of an asynchronous job'
 ---
 
 = Update the state of an asynchronous job
+:imagesdir: ./media/
+
+[.lead]
+Updates the state of a specific asynchronous job to manage its current status in ongoing processes. Use this operation to modify job attributes as needed to ensure proper workflow execution.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/jobs/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates the state of a specific asynchronous job.
-
+ONTAP 9.6
 
 == Parameters
 

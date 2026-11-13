@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-file-clone.html'
+keywords: 'file clone,clone creation,volume management,sub file clone,auto deletion'
 summary: 'Create a clone of the file'
 ---
 
 = Create a clone of the file
+:imagesdir: ./media/
+
+[.lead]
+Creates a clone of a file to efficiently duplicate an existing file within a specified volume. Use this feature when you need to replicate file content for backup, testing, or other data management purposes without affecting the original file.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/file/clone`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a clone of the file.
+ONTAP 9.6
 
 == Required Properties
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-key-managers-auth-keys.html'
+keywords: 'authentication key,security key manager,external key manager,key manager uuid,key creation,auth keys'
 summary: 'Create an authentication key'
 ---
 
 = Create an authentication key
+:imagesdir: ./media/
+
+[.lead]
+Creates an authentication key to establish secure access with an external key manager. This key is essential for encrypting and decrypting data, ensuring the security of your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/key-managers/{security_key_manager.uuid}/auth-keys`#
 
-*Introduced In:* 9.12
+== Introduced in
 
-Creates an authentication key.
+ONTAP 9.12
 
 == Related ONTAP commands
 

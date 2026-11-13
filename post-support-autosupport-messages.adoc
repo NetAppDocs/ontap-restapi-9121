@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-autosupport-messages.html'
+keywords: 'autosupport message,create message,send message,node information,message subject,cluster nodes'
 summary: 'Create and send an AutoSupport message'
 ---
 
 = Create and send an AutoSupport message
+:imagesdir: ./media/
+
+[.lead]
+Creates and sends an AutoSupport message with specific input parameters to address system issues or performance concerns. Use this operation to proactively communicate system status to NetApp for troubleshooting and support.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/autosupport/messages`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates and sends an AutoSupport message with the provided input parameters.
 

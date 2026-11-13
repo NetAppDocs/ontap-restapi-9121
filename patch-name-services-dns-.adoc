@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-name-services-dns-.html'
+keywords: 'dns domain,svm configuration,dns server,ipv6 enabled,dynamic dns'
 summary: 'Update DNS domain and server configurations'
 ---
 
 = Update DNS domain and server configurations
+:imagesdir: ./media/
+
+[.lead]
+Updates the DNS domain and server configurations for an SVM, ensuring the settings align with your networking requirements. You might perform this operation to modify existing DNS settings or incorporate new server configurations while managing your storage virtual machine.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/name-services/dns/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates DNS domain and server configurations of an SVM.
 

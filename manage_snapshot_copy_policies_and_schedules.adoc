@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snapshot_copy_policies_and_schedules.html'
+keywords: 'snapshot copy policies,snapshot schedules,ontap snapshot retention,snapshot policy management,snapshot creation schedule'
 summary: 'Manage Snapshot copy policies and schedules'
 ---
 
 = Manage Snapshot copy policies and schedules
+:imagesdir: ./media/
 
-
+[.lead]
+Explore APIs for managing Snapshot copy policies and schedules, facilitating automated Snapshot creation at predefined intervals. Use these endpoints to add, modify, retrieve, and delete schedules within Snapshot copy policies, ensuring efficient data protection and retention across your storage environment.
 
 == Overview
 

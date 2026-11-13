@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-aggregates-.html'
+keywords: 'aggregate update,aggregate expansion,aggregate simulation,disk size,aggregate job link'
 summary: 'Update an aggregate specified by the UUID'
 ---
 
 = Update an aggregate specified by the UUID
+:imagesdir: ./media/
+
+[.lead]
+Updates the properties of a specified aggregate by providing the desired configuration in the request body. This action initiates a job, which you can track using the returned job link.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/aggregates/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the aggregate specified by the UUID with the properties in the body. This request starts a job and returns a link to that job.
 

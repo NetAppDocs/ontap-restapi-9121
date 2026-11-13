@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_fc_port_information.html'
+keywords: 'fibre channel,fc logins,ontap connections,nvme fc,fc initiators'
 summary: 'Retrieve FC port information'
 ---
 
 = Retrieve FC port information
+:imagesdir: ./media/
 
-
+[.lead]
+Access active Fibre Channel login information using these endpoints. FC logins are essential for higher-level protocols like Fibre Channel Protocol and NVMe over FC, providing foundational connectivity data.
 
 == Overview
 

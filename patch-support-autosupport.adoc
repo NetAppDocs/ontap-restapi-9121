@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-autosupport.html'
+keywords: 'autosupport,cluster configuration,autosupport modify,node configuration,system node'
 summary: 'Update the AutoSupport configuration for an entire cluster'
 ---
 
 = Update the AutoSupport configuration for an entire cluster
+:imagesdir: ./media/
+
+[.lead]
+Updates the AutoSupport configuration for the entire cluster, ensuring the settings align with your operational requirements. Use this endpoint to modify AutoSupport to fit your support and monitoring needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/autosupport`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates the AutoSupport configuration for the entire cluster.
+ONTAP 9.6
 
 == Related ONTAP commands
 

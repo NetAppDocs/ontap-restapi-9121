@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nfs-export-policies-rules-clients.html'
+keywords: 'export policy,export client,nfs export,policy rule,client match,export rule'
 summary: 'Create an export policy rule client'
 ---
 
 = Create an export policy rule client
+:imagesdir: ./media/
+
+[.lead]
+Creates a new client entry for an export policy rule, specifying criteria for client access within the policy. Use this endpoint to define client-specific access rules and permissions as part of managing your export policies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nfs/export-policies/{policy.id}/rules/{index}/clients`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates an export policy rule client
 

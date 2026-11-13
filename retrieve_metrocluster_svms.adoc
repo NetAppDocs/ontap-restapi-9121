@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_metrocluster_svms.html'
+keywords: 'metrocluster svms,configuration information,svm pairs,healthy state,partner svm'
 summary: 'Retrieve MetroCluster SVMs'
 ---
 
 = Retrieve MetroCluster SVMs
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve configuration details for MetroCluster SVM pairs to ensure optimal synchronization and health across your clusters.
 
 = Overview
 

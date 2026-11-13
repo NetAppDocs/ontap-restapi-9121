@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_pools.html'
+keywords: 'storage pools,shared storage,flash capacity,usable spares,disk count'
 summary: 'Manage storage pools'
 ---
 
 = Manage storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and create storage pools to manage shared flash capacity across cache tiers within your cluster. Use these endpoints to access detailed pool information, simulate pool creation, and ensure alignment with ONTAP best practices for spare allocation.
 
 == Retrieving storage pool information
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-san-igroups-initiators-.html'
+keywords: 'initiator update,initiator group,igroup initiator,initiator modify,san protocols'
 summary: 'Update an initiator'
 ---
 
 = Update an initiator
+:imagesdir: ./media/
+
+[.lead]
+Updates an initiator within an initiator group, ensuring that modifications are made only to initiators owned directly by the group. This helps maintain accurate configurations for SAN protocols.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/san/igroups/{igroup.uuid}/initiators/{name}`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Updates an initiator of an initiator group.
 This API only supports modification of initiators owned directly by the

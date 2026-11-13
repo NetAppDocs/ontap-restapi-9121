@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_active_directory_accounts.html'
+keywords: 'active directory,organizational unit,create account,svm details,fqdn'
 summary: 'Manage Active Directory accounts'
 ---
 
 = Manage Active Directory accounts
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to manage Active Directory accounts across all Storage Virtual Machines (SVMs). Retrieve detailed account information or create new accounts as needed for your directory services integration.
 
 == Overview
 

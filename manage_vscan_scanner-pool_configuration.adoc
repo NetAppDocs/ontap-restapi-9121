@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_vscan_scanner-pool_configuration.html'
+keywords: 'vscan configuration,scanner pool,svm management,privileged users,scanner policy'
 summary: 'Manage Vscan scanner-pool configuration'
 ---
 
 = Manage Vscan scanner-pool configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure Vscan scanner-pools to define which servers and privileged users can connect to SVMs and manage their active roles within your cluster environment. Use these endpoints to tailor scanner-pool settings for both local and MCC/DR cluster setups.
 
 == Overview
 

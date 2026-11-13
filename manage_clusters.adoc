@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_clusters.html'
+keywords: 'manage clusters,cluster configuration,create cluster,cluster monitoring,cluster nodes,cluster setup'
 summary: 'Manage clusters'
 ---
 
 = Manage clusters
+:imagesdir: ./media/
 
-
+[.lead]
+Create and modify clusters using the REST API to customize your ONTAP environment. You can set up multi-node clusters, adjust configurations, and monitor creation tasks to ensure efficient cluster management.
 
 = Overview
 :doctype: book

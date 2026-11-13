@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-ldap-schemas.html'
+keywords: 'ldap schemas,ldap schema retrieval,rfc2307bis filter,ldap client schema,posix group filter'
 summary: 'Retrieve all LDAP schemas'
 ---
 
 = Retrieve all LDAP schemas
+:imagesdir: ./media/
+
+[.lead]
+Retrieves all LDAP schemas to review existing schema configurations for directory services integration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/ldap-schemas`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Retrieves all the LDAP schemas.
+ONTAP 9.11
 
 == Related ONTAP commands
 

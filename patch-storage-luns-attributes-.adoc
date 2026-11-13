@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-luns-attributes-.html'
+keywords: 'lun attribute,update attribute,lun update,storage luns,lun modification'
 summary: 'Update a LUN attribute value'
 ---
 
 = Update a LUN attribute value
+:imagesdir: ./media/
+
+[.lead]
+Updates an attribute value of a LUN to modify its configuration or properties as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/luns/{lun.uuid}/attributes/{name}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Updates a LUN attribute value.
 

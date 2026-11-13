@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_key_stores.html'
+keywords: 'keystore, key manager, security keys, key management, retrieve keys'
 summary: 'View key stores'
 ---
 
 = View key stores
+:imagesdir: ./media/
 
-
+[.lead]
+Access key store endpoints to view and retrieve information about configured key managers. Use these endpoints to understand the types and configurations of key managers in your environment.
 
 :doctype: book
 

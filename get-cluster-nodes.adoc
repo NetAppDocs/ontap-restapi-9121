@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-nodes.html'
+keywords: 'cluster nodes,retrieve nodes,node uptime,metrocluster type,management interfaces'
 summary: 'Retrieve nodes in a cluster'
 ---
 
 = Retrieve nodes in a cluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about the nodes in a cluster. Use this endpoint to understand the configuration and status of each node within the cluster for management and monitoring purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/nodes`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the nodes in the cluster.
 

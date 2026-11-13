@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-pools-.html'
+keywords: 'storage pool,storage pool uuid,retrieve storage pool,ontap storage,retrieve pool'
 summary: 'Retrieve a storage pool specified by the UUID'
 ---
 
 = Retrieve a storage pool specified by the UUID
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details about a specific storage pool using its UUID. This helps you access configuration information for managing storage resources efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/pools/{uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves the storage pool specified by the UUID.
 

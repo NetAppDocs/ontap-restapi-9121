@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-logins-.html'
+keywords: 'fc login,interface uuid,initiator wwpn,fc interface,wwpn lookup,fibre channel'
 summary: 'Retrieve an FC login'
 ---
 
 = Retrieve an FC login
+:imagesdir: ./media/
+
+[.lead]
+Retrieves an FC login to access information about Fibre Channel connections for monitoring or troubleshooting purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/logins/{interface.uuid}/{initiator.wwpn}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves an FC login.
+ONTAP 9.6
 
 == Related ONTAP commands
 

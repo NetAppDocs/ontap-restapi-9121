@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-key-managers-.html'
+keywords: 'key manager update,ontap key manager,key manager synchronization,cluster passphrase,key manager uuid'
 summary: 'Update key managers'
 ---
 
 = Update key managers
+:imagesdir: ./media/
+
+[.lead]
+Updates the configuration of a key manager, typically to synchronize keys or modify passphrases in a local ONTAP cluster.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/key-managers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates a key manager.
 

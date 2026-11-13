@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_autosupport_configuration.html'
+keywords: 'autosupport configuration,netapp autosupport,cluster connectivity,autosupport issues,autosupport transport'
 summary: 'Manage AutoSupport configuration'
 ---
 
 = Manage AutoSupport configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure and monitor AutoSupport features to convey crucial system information to NetApp, aiding in proactive support and issue resolution. Utilize GET and PATCH endpoints to access and modify AutoSupport settings and connectivity status, ensuring effective communication with NetApp support services.
 
 == Overview
 

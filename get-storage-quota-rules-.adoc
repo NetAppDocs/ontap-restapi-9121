@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-quota-rules-.html'
+keywords: 'quota rule,quota policy,storage quota,rule properties,uuid rule,ontap quota'
 summary: 'Retrieve quota policy rule properties'
 ---
 
 = Retrieve quota policy rule properties
+:imagesdir: ./media/
+
+[.lead]
+Accesses properties of a specific quota policy rule to review its configuration and details.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/quota/rules/{uuid}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves properties for a specific quota policy rule.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ipsec_policies.html'
+keywords: 'ipsec policies,manage ipsec,ipsec security,ontap ipsec,ipsec creation'
 summary: 'Manage IPsec policies'
 ---
 
 = Manage IPsec policies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage IPsec policies to secure your network traffic through encryption and authentication. Use these endpoints to create, retrieve, update, and delete IPsec policies in your ONTAP environment.
 
 == Overview
 

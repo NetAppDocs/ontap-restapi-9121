@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'storage_quota_endpoints.html'
+keywords: 'storage quota,quota limits,flexvol volume,quota policy,quota report'
 summary: 'ONTAP REST API storage quota endpoints'
 ---
 
 = ONTAP REST API storage quota endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Manage storage quota policy rules, enable quotas, and generate reports to control and monitor file and space usage on FlexVol or FlexGroup volumes. Use these endpoints to define, enforce, and adjust quota limits based on user, group, or qtree types.
 
 == Overview
 

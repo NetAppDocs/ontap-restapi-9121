@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-nfs-connected-client-settings.html'
+keywords: 'nfs settings,nfs cache,connected client,nfs client settings,update settings'
 summary: 'Update the NFS connected-client cache settings properties'
 ---
 
 = Update the NFS connected-client cache settings properties
+:imagesdir: ./media/
+
+[.lead]
+Updates the properties of the NFS connected-client cache settings to manage how client connections are cached. Use this operation to modify cache configurations according to your specific network and performance requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/nfs/connected-client-settings`#
 
-*Introduced In:* 9.12
+== Introduced in
 
-Updates the properties of the NFS connected-client cache settings.
-
+ONTAP 9.12
 
 == Request Body
 

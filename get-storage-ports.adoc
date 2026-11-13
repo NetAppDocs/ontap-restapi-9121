@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-ports.html'
+keywords: 'storage ports,retrieve ports,port collection,firmware version,port type,cable length'
 summary: 'Retrieve storage ports'
 ---
 
 = Retrieve storage ports
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about storage ports, which helps you manage and configure network connectivity for storage resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/ports`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a collection of storage ports.
 

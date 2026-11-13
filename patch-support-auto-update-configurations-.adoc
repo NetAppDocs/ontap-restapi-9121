@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-auto-update-configurations-.html'
+keywords: 'automatic update,configuration update,update configuration,support configurations,auto-update settings'
 summary: 'Modify the configuration for an automatic update'
 ---
 
 = Modify the configuration for an automatic update
+:imagesdir: ./media/
+
+[.lead]
+Updates the configuration for a specific automatic update, adjusting its settings as needed for your system's requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/auto-update/configurations/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Updates the configuration for a specified automatic update.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster.html'
+keywords: 'cluster creation,cluster configuration,management interface,dns setup,ntp servers,license setup'
 summary: 'Create a cluster'
 ---
 
 = Create a cluster
+:imagesdir: ./media/
+
+[.lead]
+Creates a new cluster, defining its essential and optional properties to suit your network and management needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a cluster.
 

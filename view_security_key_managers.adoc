@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_security_key_managers.html'
+keywords: 'security key managers,key manager keys,key id retrieval,node key-ids,encryption algorithm,key type'
 summary: 'View security key managers'
 ---
 
 = View security key managers
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve security key manager keys on a node to access information about key-ids associated with specific key types. Use these endpoints to manage encryption settings and ensure secure data access within your ONTAP environment.
 
 :doctype: book
 

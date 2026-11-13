@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-file-security-permissions-.html'
+keywords: 'file security,permissions update,control flags,owner group,slag acl'
 summary: 'Update the SD information'
 ---
 
 = Update the SD information
+:imagesdir: ./media/
+
+[.lead]
+Updates the SD specific information, such as owner, group, and control-flags, for managing access control settings effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/file-security/permissions/{svm.uuid}/{path}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Updates SD specific Information. For example, owner, group and control-flags. SD specific information of SLAG ACLs is not modifiable.
+ONTAP 9.9
+
+== Usage notes
+
+For example, owner, group and control-flags. SD specific information of SLAG ACLs is not modifiable.
 
 == Related ONTAP commands
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-domains.html'
+keywords: 'cifs domain,svm domain,preferred dc,trust relationships,discovered servers,password schedule'
 summary: 'Retrieve CIFS domain-related information of all SVMs'
 ---
 
 = Retrieve CIFS domain-related information of all SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves CIFS domain-related information for all SVMs to assess domain configurations and trust relationships within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/domains`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves the CIFS domain-related information of all SVMs.
 
