@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_shares.html'
+keywords: 'cifs shares, smb permissions, share permissions, svm path, access control lists'
 summary: 'Manage CIFS shares'
 ---
 
 = Manage CIFS shares
+:imagesdir: ./media/
 
-
+[.lead]
+Create and manage CIFS shares to provide access points for users and applications on the CIFS server over SMB. Use these endpoints to configure share permissions and ensure paths are valid and accessible within the scope of the SVM.
 
 == Overview
 

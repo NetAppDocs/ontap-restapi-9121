@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-aws-kms.html'
+keywords: 'aws kms,aws region,aws key id,svm configuration,encryption context,key manager'
 summary: 'Configure the AWS KMS configuration for an SVM'
 ---
 
 = Configure the AWS KMS configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Configures the AWS Key Management Service (KMS) settings for a specific Storage Virtual Machine (SVM). This enables you to manage encryption keys within AWS for the SVM's data operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/aws-kms`#
 
-*Introduced In:* 9.12
+== Introduced in
+
+ONTAP 9.12
+
+== Usage notes
 
 Configures the AWS KMS configuration for the specified SVM.
 

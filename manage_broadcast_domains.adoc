@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_broadcast_domains.html'
+keywords: 'broadcast domains,network connectivity,ethernet ports,layer 2 connectivity,ipspace'
 summary: 'Manage broadcast domains'
 ---
 
 = Manage broadcast domains
+:imagesdir: ./media/
 
-
+[.lead]
+The broadcast domain REST API lets you retrieve, create, modify, and delete broadcast domains within your network. These endpoints are essential for managing Ethernet ports that share layer 2 connectivity, determining their suitability for various interface types. While port membership changes require different endpoints, these APIs are crucial for configuring the overall broadcast domain setup in your cluster.
 
 == Overview
 

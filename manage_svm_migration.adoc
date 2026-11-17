@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_svm_migration.html'
+keywords: 'svm migration,cluster peering,svm transfer,status retrieval,volume transfer,operation pause'
 summary: 'Manage SVM migration'
 ---
 
 = Manage SVM migration
+:imagesdir: ./media/
 
-
+[.lead]
+Migrate an SVM from a source cluster to a destination cluster using the SVM migration APIs. These endpoints let you manage the migration process, including pausing, resuming, or aborting operations, and checking both the migration and volume transfer status. Ensure cluster peering relationships are established before initiating a migration.
 
 = Overview
 

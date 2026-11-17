@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_dns_configurations.html'
+keywords: 'dns configuration,dns subsystem,domain name,dns servers,dns status'
 summary: 'Manage DNS configurations'
 ---
 
 = Manage DNS configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage DNS configurations to display and control the DNS subsystem, including domain names and servers, which are essential parameters. Use these endpoints to retrieve, create, update, or delete DNS configurations across your storage virtual machines (SVMs).
 
 == Overview
 

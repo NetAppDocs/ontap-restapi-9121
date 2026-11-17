@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ssh_security_configuration.html'
+keywords: 'ssh security,svm configuration,key exchange,cipher configuration,mac algorithms,authentication retry'
 summary: 'Manage SSH security configuration'
 ---
 
 = Manage SSH security configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve or modify the SSH security configuration for an SVM using these endpoints. Access key exchange algorithms, encryption ciphers, MAC algorithms, and manage authentication retry limits.
 
 == Overview
 

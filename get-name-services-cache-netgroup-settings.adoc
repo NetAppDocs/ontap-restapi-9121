@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-cache-netgroup-settings.html'
+keywords: 'netgroup settings,cache settings,netgroups cache,ttl settings,svm filter'
 summary: 'Retrieve netgroup cache settings'
 ---
 
 = Retrieve netgroup cache settings
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the netgroup cache settings to view the current configuration for caching netgroup information.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/cache/netgroup/settings`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves netgroups cache settings.
 

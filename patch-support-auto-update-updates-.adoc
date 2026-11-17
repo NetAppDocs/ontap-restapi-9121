@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-auto-update-updates-.html'
+keywords: 'update action,update schedule,auto update,perform update,update identifier'
 summary: 'Perform an action on the update'
 ---
 
 = Perform an action on the update
+:imagesdir: ./media/
+
+[.lead]
+Manages update actions to modify existing resources according to your specified parameters. Use this endpoint when you need to make changes to an update's properties or status.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/auto-update/updates/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Perform an action on the update.
 

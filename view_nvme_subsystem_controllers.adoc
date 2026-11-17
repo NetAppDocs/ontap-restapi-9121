@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nvme_subsystem_controllers.html'
+keywords: 'nvme subsystem,storage solution,connected hosts,dynamic connections,host transport address'
 summary: 'View NVMe subsystem controllers'
 ---
 
 = View NVMe subsystem controllers
+:imagesdir: ./media/
 
-
+[.lead]
+The NVMe subsystem controllers REST API provides information on the dynamic connections between hosts and storage solutions. Use these endpoints to retrieve details about connected hosts and their associated NVMe subsystem controllers.
 
 == Overview
 

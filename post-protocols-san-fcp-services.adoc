@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-san-fcp-services.html'
+keywords: 'fc protocol,create service,fcp service,san protocols,fcp create'
 summary: 'Create an FC protocol service'
 ---
 
 = Create an FC protocol service
+:imagesdir: ./media/
+
+[.lead]
+Creates an FC protocol service to configure Fibre Channel communications for a storage virtual machine (SVM). This setup is typically used to facilitate SAN connectivity for applications that require high-speed data transfer.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/san/fcp/services`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an FC Protocol service.
+ONTAP 9.6
 
 == Required properties
 

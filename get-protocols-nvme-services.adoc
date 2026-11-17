@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nvme-services.html'
+keywords: 'nvme services,ontap protocols,nvme statistics,protocol throughput,service latency,metric iops'
 summary: 'Retrieve NVMe services'
 ---
 
 = Retrieve NVMe services
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about NVMe services to monitor and manage NVMe configurations. This is useful when you need to understand the current state or performance of NVMe services within your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nvme/services`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves NVMe services.
 

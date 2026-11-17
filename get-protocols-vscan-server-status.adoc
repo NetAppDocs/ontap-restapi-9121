@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-vscan-server-status.html'
+keywords: 'vscan server,server status,connection status,vscan status,vscan node,node status'
 summary: 'Retrieve the Vscan server status'
 ---
 
 = Retrieve the Vscan server status
+:imagesdir: ./media/
+
+[.lead]
+Accesses the status of a Vscan server to monitor its current operational state and ensure proper functioning within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/vscan/server-status`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a Vscan server status.
 

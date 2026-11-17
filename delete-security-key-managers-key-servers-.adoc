@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-key-managers-key-servers-.html'
+keywords: 'delete key server,key manager,external key manager,remove key server,primary key server,quorum bypass'
 summary: 'Delete a primary key server'
 ---
 
 = Delete a primary key server
+:imagesdir: ./media/
+
+[.lead]
+Deletes a primary key server, removing its configuration and access from the system. Use this operation when you need to remove a server that is no longer required for key management tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/key-managers/{uuid}/key-servers/{server}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes a primary key server.
+ONTAP 9.6
 
 == Optional parameters:
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-tape-devices-.html'
+keywords: 'tape device update,tape device management,node uuid,tape device online,tape device offline'
 summary: 'Update a tape device'
 ---
 
 = Update a tape device
+:imagesdir: ./media/
+
+[.lead]
+Updates a specific tape device to change its configuration or settings as needed. This is useful for maintaining or modifying tape device operations within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/tape-devices/{node.uuid}/{device_id}`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Updates a specific tape device.
+ONTAP 9.11
 
 == Related ONTAP commands
 

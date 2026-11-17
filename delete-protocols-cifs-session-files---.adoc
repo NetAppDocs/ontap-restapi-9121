@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-cifs-session-files---.html'
+keywords: 'session files,close files,cifs protocol,connection id,session id,file id'
 summary: 'Close open files identified by SVM'
 ---
 
 = Close open files identified by SVM
+:imagesdir: ./media/
+
+[.lead]
+Closes open files identified by the SVM, file, connection, and session identifiers. This operation is useful for managing file access and ensuring system stability.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/cifs/session/files/{node.uuid}/{svm.uuid}/{identifier}/{connection.identifier}/{session.identifier}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Closes open files identified by svm.uuid, file.identifier, connection.identifier and session_id.
 

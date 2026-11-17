@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-volumes-files-.html'
+keywords: 'delete file,delete directory,volume management,file removal,directory removal,recursive delete'
 summary: 'Delete an existing file or directory'
 ---
 
 = Delete an existing file or directory
+:imagesdir: ./media/
+
+[.lead]
+Removes a file or directory when it is no longer needed. Use this operation to manage storage and maintain organization within your file system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/files/{path}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Deletes an existing file or directory. Query-based DELETE operations are not supported.
 

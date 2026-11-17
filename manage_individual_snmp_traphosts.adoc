@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_individual_snmp_traphosts.html'
+keywords: 'snmp traphost,manage traphost,delete traphost,retrieve traphost,ontap snmp'
 summary: 'Manage individual SNMP traphosts'
 ---
 
 = Manage individual SNMP traphosts
+:imagesdir: ./media/
 
-
+[.lead]
+Define, retrieve, or delete individual SNMP traphosts to manage notifications for specific hosts within your ONTAP cluster. Use these endpoints when configuring SNMP settings to ensure accurate monitoring and alerting.
 
 == Overview
 

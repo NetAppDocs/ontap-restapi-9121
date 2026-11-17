@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nfs_connected_clients.html'
+keywords: 'nfs clients,connected clients,node hosting,volume access,idle time'
 summary: 'View NFS connected clients'
 ---
 
 = View NFS connected clients
+:imagesdir: ./media/
 
-
+[.lead]
+Use the View NFS connected clients endpoints to access details about currently connected NFS clients, potential connections, and recently unmounted clients. These endpoints help you monitor client activity and manage idle connections, ensuring optimal performance and resource utilization.
 
 == Overview
 

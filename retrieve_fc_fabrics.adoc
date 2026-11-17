@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_fc_fabrics.html'
+keywords: 'fibre channel,fabric connections,switch zones,cache update,wwpn search'
 summary: 'Retrieve FC fabrics'
 ---
 
 = Retrieve FC fabrics
+:imagesdir: ./media/
 
-
+[.lead]
+Access Fibre Channel (FC) fabric information using REST APIs to examine connections, switches, and active zonesets within the FC network. Use these endpoints to monitor the currency of cached data through cache timestamp properties.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_network_interfaces.html'
+keywords: 'fibre channel, fc interfaces, storage svm, nvme fc, performance monitoring'
 summary: 'Manage FC network interfaces'
 ---
 
 = Manage FC network interfaces
+:imagesdir: ./media/
 
-
+[.lead]
+Manage Fibre Channel (FC) network interfaces to create, update, and discover logical endpoints for FC connections within an SVM. Utilize the FC interface REST API to monitor performance, obtain status information, and receive interface placement recommendations for optimal configuration.
 
 == Overview
 

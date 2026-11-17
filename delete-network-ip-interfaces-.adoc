@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-network-ip-interfaces-.html'
+keywords: 'ip interface,delete interface,network interface,interface uuid,delete network'
 summary: 'Delete an IP interface'
 ---
 
 = Delete an IP interface
+:imagesdir: ./media/
+
+[.lead]
+Removes an IP interface to manage network resources effectively and streamline your configurations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/network/ip/interfaces/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes an IP interface.
 

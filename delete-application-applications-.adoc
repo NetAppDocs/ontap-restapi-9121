@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-application-applications-.html'
+keywords: 'delete application,remove data,application uuid,associated data,initiator groups'
 summary: 'Delete an application and all associated data'
 ---
 
 = Delete an application and all associated data
+:imagesdir: ./media/
+
+[.lead]
+Deletes an application along with all data associated with it. Use this endpoint when you need to remove all components created by the application, including volumes and shares.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/application/applications/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes an application and all associated data.
 

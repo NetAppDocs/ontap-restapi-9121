@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_cluster_counter_tables.html'
+keywords: 'cluster counters,performance statistics,network adapter statistics,data aggregation,table schema'
 summary: 'Retrieve cluster counter tables'
 ---
 
 = Retrieve cluster counter tables
+:imagesdir: ./media/
 
-
+[.lead]
+Access statistical information about ONTAP system performance using the counter tables endpoints. These endpoints provide insights into various aspects of system health by organizing data into tables, rows, counters, and properties. Use them to evaluate current performance metrics and perform calculations over specified time periods.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_buckets.html'
+keywords: 's3 buckets,object namespace,data metadata,access controls,logical used size,cluster size'
 summary: 'Manage S3 buckets'
 ---
 
 = Manage S3 buckets
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 bucket operations through these endpoints, which define object namespaces and associate buckets with S3 users on the server. Access and manipulate data within buckets using specified object-name pairs, and configure policies and conditions to control access.
 
 == Overview
 

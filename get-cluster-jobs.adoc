@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-jobs.html'
+keywords: 'cluster jobs,recent jobs,asynchronous jobs,job state,job filters,job retrieval'
 summary: 'Retrieve recent asynchronous jobs'
 ---
 
 = Retrieve recent asynchronous jobs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a list of recently running asynchronous jobs to monitor job progress or status updates before automatic deletion occurs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/jobs`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a list of recently running asynchronous jobs. After a job transitions to a failure or success state, it is deleted after a default time of 300 seconds.
+ONTAP 9.6
+
+== Usage notes
+
+After a job transitions to a failure or success state, it is deleted after a default time of 300 seconds.
 
 
 == Parameters

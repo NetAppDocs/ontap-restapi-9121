@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_netgroup_cache_settings.html'
+keywords: 'netgroup cache,cache settings,manage netgroups,svm settings,ttl configuration,update cache'
 summary: 'Manage netgroup cache settings'
 ---
 
 = Manage netgroup cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and manage netgroup cache settings with these endpoints to optimize cache behavior in your network environment. Use them to adjust cache time-to-live (TTL) values or check cache status for specific Storage Virtual Machines (SVMs).
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-portsets-interfaces.html'
+keywords: 'interfaces,portset,portset interfaces,lun portset,protocols san,portset uuid'
 summary: 'Retrieve portset network interfaces'
 ---
 
 = Retrieve portset network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the network interfaces associated with a portset to view and manage the interfaces configured for storage access.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/portsets/{portset.uuid}/interfaces`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Retrieves interfaces of a portset.
 

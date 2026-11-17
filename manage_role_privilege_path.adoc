@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_role_privilege_path.html'
+keywords: 'role privilege,access level,resource-qualified,svm scope,cluster scope'
 summary: 'Manage role privilege path'
 ---
 
 = Manage role privilege path
+:imagesdir: ./media/
 
-
+[.lead]
+Manage role privilege paths to retrieve, modify, or delete access levels associated with specific REST API or command paths within a role. Use these endpoints to fine-tune permissions for snapshots and file system analytics on SVM or cluster scopes.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-nodes.html'
+keywords: 'node addition,cluster nodes,aggregate creation,optimal layout,network modification,service processor'
 summary: 'Add a node or nodes to a cluster'
 ---
 
 = Add a node or nodes to a cluster
+:imagesdir: ./media/
+
+[.lead]
+Adds a node or multiple nodes to an existing cluster. Use this endpoint when you need to expand your cluster's capacity or improve its performance by integrating additional nodes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/nodes`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Adds a node or nodes to the cluster.
 

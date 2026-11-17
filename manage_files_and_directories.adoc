@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_files_and_directories.html'
+keywords: 'file management,file properties,directory listing,file analytics,symlink management,qos policy'
 summary: 'Manage files and directories'
 ---
 
 = Manage files and directories
+:imagesdir: ./media/
 
-
+[.lead]
+Explore endpoints that manage files and directories, including reading, writing, listing, and modifying properties. Utilize these APIs for tasks such as creating, deleting, and renaming files or directories, while supporting file system analytics and QoS policies. Ensure path formatting adheres to specified conventions for accurate API call execution.
 
 == Overview
 

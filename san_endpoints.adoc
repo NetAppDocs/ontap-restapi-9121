@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'san_endpoints.html'
+keywords: 'fibre channel,iscsi sessions,wwpn aliases,initiator groups,lun maps,vvol bindings'
 summary: 'ONTAP REST API SAN endpoints'
 ---
 
 = ONTAP REST API SAN endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Configure, provision, and manage SAN-related objects using the storage area network (SAN) endpoints. These endpoints assist with tasks such as managing Fibre Channel and iSCSI connections, initiator groups, LUNs, and VMware Virtual Volume bindings.
 
 == Overview
 

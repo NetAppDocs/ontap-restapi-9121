@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cloud-targets.html'
+keywords: 'cloud target,cloud provider,object store,ssl enabled,azure storage,server name'
 summary: 'Create a cloud target'
 ---
 
 = Create a cloud target
+:imagesdir: ./media/
+
+[.lead]
+Creates a cloud target to facilitate data storage and management in a cloud environment. This operation is crucial when integrating cloud resources with your ONTAP system for expanded storage capabilities or disaster recovery.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cloud/targets`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a cloud target.
+ONTAP 9.6
 
 == Required properties
 

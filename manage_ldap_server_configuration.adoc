@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ldap_server_configuration.html'
+keywords: 'ldap server,manage ldap,cluster ldap,ldap configuration,ldap directory,netapp ldap'
 summary: 'Manage LDAP server configuration'
 ---
 
 = Manage LDAP server configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Use this API to retrieve and manage cluster LDAP server configurations for centralized maintenance of user information. Set up LDAP configurations to look up details stored in external LDAP directories, ensuring accurate authentication and access control within your cluster.
 
 == Overview
 

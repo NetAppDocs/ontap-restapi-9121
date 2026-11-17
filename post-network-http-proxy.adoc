@@ -3,16 +3,26 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-network-http-proxy.html'
+keywords: 'http proxy,svm configuration,cluster ipspace,ipv6 enabled,server validation'
 summary: 'Create an HTTP proxy configuration for an SVM or cluster IPspace'
 ---
 
 = Create an HTTP proxy configuration for an SVM or cluster IPspace
+:imagesdir: ./media/
+
+[.lead]
+Creates an HTTP proxy configuration for an SVM or a Cluster IPspace to enable routing of HTTP traffic through a specified proxy server. This is useful for managing and controlling network communication within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/network/http-proxy`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Creates an HTTP proxy configuration for an SVM or a Cluster IPspace.
+ONTAP 9.7
+
+== Usage notes
+
 Important notes:
 
 * IPv6 must be enabled if IPv6 family addresses are specified in the "server" field.

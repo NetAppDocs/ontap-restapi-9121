@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-snapmirror-relationships-.html'
+keywords: 'snapmirror update,relationship initialize,relationship resync,relationship failover,relationship reverse,relationship policy'
 summary: 'Update a SnapMirror relationship'
 ---
 
 = Update a SnapMirror relationship
+:imagesdir: ./media/
+
+[.lead]
+Updates SnapMirror relationships to initiate various operations such as initializing, resyncing, breaking, quiescing, and resuming the relationship. You might also modify the SnapMirror policy, failover to the destination endpoint, fail back to the original state, or reverse the relationship direction as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/snapmirror/relationships/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates a SnapMirror relationship. This API is used to initiate SnapMirror operations such as "initialize", "resync", "break", "quiesce", and "resume" by specifying the appropriate value for the "state" field. It is also used to modify the SnapMirror policy associated with the specified relationship. Additionally, a SnapMirror relationship can be failed over to the destination endpoint or a failed over SnapMirror relationship can be failed back to the original state or a SnapMirror relationship direction can be reversed using this API.
 

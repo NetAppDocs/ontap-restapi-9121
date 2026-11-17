@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_multi-admin_approval_groups.html'
+keywords: 'multi-admin approval,approval groups,multi-admin verify,user groups,ontap users'
 summary: 'Manage multi-admin approval groups'
 ---
 
 = Manage multi-admin approval groups
+:imagesdir: ./media/
 
-
+[.lead]
+Define and manage multi-admin approval groups within a cluster server context to streamline the approval process for rules or global settings. Use these endpoints to specify user lists and retrieve approvals efficiently.
 
 == Overview
 

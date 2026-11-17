@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_or_delete_a_role.html'
+keywords: 'role retrieval,role deletion,svm scope,cluster scope,pre-defined roles'
 summary: 'View or delete a role'
 ---
 
 = View or delete a role
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve or delete roles using this API, specifying the owner UUID and role name in the URI path. Roles can be scoped to a specific SVM or the entire cluster, with predefined roles being retrievable but not deletable.
 
 == Overview
 

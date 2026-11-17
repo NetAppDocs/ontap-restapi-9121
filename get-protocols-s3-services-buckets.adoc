@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-s3-services-buckets.html'
+keywords: 's3 bucket,svm configuration,bucket policy,s3 conditions,object store'
 summary: 'Retrieve S3 bucket configurations for an SVM'
 ---
 
 = Retrieve S3 bucket configurations for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the S3 bucket configurations for an SVM to understand the setup and manage object storage effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/buckets`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves the S3 bucket's configuration of an SVM. Note that in order to retrieve S3 bucket policy conditions, the 'fields' option should be set to '**'.
 

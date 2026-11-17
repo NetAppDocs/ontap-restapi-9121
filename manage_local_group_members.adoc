@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_local_group_members.html'
+keywords: 'local group,active directory,local members,svm management,cifs group'
 summary: 'Manage local group members'
 ---
 
 = Manage local group members
+:imagesdir: ./media/
 
-
+[.lead]
+Manage local group members by using this API to display, add, or delete users and groups within a local SVM group. This functionality supports local users and Active Directory entities, enhancing group management in your environment.
 
 == Overview
 

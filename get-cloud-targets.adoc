@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cloud-targets.html'
+keywords: 'cloud targets,cluster retrieval,storage aggregate,object store,provider type,ssl enabled'
 summary: 'Retrieve cloud targets in the cluster'
 ---
 
 = Retrieve cloud targets in the cluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the list of cloud targets configured within the cluster. Use this endpoint to view and manage cloud storage settings for seamless integration with external cloud providers.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cloud/targets`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the collection of cloud targets in the cluster.
 

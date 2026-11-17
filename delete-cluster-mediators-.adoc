@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-cluster-mediators-.html'
+keywords: 'cluster mediator,delete mediator,mediator removal,cluster management,uuid delete'
 summary: 'Delete an ONTAP Mediator'
 ---
 
 = Delete an ONTAP Mediator
+:imagesdir: ./media/
+
+[.lead]
+Deletes a mediator to remove it from the ONTAP environment when it is no longer needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/cluster/mediators/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Deletes the mediator.
-
+ONTAP 9.8
 
 == Parameters
 

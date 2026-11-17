@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nvme-subsystem-maps.html'
+keywords: 'nvme subsystem,subsystem map,svm uuid,namespace uuid,nvme namespace,vserver nvme'
 summary: 'Create an NVMe subsystem map'
 ---
 
 = Create an NVMe subsystem map
+:imagesdir: ./media/
+
+[.lead]
+Creates an NVMe subsystem map to establish a connection between an existing NVMe subsystem and a namespace within your storage virtual machine (SVM). This is essential for configuring NVMe resources and managing data flow effectively within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nvme/subsystem-maps`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an NVMe subsystem map.
+ONTAP 9.6
 
 == Required properties
 

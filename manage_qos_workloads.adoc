@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_qos_workloads.html'
+keywords: 'quality of service, qos workloads, storage object, qos cluster, manage workloads'
 summary: 'Manage QoS workloads'
 ---
 
 = Manage QoS workloads
+:imagesdir: ./media/
 
-
+[.lead]
+Track and manage Quality of Service workloads to monitor storage object performance within your environment. Use these endpoints to retrieve lists or specific details about workloads in the cluster, ensuring efficient allocation of resources.
 
 == Quality of Service Workloads
 

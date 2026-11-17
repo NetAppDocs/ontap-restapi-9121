@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nfs-export-policies-rules.html'
+keywords: 'nfs export,export policy,rules retrieval,policy rules,policy filters,export policy rules'
 summary: 'Retrieve export policy rules'
 ---
 
 = Retrieve export policy rules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves export policy rules to examine how they are configured within your ONTAP system, facilitating management and adjustments of NFS access controls.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nfs/export-policies/{policy.id}/rules`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves export policy rules.
+ONTAP 9.6
 
 == Related ONTAP commands
 

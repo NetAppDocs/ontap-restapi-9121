@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_directories.html'
+keywords: 'directories performance,retrieve directories,volume metrics,io activity,largest directories,top metric'
 summary: 'Retrieve directories'
 ---
 
 = Retrieve directories
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve directories with the highest performance or capacity metrics for a specified volume using this API. Filter the metrics by specifying the `top_metric` parameter to gain insights into IO activity or directory size. This API supports returning one metric per request.
 
 == Overview
 

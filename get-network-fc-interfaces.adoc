@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-interfaces.html'
+keywords: 'fc interfaces,retrieves interfaces,fiber channel,location filter,data protocol,cluster nodes'
 summary: 'Retrieve FC interfaces'
 ---
 
 = Retrieve FC interfaces
+:imagesdir: ./media/
+
+[.lead]
+Retrieves FC interfaces, helping you access information about Fibre Channel interfaces available in your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/interfaces`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves FC interfaces.
+ONTAP 9.6
 
 == Related ONTAP commands
 

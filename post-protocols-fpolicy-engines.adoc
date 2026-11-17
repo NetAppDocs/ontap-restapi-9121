@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-fpolicy-engines.html'
+keywords: 'fpolicy engine,svm configuration,data svm,fpolicy server,external engine,notification servers'
 summary: 'Create an FPolicy engine configuration for an SVM'
 ---
 
 = Create an FPolicy engine configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates an FPolicy engine configuration for a specified SVM to manage file access effectively. This operation is applicable only to data SVMs and helps in setting up the necessary parameters for FPolicy server notifications.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/engines`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an FPolicy engine configuration for a specified SVM. FPolicy engine creation is allowed only on data SVMs.
+ONTAP 9.6
+
+== Usage notes
+
+FPolicy engine creation is allowed only on data SVMs.
 
 == Required properties
 

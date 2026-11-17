@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-qtrees-.html'
+keywords: 'qtree delete,storage qtree,qtree removal,volume uuid,qtree id,qtree management'
 summary: 'Delete a qtree'
 ---
 
 = Delete a qtree
+:imagesdir: ./media/
+
+[.lead]
+Deletes a qtree, removing the specified directory structure and its contents from the storage system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/qtrees/{volume.uuid}/{id}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes a qtree.
+ONTAP 9.6
 
 == Related ONTAP commands
 

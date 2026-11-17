@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-s3-services-groups.html'
+keywords: 's3 group,svm configuration,object store server,protocols s3,vserver configuration'
 summary: 'Retrieve the S3 group configuration'
 ---
 
 = Retrieve the S3 group configuration
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the S3 group's SVM configuration to review or manage its settings within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/groups`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Retrieves the S3 group's SVM configuration.
+ONTAP 9.8
 
 == Related ONTAP commands
 

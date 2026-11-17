@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-applications-snapshots.html'
+keywords: 'snapshot copies,application consistent,create time filter,snapshot retrieval,application uuid'
 summary: 'Retrieve an application Snapshot copy'
 ---
 
 = Retrieve an application Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Snapshot copies of an application to access specific point-in-time data for backup or recovery processes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/applications/{application.uuid}/snapshots`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves Snapshot copies of an application.
+ONTAP 9.6
 
 == Query examples
 

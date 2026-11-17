@@ -2,13 +2,16 @@
 sidebar: sidebar
 api: true
 explorer: false
-permalink: 'view_cifs_domain-related_information_(specific_svm).html'
+permalink: 'view_cifs_domain-related_information_specific_svm_.html'
+keywords: 'cifs domain,specific svm,trust relationships,discovered servers,preferred dcs,password schedule'
 summary: 'View CIFS domain-related information (specific SVM)'
 ---
 
 = View CIFS domain-related information (specific SVM)
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve CIFS domain-related information for a specific SVM to examine domain configurations, trust relationships, and server details.
 
 == Overview
 

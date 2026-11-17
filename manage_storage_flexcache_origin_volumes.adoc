@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_flexcache_origin_volumes.html'
+keywords: 'flexcache management,origin volumes,flexvol configuration,cross cluster,flexgroup'
 summary: 'Manage storage FlexCache origin volumes'
 ---
 
 = Manage storage FlexCache origin volumes
+:imagesdir: ./media/
 
-
+[.lead]
+Explore the management of FlexCache origin volumes to streamline data access across different configurations. Leverage these endpoints to retrieve, inspect, and modify the attributes and settings of origin volumes within your ONTAP environment.
 
 == Overview
 

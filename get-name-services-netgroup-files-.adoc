@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-netgroup-files-.html'
+keywords: 'netgroup file,raw netgroup,svm uuid,name services,netgroup details'
 summary: 'Retrieve the netgroup file details'
 ---
 
 = Retrieve the netgroup file details
+:imagesdir: ./media/
+
+[.lead]
+Retrieves netgroup file details for a specified SVM to access configuration information in JSON format. Use this endpoint to obtain the raw netgroup file when necessary by setting the appropriate header.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/netgroup-files/{svm.uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves the netgroup file details for a given SVM if the header is set as "accept: application/json".
 If the header is set as "accept: multipart/form-data", the raw netgroup file of the given SVM is retrieved.

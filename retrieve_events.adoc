@@ -3,17 +3,20 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_events.html'
+keywords: 'ems events,observed events,system events,event collection,latest event'
 summary: 'Retrieve events'
 ---
 
 = Retrieve events
+:imagesdir: ./media/
 
-
+[.lead]
+Query a live collection of observed system events to monitor and analyze ongoing activities within your environment. Use these endpoints to apply filters and retrieve specific event lists based on your operational needs.
 
 == Overview
 
 Queries a live collection of observed events on the system.
-Note: The `filter.name` parameter is used to pass a filter to be applied to the event collection returned. To retrieve the list of available filters, refer to <</docs/support/ems_filter_collection_get,/support/ems/filters>>
+Note: The `filter.name` parameter is used to pass a filter to be applied to the event collection returned. To retrieve the list of available filters, refer to link:get-support-ems-filters.html[/support/ems/filters]
 
 == Example
 

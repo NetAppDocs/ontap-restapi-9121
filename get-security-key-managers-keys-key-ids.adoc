@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-managers-keys-key-ids.html'
+keywords: 'key manager configurations,key manager uuid,node uuid,key query,key management'
 summary: 'Retrieve key manager configurations'
 ---
 
 = Retrieve key manager configurations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves key manager configurations to access the current settings and details for managing encryption keys in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Retrieves key manager configurations.
+ONTAP 9.11
 
 == Required properties
 

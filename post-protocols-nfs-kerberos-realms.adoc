@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nfs-kerberos-realms.html'
+keywords: 'kerberos realm,realm creation,svm uuid,active directory,realm name,kdc vendor'
 summary: 'Create a Kerberos realm'
 ---
 
 = Create a Kerberos realm
+:imagesdir: ./media/
+
+[.lead]
+Creates a Kerberos realm to manage secure authentication in your ONTAP environment. This operation is typically used when setting up or modifying authentication mechanisms within storage virtual machines.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nfs/kerberos/realms`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a Kerberos realm.
+ONTAP 9.6
 
 == Required properties
 

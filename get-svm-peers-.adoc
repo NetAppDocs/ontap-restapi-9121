@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-svm-peers-.html'
+keywords: 'svm peer,peer relationship,relationship instance,svm relationship,vserver peer'
 summary: 'Retrieve an SVM peer relationship instance'
 ---
 
 = Retrieve an SVM peer relationship instance
+:imagesdir: ./media/
+
+[.lead]
+Retrieves an SVM peer relationship instance to access details about the parameters of the peer relationship.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/svm/peers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves the SVM peer relationship instance.
+ONTAP 9.6
 
 == Related ONTAP commands
 

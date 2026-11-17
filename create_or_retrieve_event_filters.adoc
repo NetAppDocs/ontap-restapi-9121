@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'create_or_retrieve_event_filters.html'
+keywords: 'event filters,event management,filter rules,filter criteria,include exclude'
 summary: 'Create or retrieve event filters'
 ---
 
 = Create or retrieve event filters
+:imagesdir: ./media/
 
-
+[.lead]
+Manage event filters by defining rules to identify and handle specific system events. These filters determine which events require further action and where they are sent. Utilize filters to customize event handling based on criteria such as name patterns, severity levels, and SNMP trap types.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-software-upload.html'
+keywords: 'cluster software,software upload,firmware package,local filesystem,software package'
 summary: 'Upload a software or firmware package located on the local file system'
 ---
 
 = Upload a software or firmware package located on the local file system
+:imagesdir: ./media/
+
+[.lead]
+Use this endpoint to upload a software or firmware package from your local file system. This is useful for updating or upgrading your systems with new software versions.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/software/upload`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Uploads a software or firmware package located on the local filesystem.
 

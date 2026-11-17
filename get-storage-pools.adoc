@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-pools.html'
+keywords: 'storage pools,cluster storage,health state,usable size,spare allocation'
 summary: 'Retrieve storage pools for the entire cluster'
 ---
 
 = Retrieve storage pools for the entire cluster
+:imagesdir: ./media/
+
+[.lead]
+Accesses a collection of storage pools across the entire cluster to review the available storage resources.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/pools`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves the collection of storage pools for the entire cluster.
 

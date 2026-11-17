@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-svm-migrations-.html'
+keywords: 'svm migration,pause migration,resume migration,cutover migration,source cleanup,migration actions'
 summary: 'Update actions performed during an SVM migration'
 ---
 
 = Update actions performed during an SVM migration
+:imagesdir: ./media/
+
+[.lead]
+Updates the actions that you can perform during an SVM migration, providing options to pause, resume, cutover, or clean up the source as needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/svm/migrations/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Actions that can be performed during an SVM migration.
 

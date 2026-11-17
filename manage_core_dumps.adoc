@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_core_dumps.html'
+keywords: 'core dump,manage core,delete core dump,kernel core,cluster node'
 summary: 'Manage core dumps'
 ---
 
 = Manage core dumps
+:imagesdir: ./media/
 
-
+[.lead]
+Access core dumps across your cluster or specific nodes using dedicated endpoints for retrieval and deletion. These APIs help you manage system diagnostics and troubleshoot issues effectively.
 
 == Overview
 

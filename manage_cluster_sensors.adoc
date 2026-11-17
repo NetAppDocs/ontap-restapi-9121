@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_sensors.html'
+keywords: 'cluster sensors,platform environment,voltage sensor,sensor values,threshold state'
 summary: 'Manage cluster sensors'
 ---
 
 = Manage cluster sensors
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed information about all platform environment sensors using this API. Access sensor data to monitor conditions and ensure optimal performance within your cluster environment.
 
 = Overview
 

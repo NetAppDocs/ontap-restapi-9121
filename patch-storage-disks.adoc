@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-disks.html'
+keywords: 'disk ownership,change keys,disk sanitize,disk assign,disk encryption,disk modify'
 summary: 'Update disk ownership, change authentication keys, or sanitize disks'
 ---
 
 = Update disk ownership, change authentication keys, or sanitize disks
+:imagesdir: ./media/
+
+[.lead]
+Updates disk ownership, changes authentication keys, or sanitizes disks to manage and secure your storage environment effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/disks`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Updates disk ownership, changes authentication keys, or sanitizes disks.
+ONTAP 9.7
 
 == Related ONTAP commands
 

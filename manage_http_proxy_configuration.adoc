@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_http_proxy_configuration.html'
+keywords: 'http proxy,svm configuration,cluster ipspace,http proxy authentication,network http proxy,proxy server'
 summary: 'Manage HTTP proxy configuration'
 ---
 
 = Manage HTTP proxy configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure and manage HTTP proxy settings for SVMs and Cluster IPspaces to optimize network routing and enhance security. Use these endpoints to retrieve, create, update, and delete HTTP proxy configurations as needed for your environment.
 
 == Overview
 

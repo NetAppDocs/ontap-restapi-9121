@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_the_multi-admin-verify_global_setting.html'
+keywords: 'multi-admin verify,global setting,multi-admin verification,modify setting,default values'
 summary: 'Manage the multi-admin-verify global setting'
 ---
 
 = Manage the multi-admin-verify global setting
+:imagesdir: ./media/
 
-
+[.lead]
+Access and modify the multi-admin verification global setting using these endpoints to configure security measures in your environment. Retrieve the current setting values or update them to suit your administrative policies.
 
 == Overview
 

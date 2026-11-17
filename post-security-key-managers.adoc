@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-key-managers.html'
+keywords: 'key manager,svm creation,client certificate,server ca certificates,onboard passphrase,synchronize keys'
 summary: 'Create a key manager'
 ---
 
 = Create a key manager
+:imagesdir: ./media/
+
+[.lead]
+Creates a key manager to manage encryption keys within an existing SVM. Use this endpoint when you need to configure external or onboard key management for your ONTAP cluster.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/key-managers`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a key manager.
+ONTAP 9.6
 
 == Required properties
 

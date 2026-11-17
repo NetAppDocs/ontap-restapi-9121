@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete_suspect_files.html'
+keywords: 'delete suspects,suspect files,clear suspects,volume clearing,file removal'
 summary: 'Delete suspect files'
 ---
 
 = Delete suspect files
+:imagesdir: ./media/
 
-
+[.lead]
+Use the suspects DELETE API to remove all suspect files from a volume's list of potential suspects. These endpoints help ensure your storage environment is free from problematic files.
 
 The suspects DELETE API clears all the suspect files for a volume from the list of potential suspects.
 

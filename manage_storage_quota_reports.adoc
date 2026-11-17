@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_quota_reports.html'
+keywords: 'storage quota,quota reports,space consumption,volume quota,qtree limits'
 summary: 'Manage storage quota reports'
 ---
 
 = Manage storage quota reports
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and analyze quota reports to monitor file and space consumption across FlexVol and FlexGroup volumes. Use these endpoints to track usage by user, group, or qtree associated with specific volumes.
 
 == Overview
 

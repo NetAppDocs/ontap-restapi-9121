@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_consistency_group_snapshot_copies.html'
+keywords: 'consistency group,application consistency,snapshot copies,crash consistent,restore operation,granular snapshot'
 summary: 'Manage application consistency group Snapshot copies'
 ---
 
 = Manage application consistency group Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage application consistency group Snapshot copies to create, inventory, and restore snapshots on-demand or on a schedule. While crash-consistent snapshots are the default, application-consistent snapshots can be manually created for better integration with host applications. For optimal coordination, consider using the SnapCenter Backup Management suite alongside these APIs.
 
 == Overview
 

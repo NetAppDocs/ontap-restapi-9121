@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-software.html'
+keywords: 'cluster software,software version update,package installation,validate software,software upgrade'
 summary: 'Update the cluster software version'
 ---
 
 = Update the cluster software version
+:imagesdir: ./media/
+
+[.lead]
+Updates the cluster's software version to install new features or patches. Use this endpoint when you need to manage software version changes across the cluster, including validating packages before full installation.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/software`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the cluster software version.
 Important note:

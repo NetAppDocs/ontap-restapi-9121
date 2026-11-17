@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snapshot_copy_policies.html'
+keywords: 'snapshot copy,retention count,snaplock expiry,snapshot policy,snapshot schedule'
 summary: 'Manage Snapshot copy policies'
 ---
 
 = Manage Snapshot copy policies
+:imagesdir: ./media/
 
-
+[.lead]
+Manage Snapshot copy policies to automate the creation of scheduled Snapshot copies in ONTAP. Use these endpoints to define policies, associate schedules, and control retention for efficient data protection and recovery.
 
 == Overview
 

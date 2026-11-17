@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-file-clone-split-loads-.html'
+keywords: 'volume clone,clone split,node uuid,split load,file clone,rest retrieve'
 summary: 'Retrieve the volume file clone split load'
 ---
 
 = Retrieve the volume file clone split load
+:imagesdir: ./media/
+
+[.lead]
+Accesses the details of a volume file clone split load to understand its current state and performance metrics within your ONTAP environment. Use this information to monitor and optimize your storage operations effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/file/clone/split-loads/{node.uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieve Volume File Clone Split Load REST
 

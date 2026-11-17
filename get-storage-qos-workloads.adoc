@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-qos-workloads.html'
+keywords: 'qos workloads,storage workloads,volume filter,qtree filter,workload class,policy name'
 summary: 'Retrieve QoS workloads'
 ---
 
 = Retrieve QoS workloads
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of QoS workloads to understand and manage the quality of service configurations for your storage systems.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/qos/workloads`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves a collection of QoS workloads.
-
+ONTAP 9.10
 
 == Parameters
 

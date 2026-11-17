@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-compliance-clocks.html'
+keywords: 'snaplock compliance,compliance clock,initialize compliance clock,snaplock storage,node uuid,node name'
 summary: 'Initialize a SnapLock ComplianceClock'
 ---
 
 = Initialize a SnapLock ComplianceClock
+:imagesdir: ./media/
+
+[.lead]
+Initializes the SnapLock ComplianceClock to set the compliance clock for a node, ensuring that the system adheres to specified data retention policies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/compliance-clocks`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Initializes the SnapLock ComplianceClock.
+ONTAP 9.10
 
 == Required properties
 

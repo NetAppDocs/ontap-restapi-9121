@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-snapmirror-relationships-transfers-.html'
+keywords: 'snapmirror transfer,abort transfer,async snapmirror,snapmirror relationship,transfer uuid'
 summary: 'Cancel an ongoing SnapMirror transfer'
 ---
 
 = Cancel an ongoing SnapMirror transfer
+:imagesdir: ./media/
+
+[.lead]
+Cancels an ongoing SnapMirror transfer to halt the data replication process between storage systems. This is typically used when you need to stop data transfer due to network issues or to perform maintenance tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/snapmirror/relationships/{relationship.uuid}/transfers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Aborts an ongoing SnapMirror transfer. This operation is applicable on asynchronous SnapMirror relationships.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'cluster_ntp_endpoints.html'
+keywords: 'ontap ntp,cluster synchronization,network time,external time servers,ntp keys,time security'
 summary: 'ONTAP REST API cluster NTP endpoints'
 ---
 
 = ONTAP REST API cluster NTP endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Synchronize the ONTAP cluster time using NTP endpoints to ensure accurate timekeeping across all nodes. Use these endpoints to configure NTP servers and manage symmetric authentication keys, which are essential for precise and secure time synchronization.
 
 == Overview
 

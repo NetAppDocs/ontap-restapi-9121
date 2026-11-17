@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_cluster_web_configurations.html'
+keywords: 'cluster web configuration,csrf protection,http port,https port,certificate uuid'
 summary: 'View and update cluster web configurations'
 ---
 
 = View and update cluster web configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Use this API to view and modify cluster web configurations, including settings for ports, certificates, and security features. Retrieve current configurations to ensure proper setup, or apply updates to maintain optimal web service functionality across your ONTAP cluster.
 
 = Overview
 

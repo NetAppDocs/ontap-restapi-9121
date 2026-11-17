@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-unix-symlink-mapping.html'
+keywords: 'unix symlink,cifs clients,symbolic link,vserver symlink,svm filter,home directory'
 summary: 'Retrieve a UNIX symbolic link mappings for CIFS clients'
 ---
 
 = Retrieve a UNIX symbolic link mappings for CIFS clients
+:imagesdir: ./media/
+
+[.lead]
+Retrieves UNIX symbolic link mappings for CIFS clients to understand how symbolic links are translated between UNIX and CIFS environments.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/unix-symlink-mapping`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves UNIX symbolic link mappings for CIFS clients.
+ONTAP 9.6
 
 == Related ONTAP commands
 

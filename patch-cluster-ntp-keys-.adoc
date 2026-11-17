@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-ntp-keys-.html'
+keywords: 'ntp key,cluster ntp,ntp authentication,symmetric key,digest type,value update'
 summary: 'Update NTP symmetric authentication key details'
 ---
 
 = Update NTP symmetric authentication key details
+:imagesdir: ./media/
+
+[.lead]
+Updates the details of a specific NTP symmetric authentication key using its numeric identifier or index. Use this endpoint when you need to modify the cryptographic hash type or value of the shared private key for network time protocol synchronization.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/ntp/keys/{id}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Updates the details of a specific NTP symmetric authentication key by numeric
 identifier or index (ID).
